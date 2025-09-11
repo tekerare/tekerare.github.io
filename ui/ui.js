@@ -33,7 +33,7 @@ function badgeLink(){
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");
-  x.innerHTML = '<table><tbody><tr><th colspan="2"><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></th></tr><tr><td><a href="https://' + siteURL + '/log/">Blog</a></td><td><a href="https://' + siteURL + '/microlog/">Microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">Fashion Log</a></td><td><a href="https://' + siteURL + '/luchino_shrine/">Luchino Fansite</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">My Music</a></td><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr></tbody></table>';
+  x.innerHTML = '<table><tbody><tr><th colspan="2"><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></th></tr><tr><td><a href="https://' + siteURL + '/log/">Blog</a></td><td><a href="https://' + siteURL + '/microlog/">Microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">Fashion</a></td><td><a href="https://' + siteURL + '/shrine/">Shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">My Music</a></td><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr><tr><td colspan="2"><a href="https://' + siteURL + '/stream/">Stream</a></td></tr></tbody></table>';
   document.getElementById('lContainer').appendChild(x);
 }
 function rssBlock(){
@@ -106,6 +106,19 @@ function loadAsset(){
 	case 8:
 	  assetPiece = "bottom"
 	  document.write('</div><section id="' + assetPiece + '"><img src="https://' + siteURL + '/ui/layout_pieces/layout_' + assetPiece + '_transparent.gif" alt="" usemap="#' + assetPiece + '_links"></section>');
+	  readerUI();
+	break;
+	case 9:
+	  imgPreview();
+	  document.write('<div id="preview"><img src="" id="fullRes" alt="" title=""></div><div id="fauxWindow"><h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../microlog/">Microlog</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../log/update/">Update</a>  <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:0px 2px;">Location:</div><div class="fauxField" style="margin: -2px 0px 0px 0px; cursor:not-allowed;width:100%;">https://'+ siteURL +'</div><div style="width:auto;"><button class="dropDown"></button></div></div><div class="inContent fauxField" style="background:url(../ui/backgrounds/gingham.gif); width:auto;"><div id="lContainer">');
+	break;
+	case 10:
+	  guLogMap();
+	  document.write('</div><div id="rContainer">');
+	  checkPoint();
+	break;
+	case 11:
+	  document.write('</div></div></div>');
 	  readerUI();
 	break;
   }

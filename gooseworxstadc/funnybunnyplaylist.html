@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>アメイジング・デジタル・サーカス</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="A fanpage/online shrine of all things TADC.">
+<link rel="stylesheet" href="../ui/css.css">
+<link rel="stylesheet" href="css.css">
+<script src="../ui/ui.js"></script>
+<script src="js.js"></script>
+</head>
+<body id="imgWindow">
+<script>siteArea = 9;loadAsset();</script>
+<script>siteArea = 10;loadAsset();</script>
+<h3>FunnyBunny Playlist (Select A Track To Play)</h3>
+<audio controls="" id="audio" autoplay="false" tabindex="0"></audio>
+<div>
+<table class="playlist">
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(0)'>▶ セラニポージ - ラヒットハニック</a></h3>
+	  <p>An adventure where many, many, many, many, bunnies.<p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(2)'>▶ applebonker - mellow it</a></h3>
+	  <p>I like a little bite to my adventures, but I guess sitting in silence isn't so bad!</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(1)'>▶ The Quick Brown Fox - DAS LOVE BOP</a></h3>
+	  <p>How it feels to bag the weird, funny girl with cute eyes.</p>
+    </td>
+  </tr>
+</table>
+</div>
+<script>siteArea = 11;loadAsset();</script>
+</body>
+<script>
+const audioFiles = [
+  "audios/SeraniPojiラヒットハニック.mp3",
+  "audios/applebonker_mellowit.mp3",
+  "audios/TheQuickBrownFoxDASLOVEBOP.mp3"
+];
+let currentAudioIndex = 0;
+const audioElement = document.getElementById('audio');
+function changeAudio(audioURL) {
+  audioElement.src = audioURL;
+  audioElement.load();
+  audioElement.play();
+}
+document.querySelectorAll('h3 a').forEach(function(h3, index) {
+  h3.addEventListener('click', function() {
+    currentAudioIndex = index;
+    const audioURL = audioFiles[currentAudioIndex];
+    changeAudio(audioURL);
+  });
+});
+
+audioElement.addEventListener('ended', function() {
+  currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
+  const nextAudioURL = audioFiles[currentAudioIndex];
+  changeAudio(nextAudioURL);
+});
+</script>
+</html>

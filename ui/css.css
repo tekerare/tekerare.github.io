@@ -1,4 +1,7 @@
 /* GLOBAL ROOT */
+@font-face {font-family: "bazinga"; src: url("../fonts/bazinga-tadc.otf");}
+@font-face {font-family: "kiwisoda"; src: url("../fonts/kiwisoda.ttf");}
+@font-face {font-family: "kinky"; src: url("../fonts/kinky.otf");}
 :root{
   --linkColor:#000000;
   --selectionColor:#00000030;
@@ -14,6 +17,9 @@
   --fontSizeMobile:14px;
   --fontSizeDesktop:12px;
   --themeBG:url('backgrounds/machine_tile.png');
+  --fauxWindowBoxShadow:inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff;
+  --browserColor:#d4cbb2;
+  --fauxWindowButtonSize:20px;
 }
 
 /* GLOBAL */
@@ -52,6 +58,7 @@ th, td, #body #lContainer ul, #body #rContainer > ul, h4, h3, h2, h1{ background
 details{cursor:text;color:#636363;}
 summary{cursor:pointer;color:#000000;}
 iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
+video{border:1px #000000 solid;}
 quiet{color:#00000050;}
 #body, #treeBody, #singleBody{width:644px; padding:10px 0px 10px 0px; opacity:1; margin:0 auto;
   section, div, img{background-position:top left;box-sizing:border-box;}
@@ -62,7 +69,7 @@ quiet{color:#00000050;}
 #top, #bottom{background-repeat: no-repeat !important;}
 #top{min-height:116px; max-height:116px;}
 #lContainer, #rContainer {img{ padding:0px 1px 0px 1px;}}
-#lContainer{ background:url('layout_pieces/layout_lcontainer.png'); padding:5px 0px 0px 14px; text-align:center; width:204px;
+#lContainer{ padding:5px 0px 0px 14px; text-align:center; width:204px;
   div, div{text-align:start}
   textarea{max-width:149px; min-width:149px;}
 }
@@ -85,6 +92,7 @@ quiet{color:#00000050;}
   #rContainer > h1{background:url("layout_pieces/h1_bull.png") no-repeat center left, var(--jellyGradient)!important; width:auto !important; box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff; border:1px #36333b; border-style:solid none solid none !important; margin:0; color:#ffffff; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} text-shadow:-1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder); padding:4px 4px 4px 23px; font-size:14px;}
   #top{background:url('layout_pieces/layout_header_multi.png');}
   #bottom{background:url('layout_pieces/layout_bottom_multi.png'); height:132px;}
+  #lContainer{background:url('layout_pieces/layout_lcontainer.png');}
   #rContainer{
   background:url('layout_pieces/layout_rcontainer.png');
   padding:0px 10px 0px 1px;
@@ -128,6 +136,38 @@ quiet{color:#00000050;}
   #bottom{background:url('layout_pieces/layout_bottom_tree.png');}
 }
 /*SINGLE THEME END*/
+/*FAUX WINDOW THEME START*/
+#fauxWindow{ background: var(--browserColor); border:1px #000000 solid;box-shadow:var(--fauxWindowBoxShadow); padding:2px; margin:0 auto; width:644px; cursor:default;
+  h1{ background:0;}
+  ::selection{background:#00000000}
+  button{background: url('icons/window_set.png') no-repeat, var(--browserColor); box-shadow:var(--fauxWindowBoxShadow); border:1px #000000 solid; min-height: var(--fauxWindowButtonSize); min-width:var(--fauxWindowButtonSize);margin:-0px -0px; pointer-events:auto;cursor:not-allowed;}
+  button:hover{box-shadow: inset -1px -1px #808080, inset 1px 1px , inset -2px -2px #ffffff, inset 2px 2px #ffffff;}
+  #inContent{ cursor:default; padding:0px 0px 20px 0px; width:auto;
+    ::selection{background:#00000020 !important;}
+	img{ max-width:100%; margin:0 auto; image-rendering:crisp-edges;}
+  }
+  #lContainer{min-width:200px; padding:0px; border:1px var(--headingBorder); border-style:none var(--treeBorderStyle) none none;
+    > div{ border:1px var(--headingBorder); border-style:none none var(--treeBorderStyle) none;}
+  }
+  #rContainer{min-width:auto;
+    h1, h1 a{font-family:"bazinga"; text-align:center; box-shadow:none !important; text-decoration:none;}
+	h2{font-family: "kiwisoda";}
+  }
+  > h1{background:#807c73; font-size:12px; margin:0 auto; color:#ffffff;}
+  > div{
+	  box-shadow: inset 0px -1px #0a0a0a, inset -0px -2px #808080;
+	  margin:3px 0px 0px 0px;
+      padding: 3px 5px 6px 5px !important;
+	}
+  .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:3px;}
+  .minmaxDec2{right:40px;}
+  .minmaxDec{background-position:top left -15px;right:20px;}
+   .dropDown{background-position:top left -49px;}
+  .closeDec{background-position:top left -34px;right:0px;}
+  .fauxField{background:#ffffff;border:var(--browserColor) 3px inset; padding:0px 5px 0px 5px;margin:0px -1px !important;}
+  .kinkyfont{font-family: "kinky";}
+}
+/*FAUX WINDOW THEME END*/
 /*OFFSITE CUSTOMS START*/
 #CultofUsakumya {background:none !important; border:0 !important; 
   table{width:auto;margin:0 auto;}
