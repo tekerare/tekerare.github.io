@@ -33,7 +33,7 @@ function badgeLink(){
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");
-  x.innerHTML = '<table><tbody><tr><th colspan="2"><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></th></tr><tr><td><a href="https://' + siteURL + '/log/">Blog</a></td><td><a href="https://' + siteURL + '/microlog/">Microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">Fashion</a></td><td><a href="https://' + siteURL + '/shrines/">Shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">My Music</a></td><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr><tr><td colspan="2"><a href="https://' + siteURL + '/stream/">Stream</a></td></tr></tbody></table>';
+  x.innerHTML = '<table><tbody><tr><th colspan="2"><a href="https://' + siteURL + '/log/update/">Update Log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>RSS Feed</a></th></tr><tr><td><a href="https://' + siteURL + '/log/">Blog</a></td><td><a href="https://' + siteURL + '/microlog/">Microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">Fashion</a></td><td><a href="https://' + siteURL + '/shrines">Shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">My Music</a></td><td><a href="https://' + siteURL + '/about">About The Site</a></td></tr><tr><td colspan="2"><a href="https://' + siteURL + '/stream/">Stream</a></td></tr></tbody></table>';
   document.getElementById('lContainer').appendChild(x);
 }
 function rssBlock(){
