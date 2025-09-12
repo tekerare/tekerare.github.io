@@ -150,7 +150,7 @@ quiet{color:#00000050;}
     > div{ border:1px var(--headingBorder); border-style:none none var(--treeBorderStyle) none;}
   }
   #rContainer{min-width:auto;
-    h1, h1 a{font-family:"bazinga"; text-align:center; box-shadow:none !important; text-decoration:none;}
+    h1, h1 a{font-family:"bazinga"; box-shadow:none !important; text-decoration:none;}
 	h2{font-family: "kiwisoda";}
   }
   > h1{background:#807c73; font-size:12px; margin:0 auto; color:#ffffff;}
