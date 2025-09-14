@@ -1,4 +1,4 @@
-body{background: linear-gradient(0deg, #ffffff 0%, #00000000 50%, #00000000 100%), url('../ui/backgrounds/gingham.png'), #ffffff; background-size:40px; background-attachment:fixed;}
+body{background: linear-gradient(0deg, #ffffff 0%, #00000000 50%, #00000000 100%), url('../ui/backgrounds/gingham.png'), #ffffff; background-size:20px; background-attachment:fixed;}
 
 #rContainer{h1, h1 a{color:#f277a2 !important;}}
 #fullRes {border: 0;}
