@@ -58,7 +58,7 @@ th, td, #body #lContainer ul, #body #rContainer > ul, h4, h3, h2, h1{ background
 details{cursor:text;color:#636363;}
 summary{cursor:pointer;color:#000000;}
 iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
-video{border:1px #000000 solid;}
+video{background:#ffffff; border:1px #000000 solid;}
 quiet{color:#00000050;}
 #body, #treeBody, #singleBody{width:644px; padding:10px 0px 10px 0px; opacity:1; margin:0 auto;
   section, div, img{background-position:top left;box-sizing:border-box;}
