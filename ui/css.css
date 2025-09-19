@@ -18,6 +18,7 @@
   --fontSizeDesktop:12px;
   --themeBG:url('backgrounds/machine_tile.png');
   --fauxWindowBoxShadow:inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px #808080, inset 2px 2px #ffffff;
+  --browserTitle:#807c73;
   --browserColor:#d4cbb2;
   --fauxWindowButtonSize:20px;
 }
@@ -142,7 +143,7 @@ quiet{color:#00000050;}
   ::selection{background:#00000000}
   button{background: url('icons/window_set.png') no-repeat, var(--browserColor); box-shadow:var(--fauxWindowBoxShadow); border:1px #000000 solid; min-height: var(--fauxWindowButtonSize); min-width:var(--fauxWindowButtonSize);margin:-0px -0px; pointer-events:auto;cursor:not-allowed;}
   button:hover{box-shadow: inset -1px -1px #808080, inset 1px 1px , inset -2px -2px #ffffff, inset 2px 2px #ffffff;}
-  #inContent{ cursor:default; padding:0px 0px 20px 0px; width:auto;
+  .inContent{ cursor:default; width:auto;
     ::selection{background:#00000020 !important;}
 	img{ max-width:100%; margin:0 auto; image-rendering:crisp-edges;}
   }
@@ -153,7 +154,7 @@ quiet{color:#00000050;}
     h1, h1 a{font-family:"bazinga"; box-shadow:none !important; text-decoration:none;}
 	h2{font-family: "kiwisoda";}
   }
-  > h1{background:#807c73; font-size:12px; margin:0 auto; color:#ffffff;}
+  > h1{background:var(--browserTitle); font-size:12px; margin:0 auto; color:#ffffff;}
   > div{
 	  box-shadow: inset 0px -1px #0a0a0a, inset -0px -2px #808080;
 	  margin:3px 0px 0px 0px;

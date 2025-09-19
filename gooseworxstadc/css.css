@@ -1,4 +1,14 @@
-body{background: linear-gradient(0deg, #ffffff 0%, #00000000 50%, #00000000 100%), url('../ui/backgrounds/gingham.png'), #ffffff; background-size:20px; background-attachment:fixed;}
+:root{
+  --browserColor:#ebc9ff;
+  --browserTitle:#bb86d9;
+}
 
-#rContainer{h1, h1 a{color:#f277a2 !important;}}
+body{background: linear-gradient(0deg, #ffffff 0%, #00000000 50%, #00000000 100%), url('media/bg_jax.png'), url('../ui/backgrounds/gingham.png'), #ffffff; background-attachment:fixed;}
+
+#rContainer{h1, h1 a{color:#ff2b41 !important;}}
 #fullRes {border: 0;}
+.inContent{background:url(../ui/backgrounds/gingham.gif) !important;}
+#checkpoint{
+  background:url("ui/checkpoint.png") no-repeat;
+  h1{text-shadow: 2px 2px 2px #ffffff,-2px -2px 2px #ffffff, 2px -2px 2px #ffffff, -2px 2px 2px #ffffff;}
+}
