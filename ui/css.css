@@ -21,6 +21,7 @@
   --browserTitle:#807c73;
   --browserColor:#d4cbb2;
   --fauxWindowButtonSize:20px;
+  --imgBlockSize:300px;
 }
 
 /* GLOBAL */
@@ -79,9 +80,12 @@ quiet{color:#00000050;}
 }
 #preview{background:#000000b5; background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none;}
 #fullRes{ height:80vh; margin:5vh auto; cursor:pointer; border:#ffffff 1px solid;}
+.imgSumm{ padding: 15px 20px 10px 20px; box-sizing:border-box;background:#ffffffb5; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease;filter:opacity(0%); overflow:hidden;}
+.imgBlock{background-size:cover !important; min-height:var(--imgBlockSize);  border-radius:10px; border:1px solid #000000;}
+.imgBlock:hover .imgSumm{box-shadow: inset 1px 1px 0px 1px #d67875, inset -1px -1px 0px 1px #d67875, inset -1px 1px 0px 1px #d67875, inset 1px -1px 0px 1px #d67875; animation:imgSummAnm .5s ease; filter:opacity(100%);}
 /*RSS FEED START*/
-  .feedBlock{background:url("backgrounds/dotted_paper.png")!important;border:3px #bcbcbc inset !important;border-radius:0px !important;padding:5px 0px 0px 0px; overflow-y: scroll; height:110px;}
-  .feed-title{display:none;}
+.feedBlock{background:url("backgrounds/dotted_paper.png")!important;border:3px #bcbcbc inset !important;border-radius:0px !important;padding:5px 0px 0px 0px; overflow-y: scroll; height:110px;}
+.feed-title{display:none;}
 /*RSS FEED END*/
 .flex{display:flex;
   div{width:50%; img{max-width: 97% !important;}}
@@ -104,6 +108,7 @@ quiet{color:#00000050;}
   }
   #lContainer div{background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important;}
   #rContainer > div{background:var(--divInset); border:1px solid #000000; margin:0 auto; width:95%; box-shadow: inset 0px 0px 3px #ffffff;margin:5px auto 5px; border-color: #3a371b;}
+  .flex{background:none !important; box-shadow:none !important; border:none !important;}
 }
 /*DEFAULT THEME END*/
 /*TREE THEME END*/
@@ -124,6 +129,9 @@ quiet{color:#00000050;}
   #rContainer{
 	h3, h4{border-style: var(--treeBorderStyle) var(--treeBorderStyle) none none !important;}
 	background:url('layout_pieces/layout_mid_tree.png') right top; padding:0px 35px 0px 0px; width:100%;
+	div{
+	  table{width:90%; margin:0 auto;}
+	}
   }
   .banner{background-position:top right; background-repeat:none; width:225px; height:95px; border:none !important;}
 }
@@ -131,7 +139,7 @@ quiet{color:#00000050;}
 /*SINGLE THEME START*/
 #singleBody{
   iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
-  .inContent{background:url('layout_pieces/layout_mid_tree.png') left top, var(--themeBG) repeat-y center; padding:5px 26px 5px 30px; display:block; img{border-radius:var(--roundedImg); display:block; max-width: 95%; margin:5px auto 5px;}}
+  .inContent{background:url('layout_pieces/layout_mid_tree.png') left top, #ffffff; padding:5px 26px 5px 30px; display:block; img{border-radius:var(--roundedImg); display:block; max-width: 95%; margin:5px auto 5px;}}
   > div > div{background:#ffffffa6; padding: 4px 0px 4px 0px; border-radius:10px; width:95%; margin:5px auto;}
   #top{background:url('layout_pieces/layout_header_tree.png');}
   #bottom{background:url('layout_pieces/layout_bottom_tree.png');}
@@ -169,6 +177,18 @@ quiet{color:#00000050;}
   .kinkyfont{font-family: "kinky";}
 }
 /*FAUX WINDOW THEME END*/
+/*ANIMATIONS START*/
+@keyframes imgSummAnm{
+  0%{padding:0px 20px 10px 20px;}
+  100%{padding:15px 20px 10px 20px;}
+}
+@keyframes selectBop {
+  0% {transform:translate(0px, -2px);}
+  60% {transform:translate(0px, 1px);}
+  90% {transform:translate(0px, -1px);}
+  100%{transform:translate(0px, 0px);}
+}
+/*ANIMATIONS END*/
 /*OFFSITE CUSTOMS START*/
 #CultofUsakumya {background:none !important; border:0 !important; 
   table{width:auto;margin:0 auto;}

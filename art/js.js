@@ -1,0 +1,3 @@
+function guLogMap(){
+  document.write('<img src="ui/checkpoint.png" alt="*GRISTLEPOD*"><div><table><th colspan="3"><a href=".">home</a></th><tr><td><a href="https://ko-fi.com/gristlepod" target="_blank">ko-fi</a></td><td><a href="terms">terms</a></td><td><a href="gallery">gallery</a></td></tr><tr><td colspan="3"><a href="conventions">irl events &amp; conventions</a></td></tr></table></div><div><p>contact: <a href="mailto:0ekekddddd@protonmail.com">protonmail[dot]com</a> or ko-fi direct messages.</p></div>');
+}
