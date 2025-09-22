@@ -58,6 +58,7 @@ table{width:100%;}
 th{background-color: var(--verticalTableMenu) !important; text-align:start; color:#6e3a37; a{color:#6e3a37 !important;}}
 th, td{border:var(--treeBorderStyle) 1px var(--headingBorder) !important; padding:3px 4px 3px 4px;}
 th, td, #body #lContainer ul, #body #rContainer > ul, h4, h3, h2, h1{ background:url("backgrounds/tone.png"); border:1px var(--headingBorder);}
+button{cursor:pointer;}
 details{cursor:text;color:#636363;}
 summary{cursor:pointer;color:#000000;}
 iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
@@ -84,6 +85,7 @@ quiet{color:#00000050;}
 .imgSumm{ font-family:hack; font-size:14px; padding: 15px 20px 10px 20px; box-sizing:border-box;background:#ffffffe0; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease;filter:opacity(0%); overflow:hidden;}
 .imgBlock{background-size:cover !important; min-height:var(--imgBlockSize);  border-radius:10px; border:1px solid #000000; image-rendering:smooth;}
 @media screen and (min-width:790px){.imgBlock:hover .imgSumm{box-shadow: inset 1px 1px 0px 1px #d67875, inset -1px -1px 0px 1px #d67875, inset -1px 1px 0px 1px #d67875, inset 1px -1px 0px 1px #d67875; animation-name:imgSummAnm; filter:opacity(100%);}}
+#minimalistLinks{button{background-color:var(--verticalTableMenu); margin:2px !important; background-position:top left; background-size:48px 48px; margin:10px 0px 0px 0px; height:48px;width:48px;border:1px #6e3a37 solid;border-radius:5px;} button:hover{animation:selectBop .3s ease-in;}}
 /*RSS FEED START*/
 .feedBlock{background:url("backgrounds/dotted_paper.png")!important;border:3px #bcbcbc inset !important;border-radius:0px !important;padding:5px 0px 0px 0px; overflow-y: scroll; height:110px;}
 .feed-title{display:none;}
