@@ -83,7 +83,7 @@ quiet{color:#00000050;}
 #fullRes{ height:80vh; margin:5vh auto; cursor:pointer; border:#ffffff 1px solid;}
 .imgSumm{ font-family:hack; font-size:14px; padding: 15px 20px 10px 20px; box-sizing:border-box;background:#ffffffe0; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease;filter:opacity(0%); overflow:hidden;}
 .imgBlock{background-size:cover !important; min-height:var(--imgBlockSize);  border-radius:10px; border:1px solid #000000; image-rendering:smooth;}
-.imgBlock:hover .imgSumm{box-shadow: inset 1px 1px 0px 1px #d67875, inset -1px -1px 0px 1px #d67875, inset -1px 1px 0px 1px #d67875, inset 1px -1px 0px 1px #d67875; animation:imgSummAnm .5s ease; filter:opacity(100%);}
+@media screen and (min-width:790px){.imgBlock:hover .imgSumm{box-shadow: inset 1px 1px 0px 1px #d67875, inset -1px -1px 0px 1px #d67875, inset -1px 1px 0px 1px #d67875, inset 1px -1px 0px 1px #d67875; animation-name:imgSummAnm; filter:opacity(100%);}}
 /*RSS FEED START*/
 .feedBlock{background:url("backgrounds/dotted_paper.png")!important;border:3px #bcbcbc inset !important;border-radius:0px !important;padding:5px 0px 0px 0px; overflow-y: scroll; height:110px;}
 .feed-title{display:none;}
@@ -91,6 +91,7 @@ quiet{color:#00000050;}
 .flex{display:flex;
   div{width:50%; img{max-width: 97% !important;}}
   > img{width:50%; height:auto !important; cursor:crosshair;}
+  > img:hover{animation:selectBop .1 ease;} 
 }
 .tone{background:url("backgrounds/tone.png");}
 /*DEFAULT THEME START*/
