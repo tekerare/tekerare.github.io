@@ -42,7 +42,7 @@ hr {background-image: linear-gradient(to right, #00000000, #000000, #00000000);b
 audio{width:100%;filter:opacity(30%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
 audio:hover{filter:opacity(50%);}
 a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000; cursor:pointer;}
-p, h1, h2, h3, h4, details, span, center, quiet, .flex{padding:0px 10px 0px 10px; display:block;}
+p, h1, h2, h3, h4, details, span, center, quiet{padding:0px 10px 0px 10px; display:block;}
 p, h1, h2, h4, details, span, li, td{border:1px #000000;}
 h1, h2, h4{margin:0;}
 h3, h2, h1{border:1px var(--headingBorder); border-style:var(--treeBorderStyle) none var(--treeBorderStyle) none;}
@@ -97,7 +97,7 @@ quiet{color:#00000050;}
 .a{top:-15px;right:-30px; transform:rotate(15deg);}
 @media screen and (min-width:790px){.imgBlock:hover .imgSumm{box-shadow: inset 1px 1px 0px 1px #d67875, inset -1px -1px 0px 1px #d67875, inset -1px 1px 0px 1px #d67875, inset 1px -1px 0px 1px #d67875; animation-name:imgSummAnm; filter:opacity(100%);}}
 #minimalistLinks{button{background-color:var(--verticalTableMenu); margin:2px !important; background-position:top left; background-size:48px 48px; margin:10px 0px 0px 0px; height:48px;width:48px;border:1px #6e3a37 solid;border-radius:5px;} button:hover{animation:selectBop .3s ease-in;}}
-.flex{display:flex;
+.flex{display:flex; margin:2px auto !important;
   div{width:50%; img{max-width: 97% !important;}}
   > img{width:50%; height:auto !important; cursor:crosshair;}
 }
