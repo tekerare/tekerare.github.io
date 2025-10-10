@@ -1,9 +1,8 @@
 :root{
   --boldTxt:#9c0520;
 }
-.inContent{background:url('../ui/backgrounds/tiled_plants.png') repeat-y !important; background-position: center !important;}
+body{background:url('../ui/backgrounds/tiled_plants.png') !important;}
 #lContainer{
-  background: url("../ui/layout_pieces/layout_mid_tree.png") left top, linear-gradient(90deg, #00000000 0%, #00000000 10%, #ffffffa2 10%, #ffffffa2 100%) !important;
 }
 #rContainer{h4, h3, h2, h1 {
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
