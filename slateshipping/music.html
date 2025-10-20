@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ノトルキ ♥ 愚教 ♥ 勘蜥</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="A fanpage/online church of all things Luchino Diruse.">
+<link rel="stylesheet" href="../ui/css.css">
+<link rel="stylesheet" href="css.css">
+<script src="../ui/ui.js"></script>
+<script src="js.js"></script>
+</head>
+<body>
+<script>siteArea = 9;loadAsset();</script>
+<script>siteArea = 10;loadAsset();</script>
+<h2>Music Playlist</h2>
+<audio controls="" id="audio" autoplay="false" tabindex="0"></audio>
+<h3>Select A Track Below To Play</h3>
+<div>
+<table class="playlist">
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(0)'>▶ Tim Exile - Sliiime</a></h3>
+	  <p>An abstract IDM track from Tim Exile's &quot;Pro Agonist&quot; (18+). Just when you thought you could identify a word of English, its already molted into some un-human buzzing synth with each acoustic pluck. It's one of my favorite songs that only my favorite characters have the honor of holding as an &quot;anthem&quot;.<p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(1)'>▶ Narrow Head - Gearhead</a></h3>
+	  <p>A "noise rock" track from Narrow Head's &quot;Moments of Clarity&quot;. After the wick slicks clean into a final textural roar, no longer suffocates the miner once trapped in his wool and his sweat, for the water welcomes him. A brooding track that perfectly captures resentment and weight.<p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(2)'>▶ Tim Exile - Fortress</a></h3>
+	  <p>"So bring in the archaeologists, to unearth your heritage and take you home."</p>
+	  <p>After several visits in his dreams Gla'aki began to promise Norton his tender freedom.<p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(3)'>▶ Anklepants - Preset Of The Radical Sydney Dubstep Fad</a></h3>
+	  <p><a href='https://id5.fandom.com/wiki/Emergency_Transport?file=EmergencyTransportPress.gif' target='_blank'>Emergency Transport</a> was sent to scavenge the metropolis while the rest of the squad is held back at the research quarters. He passes the time salvaging signals on his ham radio while hauling back spare tires.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(4)'>▶ Tim Exile - Listening Tree</a></h3>
+	  <p>The transmissions grew erratic the deeper Emergency Transport walked into the sporic nest. He hugs his radio's earpiece reluctantly to his ear awaiting the next order, but the cycling melodies suddenly grew rhythmic. His transmissions promised fresh air to wastelands which hasn't seen green grass in forever; the oddest part was how convincing it all sounded.</p>
+    </td>
+  </tr>
+</table>
+</div>
+<h3>&rarr; Unlisted Tracks</h3>
+<div>
+<table>
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(5)'>▶ Phatworld - Genghis Khan</a></h3>
+	  <p>Emergency Transport drag races <a href='https://id5.fandom.com/wiki/Highway_Cavalier' target='_blank'>Highway Cavalier</a> through uncharted plains yet touched by spores before finding refuge at a neglected gas pump. I always associated them with bassline 4x4.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	  <h3><a onclick='changeAudio(6)'>▶ Sekt-87 - Brain (More Fool U Remix)</a></h3>
+	  <p><a href='https://id5.fandom.com/wiki/Bone_Flute' target='_blank'>Boneflute</a> only emerges from the Earths to cull the wicked every few years, but this hunt would be longer than anticipated. He carries a beheaded (but very much sentient) <a href='https://id5.fandom.com/wiki/Keyboard'>Keyboard</a> over his waistband as he pursues his next souvenir.</p>
+    </td>
+  </tr>
+</table>
+</div>
+<script>siteArea = 11;loadAsset();</script>
+</body>
+<script>
+const audioFiles = [
+  "audios/timexile_sliiime.mp3",
+  "audios/narrowhead_gearhead.mp3",
+  "audios/timexile_fortress.mp3",
+  "audios/anklepants_presetoftheradicalsydneydubstepfad.mp3",
+  "audios/timexile_listeningtree.mp3",
+  "audios/phatworld-genghiskhan.mp3",
+  "audios/sekt-87_brain(morefoolu).mp3",
+];
+let currentAudioIndex = 0;
+const audioElement = document.getElementById('audio');
+function changeAudio(audioURL) {
+  audioElement.src = audioURL;
+  audioElement.load();
+  audioElement.play();
+}
+document.querySelectorAll('h3 a').forEach(function(h3, index) {
+  h3.addEventListener('click', function() {
+    currentAudioIndex = index;
+    const audioURL = audioFiles[currentAudioIndex];
+    changeAudio(audioURL);
+  });
+});
+
+audioElement.addEventListener('ended', function() {
+  currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
+  const nextAudioURL = audioFiles[currentAudioIndex];
+  changeAudio(nextAudioURL);
+});
+</script>
+</html>

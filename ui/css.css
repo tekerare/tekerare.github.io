@@ -176,7 +176,7 @@ quiet{color:#00000050;}
 	  margin:3px 0px 0px 0px;
       padding: 3px 5px 6px 5px !important;
 	}
-  .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:3px;}
+  .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;}
   .minmaxDec2{right:40px;}
   .minmaxDec{background-position:top left -15px;right:20px;}
    .dropDown{background-position:top left -49px;}

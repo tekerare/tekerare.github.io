@@ -1,0 +1,21 @@
+:root{
+  --bgColor:#e1e3e1;
+  --bgColorOpacity:#e1e3e160;
+  --boldTxt:#f2f2f2;
+  --liLinkBorder:#b33b00;
+}
+body{
+  background-size: 150px, auto, auto, auto;
+  background-position:top left, top, top right, top;font-size:var(--fontSizeDesktop);
+  margin: 0 auto;
+}
+h1{font-size:16px;}
+mark {background: #00000030;}
+#treeBody {h1, h2, h3, h4{a, a:visited{text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder); color:#ffffff;}}}
+body{background:linear-gradient(90deg,#00000000 2%, #ffffff30 10%, #ffffffb4 40%, #ffffffb4 60%, #ffffff30 90%, #00000000 98%), url('../ui/backgrounds/moss.gif'); background-position: center !important;}
+#lContainer{
+  background:url("../ui/backgrounds/cherries.gif");
+  > h4{background: url("layout_pieces/bill_scales_texture-flip.gif") repeat-x 0px 1px !important;text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  color:#000000;
+  }
+.banner{min-height:150px; background:url('../ui/tree_post/notoruki.png') !important; background-size:225px !important; image-rendering:crisp-edges;}
