@@ -4,5 +4,5 @@ function guLogMap(){
   document.write('<h4>Blog Stats</h4><div><p><b>Created since:</b> 2025.09.10<br><b>Favorite Character:</b> Pomni</p></div><br><a href="https://web.archive.org/web/20040730071408fw_/http://omoh.clayangel.net/" target="_blank"><img src="../ui/images/yaoi_yuri.jpg" alt="Yaoi &amp; yuri support on the web - open your mind, open your heart." title="Yaoi &amp; yuri support on the web - open your mind, open your heart."></a>');
 }
 function checkPoint(){
-  document.write('<div id="checkpoint"><h1 style="color:#f277a2;padding-top:30px;text-align:center;"><a href="."><img src="ui/3d_digital.gif" alt="Digital" title="Digital" style="margin:0px auto -10px;"><br><img src="ui/3d_circus.gif" alt="Circus" title="Circus" style="margin:0px auto;"><br><img src="ui/3d_webshrine.gif" alt="Web Shrine" title="Web Shrine" style="margin:0px 0px 20px 0px;"></a></h1></div>');
+  document.write('<div id="checkpoint"><h1 style="color:#f277a2;text-align:center;"><a href="."><img src="ui/3d_digital.gif" alt="Digital" title="Digital" style="margin:0px auto -2px;height:30px;"><img src="ui/3d_circus.gif" alt="Circus" title="Circus" style="margin:0px auto;height:25px;"><img src="ui/3d_webshrine.gif" alt="Web Shrine" title="Web Shrine" style="height:20px;margin:5px 0 0;"></a></h1></div>');
 }
