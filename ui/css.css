@@ -141,7 +141,7 @@ quiet{color:#00000050;}
 	h3, h4{border-style: var(--treeBorderStyle) var(--treeBorderStyle) none none !important;}
 	background:url('layout_pieces/layout_mid_tree.png') right top; padding:0px 35px 0px 0px; width:100%;
   }
-  .banner{background-position:top right; background-repeat:none; width:225px; height:95px; border:none !important;}
+  .banner{background-position:top right; width:225px; height:95px; border:none !important;}
 }
 /*TREE THEME END*/
 /*SINGLE THEME START*/

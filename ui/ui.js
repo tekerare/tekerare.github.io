@@ -22,7 +22,7 @@ function enlarge(){
 
 function quickBio(){
   const x = document.createElement("div");
-  x.innerHTML = '<p><img src="ui/images/atglasses.gif" style="pointer-events:none;float:left;padding:0px 9px 0px 0px;"> Web developer &amp; designer. Working full-time. E-mail for collaboration.</p>';
+  x.innerHTML = '<p><img src="ui/images/atglasses.gif" style="pointer-events:none;float:left;padding:0px 9px 0px 0px;"> Web developer &amp; designer. Looking for work. E-mail for collaboration.</p>';
    document.getElementById('lContainer').appendChild(x);
 }
 function badgeLink(){
