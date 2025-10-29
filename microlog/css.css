@@ -1,7 +1,7 @@
 :root{
   --boldTxt:#9c0520;
 }
-body{background:url('../ui/backgrounds/tiled_plants.png') !important;}
+body{background: linear-gradient(90deg, #00000000 0%, #ffffff 60%, #ffffff 100%), url('../ui/backgrounds/tiled_plants.png') !important;}
 #lContainer{
 }
 #rContainer{h4, h3, h2, h1 {
