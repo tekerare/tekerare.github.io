@@ -53,7 +53,7 @@ function loadTheme(){
 	y.setAttribute('target', '_parent');
 	x.setAttribute('href', '#header');
 	y.setAttribute('href', '#footer');
-	x.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/top.png" alt="top" title="top" style="position:fixed;bottom:80px;right:0;">';
+	x.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/top.png" alt="top" title="top" style="position:fixed;bottom:66px;right:0;">';
 	y.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/bottom.png" alt="bottom" title="bottom" style="position:fixed;bottom:0;right:0;">';
 	document.body.appendChild(x).appendChild(y);
   }
