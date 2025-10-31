@@ -11,10 +11,16 @@
 <script src="../ui/ui.js"></script>
 <script src="js.js"></script>
 </head>
-<body id="imgWindow">
-<script>siteArea = 9;loadAsset();</script>
-<script>siteArea = 10;loadAsset();</script>
-	<h2>Fanart Gallery</h2>
+<body id="body">
+<header id="header">
+</header>
+<nav id="nav">
+</nav>
+<div class="panel-wrapper">
+<aside id="lWrp">
+</aside>
+<main id="rWrp">
+    <h2>Fanart Gallery</h2>
 	<div class="flex">
 	  <img src="media/fanart/jaxwitch.png" alt="" loading="lazy" onclick="img='fanart/jaxwitch.png';enlarge();">
 	  <img src="media/fanart/pomnisbeachbody.png" alt="" loading="lazy" onclick="img='fanart/pomnisbeachbody.png';enlarge();">
@@ -25,6 +31,10 @@
 	</div>
 	<center>
 	  <img src="media/fanart/jaxboots.png" alt="" loading="lazy" onclick="img='fanart/jaxboots.png';enlarge();"></center>
-<script>siteArea = 11;loadAsset();</script>
+</main>
+</div>
+<footer id="footer">
+</footer>
+<script>theme = 4;loadTheme();</script>
 </body>
 </html>

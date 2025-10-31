@@ -7,14 +7,21 @@
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="texas kiss rhinestone - homepage">
 <script src="../ui/ui.js"></script>
+<script src="js.js"></script>
 <link rel="stylesheet" href="../ui/css.css">
 <link rel="stylesheet" href="css.css">
 <meta name="author" content="tkr">
 </head>
-<body>
-<script>siteArea = 1;loadAsset();logMap();</script>
-<script>siteArea = 2;loadAsset();</script>
-<h1>All Blogposts</h1>
+<body id="body">
+<header id="header">
+</header>
+<nav id="nav">
+</nav>
+<div class="panel-wrapper">
+<aside id="lWrp">
+</aside>
+<main id="rWrp">
+  <h1>All Blogposts</h1>
 <h3>Personal Log</h3>
 <ul>
   <li><a href="bookmarks">Bookmarks</a></li>
@@ -24,8 +31,6 @@
   <li><a href="prospectoridvguide">Golden Guide To Playing Prospector (Identity V)</a></li>
   <li><a href="foolsgoldguide">Fool's Guide To Playing Fool's Gold (Identity V)</a></li>
   <li><a href="visitorsofsidbury">Visitors Of Sidbury Bank (Identity V)</a></li>
-  <li id="newestPost"><a href="nortons_outfit">Bringing Norton To Life + Accuracy Notes</a><script>updateIcon();</script>
-  </li>
 </ul>
 <h3>Technology Sketches</h3>
 <ul>
@@ -46,8 +51,10 @@
 </ul>
 <hr>
 <script>rssBlock();</script>
-<script>rssList();</script>
-<script>siteArea = 3;loadAsset();</script>
+</main>
 </div>
+<footer id="footer">
+</footer>
+<script>theme = 1;loadTheme();</script>
 </body>
 </html>

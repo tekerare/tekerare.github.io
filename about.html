@@ -10,10 +10,16 @@
 <link rel="stylesheet" href="ui/css.css">
 <meta name="author" content="tkr">
 </head>
-<body>
-<script>siteArea = 1;loadAsset();quickBio();</script>
-<script>logMap();</script>
-<script>siteArea = 2;loadAsset();</script>
+<body id="body">
+<header id="header">
+</header>
+<nav id="nav">
+</nav>
+<div class="panel-wrapper">
+<aside id="lWrp">
+  <script>quickBio();logMap();</script>
+</aside>
+<main id="rWrp">
 <h1>About The Webmaster</h1>
 <div>
   <h3>i'm tkr - web revival backer, ethical luddite, collapsnik...</h3>
@@ -41,8 +47,10 @@
   <li style="margin:4px 0px 4px 0px;"><img src="ui/layout_pieces/h1_bull.png" alt="Kirby's Superstar - The Great Cave Offensive (SNES)" title="Kirby's Superstar - The Great Cave Offensive (SNES)" style="margin: -6px 0px;">: h1 icon</li>
   </ul>
 </div>
-<script>rssList();</script>
-<script>siteArea = 3;loadAsset();</script>
+</main>
 </div>
+<footer id="footer">
+</footer>
+<script>theme = 1;loadTheme();</script>
 </body>
 </html>

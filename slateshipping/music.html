@@ -10,9 +10,15 @@
 <script src="../ui/ui.js"></script>
 <script src="js.js"></script>
 </head>
-<body>
-<script>siteArea = 9;loadAsset();</script>
-<script>siteArea = 10;loadAsset();</script>
+<body id="body">
+<header id="header">
+</header>
+<nav id="nav">
+</nav>
+<div class="panel-wrapper">
+<aside id="lWrp">
+</aside>
+<main id="rWrp">
 <h2>Music Playlist</h2>
 <audio controls="" id="audio" autoplay="false" tabindex="0"></audio>
 <h3>Select A Track Below To Play</h3>
@@ -68,8 +74,11 @@
   </tr>
 </table>
 </div>
-<script>siteArea = 11;loadAsset();</script>
-</body>
+</main>
+</div>
+<footer id="footer">
+</footer>
+<script>theme = 4;loadTheme();</script>
 <script>
 const audioFiles = [
   "audios/timexile_sliiime.mp3",
@@ -101,4 +110,5 @@ audioElement.addEventListener('ended', function() {
   changeAudio(nextAudioURL);
 });
 </script>
+</body>
 </html>

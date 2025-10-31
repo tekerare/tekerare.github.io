@@ -12,9 +12,17 @@
 <script src="js.js"></script>
 <meta name="author" content="tkr">
 </head>
-<body>
-<script>siteArea = 1;loadAsset();guLogMap();</script>
-<script>siteArea = 2;loadAsset();</script>
+<body id="body">
+<header id="header">
+</header>
+<nav id="nav">
+
+</nav>
+<div class="panel-wrapper">
+<aside id="lWrp">
+<script>guLogMap();</script>
+</aside>
+<main id="rWrp">
 <h1>Gallery</h1>
 <center><img src="media/gallery/smilethatlightsuparoomlikeac4.png" alt="" loading="lazy" onclick="img='gallery/smilethatlightsuparoomlikeac4.png';enlarge();"></center>
 <div class="flex">
@@ -55,6 +63,10 @@
   <img src="media/gallery/mushroomburger.png" alt="" loading="lazy" onclick="img='gallery/mushroomburger.png';enlarge();">
 </div>
 <center><img src="media/gallery/polygrub_render.png" alt="" loading="lazy" onclick="img='gallery/polygrub_render.png';enlarge();"></center>
-<script>siteArea = 3;loadAsset();</script>
+</main>
+</div>
+<footer id="footer">
+</footer>
+<script>theme = 1;loadTheme();</script>
 </body>
 </html>
