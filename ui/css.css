@@ -193,13 +193,9 @@ aside{background:url('../ui/backgrounds/whitedotted.png'); width:204px; min-widt
     h1, h1 a{font-family:"bazinga"; box-shadow:none !important; text-decoration:none;}
 	h2{font-family: "kiwisoda";}
   }
-  > div{box-shadow: inset 0px -1px #0a0a0a, inset -0px -2px #808080; margin:3px 0px 0px 0px; padding: 3px 5px 6px 5px !important;}
   footer{height:0px;}
   .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;}
-  .minmaxDec2{right:40px;}
-  .minmaxDec{background-position:top left -15px;right:20px;}
-   .dropDown{background-position:top left -49px;}
-  .closeDec{background-position:top left -34px;right:0px;}
+  .minmaxDec2{right:40px;}.minmaxDec{background-position:top left -15px;right:20px;}.dropDown{background-position:top left -49px;}.closeDec{background-position:top left -34px;right:0px;}
   .fauxField{background:#ffffff;border:var(--browserColor) 3px inset; padding:1px 5px 0px 5px;margin:0px -1px !important;}
 }
 /*FAUX WINDOW THEME END*/
