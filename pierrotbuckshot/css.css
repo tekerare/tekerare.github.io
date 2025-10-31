@@ -2,7 +2,7 @@
   --browserColor:#ffc9cd;
   --browserTitle:#ff7a88;
 }
-body{background: linear-gradient(0deg, #ffffff 0%, #00000000 50%, #00000000 100%), url('../ui/backgrounds/gingham.png'), #ffffff; background-attachment:fixed;}
+body{background: url('ui/cuties_in_the_back.png') no-repeat, linear-gradient(0deg, #ffffff 0%, #00000000 50%, #00000000 100%), url('../ui/backgrounds/gingham.png'), #ffffff; background-attachment:fixed;}
 
 main{h1, h1 a{color:#ff2b41 !important;}}
 #fullRes {border: 0;}
