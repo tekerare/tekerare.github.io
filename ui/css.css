@@ -91,7 +91,7 @@ main{min-height:650px;
 .new{background:url('backgrounds/updatetile.png'), url('backgrounds/tone.png');}
 .imgSumm{ font-family:hack; font-size:14px; padding: 15px 20px 10px 20px; box-sizing:border-box;background:#ffffffe0; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease;filter:opacity(0%); overflow:hidden;}
 .imgBlock{background-size:cover !important; min-height:var(--imgBlockSize);  border-radius:10px; border:1px solid #000000; image-rendering:smooth;}
-.flowerSign{background:url("backgrounds/flower.png") top no-repeat !important; background-size:var(--flowerSignSize) !important; font-family:hack; font-size:20px; min-height:var(--flowerSignSize); padding:40px 0px 0px 0px; min-width:var(--flowerSignSize); max-width:var(--flowerSignSize); font-weight:bolder; text-align:center; position:absolute !important; z-index:1; border:0 !important; box-shadow:none !important;text-shadow:none !important;color:#d99089;}
+.flowerSign{background:url("backgrounds/flower.png") top no-repeat !important; background-size:var(--flowerSignSize) !important; font-family:hack; font-size:15px; min-height:var(--flowerSignSize); padding:43px 0px 0px 0px; min-width:var(--flowerSignSize); max-width:var(--flowerSignSize); font-weight:bolder; text-align:center; position:absolute !important; z-index:1; border:0 !important; box-shadow:none !important;text-shadow:none !important;color:#d99089;}
 .a{top:-15px;right:-30px; transform:rotate(15deg);}
 @media screen and (min-width:790px){.imgBlock:hover .imgSumm{box-shadow: inset 1px 1px 0px 1px #d67875, inset -1px -1px 0px 1px #d67875, inset -1px 1px 0px 1px #d67875, inset 1px -1px 0px 1px #d67875; animation-name:imgSummAnm; filter:opacity(100%);}}
 #minimalistLinks{button{background-color:var(--verticalTableMenu); margin:2px !important; background-position:top left; background-size:48px 48px; margin:10px 0px 0px 0px; height:48px;width:48px;border:1px #6e3a37 solid;border-radius:5px;} button:hover{animation:selectBop .3s ease-in;}}
@@ -101,7 +101,7 @@ main{min-height:650px;
 }
 .tone{background:url("backgrounds/tone.png");}
 /*EXTENSION END*/
-/*HTML SEMANTICAL THEME START*/
+/*GLOBAL HTML START*/
 .panel-wrapper{background:linear-gradient(90deg, #00000000 2%, var(--treeBgColor) 2%, var(--treeBgColor) 98%, #00000000 98%); min-height:200px; display:flex;
   img, video, center > img, center > video{max-width:95%;}
 }
@@ -111,11 +111,13 @@ header, nav, footer{text-align:center;}
 aside, main{border:1px #000000; background:#ffffff; box-sizing:border-box;
   img{ padding:0px 1px 0px 1px;}
 }
-main{ width:auto; border-style:var(--treeBorderStyle) !important;}
+main{ width:auto; border-style:var(--treeBorderStyle) !important;
+  h2{font-family: "kiwisoda";}
+}
 aside{background:url('../ui/backgrounds/whitedotted.png'); width:204px; min-width:190px; border-style: var(--treeBorderStyle) none var(--treeBorderStyle) var(--treeBorderStyle);
 }
 .panel-wrapper{display:flex; margin:0 auto;}
-/*HTML SEMANTICAL THEME END*/
+/*GLOBAL HTML THEME END*/
 /*DEFAULT THEME START*/
 #body{ 
   #rContainer > h1, main > h1{background:url("theme/h1_bull.png") no-repeat center left, var(--jellyGradient)!important; width:auto !important; box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff; border:1px #36333b; border-style:solid none solid none !important; margin:0; color:#ffffff; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} text-shadow:-1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder); padding:4px 4px 4px 23px; font-size:14px;}
@@ -191,7 +193,6 @@ aside{background:url('../ui/backgrounds/whitedotted.png'); width:204px; min-widt
   }
   main{border-style:inset inset inset none !important; min-width:auto;
     h1, h1 a{font-family:"bazinga"; box-shadow:none !important; text-decoration:none;}
-	h2{font-family: "kiwisoda";}
   }
   footer{height:0px;}
   .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;}
