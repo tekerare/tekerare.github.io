@@ -7,11 +7,12 @@
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="texas kiss rhinestone - homepage">
 <script src="../ui/ui.js"></script>
+<script src="js.js"></script>
 <link rel="stylesheet" href="../ui/css.css">
 <link rel="stylesheet" href="css.css">
 <meta name="author" content="tkr">
 <style>
-.rContainer{td:nth-child(1){
+main{td:nth-child(1){
   image-rendering: crisp-edges;
   background-repeat:no-repeat;
   background-size: 110px;
@@ -20,9 +21,15 @@
 }}
 </style>
 </head>
-<body>
-<script>siteArea = 1;loadAsset();logMap();</script>
-<script>siteArea = 2;loadAsset();</script>
+<body id="body">
+<header id="header">
+</header>
+<nav id="nav">
+</nav>
+<div class="panel-wrapper">
+<aside id="lWrp">
+</aside>
+<main id="rWrp">
 <h1>OpenMPT (1.31.04) Guide</h1>
 <p>If you want to know how I made the stuff on my music page, I've been using OpenMPT for some time and some of my friends want to know how to use it. This ugly, #fffff spreadsheet is where it starts.</p>
 <p>The goal throughout this entry is to not use the plugins rack (but there's no shame in using it. That being said, scroll to the bottom for a list of plugins I use.)</p>
@@ -59,7 +66,10 @@
 <h3>Synth1</h3>
 <p>This plugin is as barebones as synthesis can get, in a good way. I use this to create every synth and sometimes even the percussions I use. You can quite literally make both a beefy, Phatworld-like bassline on one bank, and a whole ambient library in the other. Would recommend playing around with even outside of MPT.</p>
 <p>Download @ <a href="https://web.archive.org/web/20190331141735/http://www.geocities.jp/daichi1969/softsynth/#downmac">www.geocities.jp/daichi1969/softsynth/</a></p>
-<script>siteArea = 3;loadAsset();</script>
+</main>
 </div>
+<footer id="footer">
+</footer>
+<script>theme = 1;loadTheme();</script>
 </body>
 </html>

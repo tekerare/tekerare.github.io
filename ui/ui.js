@@ -36,7 +36,7 @@ function browsePosts(){
 }
 function rssBlock(){
   const y = document.createElement("h1");
-  y.innerHTML = 'Latest Site Update <a href="https://' + siteURL + '/log/update/">(read more @ update log)</a>';
+  y.innerHTML = 'Latest Site Update <a href="https://' + siteURL + '/update">(read more @ update log)</a>';
   document.getElementById('rWrp').appendChild(y);
   document.write('<div class="feedBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div>');
 }
@@ -48,30 +48,32 @@ function loadTheme(){
   const findBody = document.getElementById('body');
   function readerUI(){
     const x = document.createElement('a');
-	x.setAttribute('href', '#top');
+	const y = document.createElement('a');
 	x.setAttribute('target', '_parent');
-	x.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/top.png" alt="top" title="top" style="position:fixed;bottom:80px;right:0;"><br><img src="https://'+ siteURL +'/ui/user_int/bottom.png" alt="bottom" title="bottom" style="position:fixed;bottom:0;right:0;">';
-	document.body.appendChild(x);
+	y.setAttribute('target', '_parent');
+	x.setAttribute('href', '#header');
+	y.setAttribute('href', '#footer');
+	x.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/top.png" alt="top" title="top" style="position:fixed;bottom:80px;right:0;">';
+	y.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/bottom.png" alt="bottom" title="bottom" style="position:fixed;bottom:0;right:0;">';
+	document.body.appendChild(x).appendChild(y);
   }
   function htmlBse(){
 	const x = document.createElement("map");
 	const y = document.createElement("img");
 	const z = document.createElement("map");
 	const s = document.createElement("img");
-	y.setAttribute('src', 'https://'+ siteURL + '/ui/layout_pieces/layout_top_transparent.gif');
+	y.setAttribute('src', 'https://'+ siteURL + '/ui/theme/layout_top_transparent.gif');
 	y.setAttribute('usemap', '#top_map');
 	x.setAttribute('name','top_links');
 	x.setAttribute('id','top_map');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="389,19,631,89">';
-	document.getElementById('header').appendChild(x);
-	document.getElementById('header').appendChild(y);
-	s.setAttribute('src', 'https://'+ siteURL + '/ui/layout_pieces/layout_bottom_transparent.gif');
+	document.getElementById('header').appendChild(x).appendChild(y);
+	s.setAttribute('src', 'https://'+ siteURL + '/ui/theme/layout_bottom_transparent.gif');
 	s.setAttribute('usemap', '#bottom_map');
 	z.setAttribute('name','bottom_links');
 	z.setAttribute('id','bottom_map');
 	z.innerHTML = '<area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto:' + mailAddress + '" target="_parent"><area alt="[Home]" title="[Home]" href="https://'+ siteURL +'" coords="131,49,182,95" shape="rect" target="_parent"><area alt="[Log]" title="[Log]" href="https://' + siteURL + '/log/" coords="240,57,270,85" shape="rect" target="_parent"><area alt="[TOS/International]" title="[TOS/International]" href="https://' + siteURL + '/art/" coords="84,62,117,88" shape="rect"  target="_blank"><area alt="[My Music]" title="[My Music]" href="https://' + siteURL + '/music/" coords="196,58,227,86" shape="rect" target="_parent">';
-	document.getElementById('footer').appendChild(z);
-	document.getElementById('footer').appendChild(s);
+	document.getElementById('footer').appendChild(z).appendChild(s);
 	readerUI();
   }
   switch(theme){
