@@ -1,17 +1,17 @@
 const siteURL = 'texaskissrhinestone.github.io';
 const mailAddress = '0ekekddddd@protonmail.com';
 
-window.onload = function(){
-  preview.onclick = function() {
-	document.getElementById('preview').style.display = 'none';
-  }
-}
 let img;
 function imgPreview(){
   const y = document.createElement('div');
   y.setAttribute('id', 'preview');
   y.innerHTML = '<img src="" id="fullRes" alt="" title="">';
   document.getElementsByTagName('body')[0].prepend(y);
+}
+function closePreview(){
+  preview.onclick = function() {
+	document.getElementById('preview').style.display = 'none';
+  }
 }
 function enlarge(){
   document.getElementById('preview').style.display = 'block';
@@ -80,6 +80,7 @@ function loadTheme(){
 	case 1:
 	  htmlBse();
 	  imgPreview();
+	  closePreview();
 	 return;
 	break;
 	case 2:
