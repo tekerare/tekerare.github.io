@@ -77,6 +77,10 @@ function loadTheme(){
 	readerUI();
   }
   switch(theme){
+	case 0:
+	  imgPreview();
+	  closePreview();
+	break;
 	case 1:
 	  htmlBse();
 	  imgPreview();
