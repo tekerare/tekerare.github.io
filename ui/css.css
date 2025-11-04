@@ -189,6 +189,7 @@ aside{background:url('../ui/backgrounds/whitedotted.png'); width:204px; min-widt
   }
   main{border-style:inset inset inset none !important; min-width:auto;
     h1, h1 a{font-family:"bazinga"; box-shadow:none !important; text-decoration:none;}
+	center{width:80%;margin:0 auto;}
   }
   footer{height:0px;}
   .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;}
