@@ -61,7 +61,7 @@ td{border-style:dotted dotted dotted dotted; img{border-radius:var(--roundedImg)
 b{color:var(--jellySolid);}
 textarea{margin:5px auto 5px auto; display: block; min-height:60px;font-family: "MS PGothic", sans-serif;font-size:12px;}
 table{width:100%;}
-th, td, .flex{img:hover{transform:translate(0px, -5px);}}
+th, td, .flex{img:hover{animation:selectBop .3s ease-in;}}
 th{background-color: var(--verticalTableMenu) !important; text-align:start; color:#6e3a37; a{color:#6e3a37 !important;}}
 th, td{border:var(--treeBorderStyle) 1px var(--headingBorder) !important; padding:3px 4px 3px 4px;
 }

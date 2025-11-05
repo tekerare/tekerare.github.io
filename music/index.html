@@ -24,21 +24,23 @@
   </div>
 </aside>
 <main id="rWrp">
-  <h1>Music</h1>
+  <h2>Music That I Made</h2>
+  <audio controls="" id="audio" autoplay="false" tabindex="0"></audio>
   <div>
-    <p>Clicking on a title will open the audio file in a new window.</p>
-  </div>
-  <div>
-  <h3>Tracks &amp; Demos</h3>
-  <ul>
-    <li><a onclick="window.open('audios/PasteMarchDivision.flac', '_blank', 'location=yes,height=200,width=500');">Paste March Division</a> 2023.03.03 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download.</a></li>
-    <li><a onclick="window.open('audios/3r+958ff.flac', '_blank', 'location=yes,height=200,width=500');">Hamster Warlock (Demo)</a> 2024.11.04 // <a href="https://www.mediafire.com/file/qww7jtwjkrjuhwv/3r%252B958ff.flac/file" target="_blank">FLAC download.</a></li>
-  </ul>
-  <h3>Sketches</h3>
-  <ul>
-    <li><a onclick="window.open('audios/Bit_Silly.flac', '_blank', 'location=yes,height=200,width=500');">bit silly</a> 2023.04.22 // <a href="https://www.mediafire.com/file/fsnajsvgo54vp5j/Bit_Silly.flac/file" target="_blank">FLAC download.</a></li>
-    <li><a onclick="window.open('audios/Commissioner.mp3', '_blank', 'location=yes,height=200,width=500');">Commissioner</a> 2023.07.16</li>
-  </ul>
+  <table class="playlist">
+    <tr>
+      <td>
+	    <h3><a onclick='changeAudio(0)'>▶ Hamster Warlock (Demo)</a></h3>
+		<p>2024.11.04 // <a href="https://www.mediafire.com/file/qww7jtwjkrjuhwv/3r%252B958ff.flac/file" target="_blank">FLAC download.</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+	    <h3><a onclick='changeAudio(1)'>▶ Paste March Division</a></h3>
+		<p>2023.03.03 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download</a></p>
+      </td>
+    </tr>
+  </table>
   </div>
   <div>
     <p>The library's small and I barely practice or put out anything musically as I focus on my art career, but I'm happy to share my strange computer sounds to the few who enjoy chiptunes and <a href="https://en.wikipedia.org/wiki/Amen_break" target="_blank">the amen break</a>.</p>
@@ -49,5 +51,31 @@
 <footer id="footer">
 </footer>
 <script>theme = 1;loadTheme();</script>
+<script>
+const audioFiles = [
+  "audios/3r+958ff.flac",
+  "audios/PasteMarchDivision.flac",
+];
+let currentAudioIndex = 0;
+const audioElement = document.getElementById('audio');
+function changeAudio(audioURL) {
+  audioElement.src = audioURL;
+  audioElement.load();
+  audioElement.play();
+}
+document.querySelectorAll('h3 a').forEach(function(h3, index) {
+  h3.addEventListener('click', function() {
+    currentAudioIndex = index;
+    const audioURL = audioFiles[currentAudioIndex];
+    changeAudio(audioURL);
+  });
+});
+
+audioElement.addEventListener('ended', function() {
+  currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
+  const nextAudioURL = audioFiles[currentAudioIndex];
+  changeAudio(nextAudioURL);
+});
+</script>
 </body>
 </html>
