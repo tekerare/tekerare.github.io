@@ -46,7 +46,6 @@ img{max-width:100%;}
 audio:hover{filter:opacity(50%);}
 a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000; cursor:pointer;}
 a:hover {color: #228B22 !important;}
-a[href^="http"]:not(:has(img))::after {content: " ↗"}
 p, h1, h2, h3, h4, details, span, center, quiet{padding:0px 10px 0px 10px; display:block;}
 h2{font-family: "kiwisoda";}
 p, h1, h2, h4, details, span, li, td{border:1px #000000;}
@@ -106,7 +105,9 @@ header, nav, footer{text-align:center;}
 aside, main{border:1px #000000; background:#ffffff; box-sizing:border-box;
   img{ padding:0px 1px 0px 1px;}
 }
-main{ min-height:650px; border-style:var(--treeBorderStyle) !important;}
+main{ min-height:650px; border-style:var(--treeBorderStyle) !important;
+  a[href^="http"]:not(:has(img))::after {content: " ↗"}
+}
 aside{background:url('../ui/backgrounds/whitedotted.png'); width:204px; min-width:190px; border-style: var(--treeBorderStyle) none var(--treeBorderStyle) var(--treeBorderStyle); 
   div, div{text-align:start}
   textarea{max-width:149px; min-width:149px;}
