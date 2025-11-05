@@ -46,6 +46,7 @@ img{max-width:100%;}
 audio:hover{filter:opacity(50%);}
 a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000; cursor:pointer;}
 a:hover {color: #228B22 !important;}
+a[href^="http"]:not(:has(img))::after {content: " ↗"}
 p, h1, h2, h3, h4, details, span, center, quiet{padding:0px 10px 0px 10px; display:block;}
 h2{font-family: "kiwisoda";}
 p, h1, h2, h4, details, span, li, td{border:1px #000000;}
