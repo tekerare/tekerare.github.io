@@ -30,7 +30,7 @@
 @media screen and (max-width:790px){html{min-height:1400px;.imgSumm{background:#ffffffb4; filter:opacity(100%);}}}
 html{scroll-behavior: smooth; scrollbar-color: var(--jellySolid) #ffffff; scrollbar-width: auto;font-family: "MS PGothic", sans-serif;}
 body{
-  background:url("backgrounds/landing_01.png") no-repeat top left, url('backgrounds/fax_brcde.png') no-repeat bottom 5px left 5px, url("backgrounds/donksona.png") no-repeat bottom left 5%, url("backgrounds/donksona_flip.png") no-repeat bottom left 95%, linear-gradient(#ffffff 0%, #ffffff00 10%, #00000000 100%) no-repeat, url("backgrounds/grain-tile.gif") repeat;
+  background:url("backgrounds/landing_01.png") no-repeat top left, url('backgrounds/fax_brcde.png') no-repeat bottom 5px left 5px, url("backgrounds/donksona.png") no-repeat bottom left 2%, url("backgrounds/donksona_flip.png") no-repeat bottom left 99%, linear-gradient(#ffffff 0%, #ffffff00 10%, #00000000 100%) no-repeat, url("backgrounds/grain-tile.gif") repeat;
   background-size: 150px, auto, auto, auto, auto, auto;
   font-size:var(--fontSizeDesktop);
   background-attachment:fixed;
