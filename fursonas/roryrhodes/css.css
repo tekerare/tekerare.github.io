@@ -1,0 +1,78 @@
+@font-face {font-family: "gothicbyte"; src: url("../../fonts/beckett.ttf");}
+@font-face {font-family: "crayon"; src: url("../../fonts/crayon.ttf");}
+@font-face {font-family: "xfwe1z"; src: url("../../fonts/xfwe1z.ttf");}
+:root{
+  --fontSizeDesktop:17px;
+  --background-color:#d6c3cd;
+  --color1:#000000;
+  --color2:#ffffff;
+  --panelWrapperTextColor:#ff058f;
+  --textShadow:2px 3px 4px #000000;
+}
+html{scroll-behavior: smooth; scrollbar-color: var(--jellySolid) #ffffff; scrollbar-width: auto;font-family: "crayon", sans-serif;}
+body{
+  min-width: auto; margin: 0 auto;
+  background-attachment:fixed;
+  background: url('bd.png'); background-size: fit; background-position:top;
+  font-size:var(--fontSizeDesktop);
+  box-shadow:inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff;
+}
+::selection{background:#00000000;}
+div{transition: 0.3s; transition-timing-function: linear;}
+p{margin:10px 0px 10px 0px; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill;text-shadow:var(--textShadow); line-height:17px;}
+h1, h2, h3, h4, h5, ul{padding:0px; margin:0;}
+h1, h2, h3, h4, h5{font-family: "gothicbyte"; font-size:41px; font-weight: lighter; text-shadow:var(--textShadow);}
+h1{font-size:87px; font-size:92px !important;}
+dl{padding:0px 5px 0px 5px;margin:0 auto;}
+dt{cursor:pointer;}
+header, nav, aside, main, div, footer{position:relative; box-sizing:border-box;border:#000000 1px;}
+header, main, nav, footer{width:650px; margin:0 auto;}
+header, footer{height:300px;image-rendering:crisp-edges;}
+header{text-align:end; cursor:default; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill;text-shadow:var(--textShadow);
+  p{line-height:15px;}
+}
+main{ background:linear-gradient(180deg,#ffffff9c 0%, #ffffff9c 80%, #00000000 100%) no-repeat; background-size:cover; min-height:2000px; margin:0 auto;}
+footer{}
+.txtStyle1, .txtStyle2, .pw-txt1{line-height:20px; image-rendering:crisp-edges;
+  h1, h2, h3 {line-height:30px; -webkit-text-stroke: 5px #000000; paint-order: stroke fill;}
+}
+.txtStyle1{position:absolute;
+  h1, h2, h3{ color:var(--color2) !important;}
+}
+.txtStyle2{position:absolute;
+  h1, h2, h3{color:var(--panelWrapperTextColor) !important;}
+}
+.playlist-wrapper{ background:url('playlist-wrapper-bg.png') no-repeat; height:300px; border:solid #000000 3px; width:103%; position: relative; z-index:2;}
+.pw-txt1{-webkit-text-stroke: 5px #ffffff; paint-order: stroke fill;text-shadow:var(--textShadow); position:absolute; top:-9px; left:7%; font-family: 'xfwe1z'; font-size:50px;}
+.playlist{background:#242424 !important; position:absolute;z-index:4; overflow:hidden;border-radius:7px;background:#ffffff;margin:3px; border:1px #000000 solid; animation:floatbox infinite ease-in-out 4s; height:38px; width:320px; color:#ffffff30;transition:0.55s;  transition-delay: 0.1s; transition-timing-function: cubic-bezier(0.5,1.8, 0.1, 0.5); 
+}
+.playlist:hover{height:200px; transition:0.3s; transition-timing-function:}
+.playlist dt:hover{ color:#ffffff; letter-spacing: 1px;}
+#audio{margin:-2px 0px 0px 0px; width:100%;}
+.nudeFullBody, .clothesFullBody{ min-height:700px;position:absolute; top:-40px; right:-50px;}
+.nudeFullBody{ background:url('ref_nudefullbody.png'); background-size:cover; min-width:460px;z-index:2;}
+.clothesFullBody{ background:url('ref_clothesfullbody.png'); 
+  right:0;top:0;
+  background-size:cover; width:460px !important; mask-size: 2000px 2000px;
+	-webkit-mask-size: 2000px 2000px; -webkit-mask-position: 0px -1000px; -webkit-mask-image: linear-gradient(0deg, #000000, #000000 43%, #00000000 52%, #00000000);
+	z-index:3;}
+.clothesFullBody:hover{-webkit-mask-position: 0px 0px;}
+.tilt3{ transform:rotate(3deg);}
+.tiltnegative3{ transform:rotate(-3deg);}
+.tilt2{ transform:rotate(2deg);}
+.tiltnegative2{ transform:rotate(-2deg);}
+@keyframes h1tiltbounce {
+  0%  {transform:scale(1, 1.8) rotate(0deg);}
+  50% {transform:scale(1, 1.8) rotate(-4deg);}
+  100%{transform:scale(1, 1.8) rotate(0deg);}
+}
+@keyframes rotate{
+  0%  {transform: rotate(0deg);}
+  50% {transform: rotate(-4deg);}
+  100%{transform: rotate(0deg);}
+}
+@keyframes floatbox {
+  0%  {transform:translate(0px, 0px); box-shadow:1px 4px 4px #000000e4;}
+  50% {transform:translate(0px, -20px); box-shadow:1px 20px 4px #0000006a;}
+  100%{transform:translate(0px, 0px); box-shadow:1px 4px 4px #000000e4;}
+}
