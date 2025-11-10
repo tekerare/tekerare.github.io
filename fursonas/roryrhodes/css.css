@@ -6,8 +6,8 @@
   --background-color:#d6c3cd;
   --color1:#000000;
   --color2:#ffffff;
-  --panelWrapperTextColor:#7ba143;
-  --textShadow:2px 3px 4px #000000;
+  --panelWrapperTextColor:#ff0000;
+  --textShadow:4px 6px 0px #00000091;
 }
 html{scroll-behavior: smooth; scrollbar-color: var(--jellySolid) #ffffff; scrollbar-width: auto;font-family: "crayon", sans-serif;}
 body{
@@ -19,7 +19,7 @@ body{
 }
 ::selection{background:#00000000;}
 div{transition: .7s; transition-timing-function: linear;}
-p{margin:10px 0px 10px 0px; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill;text-shadow:var(--textShadow); line-height:17px;}
+p{margin:10px 0px 10px 0px; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill; line-height:17px;}
 h1, h2, h3, h4, h5, ul{padding:0px; margin:0;}
 h1, h2, h3, h4, h5{font-family: "beckett"; font-size:41px; font-weight: lighter; text-shadow:var(--textShadow);}
 h1{font-size:87px; font-size:92px !important;}
@@ -31,38 +31,41 @@ header, footer{height:300px;image-rendering:crisp-edges;}
 header{background:url('g_headerdonk.png') bottom left no-repeat; background-size: 250px; text-align:end; cursor:default; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill;text-shadow:var(--textShadow);
   p{line-height:15px;}
 }
-main{ background:linear-gradient(180deg,#ffffff9c 0%, #ffffff9c 80%, #00000000 100%) no-repeat; background-size:cover; min-height:2000px; margin:0 auto; box-shadow:0px 0px 14px 5px #000000}
-.g-tree{background:url('g_tree.png') top left; background-size:fit; width:100%; height:650px; -webkit-mask-size: 400px 650px; -webkit-mask-position: 0px 650px; -webkit-mask-image: linear-gradient(0deg, #00000000 0%, #00000000 20%, #00000000 25%, #000000b3 27%,#000000b3 79%, #00000000 84%, #00000000); top:530px;}
-.g_headangles1{background:url('g_headangles1.png') top left no-repeat; min-height:251px; min-width:212px;top:16px; left:98px; animation:bob 7s ease-in-out infinite;z-index:1; transform: rotate(-2deg);}
-.g_headangles2{background:url('g_headangles2.png') top left no-repeat; min-height:303px; min-width:268px;top:68px; left:-90px; animation:bobflip 7.4s ease-in-out infinite; transform: rotate(-2deg);}
-footer{}
-.g-tree, .g_headangles1, .g_headangles2, .g_playlistdonk, .txtStyle1, .txtStyle2, .pw-txt1, .playlist, .nudeFullBody, .clothesFullBody{position:absolute;}
-.txtStyle1, .txtStyle2{line-height:20px; image-rendering:crisp-edges;
-  h1, h2, h3 {line-height:30px; -webkit-text-stroke: 5px #000000; paint-order: stroke fill;}
-}
-.txtStyle1{h1, h2, h3{ color:var(--color2) !important;}}
-.txtStyle2{h1, h2, h3{color:var(--panelWrapperTextColor) !important;}}
-.playlist-wrapper{ box-shadow:0px 5px 12px #000000; background:url('playlist-wrapper-bg.png') no-repeat; height:300px; width:103%; left:-1.5%; position: relative; z-index:2;top:1070px; transform:rotate(2deg);}
-.g_playlistdonk{background:url('g_playlistdonk.png') top left no-repeat; min-height:387px; min-width:284px;bottom:0; right:37px;}
-.playlist{font-family:"ms pgothic"; background:#242424 !important; z-index:4; bottom:10px; left:10px; overflow:hidden;border-radius:7px;background:#ffffff;margin:3px; border:1px #000000 solid; animation:floatbox infinite ease-in-out 4s; height:38px; width:340px; color:#ffffffa2;transition:0.55s;  transition-delay: 0.1s; transition-timing-function: cubic-bezier(0.5,1.8, 0.1, 0.5); 
-}
-.playlist:hover{height:200px; transition:0.3s; transition-timing-function:}
-.playlist dt:hover{ color:#ffffff;}
-#audio{margin:-2px 0px 0px 0px; width:100%;}
-.nudeFullBody, .clothesFullBody{ min-height:700px; top:-40px; right:-50px;}
+.g-tree, .g_headangles1, .g_headangles2, .g_headangles3, .g_playlistdonk, .txtStyle1, .txtStyle2, .pw-txt1, .playlist, .nudeFullBody, .clothesFullBody{position:absolute;}
+main{ background:linear-gradient(180deg,#ffffff9c 0%, #ffffff9c 80%, #00000000 100%) no-repeat; background-size:cover; min-height:2000px; margin:0 auto;}
+.g-tree{background:url('g_tree.png') top left; background-size:fit; width:100%; height:650px; -webkit-mask-size: 400px 650px; -webkit-mask-position: 0px 650px; -webkit-mask-image: linear-gradient(0deg, #00000000 0%, #00000000 20%, #00000000 25%, #000000b3 27%,#000000b3 79%, #00000000 84%, #00000000); top:550px;}
+.g_headangles1{background:url('g_headangles1.png') top left no-repeat; min-height:251px; min-width:212px;top:26px; left:130px; animation:bob 7s ease-in-out infinite;z-index:2; transform: rotate(-2deg);}
+.g_headangles2{background:url('g_headangles2.png') top left no-repeat; min-height:303px; min-width:268px;top:48px; left:-90px; animation:bobflip 7.4s ease-in-out infinite; transform: rotate(-2deg); z-index:1;}
+.g_headangles3{background:url('g_headangles3.png') top left no-repeat; min-height:251px; min-width:212px;top:270px; left:90px; animation:bobflip 7s ease-in-out infinite; transform: rotate(-2deg); z-index:0;}
+.nudeFullBody, .clothesFullBody{ min-height:700px; top:-40px; right:-90px;}
 .nudeFullBody{ background:url('ref_nudefullbody.png'); background-size:cover; min-width:460px;z-index:2;}
 .clothesFullBody{ background:url('ref_clothesfullbody.png'); cursor:crosshair;
   right:0;top:0;
   background-size:cover; width:460px !important; -webkit-mask-size: 2000px 2000px; -webkit-mask-position: 0px -1000px; -webkit-mask-image: linear-gradient(0deg, #000000, #000000 43%, #000000 47%, #00000000 50%, #00000000);
 	z-index:3;}
 .clothesFullBody:hover{-webkit-mask-position: 0px 0px;}
+footer{}
+.txtStyle1, .txtStyle2{line-height:20px; image-rendering:crisp-edges;
+  h1, h2, h3 {line-height:30px; -webkit-text-stroke: 5px #000000; paint-order: stroke fill;}
+}
+.txtStyle1{h1, h2, h3{ color:var(--color2) !important;}}
+.txtStyle2{h1, h2, h3{color:var(--panelWrapperTextColor) !important;}}
+.playlist-wrapper{ box-shadow:0px 5px 12px #000000; background:url('playlist-wrapper-bg.png') no-repeat; height:300px; width:103%; left:-1.5%; position: relative; z-index:2;top:1150px; transform:rotate(2deg);}
+.g_playlistdonk{background:url('g_playlistdonk.png') top left no-repeat; min-height:387px; min-width:284px;bottom:0; right:37px;}
+.playlist{font-family:"ms pgothic"; background:#242424 !important; z-index:4; bottom:10px; left:10px; overflow:hidden;border-radius:7px;background:#ffffff;margin:3px; border:1px #000000 solid; animation:floatbox infinite ease-in-out 4s; height:38px; width:340px; color:#ffffffa2;transition:0.55s;  transition-delay: 0.1s; transition-timing-function: cubic-bezier(0.5,1.8, 0.1, 0.5); 
+}
+.playlist:hover{height:200px; transition:0.3s; transition-timing-function:}
+.playlist dt:hover{ color:#ffffff;}
+#audio{margin:-2px 0px 0px 0px; width:100%;}
 .tilt3{ transform:rotate(3deg);}
 .tiltnegative3{ transform:rotate(-3deg);}
 .tilt2{ transform:rotate(2deg);}
 .tiltnegative2{ transform:rotate(-2deg);}
+.solidcircle {position:absolute; border:1px solid var(--color1); height:200px; width:200px; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
+.dottedcircle {position:absolute; border:2px dotted var(--color1); height:300px; width:300px; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%; animation: linearRotate linear 9s infinite;}
 @keyframes h1tiltbounce {
   0%  {transform:scale(1, 1.8) rotate(0deg);}
-  50% {transform:scale(1, 1.8) rotate(-4deg);}
+  50% {transform:scale(1, 2) rotate(-4deg);}
   100%{transform:scale(1, 1.8) rotate(0deg);}
 }
 @keyframes bob{
@@ -75,6 +78,7 @@ footer{}
   50% {transform: translate(0px, -8px) rotate(-4deg);}
   100%{transform: translate(0px, 0px) rotate(-2deg);}
 }
+@keyframes linearRotate{0%{transform: rotate(0deg);}100%{transform: rotate(90deg);}}
 @keyframes floatbox {
   0%  {transform:translate(0px, 0px); box-shadow:1px 4px 4px #000000e4;}
   50% {transform:translate(0px, -20px); box-shadow:1px 20px 4px #0000006a;}
