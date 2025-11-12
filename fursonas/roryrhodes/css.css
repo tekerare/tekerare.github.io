@@ -1,6 +1,6 @@
 @font-face {font-family: "beckett"; src: url("../../fonts/beckett.TTF");}
 @font-face {font-family: "crayon"; src: url("../../fonts/crayon.TTF");}
-@font-face {font-family: "brokenghost"; src: url("../../fonts/brokenghost.ttf");}
+@font-face {font-family: "loveletter"; src: url("../../fonts/loveletter.ttf");}
 :root{
   --fontSizeDesktop:17px;
   --background-color:#d6c3cd;
@@ -17,7 +17,7 @@ body{
   font-size:var(--fontSizeDesktop);
   box-shadow:inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff;
 }
-::selection{background:#00000000;}
+/*::selection{background:#00000000;}*/
 div{transition: .7s; transition-timing-function: linear;}
 p{margin:10px 0px 10px 0px; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill; line-height:17px;}
 h1, h2, h3, h4, h5, ul{padding:0px; margin:0;}
@@ -27,16 +27,18 @@ dl{padding:0px 5px 0px 5px;margin:0 auto;}
 dt{cursor:pointer;}
 header, nav, aside, main, div, footer{position:relative; box-sizing:border-box;border:#000000 1px;}
 header, main, nav, footer{width:650px; margin:0 auto;}
-header, footer{height:300px;image-rendering:crisp-edges;}
-header{background:url('g_headerdonk.png') bottom left no-repeat; background-size: 250px; text-align:end; cursor:default; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill;text-shadow:var(--textShadow);
+header, footer{image-rendering:crisp-edges;}
+header{background:url('g_headerdonk.png') bottom left no-repeat; height:300px;background-size: 250px; text-align:end; cursor:default; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill;text-shadow:var(--textShadow);
   p{line-height:15px;}
 }
-.g-tree, .g_headangles1, .g_headangles2, .g_headangles3, .g_playlistdonk, .txtStyle1, .txtStyle2, .pw-txt1, .playlist, .nudeFullBody, .clothesFullBody{position:absolute;}
-main{ background:linear-gradient(180deg,#ffffff9c 0%, #ffffff9c 80%, #00000000 100%) no-repeat; background-size:cover; min-height:2000px; margin:0 auto;}
-.g-tree{background:url('g_tree.png') top left; background-size:fit; width:100%; height:650px; -webkit-mask-size: 400px 650px; -webkit-mask-position: 0px 650px; -webkit-mask-image: linear-gradient(0deg, #00000000 0%, #00000000 20%, #00000000 25%, #000000b3 27%,#000000b3 79%, #00000000 84%, #00000000); top:550px;}
-.g_headangles1{background:url('g_headangles1.png') top left no-repeat; min-height:251px; min-width:212px;top:26px; left:130px; animation:bob 7s ease-in-out infinite;z-index:2; transform: rotate(-2deg);}
-.g_headangles2{background:url('g_headangles2.png') top left no-repeat; min-height:303px; min-width:268px;top:48px; left:-90px; animation:bobflip 7.4s ease-in-out infinite; transform: rotate(-2deg); z-index:1;}
-.g_headangles3{background:url('g_headangles3.png') top left no-repeat; min-height:251px; min-width:212px;top:270px; left:90px; animation:bobflip 7s ease-in-out infinite; transform: rotate(-2deg); z-index:0;}
+.g-tree, .g-headangles1, .g-headangles2, .g-headangles3, .g-playlistdonk, .g-hnaotocross, .txtStyle1, .txtStyle2, .pw-txt1, .playlist, .nudeFullBody, .clothesFullBody, .playlistchoose{position:absolute;}
+main{ background:linear-gradient(180deg,#ffffff9c 0%, #ffffff9c 85%, #00000000 100%) no-repeat; background-size:cover; min-height:1300px; margin:0 auto;}
+.g-tree{background:url('g_tree.png') top left; background-size:fit; width:100%; height:650px; -webkit-mask-size: 400px 650px; -webkit-mask-position: 0px 650px; -webkit-mask-image: linear-gradient(0deg, #00000000 0%, #00000000 20%, #00000000 25%, #000000b3 27%,#000000b3 79%, #00000000 84%, #00000000); top:680px;}
+.g-headangles1, .g-headangles2, .g-headangles3{pointer-events:none;}
+.g-headangles1{background:url('g_headangles1.png') top left no-repeat; min-height:251px; min-width:212px;top:26px; left:130px; animation:bob 7s ease-in-out infinite;z-index:3; transform: rotate(-2deg);}
+.g-headangles2{background:url('g_headangles2.png') top left no-repeat; min-height:303px; min-width:268px;top:48px; left:-90px; animation:bobflip 7.4s ease-in-out infinite; transform: rotate(-2deg); z-index:2;}
+.g-headangles3{background:url('g_headangles3.png') top left no-repeat; min-height:251px; min-width:212px;top:270px; left:90px; animation:bobflip 7s ease-in-out infinite; transform: rotate(-2deg); z-index:1;}
+.g-hnaotocross{background:url('g_hnaotocross.png') top right no-repeat; background-size:130px; min-height:251px; width:130px;top:-46px; left:-80px; transform:rotate(84deg);}
 .nudeFullBody, .clothesFullBody{ min-height:700px; top:-40px; right:-90px;}
 .nudeFullBody{ background:url('ref_nudefullbody.png'); background-size:cover; min-width:460px;z-index:2;}
 .clothesFullBody{ background:url('ref_clothesfullbody.png'); cursor:crosshair;
@@ -50,19 +52,22 @@ footer{}
 }
 .txtStyle1{h1, h2, h3{ color:var(--color2) !important;}}
 .txtStyle2{h1, h2, h3{color:var(--panelWrapperTextColor) !important;}}
-.playlist-wrapper{ box-shadow:0px 5px 12px #000000; background:url('playlist-wrapper-bg.png') no-repeat; height:300px; width:103%; left:-1.5%; position: relative; z-index:2;top:1150px; transform:rotate(2deg);}
-.g_playlistdonk{background:url('g_playlistdonk.png') top left no-repeat; min-height:387px; min-width:284px;bottom:0; right:37px;}
-.playlist{font-family:"ms pgothic"; background:#242424 !important; z-index:4; bottom:10px; left:10px; overflow:hidden;border-radius:7px;background:#ffffff;margin:3px; border:1px #000000 solid; animation:floatbox infinite ease-in-out 4s; height:38px; width:340px; color:#ffffffa2;transition:0.55s;  transition-delay: 0.1s; transition-timing-function: cubic-bezier(0.5,1.8, 0.1, 0.5); 
+.playlist-wrapper{ box-shadow:0px 5px 12px #000000; background:url('playlist-wrapper-bg.png') no-repeat; animation:bgPan ease-in-out 28s infinite; height:290px; width:370px; left:-60px; position: relative; z-index:0;top:530px; transform:rotate(2deg); cursor:crosshair; border:1px solid var(--color1);
 }
-.playlist:hover{height:200px; transition:0.3s; transition-timing-function:}
+.g-playlistdonk{background:url('g_playlistdonk.png') top left no-repeat; min-height:341px; min-width:250px;bottom:-.3px; right:37px;}
+.playlist{font-family:"ms pgothic"; background:#00000000 !important; z-index:4; bottom:5px; left:10px; overflow:hidden;border-radius:7px;background:#ffffff;margin:3px; height:100px; width:340px; color:#00000000;animation:floatbox infinite ease-in-out 4s; transition-timing-function: cubic-bezier(0.5,1.8, 0.1, 0.5); border:1px #00000000 solid; 
+  audio{visibility:hidden;}
+}
+.playlist:hover{#audio{visibility:visible;} background:#242424 !important; height:245px; transition:0.3s; color:#ffffffa2; border:1px #000000 solid;}
 .playlist dt:hover{ color:#ffffff;}
 #audio{margin:-2px 0px 0px 0px; width:100%;}
+.playlistchoose{ -webkit-text-stroke: 5px #000000; paint-order: stroke fill; font-size:27px; font-family: "loveletter"; bottom:3px; left:15px; color:#ffffff;}
 .tilt3{ transform:rotate(3deg);}
 .tiltnegative3{ transform:rotate(-3deg);}
 .tilt2{ transform:rotate(2deg);}
 .tiltnegative2{ transform:rotate(-2deg);}
 .solidcircle {position:absolute; border:1px solid var(--color1); height:200px; width:200px; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
-.dottedcircle {position:absolute; border:2px dotted var(--color1); height:300px; width:300px; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%; animation: linearRotate linear 9s infinite;}
+.color2circle {position:absolute; border:1px solid var(--color2); height:300px; width:300px; border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
 @keyframes h1tiltbounce {
   0%  {transform:scale(1, 1.8) rotate(0deg);}
   50% {transform:scale(1, 2) rotate(-4deg);}
@@ -80,7 +85,17 @@ footer{}
 }
 @keyframes linearRotate{0%{transform: rotate(0deg);}100%{transform: rotate(90deg);}}
 @keyframes floatbox {
+  0%  {transform:translate(0px, 0px);}
+  50% {transform:translate(0px, -20px);}
+  100%{transform:translate(0px, 0px);}
+}
+@keyframes floatboxwshadow {
   0%  {transform:translate(0px, 0px); box-shadow:1px 4px 4px #000000e4;}
   50% {transform:translate(0px, -20px); box-shadow:1px 20px 4px #0000006a;}
   100%{transform:translate(0px, 0px); box-shadow:1px 4px 4px #000000e4;}
+}
+@keyframes bgPan{
+  0%  {background-position: right top;}
+  50% {background-position: left top;}
+  100%{background-position: right top;}
 }
