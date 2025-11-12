@@ -22,7 +22,7 @@ div{transition: .7s; transition-timing-function: linear;}
 p{margin:10px 0px 10px 0px; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill; line-height:17px;}
 h1, h2, h3, h4, h5, ul{padding:0px; margin:0;}
 h1, h2, h3, h4, h5{font-size:30px; font-weight: lighter; text-shadow:var(--textShadow);}
-h1{font-size:87px; font-size:92px !important;}
+h1{font-size:90px; font-family:"beckett";}
 dl{padding:0px 5px 0px 5px;margin:0 auto;}
 dt{cursor:pointer;}
 header, nav, aside, main, div, footer{position:relative; box-sizing:border-box;border:#000000 1px;}
