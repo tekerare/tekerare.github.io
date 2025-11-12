@@ -17,7 +17,7 @@ body{
   font-size:var(--fontSizeDesktop);
   box-shadow:inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff;
 }
-/*::selection{background:#00000000;}*/
+::selection{background:#00000000;}
 div{transition: .7s; transition-timing-function: linear;}
 p{margin:10px 0px 10px 0px; -webkit-text-stroke: 5px #ffffff; paint-order: stroke fill; line-height:17px;}
 h1, h2, h3, h4, h5, ul{padding:0px; margin:0;}
