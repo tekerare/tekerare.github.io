@@ -1,6 +1,6 @@
 @font-face {font-family: "beckett"; src: url("../../fonts/beckett.TTF");}
 @font-face {font-family: "crayon"; src: url("../../fonts/crayon.TTF");}
-@font-face {font-family: "loveletter"; src: url("../../fonts/loveletter.ttf");}
+@font-face {font-family: "loveletter"; src: url("../../fonts/loveletter.TTF");}
 :root{
   --fontSizeDesktop:17px;
   --background-color:#d6c3cd;
