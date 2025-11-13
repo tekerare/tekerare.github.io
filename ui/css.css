@@ -52,8 +52,8 @@ p, h1, h2, h4, details, span, li, td{border:1px #000000;}
 h1, h2, h4{margin:0;}
 h3, h2, h1{border:1px var(--headingBorder); border-style:var(--treeBorderStyle) none var(--treeBorderStyle) none;}
 h1, h2, h3, h4{ color:#00000090; padding:0px 4px 0px 4px; text-align:start; margin: 5px 0px 5px 0px; position:relative;}
-ul{margin:0px 0px 3px 0px; padding:3px 0px 3px 35px;}
-ul li{list-style-type: "→ ";}
+ul{margin:0px 0px 10px 0px; padding:3px 0px 3px 35px;}
+ul li{list-style-type: hiragana;}
 li { margin:0px 10px 0px 0px;text-align:start;}
 div{position:relative;}
 section > div{border: #000000;}
