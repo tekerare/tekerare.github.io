@@ -117,7 +117,7 @@ aside{background:url('../ui/backgrounds/whitedotted.png'); width:204px; min-widt
 /*DEFAULT THEME START*/
 #body{ 
   #rContainer > h1, main > h1{background:url("theme/h1_bull.png") no-repeat center left, var(--jellyGradient)!important; width:auto !important; box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff; border:1px #36333b; border-style:solid none solid none !important; margin:0; color:#ffffff; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} text-shadow:-1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder); padding:4px 4px 4px 23px; font-size:14px;}
-  header{background:url('theme/layout_header_multi.png') !important; padding:0;}
+  header{background:url('theme/layout_header_multi.png') top left, url('theme/layout_header_defaultunderlay.png') no-repeat top 14px right 5px, url('backgrounds/coldnonsense.png') no-repeat top 14px right 5px !important; padding:0;}
   footer{background:url('theme/layout_bottom_multi.png'); height:132px;}
   aside, main{ border:0;
     > div{ border: solid 1px; box-sizing:border-box; border-radius:4px; color: #000000 !important;}
@@ -142,7 +142,7 @@ aside{background:url('../ui/backgrounds/whitedotted.png'); width:204px; min-widt
     > div, > ul, > ol{ background:#ffffffb0;}
   }
   aside > ul, aside > div, main > ul, main > div{ border-style: var(--treeBorderStyle) none var(--treeBorderStyle) var(--treeBorderStyle);}
-  header{background:url('theme/layout_header_tree.png'); padding:0;}
+  header{background:url('theme/layout_header_tree.png') top left, url('theme/layout_header_defaultunderlay.png') no-repeat top 14px right 5px, url('backgrounds/coldnonsense.png') no-repeat top 14px right 5px !important; padding:0;}
   aside{ width: 45%;
 	h3, h4{border-style:var(--treeBorderStyle) none none var(--treeBorderStyle) !important;}
 	background:url('theme/layout_mid_tree.png') left top; border-style:none var(--treeBorderStyle) none none; text-align:center; padding:0px 0px 0px 38px;

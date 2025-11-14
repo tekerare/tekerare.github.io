@@ -66,6 +66,7 @@ function loadTheme(){
 	y.setAttribute('usemap', '#top_map');
 	x.setAttribute('name','top_links');
 	x.setAttribute('id','top_map');
+	x.setAttribute('title','[Click here to front page]');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="389,19,631,89">';
 	document.getElementById('header').appendChild(x).appendChild(y);
 	s.setAttribute('src', 'https://'+ siteURL + '/ui/theme/layout_bottom_transparent.gif');
