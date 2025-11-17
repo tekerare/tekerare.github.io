@@ -9,7 +9,7 @@
   --h1BorderColor:#000000;
   --jellySolid:#a3083a;
   --verticalTableMenu:#edcbc7;
-  --headerLinkGraphic:url('theme/layout_header_defaultunderlay.png') no-repeat top 14px right 5px, url('backgrounds/coldnonsense.png') no-repeat top 14px right 5px ;
+  --headerLinkGraphic: url('theme/layout_header_portalshadow.png') no-repeat top 14px right 5px, url('theme/layout_header_portalunderlay.png') no-repeat top 14px right 5px, url('backgrounds/coldnonsense.png') no-repeat top 14px right 5px ;
   --treeBorderStyle:dotted;
   --divSolid:linear-gradient(0deg, #ededed 1%, #ffffff 30%);
   --divInset:linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%);
@@ -197,6 +197,7 @@ footer{background-repeat: no-repeat !important;}
   > img{width:50%; height:auto !important; cursor:zoom-in;}
 }
 .tone{background:url("backgrounds/tone.png");}
+.recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 29px;}
 /*EXTENSION END*/
 /*RSS FEED START*/
 .feedBlock{background:url("backgrounds/dotted_paper.png")!important; border:3px #bcbcbc inset !important; border-radius:0px !important;padding:5px 0px 0px 0px; overflow-y: scroll; height:110px;}
