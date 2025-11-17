@@ -148,7 +148,7 @@ footer{background-repeat: no-repeat !important;}
 }
 /*SINGLE THEME END*/
 /*FAUX WINDOW THEME START*/
-#fauxWindow{
+#fauxWindow{ padding:0px 0px 15px 0px; box-shadow: inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff;
   .panel-wrapper, header{background: var(--browserColor) !important; border:#000000 1px;}
   header{ height:77px !important; border-style:solid solid none solid; padding: 3px 3px 6px 3px !important; text-align:start;
 	button{background: url('icons/window_set.png') no-repeat, var(--browserColor); box-shadow:var(--fauxWindowBoxShadow); border:1px #000000 solid; min-height: var(--fauxWindowButtonSize); min-width:var(--fauxWindowButtonSize);margin:-0px -0px; pointer-events:auto;cursor:not-allowed;}
@@ -163,12 +163,11 @@ footer{background-repeat: no-repeat !important;}
 	img{ max-width:100%; margin:0 auto; image-rendering:crisp-edges;}
     ::selection{background:#00000000}
   }
-  aside, main{border:var(--browserColor) 3px;}
-  aside{border-style:inset none inset inset; min-width:200px; padding:0px;
+  aside{border-style:inset dotted inset inset; border-color:var(--browserColor) #000000 var(--browserColor) var(--browserColor); border-width:3px 1px 3px 3px; min-width:200px; padding:0px;
     h2, h1{padding:4px !important;}
     > div{ border:1px var(--h1BorderColor); border-style:none none var(--treeBorderStyle) none;}
   }
-  main{border-style:inset inset inset none !important; min-width:auto;
+  main{border:var(--browserColor); border-style:inset inset inset none !important; min-width:auto;
     h1, h1 a{font-family:"bazinga"; box-shadow:none !important; text-decoration:none;}
 	center{width:80%;margin:0 auto;}
   }

@@ -1,8 +1,8 @@
 :root{
-  --browserColor:#ffc9cd;
-  --browserTitle:#ff7a88;
+  --browserColor:#cccccc;
+  --browserTitle:#7d1010;
 }
-body{background: url('ui/cuties_in_the_back_2.png') no-repeat top right, url('ui/cuties_in_the_back.png') no-repeat top left, linear-gradient(0deg, #ffffff 0%, #00000000 50%, #00000000 100%), url('../ui/backgrounds/gingham.png'), #ffffff; background-attachment:fixed;}
+body{background: url('ui/jxstpom.png') no-repeat top left 13%, url('ui/jxstpom.png') no-repeat top right 13%, url('ui/bg.jpg'), #ffffff; background-attachment:fixed; image-rendering:pixelated;}
 
 main{h1, h1 a{color:#ff2b41 !important;}}
 #fullRes {border: 0;}
