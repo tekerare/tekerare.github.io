@@ -75,7 +75,6 @@ function loadTheme(){
 	z.setAttribute('id','bottom_map');
 	z.innerHTML = '<area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto:' + mailAddress + '" target="_parent"><area alt="[Home]" title="[Home]" href="https://'+ siteURL +'" coords="131,49,182,95" shape="rect" target="_parent"><area alt="[Log]" title="[Log]" href="https://' + siteURL + '/log/" coords="240,57,270,85" shape="rect" target="_parent"><area alt="[TOS/International]" title="[TOS/International]" href="https://' + siteURL + '/art/" coords="84,62,117,88" shape="rect"  target="_blank"><area alt="[My Music]" title="[My Music]" href="https://' + siteURL + '/music/" coords="196,58,227,86" shape="rect" target="_parent">';
 	document.getElementById('footer').appendChild(z).appendChild(s);
-	readerUI();
   }
   switch(theme){
 	case 0:
@@ -92,6 +91,7 @@ function loadTheme(){
 	  htmlBse();
 	  findBody.setAttribute('id', 'treeBody');
 	  imgPreview();
+	  closePreview();
 	break;
 	case 3:
 	  htmlBse();
@@ -106,4 +106,7 @@ function loadTheme(){
 	  readerUI();
 	break;
   }
+  var audio = document.getElementById("audio");
+  audio.volume = 0.5;
+  readerUI();
 }
