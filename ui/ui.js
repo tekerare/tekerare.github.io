@@ -96,7 +96,16 @@ function loadTheme(){
 	case 3:
 	  htmlBse();
 	  findBody.setAttribute('id', 'singleBody');
+	  const y = document.createElement('a');
+      y.setAttribute('href', '.');
+	  const z = document.createElement('a');
+      z.setAttribute('href', '.');
+	  z.innerHTML = '<center><a href="." target="_parent"><img src="ui/sdtitle.png" style="max-height:200px;" alt="&quot;Back To Main Page&quot;" title="RETURN TO PORTAL"></a></center>';
+	  document.getElementsByTagName('main')[0].prepend(z);
+	  y.innerHTML = '<center><a href="." target="_parent"><img src="ui/sdtitle.png" style="max-height:200px;" alt="&quot;Back To Main Page&quot;" title="RETURN TO PORTAL"></a></center>';
+	  document.getElementsByTagName('main')[0].append(y);
 	  imgPreview();
+	  closePreview();
 	break;
 	case 4:
 	  findBody.setAttribute('id', 'fauxWindow');
@@ -108,5 +117,6 @@ function loadTheme(){
   }
   var audio = document.getElementById("audio");
   audio.volume = 0.5;
+  video.volume = 0.5;
   readerUI();
 }

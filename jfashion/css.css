@@ -5,7 +5,6 @@
   --boldTxt:#4b4d00;
   --themeBG:url('../ui/backgrounds/gobelin.gif');
 }
-.panel-wrapper{background:url('../ui/theme/layout_mid_tree.png') left top, var(--themeBG) repeat-y !important; background-position: center !important;}
 h4, h3, h2, h1{text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; color:var(--boldTxt);}
 .banner{
   background:url('../ui/tree_post/aatp.png') !important;

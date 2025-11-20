@@ -1,4 +1,4 @@
 body{
-  background: url("ui/bg.png") bottom left no-repeat, url("ui/bg.png") top right -60px no-repeat, linear-gradient(180deg, #000000 0%, #00000000 30%, #00000000 100%), url("ui/bd.png"), #1c1d1f; background-attachment:fixed;
+  background: url("ui/bg.png") bottom left no-repeat, url("ui/bg.png") top right -60px no-repeat, url("../ui/backgrounds/bd_lilac.jpg"), #c6b6d9; background-attachment:fixed;
   background-size: auto, auto, auto, auto;
 }
