@@ -3,9 +3,5 @@ window.onload = function(){
   const x = document.getElementById('lWrp');
   const y = document.getElementById('windowLocation');
   x.innerHTML = '<div style="text-align:center;"><img src="media/notoruki_pixel.png" alt="Pixel art of Norton and Luchino with a cubic heart connecting them." title="pixel by tkr" style="pointer-events:none;width:170px;"><br>ノトルキ &hearts; 愚教 &hearts; 勘蜥<br><marquee scrollamount="2">nortluchi &hearts; foolish teacher &hearts; exploring lizard</marquee></div><center><a href="." target="_parent"><img src="ui/blogbanner.png" alt="&quot;SlateShip&quot;" title="RETURN TO PORTAL"></a></center><h2>Blog - All Posts</h2><div><table><tr><td><a href="nortluchi">What Is Norton x Luchino?</a></td></tr><tr><td><a href="whoisluchino">Who Is Luchino?</a></td></tr><tr><td><a href="fanart">Fanart Gallery</a></td></tr><tr><td><a href="roleplayprofile">Luchino Roleplay Profile</a></td></tr><tr><td><a href="itabag">痛バ ItaBag Diary</a></td></tr><tr><td><a href="nortoncosplay">My Norton Cosplay</a></td></tr><tr><td><a href="music">Music Playlist</a></td></tr></table></div><h2>Blog Stats</h2><div><center><img src="media/notoruki_portrait.png" alt="A Luchino x Norton sketch I drew." title="Aren&apos;t they cute?" style="border:1px #000000 solid;"></center><p><b>Created since:</b> 2024.09.06<br></p></div><br><a href="https://web.archive.org/web/20040730071408fw_/http://omoh.clayangel.net/" target="_blank"><img src="../ui/images/yaoi_yuri.jpg" alt="Yaoi &amp; yuri support on the web - open your mind, open your heart." title="Yaoi &amp; yuri support on the web - open your mind, open your heart."></a>';
-  const z = document.createElement('a');
-  z.setAttribute('href', '.');
-  z.innerHTML = '<center><img src="ui/blogbanner.png" alt="&quot;SlateShip&quot;" title="RETURN TO PORTAL"></center>';
-  document.getElementsByTagName('main')[0].prepend(z);
   y.innerHTML = 'SLATESHIPPING - norton x luchino church @ texaskissrhinestone';
 }

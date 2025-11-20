@@ -111,12 +111,15 @@ function loadTheme(){
 	  findBody.setAttribute('id', 'fauxWindow');
 	  const x = document.getElementById('header');
 	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../microlog/">Microlog</a> <a href="../shrines">Shrines</a> <a href="../art/">Illustrations</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../log/update/">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:0px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
+	  const sdtitle = document.createElement('span');
+      sdtitle.setAttribute('style', 'text-align:center;');
+      sdtitle.innerHTML = '<a href="."> <img src="ui/sdtitle.png" alt="Back To Main Page" title="RETURN TO PORTAL"></a>';
+	  document.getElementsByTagName('main')[0].prepend(sdtitle);
 	  imgPreview();
 	  readerUI();
 	break;
   }
   var audio = document.getElementById("audio");
   audio.volume = 0.5;
-  video.volume = 0.5;
   readerUI();
 }
