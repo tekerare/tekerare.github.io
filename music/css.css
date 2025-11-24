@@ -1,9 +1,4 @@
 body{
-  background:url('images/background01.png') !important;
+  background:url('../ui/backgrounds/tracker.png') !important;
   background-repeat:repeat !important;
-}
-li {
-  list-style-image: url('images/tune_icon.png');
-  padding-right:0px;
-  padding-left:0px;
 }

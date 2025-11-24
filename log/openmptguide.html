@@ -49,19 +49,23 @@ main{td:nth-child(1){
 <h3>How To Read Chart Notes</h3>
 <p>Open up the "Patterns" tab on a new module. The chart overview window might be a little daunting&mdash; it looks more like Microsoft Excel than it does something you'd write music in. Don't think too hard about it.</p>
 <p>Each channel is separated by 4 columns: the "<normal style="color:#000080;">Note Column</normal>," the "<normal style="color:#008080;">Instrument Column</normal>," the "<normal style="color:#144718;">Volume Column</normal>," and the "<normal style="color:#640e0e;">Effect Column</normal>".</p>
-<center><img src="media/modplug/notecommandanatomy.png" alt=""></center>
+<span style="text-align:center;"><img src="media/modplug/notecommandanatomy.jpg" class="image" alt=""></span>
 <p><normal style="color:#000080;">The note column defines which pitch the note is playing in.</normal> Not much to detail on here, but in order to switch octaves beyond what your computer keyboard can record, locate the swatch labeled "Octave" and you can click the arrows according to what scale you want to play in.</p>
 <p><normal style="color:#008080;">The instrument column determines which instrument/sample will play. Without it, you won't hear anything.</normal> For future reference instead of selecting instruments using the dropdown menu, you can highlight this column and type in an instrument-assigned number. You'd be doing a lot of typing and remembering, and can especially do the same for the volume and effects columns.</p>
 <p><normal style="color:#144718;">This column affects all that is volume related.</normal> By default, this column displays "v64" and 64 is the loudest scale of values. By double-clicking this note, you open "Note Properties" and can pick other transformations like panning, portamento, pan, vibrato, etc. <normal style="color:#640e0e;">The effects column is empty by default, but you can choose over 30+ effects that the volume column doesn't house.</normal> I won't talk about this one because your own experimentation can only do justice for the effects column.</p>
 <p>For a better indepth, you can always <a href="https://wiki.openmpt.org/Manual:_Patterns#Pattern_Editor">read the official Manual: Patterns wiki entry</a>.</p>
-<h3>Emulating Reverb or "Echo"</h3>
-<img src="media/modplug/cleancutoff01.png" style="width:100%;" alt="">
+<h2>Emulating Reverb or "Echo"</h2>
+<center><img src="media/modplug/cleancutoff01.jpg" class="image" alt=""></center>
 <p>Open the "Samples" tab and load in the samples you're going to use by clicking the folder icon on the toolbar.</p>
-<img src="media/modplug/cleancutoff02.png" style="width:100%;" alt="">
-<img src="media/modplug/cleancutoff03.png" style="width:100%;" alt="">
-<p> The sample needs to be reflected in the instruments tab. The black map at the very bottom of the display is where we will control the volume of our sample. Without the volume fade, the loop would just sustain forever until a new note is input on the same channel. And that would just be really annoying.</p>
-<img src="media/modplug/instrumentfade.png" style="width:100%;" alt="">
-<center><audio controls><source src="audios/pseudo-echo-amen.wav"></audio></center>
+<center>
+  <img src="media/modplug/cleancutoff02.png" class="image" alt="">
+  <img src="media/modplug/cleancutoff03.png" class="image" alt="">
+</center>
+<p>The sample needs to be reflected in the instruments tab. The black map at the very bottom of the display is where we will control the volume of our sample. Without the volume fade, the loop would just sustain forever until a new note is input on the same channel. And that would just be really annoying.</p>
+<center>
+  <img src="media/modplug/instrumentfade.png" class="image" alt="">
+  <audio controls><source src="audios/pseudo-echo-amen.wav"></audio>
+</center>
 <p>It's a very small detail that ties the whole thing together. This works around the negative space you get when splicing amen breaks or to blend in an instrument with sustain (padding, chords in general) to keep the track "full-sounding",</p>
 <h3>Synth1</h3>
 <p>This plugin is as barebones as synthesis can get, in a good way. I use this to create every synth and sometimes even the percussions I use. You can quite literally make both a beefy, Phatworld-like bassline on one bank, and a whole ambient library in the other. Would recommend playing around with even outside of MPT.</p>

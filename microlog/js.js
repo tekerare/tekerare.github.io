@@ -1,3 +1,0 @@
-function checkPoint(){
-  document.write('');
-}

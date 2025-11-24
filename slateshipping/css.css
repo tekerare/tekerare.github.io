@@ -12,7 +12,7 @@ body{
 h1{font-size:16px;}
 mark {background: #00000030;}
 #treeBody {h1, h2, h3, h4{a, a:visited{text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder); color:#ffffff;}}}
-body{background:linear-gradient(90deg,#00000000 2%, #ffffff30 10%, #ffffffb4 40%, #ffffffb4 60%, #ffffff30 90%, #00000000 98%), url('../ui/backgrounds/moss.gif'); background-position: center !important;}
+body{background: url('../ui/backgrounds/moss.gif'); background-position: center !important;}
 aside{
   background:url("../ui/backgrounds/cherries.gif");
   > h2{background: url("ui/bill_scales_texture-flip.gif") repeat-x 0px 4px !important;text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;

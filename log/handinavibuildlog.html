@@ -3,7 +3,7 @@
 <head>
 <title>tkr | log</title>
 <meta charset="utf-8"/>
-<link rel="shortcut icon" type="image/jpg" href="favicon.png">
+<link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
 <meta name="viewport" content="width=device-width">
 <meta name="description" content="texas kiss rhinestone - homepage">
 <script src="../ui/ui.js"></script>
@@ -66,12 +66,12 @@
   </tr>
   </table>
   <p style="color:#808080;">* Used for first boot.</p>
-  <h3>The Case</h3>
+  <h2>The Case</h2>
   <p>The lone size of the Raspberry Pi board + GPIO screen fully assembled made it a whopping 3cm horizontally, which isn't ideal. For reference, the source Handinavi is only as wide as a Motorola StarTAC, or charitably the Apple Newton. I'm modeling a damn brick. Despite that, I managed to keep it as compact as possible just to house the Pi, display, and battery.</p>
   <p>The outside shell went through so many alterations in Blender until I decided to just learn how to use Fusion 360. Can't say this aspect of making the Handinavi is exciting to explain since trial and error is a typical motion of modeling from scratch.</p>
   <center>
-    <img src="media/handinavi_pictures/fusion360_composition_front.png" alt="" onclick="img='handinavi_pictures/fusion360_composition_front.png';enlarge();">
-    <img src="media/handinavi_pictures/fusion360_composition_back.png" alt=""  onclick="img='handinavi_pictures/fusion360_composition_back.png';enlarge();">
+    <img src="media/handinavi_pictures/fusion360_composition_front.jpg" class="image" alt="" onclick="img='handinavi_pictures/fusion360_composition_front.jpg';enlarge();">
+    <img src="media/handinavi_pictures/fusion360_composition_back.jpg" class="image" alt=""  onclick="img='handinavi_pictures/fusion360_composition_back.jpg';enlarge();">
   </center>
   <p>The case comes with a hinged faux trackpad, snapguides, and inserts for the accessories. I also branded my username on the inside of the case, with a level depression to make space for a power cell. The back is carved out for an adhesed pseudo-vent and a hole for the sd card to rest on. I opted out of adding snapjoints as the guides were compact enough to hold the case together.</p>
   <p>Some parts weren't modeled like the ribbon cable sockets or the antenna steels. Instead I could just take apart old computers for these parts or get them off Adafruit online for under the price of a steak. Which is what I did.</p>
@@ -80,38 +80,24 @@
     <li>To be added...</li>
   </ol>
   <p>While functional, they don't really do much but look pretty until I figure out what to do with them to improve the build. Isn't that the art of the cyberdeck?</p>
-<h3>Rice</h3>
+<h2>Rice</h2>
   <p>Before touching anything the LCD screen and touch matrix had to be inverted and the display resoluton changed to 800 x 600 4:3.</p>
   <p>We get to see a lot of footage of what Lain's Handinavi looks like in the show. As far as I could tell... it'd be impossible to recreate it to the letter. The canonical Handinavi's applications are displayed as spherical windows that bounce around the screen, and I don't have the technical nerve to try and program that. Instead, I customized it after Lain's desktop environment as seen in Layer02 and ahead.</p>
   <p>Several artistic liberties were taken when it came to making the wallpaper because I didn't have the privilege of creating interactive tooltips or buttons. The next best thing was just to make my own theme using Gimp and Blender.</p>
-  <center><img src="media/handinavi_pictures/Navi-Desktop.png" onclick="img='handinavi_pictures/Navi-Desktop.png';enlarge();"></center>
+  <center><img src="media/handinavi_pictures/Navi-Desktop.png" class="image" onclick="img='handinavi_pictures/Navi-Desktop.png';enlarge();"></center>
   <p>I've pretty much made everything in the wallpaper except for the fontfaces, <normal style="font-family: Baskerville Old Face">Baskerville Old Face</normal> and <normal style="font-family: Monotype Corsiva">Monotype Corsiva</normal>.</p>
   <p>The orb graphics are just mesh presets rendered in Blender. If I scale it around, I stretch it in Gimp with interpolation set to none. I made 2 versions; one for tooltip flavor and a flat platform as seen when Lain checks her E-mail or opens applications. These assets were recycled later for the custom icon packs.</p>
   <p>The Navi logo in the back got airbrushed a bit to emulate a sort of glowing effect, as I felt it was missing the eerie capabilities and presence of the actual Lain computer without it. Gradients are your friend. Finally, 90s anime computers aren't 90s anime computers without its scanline overlay.</p>
   <p>I'm happy with what I ended up with. Feel free to save the wallpaper for your own 640 by 480 display.</p>
-  <table style="text-align:center;">
-    <tr>
-	  <td colspan="2"><img src="media/handinavi_pictures/blender_screenshot_1.png" alt="" onclick="img='handinavi_pictures/blender_screenshot_1.png';enlarge();"></td>
-	</tr>
-	<tr>
-	  <td colspan="2"><img src="media/handinavi_pictures/computer-build_1.png" alt="" onclick="img='handinavi_pictures/computer-build_1.png';enlarge();"></td>
-	</tr>
-	<tr>
-	  <td width="50%"><img src="media/handinavi_pictures/innards_engrave.jpg" alt="" height="220px" onclick="img='handinavi_pictures/innards_engrave.jpg';enlarge();">
-	</td>
-	  <td><img src="media/handinavi_pictures/printing_backshell.png" alt="" height="220px" onclick="img='handinavi_pictures/printing_backshell.png';enlarge();"></td>
-	</tr>
-	<tr>
-	  <td><img src="media/handinavi_pictures/prototype_fetch.jpg" alt="" height="220px" onclick="img='handinavi_pictures/prototype_fetch.jpg';enlarge();"></td>
-	  <td><img src="media/handinavi_pictures/printing_frontshell.png" alt="" height="220px" onclick="img='handinavi_pictures/printing_frontshell.png';enlarge();"></td>
-	</tr>
-	<tr>
-	  <td colspan="2"><img src="media/handinavi_pictures/prototype_landingproof.jpg" alt="" width="100%" onclick="img='handinavi_pictures/prototype_landingproof.jpg';enlarge();"></td>
-	</tr>
-	<tr>
-	  <td colspan="2"><img src="media/handinavi_pictures/prototype_closedcover.jpg" alt="" width="100%" onclick="img='handinavi_pictures/prototype_closedcover.jpg';enlarge();"></td>
-	</tr>
-  </table>
+  <h2>Gallery</h2>
+  <span style="text-align:center;"><img src="media/handinavi_pictures/blender_screenshot_1.jpg" class="image" alt="" onclick="img='handinavi_pictures/blender_screenshot_1.jpg';enlarge();"></span>
+  <span style="text-align:center;"><img src="media/handinavi_pictures/computer-build_1.jpg" class="image" alt="" onclick="img='handinavi_pictures/computer-build_1.jpg';enlarge();"></span>
+  <div class="flex">
+	<img src="media/handinavi_pictures/printing_backshell.jpg" class="image" alt="" onclick="img='handinavi_pictures/printing_backshell.jpg';enlarge();">
+	<img src="media/handinavi_pictures/printing_frontshell.jpg" class="image" alt="" onclick="img='handinavi_pictures/printing_frontshell.jpg';enlarge();">
+  </div>
+  <span style="text-align:center;"><img src="media/handinavi_pictures/prototype_landingproof.jpg" class="image" alt="" onclick="img='handinavi_pictures/prototype_landingproof.jpg';enlarge();"></span>
+  <span style="text-align:center;"><img src="media/handinavi_pictures/prototype_closedcover.jpg" class="image" alt="" width="100%" onclick="img='handinavi_pictures/prototype_closedcover.jpg';enlarge();"></span>
 </main>
 </div>
 <footer id="footer">

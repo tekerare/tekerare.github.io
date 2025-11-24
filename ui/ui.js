@@ -2,30 +2,36 @@ const siteURL = 'texaskissrhinestone.github.io';
 const mailAddress = '0ekekddddd@protonmail.com';
 
 let img;
-function imgPreview(){
+function readerUI(){
   const y = document.createElement('div');
   y.setAttribute('id', 'preview');
   y.innerHTML = '<img src="" id="fullRes" alt="" title="">';
   document.getElementsByTagName('body')[0].prepend(y);
-}
-function closePreview(){
   preview.onclick = function() {
 	document.getElementById('preview').style.display = 'none';
   }
+  const tbutt = document.createElement('a');
+  const bbutt = document.createElement('a');
+  tbutt.setAttribute('target', '_parent');
+  bbutt.setAttribute('target', '_parent');
+  tbutt.setAttribute('href', '#header');
+  bbutt.setAttribute('href', '#footer');
+  tbutt.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/top.png" alt="top" title="top" style="position:fixed;bottom:66px;right:0;">';
+  bbutt.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/bottom.png" alt="bottom" title="bottom" style="position:fixed;bottom:0;right:0;">';
+  document.body.appendChild(tbutt).appendChild(bbutt);
 }
 function enlarge(){
   document.getElementById('preview').style.display = 'block';
   document.getElementById('fullRes').setAttribute('src', 'media/'+img);
 }
-
-function quickBio(){
-  const x = document.createElement("div");
-  x.innerHTML = '<p><img src="ui/images/atglasses.gif" style="pointer-events:none;float:left;padding:0px 9px 0px 0px;"> Web developer &amp; designer. Looking for work. E-mail for collaboration.</p>';
-   document.getElementById('lWrp').appendChild(x);
-}
 function badgeLink(){
   const x = document.createElement("div");
   x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="texas kiss rhinestone: homepage" title="TEXAS KISS RHINESTONE"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="texas kiss rhinestone: homepage" title="TEXAS KISS RHINESTONE"></a></textarea><quiet style="font-size:10px;">Authenticated for badge-represented linkage of TKR. This code allows updates across links.</quiet>';
+  document.getElementById('lWrp').appendChild(x);
+}
+function galleryWidget(){
+  const x = document.createElement('div');
+  x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/art/media/gallery/witchgirlwithnicotineaddiction.jpg" class="image"></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="art/">/art/</a></quiet>';
   document.getElementById('lWrp').appendChild(x);
 }
 function browsePosts(){
@@ -46,17 +52,6 @@ function logMap(){
 }
 function loadTheme(){
   const findBody = document.getElementById('body');
-  function readerUI(){
-    const x = document.createElement('a');
-	const y = document.createElement('a');
-	x.setAttribute('target', '_parent');
-	y.setAttribute('target', '_parent');
-	x.setAttribute('href', '#header');
-	y.setAttribute('href', '#footer');
-	x.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/top.png" alt="top" title="top" style="position:fixed;bottom:66px;right:0;">';
-	y.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/bottom.png" alt="bottom" title="bottom" style="position:fixed;bottom:0;right:0;">';
-	document.body.appendChild(x).appendChild(y);
-  }
   function htmlBse(){
 	const x = document.createElement("map");
 	const y = document.createElement("img");
@@ -75,23 +70,19 @@ function loadTheme(){
 	z.setAttribute('id','bottom_map');
 	z.innerHTML = '<area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto:' + mailAddress + '" target="_parent"><area alt="[Home]" title="[Home]" href="https://'+ siteURL +'" coords="131,49,182,95" shape="rect" target="_parent"><area alt="[Log]" title="[Log]" href="https://' + siteURL + '/log/" coords="240,57,270,85" shape="rect" target="_parent"><area alt="[TOS/International]" title="[TOS/International]" href="https://' + siteURL + '/art/" coords="84,62,117,88" shape="rect"  target="_blank"><area alt="[My Music]" title="[My Music]" href="https://' + siteURL + '/music/" coords="196,58,227,86" shape="rect" target="_parent">';
 	document.getElementById('footer').appendChild(z).appendChild(s);
+	readerUI();
   }
   switch(theme){
 	case 0:
-	  imgPreview();
-	  closePreview();
+	  readerUI();
 	break;
 	case 1:
 	  htmlBse();
-	  imgPreview();
-	  closePreview();
 	 return;
 	break;
 	case 2:
 	  htmlBse();
 	  findBody.setAttribute('id', 'treeBody');
-	  imgPreview();
-	  closePreview();
 	break;
 	case 3:
 	  htmlBse();
@@ -104,8 +95,6 @@ function loadTheme(){
 	  document.getElementsByTagName('main')[0].prepend(z);
 	  y.innerHTML = '<center><a href="." target="_parent"><img src="ui/sdtitle.png" style="max-height:200px;" alt="&quot;Back To Main Page&quot;" title="RETURN TO PORTAL"></a></center>';
 	  document.getElementsByTagName('main')[0].append(y);
-	  imgPreview();
-	  closePreview();
 	break;
 	case 4:
 	  findBody.setAttribute('id', 'fauxWindow');
@@ -115,11 +104,7 @@ function loadTheme(){
       sdtitle.setAttribute('style', 'text-align:center;');
       sdtitle.innerHTML = '<a href="."> <img src="ui/sdtitle.png" alt="Back To Main Page" title="RETURN TO PORTAL"></a>';
 	  document.getElementsByTagName('main')[0].prepend(sdtitle);
-	  imgPreview();
-	  readerUI();
+      readerUI();
 	break;
   }
-  var audio = document.getElementById("audio");
-  audio.volume = 0.5;
-  readerUI();
 }
