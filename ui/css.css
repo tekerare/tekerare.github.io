@@ -205,7 +205,7 @@ footer{background-repeat: no-repeat !important;}
 .tone{background:url("backgrounds/tone.png");}
 .center{margin:0 auto;}
 .image{border:1px #000000 solid;}
-.recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 29px;}
+.recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
 /*EXTENSION END*/
 /*RSS FEED START*/
 .feedBlock{background:url("backgrounds/dotted_paper.png")!important; border:3px #bcbcbc inset !important; border-radius:0px !important;padding:5px 0px 0px 0px; overflow-y: scroll; height:110px;}
