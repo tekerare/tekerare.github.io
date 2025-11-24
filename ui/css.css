@@ -43,7 +43,6 @@ img{max-width:100%;}
 .flex{width: 330px;}
 audio:hover{filter:opacity(50%);}
 a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000; cursor:pointer;}
-a:hover {color: !important;}
 p, h1, h2, h3, h4, span, details, quiet{display:block;}
 p, h1, h2, h3, h4, details, quiet{padding:0px 10px 0px 10px; display:block;}
 h2{font-family: "kiwisoda";}
@@ -147,7 +146,7 @@ footer{background-repeat: no-repeat !important;}
   }
   aside{border:none; min-width:0;}
   main{background:var(--themeBG) !important; width:588px !important; border:0 !important; padding:5px 0px 5px 0px;
-    div {background:#0000000; width:95% !important; border-radius:10px; margin:0 auto; margin:5px auto;}
+    div {background:#00000000; width:95% !important; border-radius:10px; margin:0 auto; margin:5px auto;}
   }
   footer{background:url('theme/layout_bottom_tree.png');}
 }

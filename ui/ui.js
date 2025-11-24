@@ -55,7 +55,7 @@ function loadTheme(){
   function htmlBse(){
 	const x = document.createElement("map");
 	const y = document.createElement("img");
-	const z = document.createElement("map");
+	const bottommap = document.createElement("map");
 	const s = document.createElement("img");
 	y.setAttribute('src', 'https://'+ siteURL + '/ui/theme/layout_top_transparent.gif');
 	y.setAttribute('usemap', '#top_map');
@@ -66,11 +66,16 @@ function loadTheme(){
 	document.getElementById('header').appendChild(x).appendChild(y);
 	s.setAttribute('src', 'https://'+ siteURL + '/ui/theme/layout_bottom_transparent.gif');
 	s.setAttribute('usemap', '#bottom_map');
-	z.setAttribute('name','bottom_links');
-	z.setAttribute('id','bottom_map');
-	z.innerHTML = '<area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto:' + mailAddress + '" target="_parent"><area alt="[Home]" title="[Home]" href="https://'+ siteURL +'" coords="131,49,182,95" shape="rect" target="_parent"><area alt="[Log]" title="[Log]" href="https://' + siteURL + '/log/" coords="240,57,270,85" shape="rect" target="_parent"><area alt="[TOS/International]" title="[TOS/International]" href="https://' + siteURL + '/art/" coords="84,62,117,88" shape="rect"  target="_blank"><area alt="[My Music]" title="[My Music]" href="https://' + siteURL + '/music/" coords="196,58,227,86" shape="rect" target="_parent">';
-	document.getElementById('footer').appendChild(z).appendChild(s);
+	bottommap.setAttribute('name','bottom_links');
+	bottommap.setAttribute('id','bottom_map');
+	bottommap.innerHTML = '<area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto:' + mailAddress + '" target="_parent"><area alt="[Home]" title="[Home]" href="https://'+ siteURL +'" coords="131,49,182,95" shape="rect" target="_parent"><area alt="[Log]" title="[Log]" href="https://' + siteURL + '/log/" coords="240,57,270,85" shape="rect" target="_parent"><area alt="[TOS/International]" title="[TOS/International]" href="https://' + siteURL + '/art/" coords="84,62,117,88" shape="rect"  target="_blank"><area alt="[My Music]" title="[My Music]" href="https://' + siteURL + '/music/" coords="196,58,227,86" shape="rect" target="_parent">';
+	document.getElementById('footer').appendChild(bottommap).appendChild(s);
 	readerUI();
+  }
+  function spawnSDTitle(){
+    const sdtitle = document.createElement('center');
+    sdtitle.innerHTML = '<a href="."> <img src="ui/sdtitle.png" style=" max-height:200px;" alt="Back To Main Page" title="RETURN TO PORTAL"></a>';
+	document.getElementsByTagName('main')[0].prepend(sdtitle);
   }
   switch(theme){
 	case 0:
@@ -83,6 +88,7 @@ function loadTheme(){
 	case 2:
 	  htmlBse();
 	  findBody.setAttribute('id', 'treeBody');
+      spawnSDTitle();
 	break;
 	case 3:
 	  htmlBse();
@@ -91,19 +97,13 @@ function loadTheme(){
       y.setAttribute('href', '.');
 	  const z = document.createElement('a');
       z.setAttribute('href', '.');
-	  z.innerHTML = '<center><a href="." target="_parent"><img src="ui/sdtitle.png" style="max-height:200px;" alt="&quot;Back To Main Page&quot;" title="RETURN TO PORTAL"></a></center>';
-	  document.getElementsByTagName('main')[0].prepend(z);
-	  y.innerHTML = '<center><a href="." target="_parent"><img src="ui/sdtitle.png" style="max-height:200px;" alt="&quot;Back To Main Page&quot;" title="RETURN TO PORTAL"></a></center>';
-	  document.getElementsByTagName('main')[0].append(y);
+      spawnSDTitle();
 	break;
 	case 4:
 	  findBody.setAttribute('id', 'fauxWindow');
 	  const x = document.getElementById('header');
 	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../microlog/">Microlog</a> <a href="../shrines">Shrines</a> <a href="../art/">Illustrations</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../log/update/">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:0px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
-	  const sdtitle = document.createElement('span');
-      sdtitle.setAttribute('style', 'text-align:center;');
-      sdtitle.innerHTML = '<a href="."> <img src="ui/sdtitle.png" alt="Back To Main Page" title="RETURN TO PORTAL"></a>';
-	  document.getElementsByTagName('main')[0].prepend(sdtitle);
+      spawnSDTitle();
       readerUI();
 	break;
   }
