@@ -2,10 +2,17 @@ const siteURL = 'texaskissrhinestone.github.io';
 const mailAddress = '0ekekddddd@protonmail.com';
 
 let img;
+
+function enlarge(){
+  document.getElementById('preview').style.display = 'block';
+  document.getElementById('fullRes').setAttribute('src', 'media/'+img);
+  document.getElementById('exLink').setAttribute('href', 'media/'+img);
+}
+
 function readerUI(){
   const y = document.createElement('div');
   y.setAttribute('id', 'preview');
-  y.innerHTML = '<img src="" id="fullRes" alt="" title="">';
+  y.innerHTML = '<img src="" id="fullRes" alt="" title=""><br><a id="exLink" target="_blank" style="color:#ffffff;">open on external tab</a>';
   document.getElementsByTagName('body')[0].prepend(y);
   preview.onclick = function() {
 	document.getElementById('preview').style.display = 'none';
@@ -20,10 +27,6 @@ function readerUI(){
   bbutt.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/bottom.png" alt="bottom" title="bottom" style="position:fixed;bottom:0;right:0;">';
   document.body.appendChild(tbutt).appendChild(bbutt);
 }
-function enlarge(){
-  document.getElementById('preview').style.display = 'block';
-  document.getElementById('fullRes').setAttribute('src', 'media/'+img);
-}
 function badgeLink(){
   const x = document.createElement("div");
   x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="texas kiss rhinestone: homepage" title="TEXAS KISS RHINESTONE"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="texas kiss rhinestone: homepage" title="TEXAS KISS RHINESTONE"></a></textarea><quiet style="font-size:10px;">Authenticated for badge-represented linkage of TKR. This code allows updates across links.</quiet>';
@@ -31,7 +34,7 @@ function badgeLink(){
 }
 function galleryWidget(){
   const x = document.createElement('div');
-  x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/witchgirlwithnicotineaddiction.jpg" class="image"></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
+  x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/orderofburgerandfrills.jpg" class="image"></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
   document.getElementById('lWrp').appendChild(x);
 }
 function browsePosts(){

@@ -186,8 +186,8 @@ footer{background-repeat: no-repeat !important;}
 @keyframes selectBop {0%{transform:translate(0px, -2px);}60%{transform:translate(0px, 1px);}90%{transform:translate(0px, -1px);}100%{transform:translate(0px, 0px);}}
 /*ANIMATIONS END*/
 /*EXTENSION START*/
-#preview{background:#000000b5; background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none; cursor:zoom-out;}
-#fullRes{ max-height:80vh; margin:5vh auto; border:#ffffff 1px solid;}
+#preview{background:#000000b5; background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none; cursor:zoom-out; padding:5vh 0px 4vh 0px; font-family:hack; font-size:20px;}
+#fullRes{ max-height:80vh; 0 auto; border:#ffffff 1px solid;}
 .new{background:url('backgrounds/updatetile.png'), url('backgrounds/tone.png');}
 @media screen and (min-width:790px){.imgBlock:hover .imgSumm{box-shadow: inset 1px 1px 0px 1px #d67875, inset -1px -1px 0px 1px #d67875, inset -1px 1px 0px 1px #d67875, inset 1px -1px 0px 1px #d67875; animation-name:imgSummAnm; filter:opacity(100%);}}
 .imgSumm{ font-family:hack !important; h1, h2, h3{ font-family:hack;} h1 a, h2 a, h3 a{ transition:.5s ease;}  h1 a:hover, h2 a:hover, h3 a:hover{letter-spacing:2px; color:#000000 !important;transition:.5s ease;} font-size:14px; padding: 15px 20px 10px 20px; box-sizing:border-box; background:#ffffffe0; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease; filter:opacity(0%); overflow:hidden; -webkit-text-stroke: 3px #ffffff; paint-order: stroke fill;}
