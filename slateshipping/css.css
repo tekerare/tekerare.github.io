@@ -15,7 +15,7 @@ mark {background: #00000030;}
 body{background: url('../ui/backgrounds/moss.gif'); background-position: center !important;}
 aside{
   background:url("../ui/backgrounds/cherries.gif");
-  > h2{background: url("ui/bill_scales_texture-flip.gif") repeat-x 0px 4px !important;text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  div > h2{background: url("ui/bill_scales_texture-flip.gif") repeat-x 0px 4px, url('../ui/backgrounds/tone.png') !important;-webkit-text-stroke: 3px #ffffff; paint-order: stroke fill;;
   color:#000000;
   }
 .banner{min-height:150px; background:url('../ui/tree_post/notoruki.png') !important; background-size:225px !important; image-rendering:crisp-edges;}

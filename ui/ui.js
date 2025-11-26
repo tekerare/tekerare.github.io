@@ -34,7 +34,14 @@ function badgeLink(){
 }
 function galleryWidget(){
   const x = document.createElement('div');
-  x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/orderofburgerandfrills.jpg" class="image"></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
+  x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/orderofburgerandfrills.jpg" class="image" style="filter:grayscale(100%);"></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
+  document.getElementById('lWrp').appendChild(x);
+}
+
+function eventWidget(){
+  const x = document.createElement('div');
+  x.setAttribute('id', 'eventsWidget');
+  x.innerHTML = '<h3>upcoming booths</h3><div id="eventsList"><quiet style="text-align:center;">nearest &rarr; distant</quiet><ul><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx (june 06-07)</li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/art/merch" target="_parent">/art/</a></p>';
   document.getElementById('lWrp').appendChild(x);
 }
 function browsePosts(){
@@ -47,7 +54,7 @@ function rssBlock(){
   const y = document.createElement("h1");
   y.innerHTML = 'Latest Site Update <a href="https://' + siteURL + '/update">(read more @ update log)</a> <img src="https://' + siteURL + 'ui/icons/flag.gif" alt="">';
   document.getElementById('rWrp').appendChild(y);
-  document.write('<div class="feedBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div>');
+  document.write('<div class="rssBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=2&showtitle=false&type=js"></script></div>');
 }
 function logMap(){
   badgeLink();
