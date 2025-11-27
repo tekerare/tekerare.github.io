@@ -44,6 +44,12 @@ function eventWidget(){
   x.innerHTML = '<h3>upcoming booths</h3><div id="eventsList"><quiet style="text-align:center;">nearest &rarr; distant</quiet><ul><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx (june 06-07)</li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/art/merch" target="_parent">/art/</a></p>';
   document.getElementById('lWrp').appendChild(x);
 }
+function kofiWidget(){
+  const x = document.createElement('div');
+  x.setAttribute('id' , 'kofiWidget');
+  x.innerHTML = '<h3>support me on ko-fi</h3><div><a href="https://ko-fi.com/s/1800cb6ae7" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" alt="promotional image for fujochud sticker" title="fujochud stickers available on my ko-fi"></a> <a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/bundle_nortluchi.jpg" alt="promotional image for slateship merch bundle"title="*23% off* norton x luchino merch bundle"></a></div>';
+  document.getElementById('lWrp').appendChild(x);
+}
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");

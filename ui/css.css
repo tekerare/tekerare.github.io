@@ -101,7 +101,9 @@ footer{background-repeat: no-repeat !important;}
   aside, main{ border:0;
     > div{ color: #000000 !important;}
   }
-  aside{background:url('theme/layout_lcontainer.png'); width: 204px; padding:5px 0px 0px 14px;}
+  aside{background:url('theme/layout_lcontainer.png'); width: 204px; padding:5px 0px 0px 14px;
+    > div{padding:0px 0px 5px 0px;}
+  }
   main{ background:url('theme/layout_rcontainer.png'); padding:0px 10px 0px 1px;width: 440px;
     hr{background: url('theme/hr_mobile.png'), no-repeat; background-position:top left; width:100%; height:4px;}
 	> div{margin:5px auto 5px auto; background:linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%); border:1px solid #000000; margin: 5px auto 5px; width:95%; box-shadow: inset 0px 0px 3px #ffffff;margin:5px auto 5px;}
@@ -200,15 +202,25 @@ footer{background-repeat: no-repeat !important;}
 .center{margin:0 auto;}
 .image{border:1px #000000 solid;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
+#eventsWidget, #kofiWidget{
+  > div{ margin: 0px 5px 0px 5px; border:1px solid #000000;}
+}
+#eventsWidget{ width:95%; border-style:solid !important; border-radius:5px; background:var(--salmon) !important; border-color:#87706d !important;
+  > div{background:url('backgrounds/reader_scrll.png') no-repeat top right 3px, url("backgrounds/dotted_paper.png"), #ffffff; height:100px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll;}
+  p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
+  h3{color:#6e3a37;}
+}
+@keyframes kofiWidgetShuffle{0%{transform: translatey(0%);}50%{transform: translatey(-100%);}100%{}}
+#kofiWidget{ 
+  
+  > div{overflow:hidden; max-height:160px;
+    img{max-width:100% !important; animation:kofiWidgetShuffle steps(1, end) infinite 15s;}
+   }
+}
 /*EXTENSION END*/
 /*RSS FEED START*/
 .rssBlock{background:url("backgrounds/dotted_paper.png")!important; border:3px #bcbcbc inset !important; border-radius:0px !important;padding:5px 0px 0px 0px; overflow-y: scroll; height:110px;}
 .feed-title{display:none;}
-#eventsWidget{ width:95%; border-style:solid !important; border-radius:5px; background:var(--salmon) !important; border-color:#87706d !important;
-  p{ padding:0px 5px 0px 5px !important; margin:3px;}
-  h3{color:#6e3a37;}
-  > div{background:url('backgrounds/reader_scrll.png') no-repeat top right 3px, url("backgrounds/dotted_paper.png"), #ffffff; box-shadow: #0000006b 0px 2px 5px inset; border:1px solid #000000;  border-radius:3px; margin: 0px 5px 0px 5px; height:90px; overflow-y:scroll;padding:5px 0px 5px 0px;}
-}
 /*RSS FEED END*/
 /*OFFSITE CUSTOMS START*/
 #CultofUsakumya {background:none !important; border:0 !important; 
