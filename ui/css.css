@@ -83,8 +83,10 @@ aside, main{border:1px #000000; box-sizing:border-box;
 main{ min-height:650px; border-style:dotted !important;
   a[href^="http"]:not(:has(img))::after {content: " ↗"}
 }
-aside{background:url('../ui/backgrounds/whitedotted.jpg'); width:204px; min-width:190px; border-style: dotted none dotted dotted; 
-  div, div{text-align:start}
+aside{background:url('../ui/backgrounds/whitedotted.jpg'); width:204px; min-width:190px; border-style: dotted none dotted dotted;
+  > div{ text-align:start color: #000000 !important;
+	div{margin:5px; !important}
+  }
   textarea{max-width:149px; min-width:149px;}
 }
 footer{background-repeat: no-repeat !important;}
@@ -98,12 +100,8 @@ footer{background-repeat: no-repeat !important;}
   #rContainer > h1, main > h1{background:url("theme/h1_bull.png") no-repeat center left, var(--jellyGradient)!important; width:auto !important; box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff; border:1px #36333b; border-style:solid none solid none !important; margin:0; color:#ffffff; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} text-shadow:-1px -1px 0 var(--h1BorderColor), 1px -1px 0 var(--h1BorderColor), -1px 1px 0 var(--h1BorderColor), 1px 1px 0 var(--h1BorderColor); padding:4px 4px 4px 23px; font-size:14px;}
   header{background:url('theme/layout_header_multi.png') top left, var(--headerLinkGraphic) !important; padding:0;}
   footer{background:url('theme/layout_bottom_multi.png'); height:132px;}
-  aside, main{ border:0;
-    > div{ color: #000000 !important;}
-  }
-  aside{background:url('theme/layout_lcontainer.png'); width: 204px; padding:5px 0px 0px 14px;
-    > div{padding:0px 0px 5px 0px;}
-  }
+  aside, main{ border:0;}
+  aside{background:url('theme/layout_lcontainer.png'); width: 204px; padding:5px 0px 0px 14px;}
   main{ background:url('theme/layout_rcontainer.png'); padding:0px 10px 0px 1px;width: 440px;
     hr{background: url('theme/hr_mobile.png'), no-repeat; background-position:top left; width:100%; height:4px;}
 	> div{margin:5px auto 5px auto; background:linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%); border:1px solid #000000; margin: 5px auto 5px; width:95%; box-shadow: inset 0px 0px 3px #ffffff;margin:5px auto 5px;}
@@ -202,18 +200,15 @@ footer{background-repeat: no-repeat !important;}
 .center{margin:0 auto;}
 .image{border:1px #000000 solid;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
-#eventsWidget, #kofiWidget{
-  > div{ margin: 0px 5px 0px 5px; border:1px solid #000000;}
-}
+#eventsWidget, #kofiWidget{> div{border:1px solid #000000;}}
 #eventsWidget{ width:95%; border-style:solid !important; border-radius:5px; background:var(--salmon) !important; border-color:#87706d !important;
   > div{background:url('backgrounds/reader_scrll.png') no-repeat top right 3px, url("backgrounds/dotted_paper.png"), #ffffff; height:100px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll;}
   p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
   h3{color:#6e3a37;}
 }
 @keyframes kofiWidgetShuffle{0%{transform: translatey(0%);}50%{transform: translatey(-100%);}100%{}}
-#kofiWidget{ 
-  
-  > div{overflow:hidden; max-height:160px;
+#kofiWidget{ background:var(--divSolid);
+  > div{overflow:hidden; max-height:160px; max-width:160px; margin:0 auto;
     img{max-width:100% !important; animation:kofiWidgetShuffle steps(1, end) infinite 15s;}
    }
 }
