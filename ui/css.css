@@ -39,7 +39,6 @@ audio:hover{filter:opacity(50%);}
 a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000; cursor:pointer;}
 p, h1, h2, h3, h4, span, details, quiet{display:block;}
 p, h1, h2, h3, h4, details, quiet{padding:0px 10px 0px 10px; display:block;}
-h2{font-family: "kiwisoda";}
 p, h1, h2, h4, details, span, li, td, dl{border:1px #000000;}
 h1, h2, h4{margin:0;}
 h3, h2, h1{border:1px var(--h1BorderColor);}
@@ -84,8 +83,8 @@ main{ min-height:650px; border-style:dotted !important;
   a[href^="http"]:not(:has(img))::after {content: " ↗"}
 }
 aside{background:url('../ui/backgrounds/whitedotted.jpg'); width:204px; min-width:190px; border-style: dotted none dotted dotted;
-  > div{ text-align:start color: #000000 !important;
-	div{margin:5px; !important}
+  > div{ text-align:start; color: #000000 !important;
+	div{margin:5px; !important;}
   }
   textarea{max-width:149px; min-width:149px;}
 }
@@ -97,7 +96,8 @@ footer{background-repeat: no-repeat !important;}
 #body aside, #singleBody main { > div{border-color:#949494;}}
 /*DEFAULT THEME START*/
 #body{ 
-  #rContainer > h1, main > h1{background:url("theme/h1_bull.png") no-repeat center left, var(--jellyGradient)!important; width:auto !important; box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff; border:1px #36333b; border-style:solid none solid none !important; margin:0; color:#ffffff; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} text-shadow:-1px -1px 0 var(--h1BorderColor), 1px -1px 0 var(--h1BorderColor), -1px 1px 0 var(--h1BorderColor), 1px 1px 0 var(--h1BorderColor); padding:4px 4px 4px 23px; font-size:14px;}
+  #rContainer > h1, main > h1{background:url("theme/h1_bull.png") no-repeat center left, var(--jellyGradient)!important; width:auto !important; box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff; border:1px #36333b; border-style:solid none solid none !important; margin:0; color:#ffffff; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} text-shadow:-1px -1px 0 var(--h1BorderColor), 1px -1px 0 var(--h1BorderColor), -1px 1px 0 var(--h1BorderColor), 1px 1px 0 var(--h1BorderColor); padding:4px 4px 4px 23px;}
+  h1, h2{font-size:14px;}
   header{background:url('theme/layout_header_multi.png') top left, var(--headerLinkGraphic) !important; padding:0;}
   footer{background:url('theme/layout_bottom_multi.png'); height:132px;}
   aside, main{ border:0;}
@@ -116,13 +116,14 @@ footer{background-repeat: no-repeat !important;}
 /*TREE THEME END*/
 #treeBody{
   h1, h2, h3, h4{padding:4px !important;}
+  h2{font-family: "kiwisoda";}
   h4, h3{margin: 10px 0px 0px 0px !important;}
   ul, div{border:1px #000000;}
   aside, main{border:1px #000000; background:var(--themeBG);
     > div, > ul, > ol{ background:#ffffffb0;}
   }
   aside > ul, aside > div, main > ul, main > div{ border-style: dotted none dotted dotted;}
-  aside{ width:240px; border-style:none dotted none none; text-align:center; padding:0px 0px 0px 5px;
+  aside{ width:240px; border-style:none dotted none none; padding:0px 0px 0px 5px;
 	h3, h4{border-style:dotted none none dotted !important;}
   }
   main{ width:348px; border:0; padding:0px 5px 0px 0px;
@@ -148,6 +149,7 @@ footer{background-repeat: no-repeat !important;}
 /*SINGLE THEME END*/
 /*FAUX WINDOW THEME START*/
 #fauxWindow{ padding:0px 0px 15px 0px;
+  h1, h2{font-family: "kiwisoda";}
   .panel-wrapper, header{background: var(--fauxWindowColor) !important; border:#000000 1px;}
   header{ height:77px !important; border-style:solid solid none solid; padding: 3px 3px 6px 3px !important; text-align:start;
 	button{background: url('icons/window_set.png') no-repeat, var(--fauxWindowColor); box-shadow:var(--fauxWindowBoxShadow); border:1px #000000 solid; min-height: var(--fauxWindowButtonSize); min-width:var(--fauxWindowButtonSize);margin:-0px -0px; pointer-events:auto;cursor:not-allowed;}
@@ -208,7 +210,7 @@ footer{background-repeat: no-repeat !important;}
 }
 @keyframes kofiWidgetShuffle{0%{transform: translatey(0%);}50%{transform: translatey(-100%);}100%{}}
 #kofiWidget{ background:var(--divSolid);
-  > div{overflow:hidden; max-height:160px; max-width:160px; margin:0 auto;
+  > div{overflow:hidden; max-height:160px; max-width:160px;
     img{max-width:100% !important; animation:kofiWidgetShuffle steps(1, end) infinite 15s;}
    }
 }

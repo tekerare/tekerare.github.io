@@ -3,10 +3,10 @@
   --browserTitle:#7d1010;
 }
 body{background: url('ui/jxstpom.png') no-repeat top left 2%, url('ui/jxstpom.png') no-repeat top right 2%, url('ui/bg.jpg'), #ffffff; background-attachment:fixed;}
-
 main{h1, h1 a{color:#ff2b41 !important;}}
 #fullRes {border: 0;}
-aside{background:url(../ui/backgrounds/gingham.gif) !important;}
+aside{background:url(../ui/backgrounds/gingham.gif) !important;
+  div > h2{ -webkit-text-stroke: 3px #ffffff; paint-order: stroke fill; color:#6e588c;}
 #checkpoint{
   background:url("ui/checkpoint.png") no-repeat;
   h1{text-shadow: 2px 2px 2px #ffffff,-2px -2px 2px #ffffff, 2px -2px 2px #ffffff, -2px 2px 2px #ffffff;}
