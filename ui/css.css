@@ -8,7 +8,7 @@
   --selectionColor:#00000030;
   --jellyGradient:linear-gradient(180deg, #c99dab 5%, #d46a86 39%, #e398b0 92%);
   --h1BorderColor:#000000;
-  --jellySolid:#a3083a;
+  --jellySolid:#000000;
   --salmon:#edcbc7;
   --headerLinkGraphic: url('theme/layout_header_portalshadow.png') no-repeat top 14px right 5px, url('theme/layout_header_portalunderlay.png') no-repeat top 14px right 5px, url('backgrounds/coldnonsense.png') no-repeat top 14px right 5px ;
   --divSolid:linear-gradient(0deg, #ededed 1%, #ffffff 30%);
