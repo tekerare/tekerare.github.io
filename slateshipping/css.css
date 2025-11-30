@@ -9,7 +9,6 @@ body{
   background-position:top left, top, top right, top;font-size:var(--fontSizeDesktop);
   margin: 0 auto;
 }
-h1{font-size:16px;}
 mark {background: #00000030;}
 #treeBody {h1, h2, h3, h4{a, a:visited{text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder); color:#ffffff;}}}
 body{background: url('../ui/backgrounds/moss.gif'); background-position: center !important;}

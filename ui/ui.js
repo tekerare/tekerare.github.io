@@ -5,8 +5,8 @@ let img;
 
 function enlarge(){
   document.getElementById('preview').style.display = 'block';
-  document.getElementById('fullRes').setAttribute('src', 'media/'+img);
-  document.getElementById('exLink').setAttribute('href', 'media/'+img);
+  document.getElementById('fullRes').setAttribute('src', img);
+  document.getElementById('exLink').setAttribute('href', img);
 }
 
 function readerUI(){

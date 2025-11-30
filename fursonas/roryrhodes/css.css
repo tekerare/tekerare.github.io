@@ -11,9 +11,10 @@
 }
 html{scroll-behavior: smooth; scrollbar-color: var(--jellySolid) #ffffff; scrollbar-width: auto;font-family: "crayon", sans-serif;}
 body{
+  background: url('bd.png') top center;
+  background-size: fit;
   min-width: 900px; margin: 0 auto;
   background-attachment:fixed;
-  background: url('bd.png') top center; background-size: fit;
   font-size:var(--fontSizeDesktop);
   box-shadow:inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff;
 }
@@ -68,6 +69,7 @@ footer{}
 .playlist dt:hover{ color:#ffffff;}
 #audio{margin:-2px 0px 0px 0px; width:100%;}
 .playlistchoose{ -webkit-text-stroke: 5px #000000; paint-order: stroke fill; font-size:27px;  bottom:3px; left:15px; color:#ffffff;}
+.gift01{}
 .tilt3{ transform:rotate(3deg);}
 .tiltnegative3{ transform:rotate(-3deg);}
 .tilt2{ transform:rotate(2deg);}

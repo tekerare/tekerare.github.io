@@ -34,7 +34,6 @@ hr {background-image: linear-gradient(to right, #00000000, #000000, #00000000);b
 audio{width:100%;filter:opacity(30%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
 center{img{max-width:400px;cursor:crosshair;}}
 img{max-width:100%;}
-.flex{width: 330px;}
 audio:hover{filter:opacity(50%);}
 a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000; cursor:pointer;}
 p, h1, h2, h3, h4, span, details, quiet{display:block;}
@@ -52,9 +51,9 @@ td{border-style:dotted dotted dotted dotted; img{border-radius:var(--roundedImg)
 b{color:var(--jellySolid);}
 textarea{margin:5px auto 5px auto; display: block; min-height:60px;font-family: "MS PGothic", sans-serif;font-size:12px;}
 table{width:100%;}
-th, td, .flex{img:hover{animation:selectBop .3s ease-in;}}
+.flex{img:hover{animation:selectBop .3s ease-in;}}
 th{background-color: var(--salmon) !important; text-align:start; color:#6e3a37; a{color:#6e3a37 !important;}}
-th, td{border:dotted 1px var(--h1BorderColor) !important; padding:3px 4px 3px 4px;}
+th, td{vertical-align:top; border:dotted 1px var(--h1BorderColor) !important; padding:3px 4px 3px 4px;}
 th, td, #body main > ul, h4, h3, h2, h1{ background:url("backgrounds/tone.png"); border:1px var(--h1BorderColor);}
 dt, dd{ padding:3px;}
 dl{ border:1px #000000; border-style: none none dotted none;}
@@ -123,23 +122,21 @@ footer{background-repeat: no-repeat !important;}
     > div, > ul, > ol{ background:#ffffffb0;}
   }
   aside > ul, aside > div, main > ul, main > div{ border-style: dotted none dotted dotted;}
-  aside{ width:240px; border-style:none dotted none none; padding:0px 0px 0px 5px;
+  aside{ width:190px; border-style:none dotted none none; padding:0px 0px 0px 5px;
 	h3, h4{border-style:dotted none none dotted !important;}
   }
-  main{ width:348px; border:0; padding:0px 5px 0px 0px;
+  main{ width: 100%; border:0; padding:0px 5px 0px 0px;
 	h3, h4{border-style: dotted dotted none none !important;}
 	> ul, > div{ border-style: dotted dotted dotted none;}
   }
   footer{background:url('theme/layout_bottom_tree.png');}
-  .banner{background-position:top right; width:225px; height:95px; border:none !important;}
+  .banner{width:100%; height:95px; border:none !important;}
 }
 /*TREE THEME END*/
 /*SINGLE THEME START*/
 #singleBody{ 
   iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
-  .panel-wrapper{ display:block;
-    img{border-radius:var(--roundedImg); display:block;}
-  }
+  .panel-wrapper{ display:block;}
   aside{border:none; min-width:0;}
   main{background:var(--themeBG) !important; width:588px !important; border:0 !important; padding:5px 0px 5px 0px;
     div { width:95% !important; border-radius:10px; margin:0 auto; margin:5px auto;}
@@ -155,13 +152,12 @@ footer{background-repeat: no-repeat !important;}
 	button{background: url('icons/window_set.png') no-repeat, var(--fauxWindowColor); box-shadow:var(--fauxWindowBoxShadow); border:1px #000000 solid; min-height: var(--fauxWindowButtonSize); min-width:var(--fauxWindowButtonSize);margin:-0px -0px; pointer-events:auto;cursor:not-allowed;}
     button:hover{box-shadow: inset -1px -1px #808080, inset 1px 1px , inset -2px -2px #ffffff, inset 2px 2px #ffffff;}
 	h1{background:0; background:var(--browserTitle); font-size:12px; margin:0 auto; color:#ffffff; padding:4px;}
-	.flex{width:100%;}
 	> div{ box-sizing:border-box; box-shadow: inset 0px -1px #0a0a0a, inset -0px -2px #808080;padding: 2px 3px 4px 3px !important;}
   }
   header, .panel-wrapper{box-shadow: var(--fauxWindowBoxShadow);}
   .panel-wrapper{border-style:none solid none solid; padding:4px !important; margin:0 auto; width:644px; cursor:default;
     ::selection{background:#00000020 !important;}
-	img{ max-width:100%; margin:0 auto; image-rendering:crisp-edges;}
+	img{ max-width:95%; margin:0 auto; image-rendering:crisp-edges;}
     ::selection{background:#00000000}
   }
   aside{border-style:inset dotted inset inset; border-color:var(--fauxWindowColor) #000000 var(--fauxWindowColor) var(--fauxWindowColor); border-width:3px 1px 3px 3px; min-width:220px; padding:0px 0px 0px 10px;
@@ -169,8 +165,7 @@ footer{background-repeat: no-repeat !important;}
     > div{ border:1px var(--h1BorderColor); border-style:dotted none dotted dotted; padding:1px; margin: 0px 0px 10px 0px;}
   }
   main{background:#ffffff; border:var(--fauxWindowColor); border-style:inset inset inset none !important; min-width:auto; min-width:407px;
-    h1, h1 a{font-family:"bazinga"; box-shadow:none !important; text-decoration:none;}
-	center{width:80%;margin:0 auto;}
+    h1, h1 a{ box-shadow:none !important; text-decoration:none;}
   }
   footer{height:0px;}
   .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;}
@@ -191,12 +186,15 @@ footer{background-repeat: no-repeat !important;}
 .imgBlock{background-size:cover !important; min-height:300px; border-radius:10px; border:1px solid #000000; image-rendering:smooth;}
 .a{top:-35px;right:-30px; transform:rotate(15deg);}
 #minimalistLinks{button{background-color:var(--salmon); margin:2px !important; background-position:top left; background-size:48px 48px; margin:10px 0px 0px 0px; height:48px;width:48px;border:1px #6e3a37 solid;border-radius:5px;} button:hover{animation:selectBop .3s ease-in;}}
-.flex{background:none !important; box-shadow:none !important; border:none !important; display:flex; margin:2px auto !important; padding: 0px !important;
+.flex{background:none !important; box-shadow:none !important; border:none !important; display:flex; width: 96%; margin:2px auto !important; padding: 0px !important;
   div{width:50%; img{max-width: 97% !important;}}
-  > img{width:50%; height:auto !important; cursor:zoom-in;}
+  > img{ width:50%; height: auto !important; cursor: zoom-in; margin: 0px 1px 1px 1px !important;}
 }
 .playlist{
   h3{background:url('../ui/icons/tune_icon.png') no-repeat left 3px top 3px, url('../ui/backgrounds/tone.png'); padding:0px 0px 0px 18px;}
+}
+.mediaList{ text-align:center;
+  img{height:150px; cursor:zoom-in;}
 }
 .tone{background:url("backgrounds/tone.png");}
 .center{margin:0 auto;}
