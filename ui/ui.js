@@ -23,8 +23,8 @@ function readerUI(){
   bbutt.setAttribute('target', '_parent');
   tbutt.setAttribute('href', '#header');
   bbutt.setAttribute('href', '#footer');
-  tbutt.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/top.png" alt="top" title="top" style="position:fixed;bottom:66px;right:0;">';
-  bbutt.innerHTML = '<img src="https://'+ siteURL +'/ui/user_int/bottom.png" alt="bottom" title="bottom" style="position:fixed;bottom:0;right:0;">';
+  tbutt.innerHTML = '<img src="https://'+ siteURL +'/ui/reader_ui/top.png" alt="top" title="top" style="position:fixed;bottom:66px;right:0;">';
+  bbutt.innerHTML = '<img src="https://'+ siteURL +'/ui/reader_ui/bottom.png" alt="bottom" title="bottom" style="position:fixed;bottom:0;right:0;">';
   document.body.appendChild(tbutt).appendChild(bbutt);
 }
 function badgeLink(){
@@ -60,7 +60,7 @@ function rssBlock(){
   const y = document.createElement("h1");
   y.innerHTML = 'Latest Site Update <a href="https://' + siteURL + '/update">(read more @ update log)</a> <img src="https://' + siteURL + 'ui/icons/flag.gif" alt="">';
   document.getElementById('rWrp').appendChild(y);
-  document.write('<div class="rssBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=2&showtitle=false&type=js"></script></div>');
+  document.write('<article class="rssBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=2&showtitle=false&type=js"></script></article>');
 }
 function logMap(){
   badgeLink();
@@ -89,8 +89,9 @@ function loadTheme(){
 	readerUI();
   }
   function spawnSDTitle(){
-    const sdtitle = document.createElement('center');
-    sdtitle.innerHTML = '<a href="."> <img src="ui/sdtitle.png" style=" max-height:200px;" alt="Back To Main Page" title="RETURN TO PORTAL"></a>';
+    const sdtitle = document.createElement('span');
+	sdtitle.setAttribute('style','text-align:center; font-size:25px;');
+    sdtitle.innerHTML = '<a href="." style=" text-decoration-line: none;"> <img src="ui/sdtitle.png" style=" max-height:200px;" alt="return to previous page" title="main page"></a>';
 	document.getElementsByTagName('main')[0].prepend(sdtitle);
   }
   switch(theme){
