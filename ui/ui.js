@@ -53,7 +53,7 @@ function kofiWidget(){
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");
-  x.innerHTML = '<table><tbody><tr><th colspan="2"> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>rss feed</a></th></tr><tr><td style="width:50%;"><a href="https://' + siteURL + '/log/">blog</a></td><td><a href="https://' + siteURL + '/jfashion/">fashion</a></td></tr><tr><td><a href="https://' + siteURL + '/art/">artwork</a></td><td><a href="https://' + siteURL + '/shrines">shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">music</a></td><td><a href="https://' + siteURL + '/update">update log</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">stream</a></td><td><a href="https://' + siteURL + '/about">about</a></td></tr></tbody></table>';
+  x.innerHTML = '<table><tbody><tr><th colspan="2" style="text-align:center;">/sub/ navigation</th></tr><tr><td style="width:42%;"><a href="https://' + siteURL + '/log/">blog</a></td><td><a href="https://' + siteURL + '/jfashion/">fashion</a></td></tr><tr><td><a href="https://' + siteURL + '/art/">artwork</a></td><td><a href="https://' + siteURL + '/shrines">shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">music</a></td><td><a href="https://' + siteURL + '/update">update log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>rss</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">stream</a></td><td><a href="https://' + siteURL + '/about">about</a></td></tr></tbody></table>';
   document.getElementById('lWrp').appendChild(x);
 }
 function rssBlock(){
