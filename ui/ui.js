@@ -53,7 +53,7 @@ function kofiWidget(){
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");
-  x.innerHTML = '<table><tbody><tr><th colspan="2"><a href="https://' + siteURL + '/update">update log</a> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>rss feed</a></th></tr><tr><td><a href="https://' + siteURL + '/log/">blog</a></td><td><a href="https://' + siteURL + '/microlog/">microlog</a></td></tr><tr><td><a href="https://' + siteURL + '/jfashion/">fashion</a></td><td><a href="https://' + siteURL + '/shrines">shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">my music</a></td><td><a href="https://' + siteURL + '/about">about the site</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">stream</a></td><td><a href="https://' + siteURL + '/art/">illustrations</a></td></tr></tbody></table>';
+  x.innerHTML = '<table><tbody><tr><th colspan="2"> / <a href="https://' + siteURL + '/rss/rss.xml" target="_blank" download>rss feed</a></th></tr><tr><td style="width:50%;"><a href="https://' + siteURL + '/log/">blog</a></td><td><a href="https://' + siteURL + '/jfashion/">fashion</a></td></tr><tr><td><a href="https://' + siteURL + '/art/">artwork</a></td><td><a href="https://' + siteURL + '/shrines">shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">music</a></td><td><a href="https://' + siteURL + '/update">update log</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">stream</a></td><td><a href="https://' + siteURL + '/about">about</a></td></tr></tbody></table>';
   document.getElementById('lWrp').appendChild(x);
 }
 function rssBlock(){
@@ -119,7 +119,7 @@ function loadTheme(){
 	case 4:
 	  findBody.setAttribute('id', 'fauxWindow');
 	  const x = document.getElementById('header');
-	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../microlog/">Microlog</a> <a href="../shrines">Shrines</a> <a href="../art/">Illustrations</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../log/update/">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:0px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
+	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../shrines">Shrines</a> <a href="../art/">Art</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../log/update/">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:0px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
       spawnSDTitle();
       readerUI();
 	break;
