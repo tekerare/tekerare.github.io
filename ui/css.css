@@ -83,14 +83,13 @@ main{ min-height:650px; border-style:dotted !important;
 }
 aside{background:url('../ui/backgrounds/whitedotted.jpg'); width:204px; min-width:190px; border-style: dotted none dotted dotted;
   > article{ text-align:start; color: #000000 !important;
-	article{margin:5px; !important;}
+	article{margin:5px !important;}
   }
   textarea{max-width:149px; min-width:149px;}
 }
 footer{background-repeat: no-repeat !important;}
 .panel-wrapper{display:flex; margin:0 auto;}
 /*GLOBAL HTML THEME END*/
-#body, #treeBody, #singleBody, #fauxWindow{box-shadow: inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff, inset 0px 0px 33px 7px #ffffff;}
 #body main article, #body aside > div, #singleBody main article {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; margin:0px auto 10px auto; border: solid 1px; border-radius:4px;}
 #body aside, #singleBody main { > article, > div{border-color:#949494;}}
 /*DEFAULT THEME START*/
@@ -178,7 +177,7 @@ footer{background-repeat: no-repeat !important;}
 /*ANIMATIONS END*/
 /*EXTENSION START*/
 #preview{background:#000000b5; background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none; cursor:zoom-out; padding:5vh 0px 4vh 0px; font-family:hack; font-size:20px;}
-#fullRes{ max-height:80vh; 0 auto; border:#ffffff 1px solid;}
+#fullRes{ max-height:80vh; border:#ffffff 1px solid;}
 .new{background:url('backgrounds/updatetile.png'), url('backgrounds/tone.png');}
 .imgBlock{background-size:cover !important; min-height:300px; border-radius:10px; border:1px solid #000000; image-rendering:smooth;
   div{ font-family:hack !important; h1, h2, h3{ font-family:hack; font-size:20px !important; border-style:dotted;} h1 a, h2 a, h3 a{ transition:.5s ease;}  h1 a:hover, h2 a:hover, h3 a:hover{letter-spacing:2px; color:#000000 !important;transition:.5s ease;} font-size:14px; padding: 15px 20px 10px 20px; box-sizing:border-box; background:#ffffffe0; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease; filter:opacity(0%); overflow:hidden; -webkit-text-stroke: 3px #ffffff; paint-order: stroke fill;}
