@@ -71,8 +71,7 @@ function loadTheme(){
   function htmlBse(){
 	const x = document.createElement("map");
 	const y = document.createElement("img");
-	const bottommap = document.createElement("map");
-	const s = document.createElement("img");
+	const footer = document.createElement("div");
 	y.setAttribute('src', 'https://'+ siteURL + '/ui/theme/layout_top_transparent.gif');
 	y.setAttribute('usemap', '#top_map');
 	x.setAttribute('name','top_links');
@@ -80,12 +79,8 @@ function loadTheme(){
 	x.setAttribute('title','[Click here to front page]');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="389,19,631,89">';
 	document.getElementById('header').appendChild(x).appendChild(y);
-	s.setAttribute('src', 'https://'+ siteURL + '/ui/theme/layout_bottom_transparent.gif');
-	s.setAttribute('usemap', '#bottom_map');
-	bottommap.setAttribute('name','bottom_links');
-	bottommap.setAttribute('id','bottom_map');
-	bottommap.innerHTML = '<area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto:' + mailAddress + '" target="_parent"><area alt="[Home]" title="[Home]" href="https://'+ siteURL +'" coords="131,49,182,95" shape="rect" target="_parent"><area alt="[Log]" title="[Log]" href="https://' + siteURL + '/log/" coords="240,57,270,85" shape="rect" target="_parent"><area alt="[TOS/International]" title="[TOS/International]" href="https://' + siteURL + '/art/" coords="84,62,117,88" shape="rect"  target="_blank"><area alt="[My Music]" title="[My Music]" href="https://' + siteURL + '/music/" coords="196,58,227,86" shape="rect" target="_parent">';
-	document.getElementById('footer').appendChild(bottommap).appendChild(s);
+	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>/home/</button></a><a href="https://'+ siteURL +'/log" target="_parent"><button>/log/</button></a><a href="https://'+ siteURL +'/shrines" target="_parent"><button>/shrines</button></a><a href="https://'+ siteURL +'/art/" target="_parent"><button>/art/</button></a><a href="https://'+ siteURL +'/music/" target="_parent"><button>/music/</button></a><a href="https://'+ siteURL +'/stream/" target="_parent"><button>/stream/</button></a><a href="https://'+ siteURL +'/update" target="_parent"><button>/update</button></a><a href="https://'+ siteURL +'/about" target="_parent"><button>/about</button></a>';
+	document.getElementById('footer').appendChild(footer);
 	readerUI();
   }
   function spawnSDTitle(){
