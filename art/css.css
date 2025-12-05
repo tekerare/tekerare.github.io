@@ -1,12 +1,12 @@
 html{box-shadow:inset 0px 0px 15px 7px #000000;}
 body{
-  background: url("ui/bg.png") top right -60px no-repeat, url("../ui/backgrounds/gravel.jpg") repeat-x, linear-gradient(#00000000, #00000000 10%, #000000), url("../ui/backgrounds/space.jpg"); 
-  animation:bgPan linear infinite 23s;
+  background: url("ui/bg.png") top right -60px no-repeat, url("../ui/backgrounds/water.jpg") repeat-x, linear-gradient(#00000000, #00000000 10%, #000000), url("../ui/backgrounds/space_mono.jpg");
+  animation:bgPan linear infinite 50s;
   background-attachment:fixed;
   background-size: auto, auto, auto, auto;
 }
-#lWrp{background: linear-gradient(#0000008c), url('../ui/backgrounds/metalplates.png');}
 @keyframes bgPan{
   0%  {background-position: top right -60px, right 0px bottom, top left, right 0px bottom;}
   100%{background-position: top right -60px, right -1600px bottom, top left, right -690px bottom;}
 }
+#sdTitle{image-rendering:crisp-edges;}
