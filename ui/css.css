@@ -5,6 +5,7 @@
 :root{
   --asideBackground:url('backgrounds/whitedotted.jpg');
   --mainBackground:#dddddd;
+  --singleMainBackground:url('backgrounds/whitedotted.jpg');
   --linkColor:#000000;
   --selectionColor:#00000030;
   --jellyGradient:linear-gradient(180deg, #ffffff 5%, #d41e1e 39%, #e36868 92%);
@@ -122,7 +123,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
   iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
   aside{display:none;}
   #lWrp{ border:none; min-width:0;}
-  #rWrp{background:var(--mainBackground) !important; width:100%; border:0 !important; padding:5px 0px 5px 0px; margin:0px 6px 0px 14px;
+  #rWrp{background:var(--singleMainBackground) !important; width:100%; border:0 !important; padding:5px 0px 5px 0px; margin:0px 6px 0px 14px;
     article { width:95% !important; border-radius:10px; margin:0 auto; margin:5px auto;}
   }
 }

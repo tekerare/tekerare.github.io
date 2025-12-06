@@ -1,5 +1,7 @@
 :root{
   --asideBackground:linear-gradient(#000000b3), url('../ui/backgrounds/metalplates.png');
+  --mainBackground:#ffffff;
+  --singleMainBackground:linear-gradient(#000000b3), url('../ui/backgrounds/metalplates.png');
 }
 
 body{
