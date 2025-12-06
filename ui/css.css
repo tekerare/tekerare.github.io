@@ -6,7 +6,7 @@
   --mainBackground:#dddddd;
   --linkColor:#000000;
   --selectionColor:#00000030;
-  --jellyGradient:linear-gradient(180deg, #ffffff 5%, #aa88bd 39%, #ceb6db 92%);
+  --jellyGradient:linear-gradient(180deg, #ffffff 5%, #d41e1e 39%, #e36868 92%);
   --h1BorderColor:#000000;
   --salmon:#edcbc7;
   --headerLinkGraphic: url('theme/layout_header_portalshadow.png') no-repeat top 14px right 5px, url('theme/layout_header_portalunderlay.png') no-repeat top 14px right 5px, url('backgrounds/coldnonsense.png') no-repeat top 14px right 5px ;
@@ -163,9 +163,9 @@ footer{height:80px; background-repeat: no-repeat !important;}
 .new{background:url('backgrounds/updatetile.png'), url('backgrounds/tone.png');}
 .imgBlock{background-size:cover !important; min-height:300px; border-radius:10px; border:1px solid #000000 !important; color: #ffffff; image-rendering:smooth;
   a{color: #ffffff;}
-  div{ font-family:hack !important; h1, h2, h3{ font-family:hack; font-size:20px !important; border-style:dotted;} h1 a, h2 a, h3 a{ transition:.5s ease;}  h1 a:hover, h2 a:hover, h3 a:hover{letter-spacing:2px; transition:.5s ease;} font-size:14px; padding: 15px 15px 10px 15px; box-sizing:border-box; background:#000000e0 !important; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease; filter:opacity(0%); overflow:hidden;}
+  div{ font-family:hack !important; h1, h2, h3{ font-family:hack; font-size:20px !important; border-style:dotted;} h1 a, h2 a, h3 a{ transition:.5s ease;}  h1 a:hover, h2 a:hover, h3 a:hover{letter-spacing:2px; transition:.5s ease;} font-size:14px; padding: 15px 15px 10px 15px !important; box-sizing:border-box; background:#000000e0 !important; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease; filter:opacity(0%); overflow:hidden;}
 }
-@media screen and (min-width:790px){.imgBlock:hover div{box-shadow: inset 1px 1px 0px 1px var(--salmon), inset -1px -1px 0px 1px var(--salmon); animation-name:imgSummAnm; filter:opacity(100%);}}
+@media screen and (min-width:790px){.imgBlock:hover div{box-shadow: inset 1px 1px 0px 1px var(--bodyArticleH1), inset -1px -1px 0px 1px var(--bodyArticleH1) !important; animation-name:imgSummAnm; filter:opacity(100%);}}
 .flex{background:none !important; box-shadow:none !important; border:none !important; display:flex; width: 96%; margin:2px auto !important; padding: 0px !important;
   > div, > article{width:50%; margin:0px 1px 0px 1px !important; img{max-width: 97% !important;}}
   > img{ width:50%; height: auto !important; cursor: zoom-in; margin: 0px 1px 1px 1px !important;}
@@ -181,10 +181,9 @@ footer{height:80px; background-repeat: no-repeat !important;}
 .image{border:1px #000000 solid;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
 #eventsWidget, #kofiWidget{> div{border:1px solid #000000;}}
-#eventsWidget{ width:95%; border-style:solid !important; border-radius:5px; background:var(--salmon) !important; border-color:#87706d !important;
+#eventsWidget{ width:95%; border-style:solid !important; border-radius:5px; background:var(--divSolid) !important;
   > div{background:url('backgrounds/reader_scrll.png') no-repeat top right 3px, url("backgrounds/dotted_paper.png"), #ffffff; margin:3px; height:100px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll;}
   p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
-  h3{color:#6e3a37;}
 }
 @keyframes kofiWidgetShuffle{0%{transform: translatey(0%);}50%{transform: translatey(-100%);}100%{}}
 #kofiWidget{ background:var(--divSolid);
