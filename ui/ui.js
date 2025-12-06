@@ -57,10 +57,7 @@ function browsePosts(){
   document.getElementById('lWrp').appendChild(x);
 }
 function rssBlock(){
-  const y = document.createElement("h1");
-  y.innerHTML = 'Latest Site Update <a href="https://' + siteURL + '/update">(read more @ update log)</a> <img src="https://' + siteURL + 'ui/icons/flag.gif" alt="">';
-  document.getElementById('rWrp').appendChild(y);
-  document.write('<article class="rssBlock"><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=2&showtitle=false&type=js"></script></article>');
+  document.write('<article id="rss-feed"><h2>latest site update <a href="https://' + siteURL + '/update">(read more @ update log)</a> <img src="https://' + siteURL + 'ui/icons/flag.gif" alt=""></h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=2&showtitle=false&type=js"></script></div></article>');
 }
 function logMap(){
   badgeLink();
@@ -68,7 +65,7 @@ function logMap(){
 }
 function loadTheme(){
   const findBody = document.getElementById('body');
-  function htmlBse(){
+  function defaultHtmlBase(){
 	const x = document.createElement("map");
 	const y = document.createElement("img");
 	const footer = document.createElement("div");
@@ -94,15 +91,15 @@ function loadTheme(){
 	  readerUI();
 	break;
 	case 1:
-	  htmlBse();
+	  defaultHtmlBase();
 	 return;
 	break;
 	case 2:
-	  htmlBse();
+	  defaultHtmlBase();
 	  spawnSDTitle();
 	break;
 	case 3:
-	  htmlBse();
+	  defaultHtmlBase();
 	  findBody.setAttribute('id', 'singleBody');
 	  const y = document.createElement('a');
       y.setAttribute('href', '.');
@@ -113,7 +110,7 @@ function loadTheme(){
 	case 4:
 	  findBody.setAttribute('id', 'fauxWindow');
 	  const x = document.getElementById('header');
-	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../shrines">Shrines</a> <a href="../art/">Art</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../update">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:0px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
+	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../shrines">Shrines</a> <a href="../art/">Art</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../update">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
       spawnSDTitle();
       readerUI();
 	break;
