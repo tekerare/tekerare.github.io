@@ -118,8 +118,8 @@ footer{height:80px; background-repeat: no-repeat !important;}
 #singleBody{ 
   iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
   .panel-wrapper{ display:block; background:url('../ui/theme/treebody_lBorder.png') left top repeat-y, url('../ui/theme/treebody_rBorder.png') right top repeat-y; padding:0px 22px 0px 30px;}
-  aside{border:none; min-width:0;}
-  main{background:var(--asideBackground) !important; width:100%; border:0 !important; padding:5px 0px 5px 0px;
+  #lWrp{ border:none; min-width:0;}
+  main{background:var(--mainBackground) !important; width:100%; border:0 !important; padding:5px 0px 5px 0px;
     article { width:95% !important; border-radius:10px; margin:0 auto; margin:5px auto;}
   }
 }
