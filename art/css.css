@@ -9,7 +9,7 @@ body{
   background-size: auto, auto, auto, auto;
 }
 @keyframes bgPan{
-  0%  {background-position: top left, top left, top right -60px, right 0px bottom, top left, right 0px bottom;}
+  0%{background-position: top left, top left, top right -60px, right 0px bottom, top left, right 0px bottom;}
   100%{background-position: top left, top left, top right -60px, right -1600px bottom, top left, right -690px bottom;}
 }
 #sdTitle{image-rendering:crisp-edges;}

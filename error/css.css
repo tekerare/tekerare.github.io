@@ -1,0 +1,7 @@
+body{background: url('../ui/backgrounds/grain-tile.gif');}
+#rWrp{background:url('../ui/backgrounds/1stpai.jpg') !important; animation:bgPan linear infinite 10s;
+}
+@keyframes bgPan{
+  0%{background-position: top 0px right;}
+  100%{background-position: top -690px right;}
+}
