@@ -1,17 +1,17 @@
 :root{
-  --asideBackground:linear-gradient(#000000b3), url('../ui/backgrounds/metalplates.png');
-  --mainBackground:#ffffff;
-  --singleMainBackground:linear-gradient(#000000b3), url('../ui/backgrounds/metalplates.png');
+  --asideBackground:#f4f4f4;
+  --mainBackground:#f4f4f4;
+  --singleMainBackground:#f4f4f4;
 }
 
 body{
-  background: linear-gradient(#000000, #00000000 5%, #00000000 95%, #000000), linear-gradient(90deg, #000000, #00000000 5%, #00000000 95%, #000000), url("ui/bg.png") top right -60px no-repeat, url("../ui/backgrounds/water.jpg") repeat-x, linear-gradient(#00000000, #00000000 10%, #000000), url("../ui/backgrounds/space_mono.jpg");
+  background: linear-gradient(#000000, #00000000 5%, #00000000 95%, #000000), linear-gradient(90deg, #000000, #00000000 5%, #00000000 95%, #000000), url("ui/bg.png") top right -60px no-repeat, url("ui/U25U.png") no-repeat, url("../ui/backgrounds/water.jpg") repeat-x, linear-gradient(#00000000, #00000000 10%, #000000), url("../ui/backgrounds/space_mono.jpg");
   animation:bgPan linear infinite 50s;
   background-attachment:fixed;
   background-size: auto, auto, auto, auto;
 }
 @keyframes bgPan{
-  0%{background-position: top left, top left, top right -60px, right 0px bottom, top left, right 0px bottom;}
-  100%{background-position: top left, top left, top right -60px, right -1600px bottom, top left, right -690px bottom;}
+  0%{background-position: top left, top left, top right -60px, left -150px bottom 130px, right 0px bottom, top left, right 0px bottom;}
+  100%{background-position: top left, top left, top right -60px, left 1450px bottom 130px, right -1600px bottom, top left, right -690px bottom;}
 }
 #sdTitle{image-rendering:crisp-edges;}
