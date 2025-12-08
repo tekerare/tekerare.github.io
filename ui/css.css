@@ -189,9 +189,10 @@ footer{height:80px; background-repeat: no-repeat !important;}
 .scallop{ border-width: 7px !important;border-style: solid !important;border-image: url("backgrounds/scallop_white.png") 8 fill round !important;}
 .altm1{ height:150px; font-size:17px; background:none !important; border:none !important; box-shadow:none !important;
   li:nth-child(odd){background:var(--lightSalmon);}
+  a{transition:.3s ease-in-out;}a:hover{letter-spacing:3px;}
 }
 .tone{background:url("backgrounds/tone.png");}
-.center{margin:0 auto;}
+.center{margin:0 auto !important;}
 .image{border:1px #000000 solid;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
 #eventsWidget, #kofiWidget{> div{border:1px solid #000000;}}
