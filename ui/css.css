@@ -47,7 +47,7 @@ article, div, p, h1, h2, h4, details, span, ul, ol, li, td, dl{border:1px #00000
 h3, h2, h1, h4{border:1px var(--h1BorderColor); margin:0; color:#00000090; padding:0px 4px 0px 4px; text-align:start; margin: 5px 0px 5px 0px; position:relative;}
 details{padding:10px;}
 ul{margin:0px 0px 0px 0px; padding:3px 0px 3px 23px;}
-ol{list-style-type: hiragana; margin:3px; padding-left:25px;}
+ol{list-style-type: hiragana; margin:3px;}
 ul{list-style-type: "→ ";}
 li {margin:0px 0px 0px 0px; text-align:start;}
 div, article{position:relative;}
@@ -190,6 +190,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
 .altm1{ height:150px; font-size:17px; background:none !important; border:none !important; box-shadow:none !important;
   li:nth-child(odd){background:var(--lightSalmon);}
   a{transition:.3s ease-in-out;}a:hover{letter-spacing:3px;}
+  ol{padding-left:25px;}
 }
 .tone{background:url("backgrounds/tone.png");}
 .center{margin:0 auto !important;}
