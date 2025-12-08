@@ -82,7 +82,7 @@ function loadTheme(){
   }
   function spawnSDTitle(){
     const sdtitle = document.createElement('span');
-	sdtitle.setAttribute('style','text-align:center; font-size:25px;');
+	sdtitle.setAttribute('id' , 'sdTitle');
     sdtitle.innerHTML = '<a href="." style=" text-decoration-line: none;"> <img src="ui/sdtitle.png" id="sdTitle" style="max-height:200px;" alt="return to previous page" title="main page"></a>';
 	document.getElementsByTagName('main')[0].prepend(sdtitle);
   }
