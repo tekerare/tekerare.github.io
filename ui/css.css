@@ -94,27 +94,27 @@ footer{height:80px; background-repeat: no-repeat !important;}
 .panel-wrapper{display:flex; margin:0 auto;}
 /*GLOBAL HTML THEME END*/
 #body, #singleBody{.panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y;} header{ text-align:end;}}
-#body main article, #body aside > div, #singleBody main article {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; margin:0px auto 10px auto; border: solid 1px; border-radius:4px;}
+#body aside > div {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; margin:0px auto 10px auto; border: solid 1px; border-radius:4px;}
 #body aside, #singleBody main { > article, > div{border-color:#949494;}}
 #body, #singleBody{
+  h1, h2{font-size:15px;}
   header, footer{image-rendering:crisp-edges; button{color:#bfbfbf; margin:0px 1px 0px 1px; box-shadow:0px 1px 0px 0px #9c9c9c; background: linear-gradient(#7a7a7a, #606060, #4a4a4a); border:1px solid #303030; padding:2px; border-radius:3px;} button:hover{background: linear-gradient(#4a4a4a, #606060, #7a7a7a);}}
   header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important;}
   footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
+  article{ backdrop-filter:blur(1px); margin:5px auto 5px auto; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff 100%); border-radius:5px; border:1px solid #000000; margin: 5px auto 5px; width:95%; box-shadow: inset 0px 0px 7px #ffffff, inset 0px 0px 7px #ffffff;margin:5px auto 5px; padding:5px;
+    h1, h2{ text-shadow: -1px -1px 0 var(--bodyArticleH1), 1px -1px 0 var(--bodyArticleH1), -1px 1px 0 var(--bodyArticleH1), 1px 1px 0 var(--bodyArticleH1); background: url('theme/art_h1-1.gif') no-repeat top left, linear-gradient(90deg, var(--bodyArticle), #00000000, #00000000); background-size:20px, auto; height:19px; margin:0px 0px 4px 0px; color:#ffffff; padding:1px 0px 0px 24px;
+	  a {color: #ffffff !important; font-size: 11px; opacity: 0.5;}
+    } 
+    > div{background:#ffffff; box-shadow:inset 0px 0px 3px -1px #000000; border: #787878 1px solid; padding:0px;}
+  }
 }
 /*DEFAULT THEME START*/
 #body{
-  h1, h2{font-size:14px;}
   aside, main{ border:0;}
   aside{margin:0 0px 0px 14px; padding:5px 0px 0px 0px; max-width:216px;}
   main{ background:url('theme/borderhighlight.png') top left repeat-y, var(--mainBackground); margin:0px 6px 0px 0px; border:1px #000000; border-style:none none none solid !important; padding:5px 0px 0px 1px; width: 100%;
     > h1{ letter-spacing:1px; background:url("theme/h1_bull.png") no-repeat center left, var(--jellyGradient)!important; width:auto !important; box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff; border:1px #36333b; border-style:solid none solid none !important; margin:0; color:#ffffff; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} text-shadow:-1px -1px 0 var(--h1BorderColor), 1px -1px 0 var(--h1BorderColor), -1px 1px 0 var(--h1BorderColor), 1px 1px 0 var(--h1BorderColor); padding:4px 4px 4px 23px;}
     hr{background: url('theme/hr_mobile.png'), no-repeat; background-position:top left; width:100%; height:4px;}
-	> article{ backdrop-filter:blur(1px); margin:5px auto 5px auto; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff 100%); border:1px solid #000000; margin: 5px auto 5px; width:95%; box-shadow: inset 0px 0px 7px #ffffff, inset 0px 0px 7px #ffffff;margin:5px auto 5px; padding:5px;
-	  h1, h2{text-shadow: -1px -1px 0 var(--bodyArticleH1), 1px -1px 0 var(--bodyArticleH1), -1px 1px 0 var(--bodyArticleH1), 1px 1px 0 var(--bodyArticleH1); background: url('theme/art_h1-1.gif') no-repeat top left, linear-gradient(90deg, var(--bodyArticle), #00000000, #00000000); background-size:20px, auto; height:19px; margin:0px 0px 4px 0px; color:#ffffff; padding:1px 0px 0px 24px;
-	    a {color: #ffffff !important; font-size: 11px; opacity: 0.5;}
-	  } 
-	  > div{background:#ffffff; box-shadow:inset 0px 0px 3px -1px #000000; border: #787878 1px solid; padding:0px;}
-	}
 	li { margin:0px 10px 0px 0px;}
   }
 }
@@ -125,7 +125,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
   aside{display:none;}
   #lWrp{ border:none; min-width:0;}
   #rWrp{background:var(--singleMainBackground) !important; width:100%; border:0 !important; padding:5px 0px 5px 0px; margin:0px 6px 0px 14px;
-    article { width:95% !important; border-radius:10px; margin:0 auto; margin:5px auto;}
+    article { width:95% !important; margin:0 auto; margin:5px auto;}
   }
 }
 /*SINGLE THEME END*/

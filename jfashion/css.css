@@ -1,6 +1,7 @@
 /* GLOBAL ROOT */
 :root{
   --asideBackground: url('../ui/theme/borderhighlight.png') top left repeat-y, url('lOverhang/fashion.png') no-repeat top left, url('../ui/backgrounds/gobelin.gif');
+  --singleMainBackground:url('backgrounds/gobelin.gif');
   --mainBackground:url('backgrounds/gobelin.gif');
   --headingBorder:#000000;
   --boldTxt:#4b4d00;
