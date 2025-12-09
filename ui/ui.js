@@ -76,7 +76,7 @@ function loadTheme(){
 	x.setAttribute('title','[Click here to front page]');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="11,21,249,88">';
 	document.getElementById('header').appendChild(x).appendChild(y);
-	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>/home/</button></a><a href="https://'+ siteURL +'/log" target="_parent"><button>/log/</button></a><a href="https://'+ siteURL +'/shrines" target="_parent"><button>/shrines</button></a><a href="https://'+ siteURL +'/art/" target="_parent"><button>/art/</button></a><a href="https://'+ siteURL +'/music/" target="_parent"><button>/music/</button></a><a href="https://'+ siteURL +'/stream/" target="_parent"><button>/stream/</button></a><a href="https://'+ siteURL +'/update" target="_parent"><button>/update</button></a><a href="https://'+ siteURL +'/about" target="_parent"><button>/about</button></a>';
+	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>/home/</button></a><a href="https://'+ siteURL +'/log" target="_parent"><button>/log/</button></a><a href="https://'+ siteURL +'/shrines" target="_parent"><button>/shrines</button></a><a href="https://'+ siteURL +'/jfashion" target="_parent"><button>/jfashion</button></a><a href="https://'+ siteURL +'/art/" target="_parent"><button>/art/</button></a><a href="https://'+ siteURL +'/music/" target="_parent"><button>/music/</button></a><a href="https://'+ siteURL +'/stream/" target="_parent"><button>/stream/</button></a><a href="https://'+ siteURL +'/update" target="_parent"><button>/update</button></a><a href="https://'+ siteURL +'/about" target="_parent"><button>/about</button></a>';
 	document.getElementById('footer').appendChild(footer);
 	readerUI();
   }
@@ -110,7 +110,7 @@ function loadTheme(){
 	case 4:
 	  findBody.setAttribute('id', 'fauxWindow');
 	  const x = document.getElementById('header');
-	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../shrines">Shrines</a> <a href="../art/">Art</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../update">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
+	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../shrines">Shrines</a> <a href="../jfashion">Fashion</a> <a href="../art/">Art</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../update">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
       spawnSDTitle();
       readerUI();
 	break;

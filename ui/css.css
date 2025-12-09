@@ -98,7 +98,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
 #body aside, #singleBody main { > article, > div{border-color:#949494;}}
 #body, #singleBody{
   h1, h2{font-size:15px;}
-  header, footer{image-rendering:crisp-edges; button{color:#bfbfbf; margin:0px 1px 0px 1px; box-shadow:0px 1px 0px 0px #9c9c9c; background: linear-gradient(#7a7a7a, #606060, #4a4a4a); border:1px solid #303030; padding:2px; border-radius:3px;} button:hover{background: linear-gradient(#4a4a4a, #606060, #7a7a7a);}}
+  header, footer{image-rendering:crisp-edges; button{color:#000000; margin:0px 1px 0px 1px; box-shadow:0px 1px 0px 0px #9c9c9c; background: linear-gradient(#7a7a7a, #606060, #4a4a4a); border:1px solid #303030; padding:2px; border-radius:3px;} button:hover{background: linear-gradient(#4a4a4a, #606060, #7a7a7a);}}
   header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important;}
   footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
   article{ backdrop-filter:blur(1px); margin:5px auto 5px auto; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff 100%); border-radius:5px; border:1px solid #000000; margin: 5px auto 5px; width:95%; box-shadow: inset 0px 0px 7px #ffffff, inset 0px 0px 7px #ffffff;margin:5px auto 5px; padding:5px;
