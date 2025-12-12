@@ -5,7 +5,7 @@ window.onload = function(){
   eventWidget();
   const z = document.createElement('span');
   z.setAttribute('style' , 'text-align:center; cursor:not-allowed;');
-  z.innerHTML = '<a href="https://web.archive.org/web/20040730071408fw_/http://omoh.clayangel.net/" target="_blank"><img src="../ui/images/yaoi_yuri.jpg" alt="Yaoi &amp; yuri support on the web - open your mind, open your heart." title="Yaoi &amp; yuri support on the web - open your mind, open your heart." style="border:1px #000000 solid; max-width:100%;"></a>';
+  z.innerHTML = '<a href="https://web.archive.org/web/20040730071408fw_/http://omoh.clayangel.net/" target="_blank"><img src="https://' + siteURL + '/media/yaoi_yuri.jpg" alt="Yaoi &amp; yuri support on the web - open your mind, open your heart." title="Yaoi &amp; yuri support on the web - open your mind, open your heart." style="border:1px #000000 solid; max-width:100%;"></a>';
   document.getElementById('lWrp').appendChild(z);
   y.innerHTML = 'SLATESHIPPING - norton x luchino church @ texaskissrhinestone';
 }
