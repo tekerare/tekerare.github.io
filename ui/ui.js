@@ -41,7 +41,7 @@ function galleryWidget(){
 function eventWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
-  x.innerHTML = '<h3>upcoming booths</h3><div id="eventsList"><quiet style="text-align:center;">nearest &rarr; distant</quiet><ul><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx (june 06-07)</li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/art/merch" target="_parent">/art/</a></p>';
+  x.innerHTML = '<h3>upcoming booths</h3><div id="eventsList"><quiet style="text-align:center;">nearest &rarr; distant</quiet><ul><li><a href="https://linktr.ee/zakicon" target="_blank">zakicon</a> @ friendswood tx<br>(jan 09-11)</li><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx<br>(june 06-07)</li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/art/merch" target="_parent">/art/</a></p>';
   document.getElementById('lWrp').appendChild(x);
 }
 function kofiWidget(){
