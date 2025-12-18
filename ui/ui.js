@@ -1,4 +1,4 @@
-const siteURL = 'texaskissrhinestone.github.io';
+const siteURL = 'tekerare.github.io';
 const mailAddress = '0ekekddddd@protonmail.com';
 
 let img;
@@ -29,7 +29,7 @@ function readerUI(){
 }
 function badgeLink(){
   const x = document.createElement("div");
-  x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="texas kiss rhinestone: homepage" title="TEXAS KISS RHINESTONE"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="texas kiss rhinestone: homepage" title="TEXAS KISS RHINESTONE"></a></textarea><quiet style="font-size:10px;">Authenticated for badge-represented linkage of TKR. This code allows updates across links.</quiet>';
+  x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></textarea><quiet style="font-size:10px;">Authenticated for badge-represented linkage of TKR. This code allows updates across links.</quiet>';
   document.getElementById('lWrp').appendChild(x);
 }
 function galleryWidget(){
@@ -57,7 +57,7 @@ function browsePosts(){
   document.getElementById('lWrp').appendChild(x);
 }
 function rssBlock(){
-  document.write('<article id="rss-feed"><h2>latest site update <a href="https://' + siteURL + '/update">(read more @ update log)</a> <img src="https://' + siteURL + 'ui/icons/flag.gif" alt=""></h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2Ftexaskissrhinestone.github.io%2Frss%2Frss.xml&limit=2&showtitle=false&type=js"></script></div></article>');
+  document.write('<article id="rss-feed"><h2>latest site update <a href="https://' + siteURL + '/update">(read more @ update log)</a> <img src="https://' + siteURL + 'ui/icons/flag.gif" alt=""></h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2F' + siteURL + '%2Frss%2Frss.xml&limit=2&showtitle=false&type=js"></script></div></article>');
 }
 function logMap(){
   badgeLink();
