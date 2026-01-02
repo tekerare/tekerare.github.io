@@ -34,7 +34,7 @@ function badgeLink(){
 }
 function galleryWidget(){
   const x = document.createElement('div');
-  x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/tadc_digitalrave.jpg" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
+  x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/2025_01_02-pomnifashion.jpg" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
   document.getElementById('lWrp').appendChild(x);
 }
 
