@@ -188,7 +188,6 @@ footer{height:80px; background-repeat: no-repeat !important;}
 }
 .scallop{ border-width: 7px !important;border-style: solid !important;border-image: url("backgrounds/scallop_white.png") 8 fill round !important;}
 .altm1{ height:150px; font-size:17px; background:none !important; border:none !important; box-shadow:none !important;
-  li:nth-child(odd){background:var(--lightSalmon);}
   a{transition:.3s ease-in-out;}a:hover{letter-spacing:3px;}
   ol{padding-left:25px;}
 }
