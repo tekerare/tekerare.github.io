@@ -3,6 +3,7 @@
 @font-face {font-family: "pritchard"; src: url("../fonts/pritchard.otf");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
 :root{
+  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat top 5px left 10px, url("backgrounds/donksona.png") no-repeat bottom left 2%, url("backgrounds/donksona_flip.png") no-repeat bottom left 99%, url("backgrounds/grain-tile.gif") repeat;
   --asideBackground:url('backgrounds/whitedotted.jpg');
   --mainBackground:#dddddd;
   --singleMainBackground:url('backgrounds/whitedotted.jpg');
@@ -27,8 +28,7 @@
 @media screen and (max-width:790px){html{min-height:1400px; .imgBlock div{background:#000000e0; filter:opacity(100%);}}}
 html{scroll-behavior: smooth; scrollbar-color: var(--bodyArticleH1) #ffffff; scrollbar-width: auto;font-family: "MS PGothic", sans-serif; font-size:12px;}
 body{
-  background: url('backgrounds/fax_brcde.png') no-repeat top 5px left 10px, url("backgrounds/donksona.png") no-repeat bottom left 2%, url("backgrounds/donksona_flip.png") no-repeat bottom left 99%, url("backgrounds/grain-tile.gif") repeat;
-  background-size: 150px, auto, auto, auto, auto, auto;
+  background: var(--htmlBG);
   background-attachment:fixed;
   min-width:789px;
   margin: 0 auto;

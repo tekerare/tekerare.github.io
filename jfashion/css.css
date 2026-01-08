@@ -1,10 +1,15 @@
 /* GLOBAL ROOT */
 :root{
+  --htmlBG: url('../ui/backgrounds/pink-gingham.png');
   --asideBackground: url('../ui/theme/borderhighlight.png') top left repeat-y, url('lOverhang/fashion.png') no-repeat top left, url('../ui/backgrounds/gobelin.gif');
   --singleMainBackground:url('backgrounds/gobelin.gif');
   --mainBackground:url('backgrounds/gobelin.gif');
   --headingBorder:#000000;
   --boldTxt:#4b4d00;
+}
+#body aside > div{
+  background: linear-gradient(to bottom, #f8f9f5 0%,#e9eeda 50%,#e0e8ca 51%,#f5f8ec 100%);
+  border-color:#3f541f;
 }
 h4, h3, h2, h1{ color:var(--boldTxt);}
 #lWrp{padding:104px 0px 0px 0px !important;}
