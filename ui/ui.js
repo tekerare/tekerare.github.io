@@ -41,7 +41,8 @@ function galleryWidget(){
 function eventWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
-  x.innerHTML = '<h3>upcoming booths</h3><div id="eventsList"><quiet style="text-align:center;">nearest &rarr; distant</quiet><ul><li><a href="https://linktr.ee/zakicon" target="_blank">zakicon</a> @ friendswood tx<br>(jan 09-11)</li><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx<br>(june 06-07)</li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/art/merch" target="_parent">/art/</a></p>';
+  x.setAttribute('style', 'margin:0 auto;');
+  x.innerHTML = '<h3>upcoming booths</h3><div id="eventsList"><quiet style="text-align:center;">nearest &rarr; distant</quiet><ul><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx<br>(june 06-07)</li><li><strike>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/art/merch" target="_parent">/art/</a></p>';
   document.getElementById('lWrp').appendChild(x);
 }
 function kofiWidget(){
@@ -80,6 +81,7 @@ function loadTheme(){
 	document.getElementById('footer').appendChild(footer);
 	readerUI();
   }
+  const fauxWindowHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="https://' + siteURL + '">Home</a> <a href="https://' + siteURL + '/log/">Blog</a> <a href="https://' + siteURL + '/shrines">Shrines</a> <a href="https://' + siteURL + '/jfashion">Fashion</a> <a href="https://' + siteURL + '/art/">Art</a> <a href="https://' + siteURL + '/music/">Music</a> <a href="https://' + siteURL + '/stream/">Stream</a> <a href="https://' + siteURL + '/update">Update</a> <a href="https://' + siteURL + '/about">About</a> <a href="https://' + siteURL + '/rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
   function spawnSDTitle(){
     const sdtitle = document.createElement('span');
 	sdtitle.setAttribute('id' , 'sdTitle');
@@ -110,7 +112,13 @@ function loadTheme(){
 	case 4:
 	  findBody.setAttribute('id', 'fauxWindow');
 	  const x = document.getElementById('header');
-	  x.innerHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="../">Home</a> <a href="../log/">Blog</a> <a href="../shrines">Shrines</a> <a href="../jfashion">Fashion</a> <a href="../art/">Art</a> <a href="../music/">Music</a> <a href="../stream/">Stream</a> <a href="../update">Update</a> <a href="../about">About</a> <a href="../rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
+	  x.innerHTML = fauxWindowHTML;
+      readerUI();
+	break;
+	case 5:
+	  findBody.setAttribute('id', 'fauxWindow');
+	  const p = document.getElementById('header');
+	  p.innerHTML = fauxWindowHTML;
       spawnSDTitle();
       readerUI();
 	break;

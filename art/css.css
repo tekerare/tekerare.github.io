@@ -8,10 +8,6 @@ body{
   animation:bgPan linear infinite 50s;
   background-attachment:fixed;
   background-size: auto, auto, auto, auto;
-  main {
-	background:#f4f4f4 !important;
-	border:0px !important;
-  }
 }
 @keyframes bgPan{
   0%{background-position: top left, top left, top right -60px, left -150px bottom 130px, right 0px bottom, top left, right 0px bottom;}

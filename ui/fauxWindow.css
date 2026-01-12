@@ -1,0 +1,35 @@
+#fauxWindow{ padding:0px 0px 15px 0px;
+  h1, h2{font-family: "kiwisoda";}
+  .panel-wrapper, header{background: var(--fauxWindowColor) !important; border:#000000 1px;}
+  header{ height:77px !important; border-style:solid solid none solid; padding: 3px 3px 6px 3px !important; text-align:start;
+	button{background: url('icons/window_set.png') no-repeat, var(--fauxWindowColor); box-shadow:var(--fauxWindowBoxShadow); border:1px #000000 solid; min-height: var(--fauxWindowButtonSize); min-width:var(--fauxWindowButtonSize);margin:-0px -0px; pointer-events:auto;cursor:not-allowed;}
+    button:hover{box-shadow: inset -1px -1px #808080, inset 1px 1px , inset -2px -2px #ffffff, inset 2px 2px #ffffff;}
+	h1{font-family:'ms gothic', sans-serif; background:0; background:var(--browserTitle); font-size:12px; margin:0 auto; color:#ffffff; padding:4px;}
+	> div{ box-sizing:border-box; box-shadow: inset 0px -1px #0a0a0a, inset -0px -2px #808080;padding: 2px 3px 4px 3px !important;}
+  }
+  header, .panel-wrapper{box-shadow: var(--fauxWindowBoxShadow);}
+  .panel-wrapper{border-style:none solid none solid; padding:4px !important; margin:0 auto; cursor:default;
+    ::selection{background:#00000020 !important;}
+	img{ max-width:95%; margin:0 auto; image-rendering:crisp-edges;}
+    ::selection{background:#00000000}
+  }
+  @media (min-width: 800px) {
+    .panel-wrapper{display:flex;}
+	aside{border-style:inset dotted inset inset; min-width:220px; border-width:3px 1px 3px 3px;}
+	main{border-style:inset inset inset none; border-width:3px 3px 3px 0px}
+  }
+  @media (max-width: 799px) {
+    .panel-wrapper{display:flex;}
+	aside{border-color:var(--fauxWindowColor) #000000 var(--fauxWindowColor) var(--fauxWindowColor); border-style:inset inset inset inset; border-width:3px 3px 3px 3px;}
+	main{border:var(--fauxWindowColor); border-style: none inset inset inset; border-width:0px 3px 3px 3px;}
+  }
+  aside{ padding:0px 0px 0px 10px;
+    h2, h1{padding: 4px !important; margin:0;}
+    > div{ border:1px var(--h1BorderColor); border-style:dotted none dotted dotted; padding:1px; margin: 0px 0px 10px 0px;}
+  }
+  main{background:#ffffff;  width:100%; min-width:407px;
+    h1, h1 a{ box-shadow:none !important; text-decoration:none;}
+  }
+  footer{height:0px;}
+  .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;} .minmaxDec2{right:40px;}.minmaxDec{background-position:top left -15px;right:20px;}.dropDown{background-position:top left -49px;}.closeDec{background-position:top left -34px;right:0px;} .fauxField{background:#ffffff;border:var(--fauxWindowColor) 3px inset; padding:1px 5px 0px 5px;margin:0px -1px !important;}
+}

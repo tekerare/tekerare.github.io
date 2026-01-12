@@ -3,7 +3,7 @@
 @font-face {font-family: "pritchard"; src: url("../fonts/pritchard.otf");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
 :root{
-  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat top 5px left 10px, url("backgrounds/donksona.png") no-repeat bottom left 2%, url("backgrounds/donksona_flip.png") no-repeat bottom left 99%, url("backgrounds/grain-tile.gif") repeat;
+  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat top 5px left 10px, url("backgrounds/donksona.png") no-repeat bottom left -3%, url("backgrounds/donksona_flip.png") no-repeat bottom left 101%, url("backgrounds/grain-tile.gif") repeat;
   --asideBackground:url('backgrounds/whitedotted.jpg');
   --mainBackground:#dddddd;
   --singleMainBackground:url('backgrounds/whitedotted.jpg');
@@ -72,26 +72,25 @@ quiet{color:#00000050;}
   div, article, img{background-position:top left;}
 }
 /*GLOBAL HTML START*/
-header, nav, .panel-wrapper, footer{width:60%; min-width:644px; max-width:960px;}
-.panel-wrapper{background:linear-gradient(90deg, #00000000 2%, #ffffff 2%, #ffffff 98%, #00000000 98%); min-height:200px; display:flex;
+header, nav, .panel-wrapper, footer{width:70%; min-width:644px; max-width:960px;}
+.panel-wrapper{ min-height:200px; 
  img, video, center > img, center > video{max-width:95%;}
 }
 header{padding:10px 0px 0px 0px;min-height:77px; height:102px;}
 header, nav{text-align:center;}
-aside, main{border:1px #000000; box-sizing:border-box;
+aside, main{ box-sizing:border-box;
   img{ margin:0px 1px 0px 1px;}
 }
-aside{background:var(--asideBackground); min-width:204px; border-style: dotted none dotted dotted;
+aside{background:var(--asideBackground); min-width:204px;
   > div{ text-align:start; color: #000000 !important;
 	div{margin:5px !important;}
   }
   textarea{max-width:149px; min-width:149px;}
 }
-main{ min-height:650px; border-style:dotted !important;
+main{ min-height:650px;
   a[href^="http"]:not(:has(img))::after {content: " ↗"}
 }
 footer{height:80px; background-repeat: no-repeat !important;}
-.panel-wrapper{display:flex; margin:0 auto;}
 /*GLOBAL HTML THEME END*/
 #body, #singleBody{.panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y;} header{ text-align:end;}}
 #body aside > div {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; margin:0px auto 10px auto; border: solid 1px; border-radius:4px;}
@@ -112,6 +111,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
 #body{
   aside, main{ border:0;}
   aside{margin:0 0px 0px 14px; padding:5px 0px 0px 0px; max-width:216px;}
+  .panel-wrapper{display:flex;}
   main{ background:url('theme/borderhighlight.png') top left repeat-y, var(--mainBackground); margin:0px 6px 0px 0px; border:1px #000000; border-style:none none none solid !important; padding:5px 0px 0px 1px; width: 100%;
     > h1{ letter-spacing:1px; background:url("theme/h1_bull.png") no-repeat center left, var(--jellyGradient)!important; width:auto !important; box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff; border:1px #36333b; border-style:solid none solid none !important; margin:0; color:#ffffff; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} text-shadow:-1px -1px 0 var(--h1BorderColor), 1px -1px 0 var(--h1BorderColor), -1px 1px 0 var(--h1BorderColor), 1px 1px 0 var(--h1BorderColor); padding:4px 4px 4px 23px;}
     hr{background: url('theme/hr_mobile.png'), no-repeat; background-position:top left; width:100%; height:4px;}
@@ -145,29 +145,31 @@ footer{height:80px; background-repeat: no-repeat !important;}
 	img{ max-width:95%; margin:0 auto; image-rendering:crisp-edges;}
     ::selection{background:#00000000}
   }
-  aside{border-style:inset dotted inset inset; border-color:var(--fauxWindowColor) #000000 var(--fauxWindowColor) var(--fauxWindowColor); border-width:3px 1px 3px 3px; min-width:220px; padding:0px 0px 0px 10px;
-    h2, h1{padding: 4px !important; margin:0;}
-    > div{ border:1px var(--h1BorderColor); border-style:dotted none dotted dotted; padding:1px; margin: 0px 0px 10px 0px;}
+  @media (min-width: 10px) {
+    .panel-wrapper{ display:flex;}
+	aside{border-color:var(--fauxWindowColor) var(--fauxWindowColor) var(--fauxWindowColor) #000000 !important; border-style:inset inset inset dotted !important; border-width:3px 3px 3px 1px !important;}
+	main{border-style: inset !important; border-width:3px 0px 3px 3px !important;}
   }
-  main{background:#ffffff; border:var(--fauxWindowColor); border-style:inset inset inset none !important; width:100%; min-width:407px;
+  aside{padding:5px 5px 5px 5px; border-color:#000000 var(--fauxWindowColor) var(--fauxWindowColor) var(--fauxWindowColor); border-style:dotted inset inset inset; border-width:1px 3px 3px 3px;
+    h2, h1{padding: 4px !important; margin:0;}
+    > div{ border:1px var(--h1BorderColor); padding:1px; margin: 0px 0px 10px 0px;}
+  }
+  main{padding:5px 0px 5px 0px; border-color:var(--fauxWindowColor); border-style:inset inset none inset; border-width:3px 3px 0px 3px;background:#ffffff; width:100%; min-width:407px;
     h1, h1 a{ box-shadow:none !important; text-decoration:none;}
   }
   footer{height:0px;}
-  .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;}
-  .minmaxDec2{right:40px;}.minmaxDec{background-position:top left -15px;right:20px;}.dropDown{background-position:top left -49px;}.closeDec{background-position:top left -34px;right:0px;}
-  .fauxField{background:#ffffff;border:var(--fauxWindowColor) 3px inset; padding:1px 5px 0px 5px;margin:0px -1px !important;}
+  .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;} .minmaxDec2{right:40px;}.minmaxDec{background-position:top left -15px;right:20px;}.dropDown{background-position:top left -49px;}.closeDec{background-position:top left -34px;right:0px;} .fauxField{background:#ffffff;border:var(--fauxWindowColor) 3px inset; padding:1px 5px 0px 5px;margin:0px -1px !important;}
 }
 /*FAUX WINDOW THEME END*/
 /*ANIMATIONS START*/
 @keyframes imgSummAnm{0%{padding:0px 20px 10px 20px;}100%{padding:15px 20px 10px 20px;}}
-@keyframes selectBop {0%{transform:translate(0px, -2px);}60%{transform:translate(0px, 1px);}90%{transform:translate(0px, -1px);}100%{transform:translate(0px, 0px);}}
 /*ANIMATIONS END*/
 /*EXTENSION START*/
 #preview{background:#000000b5; background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none; cursor:zoom-out; padding:5vh 0px 4vh 0px; font-family:hack; font-size:20px;}
 #fullRes{ max-height:80vh; border:#ffffff 1px solid;}
 .imgBlock{background-size:cover !important; min-height:300px; border-radius:10px; border:1px solid #000000 !important; color: #ffffff; image-rendering:smooth;
   a{color: #ffffff;}
-  div{ font-family:hack !important; h1, h2, h3{ background:0 !important;font-family:hack ; font-size:20px !important; border-style:dotted;} h1 a, h2 a, h3 a{ transition:.5s ease;}  h1 a:hover, h2 a:hover, h3 a:hover{letter-spacing:2px; transition:.5s ease;} font-size:14px; padding: 15px 15px 10px 15px !important; box-sizing:border-box; background:#000000e0 !important; position:absolute; border-radius:3px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease; filter:opacity(0%); overflow:hidden;}
+  div{ font-family:hack !important; h1, h2, h3{ background:0 !important; font-size:20px !important; border-style:dotted;} h1 a, h2 a, h3 a{ transition:.5s ease;}  h1 a:hover, h2 a:hover, h3 a:hover{letter-spacing:2px; transition:.5s ease;} font-size:14px; padding: 15px 15px 10px 15px !important; box-sizing:border-box; background:#000000e0 !important; position:absolute; border-radius:9px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease; filter:opacity(0%); overflow:hidden;}
 }
 @media screen and (min-width:790px){.imgBlock:hover div{box-shadow: inset 1px 1px 0px 1px var(--bodyArticleH1), inset -1px -1px 0px 1px var(--bodyArticleH1) !important; animation-name:imgSummAnm; filter:opacity(100%);}}
 .flex{background:none !important; box-shadow:none !important; border:none !important; display:flex; width: 96%; max-width:610px; margin:2px auto !important; padding: 0px !important;
@@ -180,19 +182,13 @@ footer{height:80px; background-repeat: no-repeat !important;}
   .item:hover{background:url('backgrounds/tone.png');}
   > img{ width:50%; height: auto !important; cursor: zoom-in; margin: 0px 1px 1px 1px !important;}
 }
-.playlist{
-  h3{background:url('icons/tune_icon.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); padding:0px 0px 0px 18px;}
-}
-.mediaList{ text-align:center;
-  img{height:150px; cursor:zoom-in;}
-}
-.scallop{ border-width: 7px !important;border-style: solid !important;border-image: url("backgrounds/scallop_white.png") 8 fill round !important;}
-.altm1{ height:150px; font-size:17px; background:none !important; border:none !important; box-shadow:none !important;
+.playlist{h3{background:url('icons/tune_icon.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); padding:0px 0px 0px 18px;}}
+.mediaList{ text-align:center;img{height:150px; cursor:zoom-in;}}
+.altm1{ font-size:17px; background:none !important; border:none !important; box-shadow:none !important;
   a{transition:.3s ease-in-out;}a:hover{letter-spacing:3px;}
   ol{padding-left:25px;}
 }
 .tone{background:url("backgrounds/tone.png");}
-.center{margin:0 auto !important;}
 .image{border:1px #000000 solid;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
 #eventsWidget, #kofiWidget{> div{border:1px solid #000000;}}
