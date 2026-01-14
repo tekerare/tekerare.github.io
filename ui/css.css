@@ -92,20 +92,22 @@ main{ min-height:650px;
 }
 footer{height:80px; background-repeat: no-repeat !important;}
 /*GLOBAL HTML THEME END*/
-#body, #singleBody{.panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y;} header{ text-align:end;}}
-#body aside > div {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; margin:0px auto 10px auto; border: solid 1px; border-radius:4px;}
-#body aside, #singleBody main { > article, > div{border-color:#949494;}}
-#body, #singleBody{
+#body, #singleBody, #fauxWindow{
   h1, h2{font-size:15px;}
-  header, footer{image-rendering:crisp-edges; button{color:#000000; margin:0px 1px 0px 1px; box-shadow:0px 1px 0px 0px #9c9c9c; background: linear-gradient(#7a7a7a, #606060, #4a4a4a); border:1px solid #303030; padding:2px; border-radius:3px;} button:hover{background: linear-gradient(#4a4a4a, #606060, #7a7a7a);}}
-  header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important;}
-  footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
   article{ backdrop-filter:blur(1px); margin:5px auto 5px auto; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff 100%); border-radius:5px; border:1px solid #000000; margin: 5px auto 5px; width:95%; box-shadow: inset 0px 0px 7px #ffffff, inset 0px 0px 7px #ffffff;margin:5px auto 5px; padding:5px;
     h1, h2{ text-shadow: -1px -1px 0 var(--bodyArticleH1), 1px -1px 0 var(--bodyArticleH1), -1px 1px 0 var(--bodyArticleH1), 1px 1px 0 var(--bodyArticleH1); background: url('theme/art_h1-1.gif') no-repeat top left, linear-gradient(90deg, var(--bodyArticle), #00000000, #00000000); background-size:20px, auto; height:19px; margin:0px 0px 4px 0px; color:#ffffff; padding:1px 0px 0px 24px;
 	  a {color: #ffffff !important; font-size: 11px; opacity: 0.5;}
     } 
     > div{background:#ffffff; box-shadow:inset 0px 0px 3px -1px #000000; border: #787878 1px solid; padding:0px;}
   }
+}
+#body, #singleBody{.panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y;} header{ text-align:end;}}
+#body aside > div {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; margin:0px auto 10px auto; border: solid 1px; border-radius:4px;}
+#body aside, #singleBody main { > article, > div{border-color:#949494;}}
+#body, #singleBody{
+  header, footer{image-rendering:crisp-edges; button{color:#000000; margin:0px 1px 0px 1px; box-shadow:0px 1px 0px 0px #9c9c9c; background: linear-gradient(#7a7a7a, #606060, #4a4a4a); border:1px solid #303030; padding:2px; border-radius:3px;} button:hover{background: linear-gradient(#4a4a4a, #606060, #7a7a7a);}}
+  header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important;}
+  footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
 }
 /*DEFAULT THEME START*/
 #body{
@@ -131,7 +133,6 @@ footer{height:80px; background-repeat: no-repeat !important;}
 /*SINGLE THEME END*/
 /*FAUX WINDOW THEME START*/
 #fauxWindow{ padding:0px 0px 15px 0px;
-  h1, h2{font-family: "kiwisoda";}
   .panel-wrapper, header{background: var(--fauxWindowColor) !important; border:#000000 1px;}
   header{ height:77px !important; border-style:solid solid none solid; padding: 3px 3px 6px 3px !important; text-align:start;
 	button{background: url('icons/window_set.png') no-repeat, var(--fauxWindowColor); box-shadow:var(--fauxWindowBoxShadow); border:1px #000000 solid; min-height: var(--fauxWindowButtonSize); min-width:var(--fauxWindowButtonSize);margin:-0px -0px; pointer-events:auto;cursor:not-allowed;}
