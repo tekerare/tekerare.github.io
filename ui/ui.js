@@ -30,32 +30,31 @@ function readerUI(){
 function badgeLink(){
   const x = document.createElement("div");
   x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></textarea><quiet style="font-size:10px;">Authenticated for badge-represented linkage of TKR. This code allows updates across links.</quiet>';
-  document.getElementById('lWrp').appendChild(x);
+  document.getElementById('asideWrp').appendChild(x);
 }
 function galleryWidget(){
   const x = document.createElement('div');
   x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/2025_01_02-pomnifashion.jpg" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
-  document.getElementById('lWrp').appendChild(x);
+  document.getElementById('asideWrp').appendChild(x);
 }
 
 function eventWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
-  x.setAttribute('style', 'margin:0 auto;');
   x.innerHTML = '<h3>upcoming booths</h3><div id="eventsList"><quiet style="text-align:center;">nearest &rarr; distant</quiet><ul><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx<br>(june 06-07)</li><li><strike>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/art/merch" target="_parent">/art/</a></p>';
-  document.getElementById('lWrp').appendChild(x);
+  document.getElementById('asideWrp').appendChild(x);
 }
 function kofiWidget(){
   const x = document.createElement('div');
   x.setAttribute('id' , 'kofiWidget');
   x.innerHTML = '<h3>support me on ko-fi</h3><div><a href="https://ko-fi.com/s/1800cb6ae7" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" alt="promotional image for fujochud sticker" title="fujochud stickers available on my ko-fi"></a> <a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/bundle_nortluchi.jpg" alt="promotional image for slateship merch bundle"title="*23% off* norton x luchino merch bundle"></a></div>';
-  document.getElementById('lWrp').appendChild(x);
+  document.getElementById('asideWrp').appendChild(x);
 }
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");
   x.innerHTML = '<table><tbody><tr><th colspan="2" style="text-align:center;">/sub/ navigation</th></tr><tr><td colspan="2" style="text-align:center;"><a href="https://' + siteURL + '">[ home ]</a></td></tr><tr><td style="width:50%;"><a href="https://' + siteURL + '/log/">/log/</a></td><td><a href="https://' + siteURL + '/jfashion/">/jfashion/</a></td></tr><tr><td><a href="https://' + siteURL + '/art/">/art/</a></td><td><a href="https://' + siteURL + '/shrines">/shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">/music/</a></td><td><a href="https://' + siteURL + '/update">/update</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">/stream/</a></td><td><a href="https://' + siteURL + '/about">/about</a></td></tr></tbody></table>';
-  document.getElementById('lWrp').appendChild(x);
+  document.getElementById('asideWrp').appendChild(x);
 }
 function rssBlock(){
   document.write('<article id="rss-feed"><h2>latest site update <a href="https://' + siteURL + '/update">(read more @ update log)</a> <img src="https://' + siteURL + 'ui/icons/flag.gif" alt=""></h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2F' + siteURL + '%2Frss%2Frss.xml&limit=2&showtitle=false&type=js"></script></div></article>');
