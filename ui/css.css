@@ -191,6 +191,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
 }
 .tone{background:url("backgrounds/tone.png");}
 .image{border:1px #000000 solid;}
+.image:hover{border:1px #f50f0f solid;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
 #eventsWidget, #kofiWidget{> div{border:1px solid #000000;}}
 #eventsWidget{ width:95%; border-style:solid !important; border-radius:5px; background:var(--divSolid) !important;
