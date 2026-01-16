@@ -1,5 +1,4 @@
 /* GLOBAL ROOT */
-@font-face {font-family: "kiwisoda"; src: url("../fonts/kiwisoda.ttf");}
 @font-face {font-family: "pritchard"; src: url("../fonts/pritchard.otf");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
 :root{
@@ -103,12 +102,14 @@ footer{height:80px; background-repeat: no-repeat !important;}
     > div{background:#ffffff; box-shadow:inset 0px 0px 3px -1px #000000; border: #787878 1px solid; padding:0px;}
   }
 }
-#body, #singleBody{.panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y;} header{ text-align:end;}}
 #body aside > div {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; margin:0px auto 10px auto; border: solid 1px; border-radius:4px;}
 #body aside, #singleBody main { > article, > div{border-color:#949494;}}
 #body, #singleBody{
   header, footer{image-rendering:crisp-edges; button{color:#000000; margin:0px 1px 0px 1px; box-shadow:0px 1px 0px 0px #9c9c9c; background: linear-gradient(#7a7a7a, #606060, #4a4a4a); border:1px solid #303030; padding:2px; border-radius:3px;} button:hover{background: linear-gradient(#4a4a4a, #606060, #7a7a7a);}}
-  header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important;}
+  header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important; text-align:end;
+    > div{overflow-y:scroll; border:1px #000000 solid; width:260px; height:67px; background:#ffffff; top:11px; right:-392px;}
+  }
+  .panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y;}
   footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
 }
 /*GLOBAL HTML THEME END*/
@@ -196,7 +197,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
 .image:hover{border:1px #f50f0f solid;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
 #eventsWidget, #kofiWidget{> div{border:1px solid #000000;}}
-#eventsWidget{ background:url('backgrounds/aspen.jpg') !important; width:95%; border-style:solid !important; border-color:#000000 !important; border-radius:5px;
+#eventsWidget{ width:95%; border-style:solid !important; border-radius:5px;
   > div{background:url('backgrounds/reader_scrll.png') no-repeat top right 3px, url("backgrounds/dotted_paper.png"), #ffffff; margin:3px; height:100px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll;}
   p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
 }
