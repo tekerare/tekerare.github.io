@@ -200,7 +200,6 @@ footer{height:80px; background-repeat: no-repeat !important;}
   > div{background:url('backgrounds/reader_scrll.png') no-repeat top right 3px, url("backgrounds/dotted_paper.png"), #ffffff; margin:3px; height:100px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll;}
   p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
 }
-@keyframes kofiWidgetShuffle{0%{transform: translatey(0%);}50%{transform: translatey(-100%);}100%{}}
 #kofiWidget{ background:var(--divSolid);
   > div{ margin:3px; overflow:hidden; max-height:180px; max-width:180px;
     img{max-width:100% !important; animation:kofiWidgetShuffle steps(1, end) infinite 15s;}
