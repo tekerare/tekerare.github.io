@@ -47,7 +47,7 @@ function eventWidget(){
 function kofiWidget(){
   const x = document.createElement('div');
   x.setAttribute('id' , 'kofiWidget');
-  x.innerHTML = '<h3>support me on ko-fi</h3><div><a href="https://ko-fi.com/s/1800cb6ae7" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" alt="promotional image for fujochud sticker" title="fujochud stickers available on my ko-fi"></a> <a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/bundle_nortluchi.jpg" alt="promotional image for slateship merch bundle"title="*23% off* norton x luchino merch bundle"></a></div>';
+  x.innerHTML = '<h3>support me on ko-fi</h3><div><a href="https://ko-fi.com/s/1800cb6ae7" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" alt="promotional image for fujochud sticker" title="fujochud stickers available on my ko-fi"></a> <a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_nickjudycarkeys.jpg" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></div>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function browsePosts(){

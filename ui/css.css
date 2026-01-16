@@ -196,7 +196,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
 .image:hover{border:1px #f50f0f solid;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
 #eventsWidget, #kofiWidget{> div{border:1px solid #000000;}}
-#eventsWidget{ width:95%; border-style:solid !important; border-radius:5px; background:var(--divSolid) !important;
+#eventsWidget{ background:url('backgrounds/aspen.jpg') !important; width:95%; border-style:solid !important; border-color:#000000 !important; border-radius:5px;
   > div{background:url('backgrounds/reader_scrll.png') no-repeat top right 3px, url("backgrounds/dotted_paper.png"), #ffffff; margin:3px; height:100px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll;}
   p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
 }
