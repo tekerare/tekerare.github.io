@@ -146,7 +146,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
   header, .panel-wrapper{box-shadow: var(--fauxWindowBoxShadow);}
   .panel-wrapper{border-style:none solid none solid; padding:4px !important; margin:0 auto; cursor:default;
     ::selection{background:#00000020 !important;}
-	img{ max-width:95%; margin:0 auto; image-rendering:crisp-edges;}
+	img{ max-width:95%; margin:0 auto;}
     ::selection{background:#00000000}
   }
   @media (min-width: 10px) {
