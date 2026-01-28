@@ -1,10 +1,11 @@
 :root{
-  --browserColor:#cccccc;
-  --browserTitle:#7d1010;
+  --browserTitle:url('../ui/backgrounds/bd_dsotm.jpg');
+  --fauxWindowColor:#ebb7bc;
+  --bodyArticleH1:#52157a;
 }
-body{background: url('ui/jxstpom.png') no-repeat top left 2%, url('ui/jxstpom.png') no-repeat top right 2%, url('ui/bg.jpg'), #ffffff; background-attachment:fixed;}
+body{background: url('ui/jxstpom.png') no-repeat top left 2%, url('ui/jxstpom.png') no-repeat top right 2%, url('../ui/backgrounds/purplehedge.jpg') #ffffff; background-attachment:fixed;}
 #fullRes {border: 0;}
-aside{background:url(../ui/backgrounds/gingham.gif) !important;
+main{background:url('../ui/backgrounds/bd_lilac.jpg') !important;
   div > h2{ -webkit-text-stroke: 3px #ffffff; paint-order: stroke fill; color:#6e588c;}
 #checkpoint{
   background:url("ui/checkpoint.png") no-repeat;
