@@ -29,46 +29,67 @@ main{td:nth-child(1){
 </nav>
 <div class="panel-wrapper">
 <main id="mainWrp">
-<h1>OpenMPT (1.31.04) Guide</h1>
-<p>If you want to know how I made the stuff on my music page, I've been using OpenMPT for some time and some of my friends want to know how to use it. This ugly, #fffff spreadsheet is where it starts.</p>
-<p>The goal throughout this entry is to not use the plugins rack (but there's no shame in using it. That being said, scroll to the bottom for a list of plugins I use.)</p>
-<h3>What Should I Know Before I Start Composing?</h3>
-<p>Like all software the toughest part is getting used to the UI and figuring out where everything is. There are many other tracker softwares you can use, but OpenMPT/Modplug is the one I'm most familiar with and you'll find it's a pretty intuitive app.</p>
-<p>In my opinion if you're just starting out, you'd probably get better outcomes creating electronic music over traditional music in trackers. While chiptune and jungle modules can have around 20 or even under 10 slots of audio, it's tough to make something like tracker jazz sound believable and "not sampled" unless you record the melodies yourself. Speaking from experience at least. Tracker jazz isn't impossible, but its a novel ambition to do on this type of DAW.</p>
-<p>At its core OpenMPT is simply a sound editor, with capabilities in general sound design outside of music. I've formatted plenty SFX loops for a couple of video game collaborations I was on using only four channels and a pattern. Or sometimes I want to format a simple tag for my other works.</p>
-<h3>Why Should I Use Trackers?</h3>
-<p>It's not that music trackers offer more in terms of features. Not everyone HAS to use a music tracker, and they're even considered obsolete ware to some. However, there's a lot of <b>workflow</b> related differences between the conventional DAW and a music tracker.</p>
-<ol>
-  <li><b>Keyboard based control.</b><br>When working with trackers, you'll be using keybinds for the most part instead of dragging-dropping.</li>
-  <li><b>Makes improvisation easier.</b><br>What would otherwise be tedious on a conventional DAW, you can pitch, reverse, and stretch individual notes in the editor itself. Convenient if you want to create breakcore or fusion.</li>
-  <li><b>Songwide overview</b><br>The interface you see is what you'll see for the rest of the project. Instead of using a horizontal piano roll for each pattern, you input note commands on a vertical spread and can crosschannel samples. Many chiptunes are made in the limits of 4 channels.</li>
-  <li><b>You can share modules with your friends :&#x29;</b><br>Check out <a href="http://modarchive.org/">modarchive.org</a> and join the OpenMPT forums, there's a whole community around this type of thing that's great for scavenging samples or giving back.</li>
-</ol>
-<p>These can either be advantages or drawbacks depending on what you need in order to compose.</p>
-<h3>How To Read Chart Notes</h3>
-<p>Open up the "Patterns" tab on a new module. The chart overview window might be a little daunting&mdash; it looks more like Microsoft Excel than it does something you'd write music in. Don't think too hard about it.</p>
-<p>Each channel is separated by 4 columns: the "<normal style="color:#000080;">Note Column</normal>," the "<normal style="color:#008080;">Instrument Column</normal>," the "<normal style="color:#144718;">Volume Column</normal>," and the "<normal style="color:#640e0e;">Effect Column</normal>".</p>
-<span style="text-align:center;"><img src="media/modplug/notecommandanatomy.jpg" class="image" alt=""></span>
-<p><normal style="color:#000080;">The note column defines which pitch the note is playing in.</normal> Not much to detail on here, but in order to switch octaves beyond what your computer keyboard can record, locate the swatch labeled "Octave" and you can click the arrows according to what scale you want to play in.</p>
-<p><normal style="color:#008080;">The instrument column determines which instrument/sample will play. Without it, you won't hear anything.</normal> For future reference instead of selecting instruments using the dropdown menu, you can highlight this column and type in an instrument-assigned number. You'd be doing a lot of typing and remembering, and can especially do the same for the volume and effects columns.</p>
-<p><normal style="color:#144718;">This column affects all that is volume related.</normal> By default, this column displays "v64" and 64 is the loudest scale of values. By double-clicking this note, you open "Note Properties" and can pick other transformations like panning, portamento, pan, vibrato, etc. <normal style="color:#640e0e;">The effects column is empty by default, but you can choose over 30+ effects that the volume column doesn't house.</normal> I won't talk about this one because your own experimentation can only do justice for the effects column.</p>
-<p>For a better indepth, you can always <a href="https://wiki.openmpt.org/Manual:_Patterns#Pattern_Editor">read the official Manual: Patterns wiki entry</a>.</p>
-<h2>Emulating Reverb or "Echo"</h2>
-<center><img src="media/modplug/cleancutoff01.jpg" class="image" alt=""></center>
-<p>Open the "Samples" tab and load in the samples you're going to use by clicking the folder icon on the toolbar.</p>
-<center>
-  <img src="media/modplug/cleancutoff02.png" class="image" alt="">
-  <img src="media/modplug/cleancutoff03.png" class="image" alt="">
-</center>
-<p>The sample needs to be reflected in the instruments tab. The black map at the very bottom of the display is where we will control the volume of our sample. Without the volume fade, the loop would just sustain forever until a new note is input on the same channel. And that would just be really annoying.</p>
-<center>
-  <img src="media/modplug/instrumentfade.png" class="image" alt="">
-  <audio controls><source src="audios/pseudo-echo-amen.wav"></audio>
-</center>
-<p>It's a very small detail that ties the whole thing together. This works around the negative space you get when splicing amen breaks or to blend in an instrument with sustain (padding, chords in general) to keep the track "full-sounding",</p>
-<h3>Synth1</h3>
-<p>This plugin is as barebones as synthesis can get, in a good way. I use this to create every synth and sometimes even the percussions I use. You can quite literally make both a beefy, Phatworld-like bassline on one bank, and a whole ambient library in the other. Would recommend playing around with even outside of MPT.</p>
-<p>Download @ <a href="https://web.archive.org/web/20190331141735/http://www.geocities.jp/daichi1969/softsynth/#downmac">www.geocities.jp/daichi1969/softsynth/</a></p>
+  <h1>OpenMPT (1.31.04) Guide</h1>
+  <article>
+    <h2></h2>
+    <div>
+	  <p>If you want to know how I made the stuff on my music page, I've been using OpenMPT for some time and some of my friends want to know how to use it. This ugly, #fffff spreadsheet is where it starts.</p>
+	  <p>The goal throughout this entry is to not use the plugins rack (but there's no shame in using it. That being said, scroll to the bottom for a list of plugins I use.)</p>
+	  <h3>What Should I Know Before I Start Composing?</h3>
+	  <p>Like all software the toughest part is getting used to the UI and figuring out where everything is. There are many other tracker softwares you can use, but OpenMPT/Modplug is the one I'm most familiar with and you'll find it's a pretty intuitive app.</p>
+	  <p>In my opinion if you're just starting out, you'd probably get better outcomes creating electronic music over traditional music in trackers. While chiptune and jungle modules can have around 20 or even under 10 slots of audio, it's tough to make something like tracker jazz sound believable and "not sampled" unless you record the melodies yourself. Speaking from experience at least. Tracker jazz isn't impossible, but its a novel ambition to do on this type of DAW.</p>
+	  <p>At its core OpenMPT is simply a sound editor, with capabilities in general sound design outside of music. I've formatted plenty SFX loops for a couple of video game collaborations I was on using only four channels and a pattern. Or sometimes I want to format a simple tag for my other works.</p>
+	</div>
+  </article>
+  <article>
+    <h2>Why Should I Use Trackers?</h2>
+    <div>
+	  <p>It's not that music trackers offer more in terms of features. Not everyone has to use a music tracker, and they're even considered obsolete to some. However there's a lot of <b>workflow</b> related differences between the conventional DAW and a music tracker.</p>
+	  <ol>
+	    <li><b>Keyboard based control.</b><br>When working with trackers, you'll be using keybinds for the most part instead of dragging-dropping.</li>
+	    <li><b>Makes improvisation easier.</b><br>What would otherwise be tedious on a conventional DAW, you can pitch, reverse, and stretch individual notes in the editor itself. Convenient if you want to create breakcore or fusion.</li>
+	    <li><b>Songwide overview</b><br>The interface you see is what you'll see for the rest of the project. Instead of using a horizontal piano roll for each pattern, you input note commands on a vertical spread and can crosschannel samples. Many chiptunes are made in the limits of 4 channels.</li>
+	    <li><b>You can share modules with your friends :&#x29;</b><br>Check out <a href="http://modarchive.org/">modarchive.org</a> and join the OpenMPT forums, there's a whole community around this type of thing that's great for scavenging samples or giving back.</li>
+	  </ol>
+	  <p>These can either be advantages or drawbacks depending on what you need in order to compose.</p>
+	</div>
+  </article>
+  <article>
+    <h2>How To Read Chart Notes</h2>
+    <div>
+	  <p>Open up the "Patterns" tab on a new module. The chart overview window might be a little daunting&mdash; it looks more like Microsoft Excel than it does something you'd write music in. Don't think too hard about it.</p>
+	  <p>Each channel is separated by 4 columns: the "<normal style="color:#428bff;">Note Column</normal>," the "<normal style="color:#008080;">Instrument Column</normal>," the "<normal style="color:#46f72f;">Volume Column</normal>," and the "<normal style="color:#ff3826;">Effect Column</normal>".</p>
+	  <span style="text-align:center;"><img src="media/modplug/notecommandanatomy.jpg" class="image" alt=""></span>
+	  <p><normal style="color:#428bff;">The note column defines which pitch the note is playing in.</normal> Not much to detail on here, but in order to switch octaves beyond what your computer keyboard can record, locate the swatch labeled "Octave" and you can click the arrows according to what scale you want to play in.</p>
+	  <p><normal style="color:#008080;">The instrument column determines which instrument/sample will play. Without it, you won't hear anything.</normal> For future reference instead of selecting instruments using the dropdown menu, you can highlight this column and type in an instrument-assigned number. You'd be doing a lot of typing and remembering, and can especially do the same for the volume and effects columns.</p>
+	  <p><normal style="color:#46f72f;">This column affects all that is volume related.</normal> By default, this column displays "v64" and 64 is the loudest scale of values. By double-clicking this note, you open "Note Properties" and can pick other transformations like panning, portamento, pan, vibrato, etc. <normal style="color:#ff3826;">The effects column is empty by default, but you can choose over 30+ effects that the volume column doesn't house.</normal> I won't talk about this one because your own experimentation can only do justice for the effects column.</p>
+	  <p>For a better indepth, you can always <a href="https://wiki.openmpt.org/Manual:_Patterns#Pattern_Editor">read the official Manual: Patterns wiki entry</a>.</p>
+	</div>
+  </article>
+  <article>
+    <h2>Emulating Reverb or "Echo"</h2>
+    <div>
+	  <span style="text-align:center;"><img src="media/modplug/cleancutoff01.jpg" class="image" alt=""></span>
+	  <p>Open the "Samples" tab and load in the samples you're going to use by clicking the folder icon on the toolbar.</p>
+	  <span style="text-align:center;">
+	    <img src="media/modplug/cleancutoff02.png" class="image" alt="">
+	    <img src="media/modplug/cleancutoff03.png" class="image" alt="">
+	  </span>
+	  <p>The sample needs to be reflected in the instruments tab. The black map at the very bottom of the display is where we will control the volume of our sample. Without the volume fade, the loop would just sustain forever until a new note is input on the same channel. And that would just be really annoying.</p>
+	  <span style="text-align:center;">
+	    <img src="media/modplug/instrumentfade.png" class="image" alt="">
+	    <audio controls><source src="media/audios/pseudo-echo-amen.wav"></audio>
+	  </span>
+	  <p>It's a very small detail that ties the whole thing together. This works around the negative space you get when splicing amen breaks or to blend in an instrument with sustain (padding, chords in general) to keep the track "full-sounding",</p>
+	</div>
+  </article>
+  <article>
+    <h2>Synth1</h2>
+    <div>
+	  <p>This plugin is as barebones as synthesis can get, in a good way. I use this to create every synth and sometimes even the percussions I use. You can quite literally make both a beefy, Phatworld-like bassline on one bank, and a whole ambient library in the other. Would recommend playing around with even outside of MPT.</p>
+	  <p>Download @ <a href="https://web.archive.org/web/20190331141735/http://www.geocities.jp/daichi1969/softsynth/#downmac">www.geocities.jp/daichi1969/softsynth/</a></p>
+	</div>
+  </article>
 </main>
 <aside id="asideWrp">
 </div>

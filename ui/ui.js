@@ -48,13 +48,13 @@ function kofiWidget(){
   const x = document.createElement('div');
   x.setAttribute('id' , 'kofiWidget');
   x.setAttribute('style','bottom-padding:2px;');
-  x.innerHTML = '<h3>support me on ko-fi</h3><span style="text-align:center;"><a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_nickjudycarkeys.jpg" class="image" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></span>';
+  x.innerHTML = '<h3>support me on ko-fi</h3><span style="text-align:center;"><a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" class="image" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></span>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function browsePosts(){
   const x = document.createElement("div");
   const y = document.createElement("h1");
-  x.innerHTML = '<table><tbody><tr><th colspan="2" style="text-align:center;">/sub/ navigation</th></tr><tr><td colspan="2" style="text-align:center;"><a href="https://' + siteURL + '">[ home ]</a></td></tr><tr><td style="width:50%;"><a href="https://' + siteURL + '/log/">/log/</a></td><td><a href="https://' + siteURL + '/jfashion/">/jfashion/</a></td></tr><tr><td><a href="https://' + siteURL + '/art/">/art/</a></td><td><a href="https://' + siteURL + '/shrines">/shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">/music/</a></td><td><a href="https://' + siteURL + '/update">/update</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">/stream/</a></td><td><a href="https://' + siteURL + '/about">/about</a></td></tr></tbody></table>';
+  x.innerHTML = '<table><tbody><tr><td colspan="2" style="text-align:center;"><a href="https://' + siteURL + '">[ home ]</a></td></tr><tr><td style="width:50%;"><a href="https://' + siteURL + '/log/">log</a></td><td><a href="https://' + siteURL + '/jfashion/">jfashion</a></td></tr><tr><td><a href="https://' + siteURL + '/art/">art</a></td><td><a href="https://' + siteURL + '/shrines">shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">music</a></td><td><a href="https://' + siteURL + '/update">update</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">stream</a></td><td><a href="https://' + siteURL + '/about">about</a></td></tr></tbody></table>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function rssBlock(){
@@ -77,7 +77,7 @@ function loadTheme(){
 	x.setAttribute('title','[Click here to front page]');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="11,8,249,76">';
 	document.getElementById('header').appendChild(x).appendChild(y);
-	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>/home/</button></a><a href="https://'+ siteURL +'/log" target="_parent"><button>/log/</button></a><a href="https://'+ siteURL +'/shrines" target="_parent"><button>/shrines</button></a><a href="https://'+ siteURL +'/jfashion" target="_parent"><button>/jfashion</button></a><a href="https://'+ siteURL +'/art/" target="_parent"><button>/art/</button></a><a href="https://'+ siteURL +'/music/" target="_parent"><button>/music/</button></a><a href="https://'+ siteURL +'/stream/" target="_parent"><button>/stream/</button></a><a href="https://'+ siteURL +'/update" target="_parent"><button>/update</button></a><a href="https://'+ siteURL +'/about" target="_parent"><button>/about</button></a>';
+	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>/home/</button></a><a href="https://'+ siteURL +'log" target="_parent"><button>/log/</button></a><a href="https://'+ siteURL +'shrines" target="_parent"><button>/shrines</button></a><a href="https://'+ siteURL +'jfashion" target="_parent"><button>/jfashion</button></a><a href="https://'+ siteURL +'art" target="_parent"><button>/art/</button></a><a href="https://'+ siteURL +'music" target="_parent"><button>/music/</button></a><a href="https://'+ siteURL +'stream" target="_parent"><button>/stream/</button></a><a href="https://'+ siteURL +'update" target="_parent"><button>/update</button></a><a href="https://'+ siteURL +'about" target="_parent"><button>/about</button></a>';
 	document.getElementById('footer').appendChild(footer);
 	readerUI();
   }
