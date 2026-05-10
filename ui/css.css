@@ -1,6 +1,6 @@
 /* GLOBAL ROOT */
 @font-face {font-family: "pritchard"; src: url("../fonts/pritchard.otf");}
-@font-face {font-family: "assimilation"; src: url("../fonts/assimilation.ttf");}
+@font-face {font-family: "assimilation"; src: url("../fonts/assimilation.TTF");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
 :root{
   --htmlBG:url('backgrounds/fax_brcde.png') no-repeat top 5px left 10px, url("backgrounds/smiledog.gif") repeat;
@@ -28,7 +28,7 @@
 }
 
 /* GLOBAL */
-@media screen and (max-width:790px){html{min-height:1400px; .imgBlock div{background:#000000e0; filter:opacity(100%);}}}
+@media screen and (max-width:790px){html{min-height:1400px;}}
 html{scroll-behavior: smooth; scrollbar-color: var(--bodyArticleH1) #ffffff; scrollbar-width: auto;font-family: "MS PGothic", sans-serif; font-size:12px;}
 body{
   background: var(--htmlBG);
@@ -165,7 +165,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
   }
   aside{padding:5px 5px 5px 5px; border-color:#000000 var(--fauxWindowColor) var(--fauxWindowColor) var(--fauxWindowColor); border-style:dotted inset inset inset; border-width:1px 3px 3px 3px;
     h2, h1{padding: 4px !important; margin:0;}
-    > div{ border:1px var(--h1BorderColor); padding:1px; margin: 0px 0px 10px 0px;}
+    > div{ border:1px #000000; padding:1px; margin: 0px 0px 10px 0px;}
   }
   main{padding:5px 0px 5px 0px; border-color:var(--fauxWindowColor); border-style:inset inset none inset; border-width:3px 3px 0px 3px;background:#ffffff; width:100%; min-width:407px;
     h1, h1 a{ box-shadow:none !important; text-decoration:none;}
@@ -180,11 +180,6 @@ footer{height:80px; background-repeat: no-repeat !important;}
 /*EXTENSION START*/
 #preview{background:#000000b5; backdrop-filter: blur(3px); background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none; cursor:zoom-out; padding:5vh 0px 4vh 0px; font-family:hack; font-size:20px;}
 #fullRes{ max-height:80vh; border:#ffffff 1px solid;}
-.imgBlock{background-size:cover !important; min-height:300px; border-radius:10px; border:1px solid #000000 !important; color: #ffffff; image-rendering:smooth;
-  a{color: #ffffff;}
-  div{ font-family:hack !important; h1, h2, h3{ background:0 !important; font-size:20px !important; border-style:dotted;} h1 a, h2 a, h3 a{ transition:.5s ease;}  h1 a:hover, h2 a:hover, h3 a:hover{letter-spacing:2px; transition:.5s ease;} font-size:14px; padding: 15px 15px 10px 15px !important; box-sizing:border-box; background:#000000e0 !important; position:absolute; border-radius:9px; cursor:crosshair; height:100%; width:100%; left:0; top:0; transition:.5s ease; filter:opacity(0%); overflow:hidden;}
-}
-@media screen and (min-width:790px){.imgBlock:hover div{box-shadow: inset 1px 1px 0px 1px var(--bodyArticleH1), inset -1px -1px 0px 1px var(--bodyArticleH1) !important; animation-name:imgSummAnm; filter:opacity(100%);}}
 .flex{background:none !important; box-shadow:none !important; border:none !important; display:flex; width: 96%; max-width:610px; margin:2px auto !important; padding: 0px !important;
   > div, > article{width:50%; margin:0px 1px 0px 1px !important; 
     img{max-width: 97% !important;}
