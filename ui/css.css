@@ -191,7 +191,7 @@ footer{height:80px; background-repeat: no-repeat !important;}
   .item:hover{background:url('backgrounds/tone.png');}
   > img{ width:50%; height: auto !important; cursor: zoom-in; margin: 0px 1px 1px 1px !important;}
 }
-.playlist{h3{background:url('theme/icon-tune_icon.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); padding:0px 0px 0px 18px;a{transition:.4s ease-in-out;}a:hover{letter-spacing:1px;}}}
+.playlist{h3{background:url('theme/icon-tune.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); padding:0px 0px 0px 18px;a{transition:.4s ease-in-out;}a:hover{letter-spacing:1px;}}}
 .mediaList{ text-align:center;img{height:150px; cursor:zoom-in;}}
 .altm1{ font-size:17px; background:none !important; border:none !important; box-shadow:none !important;
   a{transition:.3s ease-in-out;}a:hover{letter-spacing:3px;}
