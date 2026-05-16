@@ -35,21 +35,21 @@ function badgeLink(){
 function galleryWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'galleryWidget');
-  x.innerHTML = '<h3 style="text-align:center;">&rarr; newest in gallery &larr;</h3><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/tadc_2026-04-08_jaxatyourservice.jpg" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
+  x.innerHTML = '<h2 style="text-align:center;">&rarr; Newest In Gallery &larr;</h2><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/tadc_2026-04-08_jaxatyourservice.jpg" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
   document.getElementById('asideWrp').appendChild(x);
 }
 
 function eventWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
-  x.innerHTML = '<h3>upcoming booths</h3><div id="eventsList"><ul><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx<br>(june 06-07)</li><li><a href="https://www.instagram.com/p/DXE-ipRjlHb/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank">tadc fan popup @ sugarland tx</a><br>(june 27 - 28)</li><li>identity v popup @ sugarland tx<br>(oct 10)</li><strike><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/art/merch" target="_parent">/art/</a></p>';
+  x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ul><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx<br>(june 06-07)</li><li><a href="https://www.instagram.com/p/DXE-ipRjlHb/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank">tadc fan popup @ sugarland tx</a><br>(june 27 - 28)</li><li>identity v popup @ sugarland tx<br>(oct 10)</li><strike><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/shop/timeline" target="_parent">/shop/</a></p>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function kofiWidget(){
   const x = document.createElement('div');
   x.setAttribute('id' , 'kofiWidget');
   x.setAttribute('style','bottom-padding:2px;');
-  x.innerHTML = '<h3>support me on ko-fi</h3><span style="text-align:center;"><a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" class="image" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></span>';
+  x.innerHTML = '<h3>Browse My Shop</h3><span style="text-align:center;"><a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" class="image" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></span>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function browsePosts(){
@@ -78,7 +78,7 @@ function loadTheme(){
 	x.setAttribute('title','[Click here to front page]');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="11,8,249,76">';
 	document.getElementById('header').appendChild(x).appendChild(y);
-	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>/home/</button></a><a href="https://'+ siteURL +'log" target="_parent"><button>/log/</button></a><a href="https://'+ siteURL +'shrines" target="_parent"><button>/shrines</button></a><a href="https://'+ siteURL +'jfashion" target="_parent"><button>/jfashion</button></a><a href="https://'+ siteURL +'art" target="_parent"><button>/art/</button></a><a href="https://'+ siteURL +'music" target="_parent"><button>/music/</button></a><a href="https://'+ siteURL +'stream" target="_parent"><button>/stream/</button></a><a href="https://'+ siteURL +'update" target="_parent"><button>/update</button></a><a href="https://'+ siteURL +'about" target="_parent"><button>/about</button></a>';
+	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>home</button></a><a href="https://'+ siteURL +'shop" target="_parent"><button>shop</button></a><a href="https://'+ siteURL +'log" target="_parent"><button>log</button></a><a href="https://'+ siteURL +'shrines" target="_parent"><button>shrines</button></a><a href="https://'+ siteURL +'art" target="_parent"><button>art</button></a><a href="https://'+ siteURL +'music" target="_parent"><button>music</button></a><a href="https://'+ siteURL +'stream" target="_parent"><button>stream</button></a><a href="https://'+ siteURL +'update" target="_parent"><button>update</button></a><a href="https://'+ siteURL +'about" target="_parent"><button>about</button></a>';
 	document.getElementById('footer').appendChild(footer);
 	readerUI();
   }

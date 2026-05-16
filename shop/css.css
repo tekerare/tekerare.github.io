@@ -1,19 +1,27 @@
 :root{
   --singleMainBackground:#f4f4f4;
-  --mainBackground:url('../ui/backgrounds/bd_snow.jpg') !important;
+  --mainBackground:linear-gradient(90deg, #00000000, #00000000 70%, #ffffff), linear-gradient(#ffffffa0), url('../ui/backgrounds/bd_pinksnow.jpg') !important;
+  --asideBackground:#ffffff;
+  --articleSubSurface:#ff809130;
 }
 a, a:visited{color:#ffffff;}
-header, main, aside, footer{border-color:#ffffff; color:#ffffff; padding:7px;}
+header, footer{height:0px;}
+header, main, aside, footer{ padding:7px;}
 body{
-  background: url('../ui/backgrounds/sky.jpg');
-  animation:bgPan linear infinite 50s;
+  background: url('../ui/backgrounds/pink-gingham.png');
+  animation:bgPan linear infinite .8s;
   background-attachment:fixed;
   background-size: auto, auto, auto, auto;
 }
-aside{ background:#000000;box-shadow: 0px 0px 9px 5px #000000;}
-#sdTitle{image-rendering:crisp-edges;}
-
+#body{
+  main{background: var(--mainBackground); border:0px;}
+}
+#eventsWidget, #eventsWidget > div{box-shadow: none !important;}
+#eventsWidget{border: 0!important; background:none !important;
+  > div{background:none !important; height:auto !important; border:none !important; overflow-y:auto !important;}
+  p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
+}
 @keyframes bgPan {
-	0% {background: url('../ui/backgrounds/sky.jpg') top 0px left 0px;}
-	100% {background: url('../ui/backgrounds/sky.jpg') top 0px left 1000px;}
+  0% {background: linear-gradient(#ffffff 0%, #ffffff00 20%, #ffffff00 70%, #ffffff 100%), url('../ui/backgrounds/pink-gingham.png') top 0px left 0px;}
+  100% {background: linear-gradient(#ffffff 0%, #ffffff00 20%, #ffffff00 70%, #ffffff 100%), url('../ui/backgrounds/pink-gingham.png') top 0px left 20px;}
 }
