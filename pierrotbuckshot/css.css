@@ -1,6 +1,6 @@
 :root{
   --browserTitle:url('../ui/backgrounds/bd_dsotm.jpg');
-  --fauxWindowColor:#d3c5e3;
+  --fwColor:#d3c5e3;
   --bodyArticleH1:#52157a;
 }
 body{background: url('ui/jxstpom.png') no-repeat top left 2%, url('ui/jxstpom.png') no-repeat top right 2%, url('../ui/backgrounds/bd_maid.jpg') #ffffff; background-attachment:fixed;}

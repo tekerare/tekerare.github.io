@@ -1,0 +1,19 @@
+:root{
+  --singleMainBackground:#f4f4f4;
+  --mainBackground:url('../ui/backgrounds/bd_snow.jpg') !important;
+}
+a, a:visited{color:#ffffff;}
+header, main, aside, footer{border-color:#ffffff; color:#ffffff; padding:7px;}
+body{
+  background: url('../ui/backgrounds/sky.jpg');
+  animation:bgPan linear infinite 50s;
+  background-attachment:fixed;
+  background-size: auto, auto, auto, auto;
+}
+aside{ background:#000000;box-shadow: 0px 0px 9px 5px #000000;}
+#sdTitle{image-rendering:crisp-edges;}
+
+@keyframes bgPan {
+	0% {background: url('../ui/backgrounds/sky.jpg') top 0px left 0px;}
+	100% {background: url('../ui/backgrounds/sky.jpg') top 0px left 1000px;}
+}
