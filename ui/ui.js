@@ -54,8 +54,7 @@ function kofiWidget(){
 }
 function browsePosts(){
   const x = document.createElement("div");
-  const y = document.createElement("h1");
-  x.innerHTML = '<table><tbody><tr><td colspan="2" style="text-align:center;"><a href="https://' + siteURL + '">[ home ]</a></td></tr><tr><td style="width:50%;"><a href="https://' + siteURL + '/log/">log</a></td><td><a href="https://' + siteURL + '/jfashion/">jfashion</a></td></tr><tr><td><a href="https://' + siteURL + '/art/">art</a></td><td><a href="https://' + siteURL + '/shrines">shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">music</a></td><td><a href="https://' + siteURL + '/update">update</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">stream</a></td><td><a href="https://' + siteURL + '/about">about</a></td></tr></tbody></table>';
+  x.innerHTML = '<h2>Browse Site</h2><table><tbody><tr><td colspan="2" style="text-align:center;"><a href="https://' + siteURL + '">home</a></td></tr><tr><td style="width:50%;"><a href="https://' + siteURL + '/log/">log</a></td><td><a href="https://' + siteURL + '/shop/">shop</a></td></tr><tr><td><a href="https://' + siteURL + '/art/">art</a></td><td><a href="https://' + siteURL + '/shrines">shrines</a></td></tr><tr><td><a href="https://' + siteURL + '/music/">music</a></td><td><a href="https://' + siteURL + '/update">update</a></td></tr><tr><td><a href="https://' + siteURL + '/stream/">stream</a></td><td><a href="https://' + siteURL + '/about">about</a></td></tr></tbody></table>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function rssBlock(){
@@ -82,7 +81,7 @@ function loadTheme(){
 	document.getElementById('footer').appendChild(footer);
 	readerUI();
   }
-  const fauxWindowHTML = '<h1>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></h1><div><a href="https://' + siteURL + '">Home</a> <a href="https://' + siteURL + '/log/">Blog</a> <a href="https://' + siteURL + '/shrines">Shrines</a> <a href="https://' + siteURL + '/jfashion">Fashion</a> <a href="https://' + siteURL + '/art/">Art</a> <a href="https://' + siteURL + '/music/">Music</a> <a href="https://' + siteURL + '/stream/">Stream</a> <a href="https://' + siteURL + '/update">Update</a> <a href="https://' + siteURL + '/about">About</a> <a href="https://' + siteURL + '/rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
+  const fauxWindowHTML = '<span>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></span><div><a href="https://' + siteURL + '">Home</a> <a href="https://' + siteURL + '/log/">Blog</a> <a href="https://' + siteURL + '/shrines">Shrines</a> <a href="https://' + siteURL + '/jfashion">Fashion</a> <a href="https://' + siteURL + '/art/">Art</a> <a href="https://' + siteURL + '/music/">Music</a> <a href="https://' + siteURL + '/stream/">Stream</a> <a href="https://' + siteURL + '/update">Update</a> <a href="https://' + siteURL + '/about">About</a> <a href="https://' + siteURL + '/rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
   function spawnSDTitle(){
     const sdtitle = document.createElement('span');
 	sdtitle.setAttribute('id' , 'sdTitle');

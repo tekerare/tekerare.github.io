@@ -1,6 +1,6 @@
 :root{
   --singleMainBackground:#f4f4f4;
-  --mainBackground:linear-gradient(90deg, #00000000, #00000000 70%, #ffffff), linear-gradient(#ffffffa0), url('../ui/backgrounds/bd_pinksnow.jpg') !important;
+  --mainBackground:linear-gradient(90deg, #00000000, #00000000 70%, #ffffff), linear-gradient(#ffffffa0), url('../ui/backgrounds/pink-gingham.png') !important;
   --asideBackground:#ffffff;
   --articleSubSurface:#ff809130;
 }
@@ -9,7 +9,7 @@ header, footer{height:0px;}
 header, main, aside, footer{ padding:7px;}
 body{
   background: url('../ui/backgrounds/pink-gingham.png');
-  animation:bgPan linear infinite .8s;
+  animation:bgPan linear infinite 4s;
   background-attachment:fixed;
   background-size: auto, auto, auto, auto;
 }
@@ -22,6 +22,6 @@ body{
   p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
 }
 @keyframes bgPan {
-  0% {background: linear-gradient(#ffffff 0%, #ffffff00 20%, #ffffff00 70%, #ffffff 100%), url('../ui/backgrounds/pink-gingham.png') top 0px left 0px;}
-  100% {background: linear-gradient(#ffffff 0%, #ffffff00 20%, #ffffff00 70%, #ffffff 100%), url('../ui/backgrounds/pink-gingham.png') top 0px left 20px;}
+  0% {background: linear-gradient(#ffffff 0%, #ffffff00 20%, #ffffff00 70%, #ffffff 100%), url('../ui/backgrounds/bd_lilac.jpg') top 0px left 0px;}
+  100% {background: linear-gradient(#ffffff 0%, #ffffff00 20%, #ffffff00 70%, #ffffff 100%), url('../ui/backgrounds/bd_lilac.jpg') top 0px left 64px;}
 }

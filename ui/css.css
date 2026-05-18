@@ -117,11 +117,12 @@ main{ min-height:650px;
 /*SINGLE THEME END*/
 /*FAUX WINDOW THEME START*/
 #fauxWindow{ padding:0px 0px 15px 0px;
-  .panel-wrapper, header{background: var(--fwColor) !important; border:#000000 1px;}#001aff
+  .panel-wrapper, header{background: var(--fwColor) !important; border:#000000 1px;}
   header{ height:77px !important; border-style:solid solid none solid; padding: 3px 3px 6px 3px !important; text-align:start;
-	button{background: url('icons/window_set.png') no-repeat, var(--fwColor); box-shadow:var(--fwBoxShadow); border:1px #000000 solid; min-height: var(--fwButtonSize); min-width:var(--fwButtonSize);margin:-0px -0px; pointer-events:auto;cursor:not-allowed;}
+	button{background: url('icons/window_set.png') no-repeat, var(--fwColor); box-shadow:var(--fwBoxShadow); border:1px #000000 solid; min-height: var(--fwButtonSize); min-width:var(--fwButtonSize); pointer-events:auto;cursor:not-allowed;}
     button:hover{box-shadow: inset -1px -1px #808080, inset 1px 1px , inset -2px -2px #ffffff, inset 2px 2px #ffffff;}
-	h1{font-family:'ms gothic', sans-serif; background:0; background:var(--browserTitle); font-size:12px; margin:0 auto; color:#ffffff; padding:4px;}
+	span{ background:0; background:var(--browserTitle); margin:0 auto; color:#ffffff; padding:4px;}
+	span{position:relative;}
 	> div{ box-sizing:border-box; box-shadow: inset 0px -1px #0a0a0a, inset -0px -2px #808080;padding: 2px 3px 4px 3px !important;}
   }
   header, .panel-wrapper{box-shadow: var(--fwBoxShadow);}
@@ -135,7 +136,7 @@ main{ min-height:650px;
 	aside{border-color:var(--fwColor) var(--fwColor) var(--fwColor) #000000 !important; border-style:inset inset inset dotted !important; border-width:3px 3px 3px 1px !important;}
 	main{border-style: inset !important; border-width:3px 0px 3px 3px !important;}
   }
-  aside{padding:5px 5px 5px 5px; border-color:#000000 var(--fwColor) var(--fwColor) var(--fwColor); border-style:dotted inset inset inset; border-width:1px 3px 3px 3px;
+  aside{max-width:220px; padding:5px 5px 5px 5px; border-color:#000000 var(--fwColor) var(--fwColor) var(--fwColor); border-style:dotted inset inset inset; border-width:1px 3px 3px 3px;
     h2, h1{padding: 4px !important; margin:0;}
     > div{ border:1px #000000; padding:1px; margin: 0px 0px 10px 0px;}
   }
@@ -153,8 +154,7 @@ main{ min-height:650px;
 #body, #singleBody, #fauxWindow{
   a, a:visited{color:var(--linkColor);}
   .panel-wrapper, nav, aside, main, header, footer{margin:0 auto;}
-  header, aside, main, footer{box-shadow:none;}
-  header{padding:10px 0px 0px 0px;min-height:77px; height:102px;border:none;}
+  header{padding:10px 0px 0px 0px;min-height:77px; height:102px;}
   main{h1, h2{ text-transform: lowercase;}}
   h1{font-size:18px;} h2{font-size:16px;}
   aside{background:var(--asideBackground);
@@ -183,8 +183,9 @@ main{ min-height:650px;
 }
 #body aside, #singleBody main { > article, > div{border-color:#949494;}}
 #body, #singleBody{
+  header, aside, main, footer{box-shadow:none;}
   header, footer{ button{color:#000000; margin:0px 1px 0px 1px; background: linear-gradient(#8c757a, #80656b, #6e5157); border:1px solid #303030; padding:2px; border-radius:2px;} button:hover{background: linear-gradient(#6e5157, #80656b, #8c757a);}}
-  header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important; text-align:end;
+  header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important; text-align:end; border:none;
     > div{overflow-y:scroll; border:1px #000000 solid; width:260px; height:67px; background:#ffffff; top:11px; right:-392px;}
   }
   main{margin: 0px 0px 0px 14px;}
