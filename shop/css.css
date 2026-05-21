@@ -6,7 +6,7 @@
   
   
   --bgBlood: url('../ui/backgrounds/drip.png')repeat-x;
-  --bgPageDoll: url('../ui/backgrounds/pagedoll_slaughterlouse.png') bottom right -2% no-repeat;
+  --bgPageDoll: url('../ui/backgrounds/pagedoll_slaughterlouse.png') bottom right -9% no-repeat;
   --scrollBg: url('../ui/backgrounds/pink-gingham.png');
   --x:fixed;
 }
@@ -15,10 +15,11 @@ header, footer{height:0px;}
 header, main, aside, footer{ padding:7px;}
 body{
   background: var(--bgPageDoll), var(--scrollBg) top 0px left 0px;
-  animation:bgPan linear infinite 50s;
+  animation:bgPan linear infinite 90s;
   background-attachment:fixed;
 }
-#body{ max-width:644px;
+header, .panel-wrapper, footer{ max-width:644px;}
+#body{
   main{background: var(--mainBackground); border:0px;}
 }
 #eventsWidget, #eventsWidget > div{box-shadow: none !important;}
@@ -28,5 +29,5 @@ body{
 }
 @keyframes bgPan {
   0% {background: var(--bgBlood) top left, var(--bgPageDoll), var(--scrollBg) top 0px left 0px; background-attachment:var(--x);}
-  100% {background: var(--bgBlood) top left 800px, var(--bgPageDoll), var(--scrollBg) top 0px left 400px; background-attachment:var(--x);}
+  100% {background: var(--bgBlood) top left 800px, var(--bgPageDoll), var(--scrollBg) top 0px left -860px; background-attachment:var(--x);}
 }
