@@ -29,7 +29,7 @@ function readerUI(){
 }
 function badgeLink(){
   const x = document.createElement("div");
-  x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></textarea><quiet style="font-size:10px;">Authenticated for badge-represented linkage of TKR. This code allows updates across links.</quiet>';
+  x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></textarea><quiet style="font-size:10px;">Badge-represented linkage. This code allows updates across links.</quiet>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function galleryWidget(){
@@ -42,14 +42,14 @@ function galleryWidget(){
 function eventWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
-  x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ul><li><a href="https://www.kimokawaii.net" target="_blank">kimokawaii</a> @ conroe tx<br>(june 06-07)</li><li><a href="https://www.instagram.com/p/DXE-ipRjlHb/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank">tadc fan popup @ sugarland tx</a><br>(june 27 - 28)</li><li>identity v popup @ sugarland tx<br>(oct 10)</li><strike><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/shop/timeline" target="_parent">/shop/</a></p>';
+  x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ul><li><a href="https://www.instagram.com/p/DXE-ipRjlHb/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank">tadc fan popup @ sugarland tx</a><br>(june 27 - 28)</li><li>identity v popup @ sugarland tx<br>(oct 10)</li><strike><li>kimokawaii @ conroe tx<br>(june 06-07)</li><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/shop/timeline" target="_parent">/shop/</a></p>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function kofiWidget(){
   const x = document.createElement('div');
   x.setAttribute('id' , 'kofiWidget');
   x.setAttribute('style','bottom-padding:2px;');
-  x.innerHTML = '<h3>Browse My Shop</h3><span style="text-align:center;"><a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" class="image" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></span>';
+  x.innerHTML = '<h3>Browse My Shop</h3><span style="text-align:center;"><a href="https://'+ siteURL +'/shop/" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" class="image" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></span>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function browsePosts(){
