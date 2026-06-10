@@ -35,7 +35,7 @@ function badgeLink(){
 function galleryWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'galleryWidget');
-  x.innerHTML = '<h2 style="text-align:center;">&rarr; Newest In Gallery &larr;</h2><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/tadc_2026-04-08_jaxatyourservice.jpg" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
+  x.innerHTML = '<h2 style="text-align:center;">&rarr; Newest In Gallery &larr;</h2><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/tadc-2026_06_08.jpg" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
   document.getElementById('asideWrp').appendChild(x);
 }
 
@@ -49,7 +49,7 @@ function kofiWidget(){
   const x = document.createElement('div');
   x.setAttribute('id' , 'kofiWidget');
   x.setAttribute('style','bottom-padding:2px;');
-  x.innerHTML = '<h3>Browse My Shop</h3><span style="text-align:center;"><a href="https://'+ siteURL +'/shop/" target="_blank"><img src="https://' + siteURL + '/media/prmo/sticker_fujochud.jpg" class="image" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></span>';
+  x.innerHTML = '<h3>Browse My Shop</h3><span style="text-align:center;"><a href="https://'+ siteURL +'/shop/" target="_blank"><img src="https://' + siteURL + '/media/prmo/maidjaxstandee.jpg" class="image" alt="promotional image for nickjudy car keys stickers" title="nickjudy car keys sticker available on my ko-fi"></a></span>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function browsePosts(){
