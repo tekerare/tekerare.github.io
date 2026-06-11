@@ -210,7 +210,7 @@ main{ min-height:650px;
   > img{ width:50%;}
 }
 .playlist{h3{background:url('theme/icon-tune.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); padding:0px 0px 0px 18px;a{transition:.4s ease-in-out;}a:hover{letter-spacing:1px;}}}
-.mediaList, .itemList{ margin:0px 10px 0px 10px;div{margin:0 auto;}a{color:#ff5e89 !important;}span{margin:0px;}}
+.mediaList, .itemList{ margin:0px 10px 0px 10px;div{margin:0 auto;}a{color:#000000 !important;}span{margin:0px;}}
 .mediaList{ text-align:center;
   img{height:150px; cursor:zoom-in;}
 }
