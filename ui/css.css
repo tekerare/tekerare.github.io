@@ -3,7 +3,7 @@
 @font-face {font-family: "assimilation"; src: url("../fonts/assimilation.TTF");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
 :root{
-  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat bottom 10px left 15px, url("backgrounds/shimotsumafield.jpg") repeat-x bottom;
+  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat bottom 10px left 15px, url("backgrounds/shimotsumafield.jpg") repeat-x bottom, #ffffff;
   --asideBackground:url('backgrounds/whitedotted.jpg');
   --mainBackground:#bfa6ac;
   --singleMainBackground:url('backgrounds/whitedotted.jpg');
@@ -32,7 +32,7 @@
 html{scroll-behavior: smooth; scrollbar-color: var(--bodyArticleH1) #ffffff; scrollbar-width: auto;font-family: "MS PGothic", sans-serif; font-size:12px;}
 body{
   background: var(--htmlBG);
-  background-size:auto, cover;
+  background-attachment:fixed;
   min-width:789px;
   margin: 0 auto;
 }
