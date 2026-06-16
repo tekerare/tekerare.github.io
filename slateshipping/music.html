@@ -70,7 +70,7 @@
     </div>
   </article>
 </main>
-<aside id="rWrp">
+<aside id="asideWrp">
 </aside>
 </div>
 <footer id="footer">
@@ -86,26 +86,7 @@ const audioFiles = [
   "audios/phatworld_135merkaz.mp3",
   "audios/sekt-87_brain(morefoolu).mp3",
 ];
-let currentAudioIndex = 0;
-const audioElement = document.getElementById('audio');
-function changeAudio(audioURL) {
-  audioElement.src = audioURL;
-  audioElement.load();
-  audioElement.play();
-}
-document.querySelectorAll('h3 a').forEach(function(h3, index) {
-  h3.addEventListener('click', function() {
-    currentAudioIndex = index;
-    const audioURL = audioFiles[currentAudioIndex];
-    changeAudio(audioURL);
-  });
-});
-
-audioElement.addEventListener('ended', function() {
-  currentAudioIndex = (currentAudioIndex + 1) % audioFiles.length;
-  const nextAudioURL = audioFiles[currentAudioIndex];
-  changeAudio(nextAudioURL);
-});
 </script>
+<script src="../ui/audioPlaylistExt.js"></script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>アメイジング・デジタル・サーカス</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<meta name="description" content="A fanpage/online shrine of all things TADC.">
+<meta property="og:image" content="preview.png"/>
+<link rel="stylesheet" href="../ui/css.css">
+<link rel="stylesheet" href="css.css">
+<script src="../ui/ui.js"></script>
+<script src="js.js"></script>
+</head>
+<body id="body">
+<header id="header">
+</header>
+<nav id="nav">
+</nav>
+<div class="panel-wrapper">
+<main id="mainWrp">
+  <h1>Playlist</h1>
+  <article>
+    <h2>FunnyBunny Playlist (Select A Track To Play)</h2>
+	<div>
+	  <audio controls="" id="audio" autoplay="false" tabindex="0"></audio>
+	  <div>
+	  <table class="playlist">
+	    <tr>
+		  <td>
+			<h3><a onclick='changeAudio(0)'> Squarepusher - Dark Steering</a></h3>
+			<p>the song that inspired my <a style="border-bottom: dotted 1px #000000;" onclick="img='../media/og_rtwrk/tadc_witchgirlwithnicotineaddiction.jpg';enlarge();">"Tgirl Witch Jax"</a> piece.</p>
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+			<h3><a onclick='changeAudio(1)'> Esp - Lyla</a></h3>
+			<p>relief and the abstract</p>
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+			<h3><a onclick='changeAudio(1)'> Lauren Bousfield - Hazer</a></h3>
+			<p>her resentment has no home to go back to</p>
+		  </td>
+		</tr>
+	  </table>
+	  </div>
+	</div>
+  </article>
+</main>
+<aside id="asideWrp">
+</aside>
+</div>
+<footer id="footer">
+</footer>
+<script>theme = 4;loadTheme();</script>
+<script>
+const audioFiles = [
+  "../audios/squarepusher_darksteering.mp3",
+  "../audios/esp_lyla.mp3",
+  "../audios/laurenbousfield_hazer.mp3"
+];
+</script>
+<script src="../ui/audioPlaylistExt.js"></script>
+</body>
+</html>

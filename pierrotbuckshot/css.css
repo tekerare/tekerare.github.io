@@ -7,7 +7,3 @@ body{background: url('ui/jxstpom.png') no-repeat top left 2%, url('ui/jxstpom.pn
 #fullRes {border: 0;}
 main{background:url('../ui/backgrounds/bd_lilac.jpg') !important;
   div > h2{ -webkit-text-stroke: 3px #ffffff; paint-order: stroke fill; color:#6e588c;}
-#checkpoint{
-  background:url("ui/checkpoint.png") no-repeat;
-  h1{text-shadow: 2px 2px 2px #ffffff,-2px -2px 2px #ffffff, 2px -2px 2px #ffffff, -2px 2px 2px #ffffff;}
-}

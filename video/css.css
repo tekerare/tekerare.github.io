@@ -1,0 +1,15 @@
+:root{
+  --singleMainBackground: url('../ui/backgrounds/green-gingham.gif') !important;
+  --mainBackground:linear-gradient(90deg, #00000000, #00000000 70%, #ffffff), url('../ui/backgrounds/green-gingham.gif') !important;
+  --asideBackground:#ffffff;
+  --articleSubSurface:#ff809130;
+  
+  --x:fixed;
+}
+a, a:visited{color:#ffffff;}
+header, footer{height:0px;}
+header, main, aside, footer{ padding:7px;}
+#body{
+  main{background: var(--mainBackground); border:0px;}
+}
+#eventsWidget{> div{height:auto !important; overflow-y:auto !important;}}
