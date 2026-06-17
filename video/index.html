@@ -21,7 +21,7 @@
 <div class="panel-wrapper">
 <main id="mainWrp">
   <span style="text-align:center;">
-    <video id="video" tabindex="0" controls style="width:100%;">
+    <video id="video" tabindex="0" controls style="background:#000000; width:100%; max-height:370px;">
       <source src="../media/videos/ravefurrest2026/demifiend.mp4" type="video/mp4">
 	</video>
   </span>
@@ -29,17 +29,20 @@
     <tr>
 	  <td>
         <h2>ravefurrest 2026</h2>
-	    <a onclick='changeVideo(0)'><button>demifiend.mp4</button></a>
-		<a onclick='changeVideo(1)'><button>kittenhouse1.mp4</button></a>
-		<a onclick='changeVideo(2)'><button>kittenhouse2.mp4</button></a>
+	    <a onclick='changeVideo(0)'><button>demifiend</button></a>
+		<a onclick='changeVideo(0)'><button>kittenhouse1</button></a>
+		<a onclick='changeVideo(0)'><button>kittenhouse2</button></a>
 	  </td>
 	</tr>
     <tr>
 	  <td>
 	    <h2>amped 2026</h2>
-	    <a onclick='changeVideo(3)'><button>fuckice.mp4</button></a>
-		<a onclick='changeVideo(4)'><button>metalpipe.mp4</button></a>
-		<a onclick='changeVideo(5)'><button>sambawhistle.mp4</button></a></td>
+	    <a onclick='changeVideo(0)'><button>fuckice</button></a>
+		<a onclick='changeVideo(0)'><button>metalpipe</button></a>
+		<a onclick='changeVideo(0)'><button>sambawhistle</button></a>
+		<a onclick='changeVideo(0)'><button>janey</button></a>
+		<a onclick='changeVideo(0)'><button>kickcircle</button></a>
+		</td>
 	</tr>
   </table>
 </main>
@@ -58,6 +61,8 @@ const videoFiles = [
   "../media/videos/amped/fuckice.mp4",
   "../media/videos/amped/metalpipe.mp4",
   "../media/videos/amped/sambawhistle.mp4",
+  "../media/videos/amped/janey.mp4",
+  "../media/videos/amped/kickcircle.mp4"
 ];
 let currentVideoIndex = 0;
 const videoElement = document.getElementById('video');
