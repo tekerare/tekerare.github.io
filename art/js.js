@@ -1,5 +1,7 @@
 function guLogMap(){
-  document.write('<a href="https://' + siteURL + '/art/" target="_parent"><img src="https://' + siteURL + '/media/label/gristlepod_spin.gif" alt="*GRISTLEPOD*" style="max-width:180px; image-rendering:crisp-edges;"></a><br><div class="altm1"><ol><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li><li><a href="https://' + siteURL + '/shop/" target="_parent">shop</a></li></ol></div>');
+  const x = document.getElementById('asideWrp');
+  x.innerHTML = '<a href="https://' + siteURL + '/art/" target="_parent"><img src="https://' + siteURL + '/media/label/gristlepod_spin.gif" alt="*GRISTLEPOD*" style="max-width:180px; image-rendering:crisp-edges;"></a>';
+  artSiteMap();
   eventWidget();
 }
 window.onload = function(){

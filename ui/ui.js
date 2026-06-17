@@ -1,5 +1,5 @@
 const siteURL = 'tekerare.github.io';
-const mailAddress = '0ekekddddd@protonmail.com';
+const mailAddress = 'tekerare@protonmail.com';
 
 let img;
 
@@ -38,7 +38,12 @@ function galleryWidget(){
   x.innerHTML = '<h2 style="text-align:center;">&rarr; Newest In Gallery &larr;</h2><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/tadc-2026_06_08.png" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
   document.getElementById('asideWrp').appendChild(x);
 }
-
+function artSiteMap(){
+  const x = document.createElement("ul");
+  x.setAttribute('class','ulSiteMap');
+  x.innerHTML = '<li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">shop</a></li><ul><li><a href="https://' + siteURL + '/shop/terms" target="_parent">terms</a></li><li><a href="https://' + siteURL + '/shop/timeline" target="_parent">booths</a></li><li><a href="https://ko-fi.com/tekerare" target="_blank">ko-fi</a></li></ul><li>thanks for supporting &hearts;</li>';
+  document.getElementById('asideWrp').appendChild(x);
+}
 function eventWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
