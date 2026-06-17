@@ -25,12 +25,31 @@
       <source src="../media/videos/ravefurrest2026/demifiend.mp4" type="video/mp4">
 	</video>
   </span>
-  <p>under construction! please enjoy this video from ravefurrest houston 2026.</p>
+  <table>
+    <tr>
+	  <td>
+        <h2>ravefurrest 2026</h2>
+	    <a onclick='changeVideo(0)'><button>demifiend.mp4</button></a>
+		<a onclick='changeVideo(1)'><button>kittenhouse1.mp4</button></a>
+		<a onclick='changeVideo(2)'><button>kittenhouse2.mp4</button></a>
+	  </td>
+	</tr>
+    <tr>
+	  <td>
+	    <h2>amped 2026</h2>
+	    <a onclick='changeVideo(3)'><button>fuckice.mp4</button></a>
+		<a onclick='changeVideo(4)'><button>metalpipe.mp4</button></a>
+		<a onclick='changeVideo(5)'><button>sambawhistle.mp4</button></a></td>
+	</tr>
+  </table>
+  <article class="forceSingle">
+    <h2>what is this?</h2>
+	<div>
+	  <p>real life videos. mostly events, raves, or shows organized by year.</p></p>
+	</div>
+  </article>
 </main>
 <aside id="asideWrp">
-<ul>
-
-</ul>
 </aside>
 </div>
 <footer id="footer">
@@ -38,6 +57,27 @@
 <script>theme = 1;loadTheme();</script>
 </body>
 <script>
-
+const videoFiles = [
+  "../media/videos/ravefurrest2026/demifiend.mp4",
+  "../media/videos/ravefurrest2026/kittenhouse1.mp4",
+  "../media/videos/ravefurrest2026/kittenhouse2.mp4",
+  "../media/videos/amped/fuckice.mp4",
+  "../media/videos/amped/metalpipe.mp4",
+  "../media/videos/amped/sambawhistle.mp4",
+];
+let currentVideoIndex = 0;
+const videoElement = document.getElementById('video');
+function changeVideo(videoURL) {
+  videoElement.src = videoURL;
+  videoElement.load();
+  videoElement.play();
+}
+document.querySelectorAll('td a').forEach(function(td, index) {
+  td.addEventListener('click', function() {
+    currentVideoIndex = index;
+    const videoURL = videoFiles[currentVideoIndex];
+    changeVideo(videoURL);
+  });
+});
 </script>
 </html>
