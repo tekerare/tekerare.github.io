@@ -20,32 +20,54 @@
 </nav>
 <div class="panel-wrapper">
 <main id="mainWrp">
-  <h1>video</h1>
-  <span style="text-align:center;">
-    <video id="video" tabindex="0" controls style="background:#000000; width:100%; max-height:370px;">
-      <source src="../media/videos/ravefurrest2026/demifiend.mp4" type="video/mp4">
-	</video>
-  </span>
-  <table>
-    <tr>
-	  <td>
-        <h2>ravefurrest 2026</h2>
-	    <a onclick='changeVideo(0)'><button>demifiend</button></a>
-		<a onclick='changeVideo(0)'><button>kittenhouse1</button></a>
-		<a onclick='changeVideo(0)'><button>kittenhouse2</button></a>
-	  </td>
-	</tr>
-    <tr>
-	  <td>
-	    <h2>amped 2026</h2>
-	    <a onclick='changeVideo(0)'><button>fuckice</button></a>
-		<a onclick='changeVideo(0)'><button>metalpipe</button></a>
-		<a onclick='changeVideo(0)'><button>sambawhistle</button></a>
-		<a onclick='changeVideo(0)'><button>janey</button></a>
-		<a onclick='changeVideo(0)'><button>kickcircle</button></a>
-		</td>
-	</tr>
-  </table>
+  <div class="mediaViewer">
+    <video src="../media/videos/ravefurrest2026/demifiend.mp4" loop controls class="mediaVid"></video>
+    <h2 class="mediaVidTitle">muleviewer 1.0</h2>
+	<div class="mediaVidDescription">real footage of shows or events i've been at. hopefully i can tip the scales by a grain to help you figure if they're worth going to. if u wanna meet at any local upcoming events, e-mail me a week or two in advance.</div>
+  </div>
+  <div class="playlist">
+	<div class="list">
+      <video src="../media/videos/ravefurrest2026/crowdcheck.mp4" class="list-video"></video>
+	  <h2 class="list-title">ravefurrest 2026: 8:00pm venuecheck</h2>
+	  <span class="list-description"><p>me and my coworker got to <b>the secret group</b> the earliest, but we got kicked out of the line for on-premise liquor so we decided to nose around any new faces while we finished our drinks. this is the earliest venuecheck i could capture for the first hour of the show.</p></span>
+    </div>
+	<div class="list">
+      <video src="../media/videos/ravefurrest2026/kittenhouse.mp4" class="list-video"></video>
+	  <h2 class="list-title">ravefurrest 2026: kittenhouse</h2>
+	  <span class="list-description"><p>kittenhouse upclose. it was a very strong set to start the night off for sure. here's <a href="https://x.com/kitt3nhouse">tracie's sns</a> if you're interested.</p></span>
+    </div>
+	<div class="list active">
+      <video src="../media/videos/ravefurrest2026/demifiend.mp4" class="list-video"></video>
+	  <h2 class="list-title">ravefurrest 2026: demifiend</h2>
+      <p class="list-description">my favorite set of the entire night. half of the venue cleared out after russelbuck's window so i had more area to shuffle around.</p>
+	</div>
+	<div class="list">
+      <video src="../media/videos/ravefurrest2026/jup1t3r.mp4" class="list-video"></video>
+	  <h2 class="list-title">ravefurrest 2026: jup1t3r</h2>
+	  <span class="list-description"><p>the final stretch. you could really tell who the real technoheads were, left were the people unafraid to shred a little concrete and i danced up on stage with some of them. here's <a href="https://soundcloud.com/333jptr/tracks" target="_blank">jup1ter's soundcloud</a>, go check it out.</p></span>
+    </div>
+	<div class="list active">
+	  <video src="../media/videos/amped/fuckice.mp4" class="list-video"></video>
+	  <h2 class="list-title">amped 2026: fuck ice</h2>
+	  <span class="list-description"><p></p></span>
+	</div>
+	<div class="list">
+	  <video src="../media/videos/amped/kickcircle.mp4" class="list-video"></video>
+	  <h2 class="list-title">amped 2026: kick circle</h2>
+	  <span class="list-description"><p>can't have a good time without a good kick circle. shot with courtesy of my friend jane.</p></span>
+    </div>
+    <div class="list">
+      <video src="../media/videos/amped/meandjane.mp4" class="list-video"></video>
+	  <h2 class="list-title">amped 2026: me and jane</h2>
+	  <span class="list-description"><p>it got too sweaty towards the middle but we were still having a lot of fun on the sides. we dove back in after this video.</p></span>
+    </div>
+	<div class="list active">
+	  <video src="../media/videos/amped/sambawhistle.mp4" class="list-video"></video>
+	  <h2 class="list-title">amped 2026: samba whistle</h2>
+	  <span class="list-description"><p>i didn't take a lot of videos for amped because i spent most of the show dancing. i took this while resting at the back and lol, look at all these people too scared to look dumb dancing XD</p>
+	  <p>this was pretty much the kind of energy amped and its following events attracted, but that's why you bring friends.</p></span>
+	</div>
+  </div>
 </main>
 <aside id="asideWrp">
 </aside>
@@ -53,31 +75,22 @@
 <footer id="footer">
 </footer>
 <script>theme = 1;loadTheme();</script>
-</body>
 <script>
-const videoFiles = [
-  "../media/videos/ravefurrest2026/demifiend.mp4",
-  "../media/videos/ravefurrest2026/kittenhouse1.mp4",
-  "../media/videos/ravefurrest2026/kittenhouse2.mp4",
-  "../media/videos/amped/fuckice.mp4",
-  "../media/videos/amped/metalpipe.mp4",
-  "../media/videos/amped/sambawhistle.mp4",
-  "../media/videos/amped/janey.mp4",
-  "../media/videos/amped/kickcircle.mp4"
-];
-let currentVideoIndex = 0;
-const videoElement = document.getElementById('video');
-function changeVideo(videoURL) {
-  videoElement.src = videoURL;
-  videoElement.load();
-  videoElement.play();
-}
-document.querySelectorAll('td a').forEach(function(td, index) {
-  td.addEventListener('click', function() {
-    currentVideoIndex = index;
-    const videoURL = videoFiles[currentVideoIndex];
-    changeVideo(videoURL);
-  });
+let videoList = document.querySelectorAll('.playlist .list');
+
+videoList.forEach(vid =>{
+   vid.onclick = () =>{
+      videoList.forEach(remove =>{remove.classList.remove('active')});
+      vid.classList.add('active');
+      let src = vid.querySelector('.list-video').src;
+      let title = vid.querySelector('.list-title').innerHTML;
+      let description = vid.querySelector('.list-description').innerHTML;
+      document.querySelector('.mediaViewer .mediaVid').src = src;
+      document.querySelector('.mediaViewer .mediaVid').play();
+      document.querySelector('.mediaViewer .mediaVidTitle').innerHTML = title;
+      document.querySelector('.mediaViewer .mediaVidDescription').innerHTML = description;
+   };
 });
 </script>
+</body>
 </html>

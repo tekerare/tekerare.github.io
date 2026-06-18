@@ -72,7 +72,7 @@ button{cursor:pointer; font-size:12px; font-family:ms gothic;}
 details{cursor:text;color:#636363;}
 summary{cursor:pointer;}
 iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
-video{background:#ffffff; border:1px #000000 solid;}
+video{background:#000000; border:1px #000000 solid;}
 quiet{color:#00000050;}
 header, footer, h1, h2{image-rendering:crisp-edges;}
 header, nav, .panel-wrapper, footer{width:70%; min-width:644px; max-width:960px;}
@@ -93,7 +93,7 @@ aside{min-width:204px;
 main{ min-height:650px;
   a[href^="http"]:not(:has(img))::after {content: " ↗"}
 }
-#body, #singleBody, nav, .panel-wrapper, aside, main, header, footer{opacity:1; box-sizing:border-box;
+#body, #singleBody, nav, .panel-wrapper, aside, main, header, footer, div, video{opacity:1; box-sizing:border-box;
   div, article, img{background-position:top left;}
 }
 /*BODY THEME START*/
