@@ -23,7 +23,7 @@ audioElement.addEventListener('ended', function() {
 
 // video player
 
-let videoList = document.querySelectorAll('.video-list-container .list');
+let videoList = document.querySelectorAll('.playlist .list');
 
 videoList.forEach(vid =>{
    vid.onclick = () =>{
@@ -31,8 +31,10 @@ videoList.forEach(vid =>{
       vid.classList.add('active');
       let src = vid.querySelector('.list-video').src;
       let title = vid.querySelector('.list-title').innerHTML;
-      document.querySelector('.main-video-container .main-video').src = src;
-      document.querySelector('.main-video-container .main-video').play();
-      document.querySelector('.main-video-container .main-vid-title').innerHTML = title;
+      let description = vid.querySelector('.list-description').innerHTML;
+      document.querySelector('.mediaViewer .mediaVid').src = src;
+      document.querySelector('.mediaViewer .mediaVid').play();
+      document.querySelector('.mediaViewer .mediaVidTitle').innerHTML = title;
+      document.querySelector('.mediaViewer .mediaVidDescription').innerHTML = description;
    };
 });
