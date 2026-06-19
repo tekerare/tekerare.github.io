@@ -55,7 +55,7 @@ ul{margin:0px 0px 0px 0px; padding:3px 0px 3px 23px;}
 ol{list-style-type: hiragana; margin:3px;}
 ul{list-style-type: "→ ";}
 .ulSiteMap{list-style-type: "├ "; > li:first-child{list-style-type:"┌ ";}  > li:last-child{list-style-type:"└ ";}
-  ul{padding:0px 0px 0px 24px; list-style-type: "│   ├ "; li:last-child{list-style-type:"│   └ ";}}
+  ul{padding:0px 0px 0px 24px; list-style-type: "│   ├ "; li:last-child{list-style-type:"│   └ ";} li:last-child{list-style-type:"└   └ ";}}
 }
 li {margin:0px 0px 0px 0px; text-align:start;}
 div, article{position:relative;}
