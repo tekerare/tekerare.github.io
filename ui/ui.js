@@ -41,7 +41,7 @@ function galleryWidget(){
 function artSiteMap(){
   const x = document.createElement("ul");
   x.setAttribute('class','ulSiteMap');
-  x.innerHTML = '<li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">shop</a></li><ul><li><a href="https://' + siteURL + '/shop/terms" target="_parent">terms</a></li><li><a href="https://' + siteURL + '/shop/timeline" target="_parent">booths</a></li><li><a href="https://ko-fi.com/tekerare" target="_blank">ko-fi</a></li></ul>';
+  x.innerHTML = '<li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">shop</a></li><ul><li><a href="https://' + siteURL + '/shop/terms" target="_parent">terms</a></li><li><a href="https://' + siteURL + '/shop/timeline" target="_parent">booths</a></li><li><a href="https://ko-fi.com/tekerare" target="_blank">ko-fi</a></li></ul><li></li>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function eventWidget(){
