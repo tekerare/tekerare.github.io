@@ -54,7 +54,7 @@ function kofiWidget(){
   const x = document.createElement('div');
   x.setAttribute('id' , 'kofiWidget');
   x.setAttribute('style','bottom-padding:2px;');
-  x.innerHTML = '<h3>Browse My Shop</h3><span style="text-align:center;"><a href="https://'+ siteURL +'/shop/" target="_blank"><img src="https://' + siteURL + '/media/prmo/maidjaxstandee.jpg" class="image" alt="promotional image for my maid jax acrylic standee, available on my shop."></a></span>';
+  x.innerHTML = '<h3>Browse My Shop</h3><span style="text-align:center;"><a href="https://'+ siteURL +'/shop/" target="_blank"><img src="https://' + siteURL + '/media/prmo/cafetadcstandees.gif" class="image" alt="promotional image for my servant pomni and maid jax acrylic standee, available on my shop."></a></span>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function browsePosts(){
