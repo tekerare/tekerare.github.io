@@ -41,13 +41,13 @@ function galleryWidget(){
 function artSiteMap(){
   const x = document.createElement("ul");
   x.setAttribute('class','ulSiteMap');
-  x.innerHTML = '<li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">shop</a></li><ul><li><a href="https://' + siteURL + '/shop/terms" target="_parent">terms</a></li><li><a href="https://' + siteURL + '/shop/timeline" target="_parent">booths</a></li><li><a href="https://ko-fi.com/tekerare" target="_blank">ko-fi</a></li></ul><li></li>';
+  x.innerHTML = '<li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">shop</a></li><ul><li><a href="https://' + siteURL + '/shop/terms" target="_parent">terms</a></li><li><a href="https://' + siteURL + '/shop/booths" target="_parent">booths</a></li><li><a href="https://ko-fi.com/tekerare" target="_blank">ko-fi</a></li></ul><li></li>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function eventWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
-  x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ul><li><a href="https://www.instagram.com/p/DXE-ipRjlHb/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank">tadc fan popup @ sugarland tx</a><br>(june 27 - 28)</li><li>identity v popup @ sugarland tx<br>(oct 10)</li><strike><li>kimokawaii @ conroe tx<br>(june 06-07)</li><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/shop/timeline" target="_parent">/shop/</a></p>';
+  x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ul><li>identity v popup @ sugarland tx<br>(july 4)</li><li>identity v popup @ sugarland tx<br>(oct 10)</li><strike><li>tadc fan popup @ sugarland tx<br>(june 27 - 28)</li><li>kimokawaii @ conroe tx<br>(june 06-07)</li><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/shop/booths" target="_parent">/shop/</a></p>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function kofiWidget(){
