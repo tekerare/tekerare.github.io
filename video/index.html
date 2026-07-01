@@ -21,24 +21,11 @@
 <div class="panel-wrapper">
 <main id="mainWrp">
   <div class="mediaViewer">
-    <video src="../media/videos/ravefurrest2026/demifiend.mp4" loop controls class="mediaVid"></video>
+    <video src="../media/videos/ravefurrest2026/demifiend.mp4" loop controls class="videoContainer"></video>
     <h2 class="mediaVidTitle">muleviewer 1.0</h2>
 	<div class="mediaVidDescription">real footage of shows or events i've been at. hopefully i can tip the scales by a grain to help you figure if they're worth going to. if u wanna meet at any local upcoming events, e-mail me a week or two in advance.</div>
   </div>
   <div class="playlist">
-	<div class="list">
-      <video src="../media/videos/popups/tadcpopup_bnb.mp4" class="list-video"></video>
-	  <h2 class="list-title">tadc popup 6/27</h2>
-	  <span class="list-description">
-	    <p>footage provided by the host of the event, luckybot29 (<a href="https://www.tiktok.com/@luckybot29/" target="tiktok">tiktok</a>, <a href="https://www.instagram.com/the_luckybot/" target="_blank">instagram</a>). if you'd like to see my booth setup from this weekend <a href="../shop/booths">click here</a>.</p>
-		<ol>
-		  <li>healthiest support i've ever seen at an event. the zines and funnybunny charms sold out this weekend and we've reached the fund milestone for the acrylic servant pomni standee. did you know this was nikki's first time hosting a pop-up? wow.</li>
-		  <li>survey says that offline fans enjoyed the last episode, and at worst people had mixed feelings. someone called me a fortune teller because of jax's trans arc reveal lol.</li>
-		  <li>place was packed and lively all thanks to the wonderful snacks + drinks concocted by <a href="https://www.instagram.com/sweetpunch.htx/" target="_blank">sweetpunch.htx</a> and <a href="https://www.instagram.com/boba.brothtx/" target="_blank">boba.brothtx</a>. someone gave me a jax cookie; her sugar icing is sweeter than her attitude.</li>
-		</ol>
-		<p>e-mail me if you have more footage of the event! i'd like to post all of it.</p>
-	  </span>
-    </div>
 	<div class="list">
       <video src="../media/videos/ravefurrest2026/crowdcheck.mp4" class="list-video"></video>
 	  <h2 class="list-title">ravefurrest 2026: 8:00pm venuecheck</h2>
@@ -98,8 +85,8 @@ videoList.forEach(vid =>{
       let src = vid.querySelector('.list-video').src;
       let title = vid.querySelector('.list-title').innerHTML;
       let description = vid.querySelector('.list-description').innerHTML;
-      document.querySelector('.mediaViewer .mediaVid').src = src;
-      document.querySelector('.mediaViewer .mediaVid').play();
+      document.querySelector('.mediaViewer .videoContainer').src = src;
+      document.querySelector('.mediaViewer .videoContainer').play();
       document.querySelector('.mediaViewer .mediaVidTitle').innerHTML = title;
       document.querySelector('.mediaViewer .mediaVidDescription').innerHTML = description;
    };

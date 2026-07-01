@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>tkr | shop</title>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" type="image/jpg" href="../favicon.png">
+<meta name="viewport" content="width=1180px">
+<meta name="description" content="tekerare - artwork">
+<meta property="og:image" content="preview.jpg"/>
+<link rel="stylesheet" href="../ui/css.css">
+<link rel="stylesheet" href="css.css">
+<script src="../ui/ui.js"></script>
+<script src="js.js"></script>
+<meta name="author" content="tkr">
+</head>
+<body id="body">
+<header id="header">
+</header>
+<nav id="nav">
+</nav>
+<div class="panel-wrapper">
+<main id="mainWrp">
+  <h1>event log</h1>
+  <div class="mediaViewer">
+    <video src="../media/videos/popups/tadcpopup_bnb.mp4" loop controls class="videoContainer"></video>
+    <h2 class="mediaVidTitle">tadc popup 6/27</h2>
+	<div class="mediaVidDescription">
+	  <span class="list-description">
+	    <p>footage provided by the host of the event, luckybot29 (<a href="https://www.tiktok.com/@luckybot29/" target="tiktok">tiktok</a>, <a href="https://www.instagram.com/the_luckybot/" target="_blank">instagram</a>). if you'd like to see my booth setup from this weekend <a href="../shop/booths">click here</a>.</p>
+		<ol>
+		  <li>healthiest support i've ever seen at an event. the zines and funnybunny charms sold out this weekend and we've reached the fund milestone for the acrylic servant pomni standee. did you know this was nikki's first time hosting a pop-up? wow.</li>
+		  <li>survey says that offline fans enjoyed the last episode, and at worst people had mixed feelings. someone called me a fortune teller because of jax's trans arc reveal lol.</li>
+		  <li>place was packed and lively all thanks to the wonderful snacks + drinks concocted by <a href="https://www.instagram.com/sweetpunch.htx/" target="_blank">sweetpunch.htx</a> and <a href="https://www.instagram.com/boba.brothtx/" target="_blank">boba.brothtx</a>. someone gave me a jax cookie; her sugar icing is sweeter than her attitude.</li>
+		</ol>
+		<p>e-mail me if you have more footage of the event! i'd like to post all of it.</p>
+	  </span>
+	</div>
+  </div>
+  <div class="playlist">
+	<div class="list">
+      <video src="../media/videos/popups/tadcpopup_bnb.mp4" class="list-video"></video>
+	  <h2 class="list-title">tadc popup 6/27</h2>
+	  <span class="list-description">
+	    <p>footage provided by the host of the event, luckybot29 (<a href="https://www.tiktok.com/@luckybot29/" target="tiktok">tiktok</a>, <a href="https://www.instagram.com/the_luckybot/" target="_blank">instagram</a>). if you'd like to see my booth setup from this weekend <a href="../shop/booths">click here</a>.</p>
+		<ol>
+		  <li>healthiest support i've ever seen at an event. the zines and funnybunny charms sold out this weekend and we've reached the fund milestone for the acrylic servant pomni standee. did you know this was nikki's first time hosting a pop-up? wow.</li>
+		  <li>survey says that offline fans enjoyed the last episode, and at worst people had mixed feelings. someone called me a fortune teller because of jax's trans arc reveal lol.</li>
+		  <li>place was packed and lively all thanks to the wonderful snacks + drinks concocted by <a href="https://www.instagram.com/sweetpunch.htx/" target="_blank">sweetpunch.htx</a> and <a href="https://www.instagram.com/boba.brothtx/" target="_blank">boba.brothtx</a>. someone gave me a jax cookie; her sugar icing is sweeter than her attitude.</li>
+		</ol>
+		<p>e-mail me if you have more footage of the event! i'd like to post all of it.</p>
+	  </span>
+    </div>
+  </div>
+</main>
+<aside id="asideWrp">
+</aside>
+</div>
+<footer id="footer">
+</footer>
+<script>theme = 1;loadTheme();</script>
+<script>
+let videoList = document.querySelectorAll('.playlist .list');
+
+videoList.forEach(vid =>{
+   vid.onclick = () =>{
+      videoList.forEach(remove =>{remove.classList.remove('active')});
+      vid.classList.add('active');
+      let src = vid.querySelector('.list-video').src;
+      let title = vid.querySelector('.list-title').innerHTML;
+      let description = vid.querySelector('.list-description').innerHTML;
+      document.querySelector('.mediaViewer .videoContainer').src = src;
+      document.querySelector('.mediaViewer .videoContainer').play();
+      document.querySelector('.mediaViewer .mediaVidTitle').innerHTML = title;
+      document.querySelector('.mediaViewer .mediaVidDescription').innerHTML = description;
+   };
+});
+</script>
+</body>
+</html>

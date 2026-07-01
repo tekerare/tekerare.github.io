@@ -20,7 +20,7 @@
 </nav>
 <div class="panel-wrapper">
 <main id="mainWrp">
-<h1>booth history</h1>
+<h1>my booths</h1>
   <div class="flex">
     <div>
 	  <img src="../media/booths/tadcpopup_bab_2026-1.jpg" class="image" alt="" loading="lazy" onclick="img='../media/booths/tadcpopup_bab_2026-1.jpg';enlarge();">
@@ -47,6 +47,23 @@
 </div>
 <footer id="footer">
 </footer>
-<script>theme = 1;loadTheme();</script>
+<script>
+let videoList = document.querySelectorAll('.playlist .list');
+
+videoList.forEach(vid =>{
+   vid.onclick = () =>{
+      videoList.forEach(remove =>{remove.classList.remove('active')});
+      vid.classList.add('active');
+      let src = vid.querySelector('.list-video').src;
+      let title = vid.querySelector('.list-title').innerHTML;
+      let description = vid.querySelector('.list-description').innerHTML;
+      document.querySelector('.mediaViewer .videoContainer').src = src;
+      document.querySelector('.mediaViewer .videoContainer').play();
+      document.querySelector('.mediaViewer .mediaVidTitle').innerHTML = title;
+      document.querySelector('.mediaViewer .mediaVidDescription').innerHTML = description;
+   };
+});
+</script>
+<script>theme = 2;loadTheme();</script>
 </body>
 </html>
