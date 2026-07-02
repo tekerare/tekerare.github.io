@@ -226,10 +226,10 @@ main{ min-height:650px;
 /* VIDEO PLAYER START */
 .mediaViewer, .playlist{h2{background:0; text-shadow:none;} border: 5px solid transparent; border-image: url('../ui/backgrounds/scallop_white.png') 5 round; padding:3px; width:96%; background:#ffffff; margin:5px auto 5px;}
 .mediaViewer{video{max-width:100%;}
-  .videoContainer{width:100%; max-height:370px; border-radius:7px;}
+  .videoContainer{width:100%; max-height:400px; border-radius:7px;}
   .mediaVidDescription{min-height:50px;}
 }
-.playlist{ height:250px; overflow-y:scroll;
+.playlist{
   .list{video{width:119px; max-height:70px; margin:2px;} display:flex; margin:0;cursor:pointer;}
   .list:hover{background:url(../ui/backgrounds/tone.png);}
   .list-title{margin:auto 0;}
