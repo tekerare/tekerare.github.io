@@ -238,7 +238,7 @@ main{ min-height:650px;
 /* VIDEO PLAYER END */
 /*EXTENSION END*/
 /*RSS FEED START*/
-#rss-feed{> div{height:120px; overflow-y:scroll;}}
+#rss-feed{> div{height:135px; overflow-y:scroll;}}
 .feed-title{display:none;}
 /*RSS FEED END*/
 /*OFFSITE CUSTOMS START*/
