@@ -63,7 +63,7 @@ function browsePosts(){
   document.getElementById('asideWrp').appendChild(x);
 }
 function rssBlock(){
-  document.write('<article id="rss-feed"><h2>most recent change <a href="https://' + siteURL + '/update">(read more @ update log)</a> </h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2F' + siteURL + '%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div></article>');
+  document.write('<article id="rss-feed"><h2>most recent change</h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2F' + siteURL + '%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div></article>');
 }
 function logMap(){
   badgeLink();
