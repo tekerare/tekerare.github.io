@@ -32,6 +32,9 @@ function badgeLink(){
   x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/ui/buttons/button.gif" alt="tekerare: homepage" title="TEKERARE"></a></textarea><quiet style="font-size:10px;">Badge-represented linkage. This code allows updates across links.</quiet>';
   document.getElementById('asideWrp').appendChild(x);
 }
+function changeLog(){
+  document.write('<article id="rss-feed"><h2>most recent <a href="update">change</a></h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2F' + siteURL + '%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div></article>');
+}
 function galleryWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'galleryWidget');
@@ -61,9 +64,6 @@ function browsePosts(){
   const x = document.createElement("div");
   x.innerHTML = '<h2>Browse Site</h2><ul class="ulSiteMap"><li><a href="https://' + siteURL + '">home</a></li><li><a href="https://' + siteURL + '/shop/">shop</a></li><li><a href="https://' + siteURL + '/art/">art</a></li><li><a href="https://' + siteURL + '/log/">log</a></li><li><a href="https://' + siteURL + '/shrines">shrines</a></li><ul><li><a href="https://' + siteURL + '/jfashion">fashion</a></li><li><a href="https://' + siteURL + '/pierrotbuckshot">jax x pomni</a></li><li><a href="https://' + siteURL + '/slateshipping">norton x luchino</a></li></ul><li><a href="https://' + siteURL + '/music/">music</a></li><li><a href="https://' + siteURL + '/update">update</a></li><li><a href="https://' + siteURL + '/video/">video</a></li><ul><li><a href="https://' + siteURL + '/video/stream">stream</a></li></ul><li><a href="https://' + siteURL + '/about">about</a></li></ul><br>';
   document.getElementById('asideWrp').appendChild(x);
-}
-function rssBlock(){
-  document.write('<article id="rss-feed"><h2>most recent change</h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2F' + siteURL + '%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div></article>');
 }
 function logMap(){
   badgeLink();

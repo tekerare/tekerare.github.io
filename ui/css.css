@@ -169,7 +169,7 @@ main{ min-height:650px;
   footer{height:80px; background-repeat: no-repeat !important;}
   article{ margin:5px auto 5px auto; border-radius:5px; margin: 5px auto 5px; padding:5px; backdrop-filter:blur(1px); box-shadow: inset 0px 0px 7px var(--articleSubSurface), inset 0px 0px 7px #ffffff; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff00 100%); border:1px solid; border-color:#000000; width:95%;
     h1, h2{ text-shadow: -1px -1px 0 var(--bodyArticleH1), 1px -1px 0 var(--bodyArticleH1), -1px 1px 0 var(--bodyArticleH1), 1px 1px 0 var(--bodyArticleH1); background: url('theme/icon-h2_bull.gif') no-repeat top left 2px, linear-gradient(90deg, var(--bodyArticleH1Bg), #00000000, #00000000); background-size:20px, auto; height:19px; margin:0px 0px 4px 0px; color:#ffffff; padding:1px 0px 0px 24px;
-	  a {color: #ffffff !important; font-size: 11px; opacity: 0.5;}
+	  a {color: #ffffff !important;}
     }
     > div{box-shadow:inset 0px 0px 3px -1px #000000; border: #000000 1px solid; padding:0px;
 	}
