@@ -131,7 +131,7 @@ main{ min-height:650px;
   header, .panel-wrapper{box-shadow: var(--fwBoxShadow);}
   .panel-wrapper{border-style:none solid none solid; padding:4px !important; margin:0 auto; cursor:default;
     ::selection{background:#00000020 !important;}
-	img{ max-width:95%; margin:0 auto; max-height: 367px;}
+	img{ max-width:95%; margin:0 auto; max-height: 340px;}
     ::selection{background:#00000000}
   }
   @media (min-width: 10px) {
@@ -206,9 +206,7 @@ main{ min-height:650px;
 #preview{background:#000000b5; backdrop-filter: blur(3px); background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none; cursor:zoom-out; padding:5vh 0px 4vh 0px; font-family:hack; font-size:20px;}
 #fullRes{ max-height:80vh; border:#ffffff 1px solid;}
 .flex{background:none; box-shadow:none !important; border:none !important; display:flex; width: 96%; max-width:610px; margin:2px auto !important; padding: 0px !important;
-  > div, > article, > a{width:50%; margin:0px 1px 0px 1px !important; 
-    > img{ width:97%;}
-  }
+  > div, > article, > a{width:50%; > img{ max-width:96% !important;}}
   > img{ width:49%;}
 }
 .playlist{h3{ background:url('theme/icon-tune.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); text-shadow:none; padding:0px 0px 0px 18px;a{transition:.2s ease-in-out;}a:hover{letter-spacing:1px;}}}
