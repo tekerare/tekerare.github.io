@@ -131,7 +131,7 @@ main{ min-height:650px;
   header, .panel-wrapper{box-shadow: var(--fwBoxShadow);}
   .panel-wrapper{border-style:none solid none solid; padding:4px !important; margin:0 auto; cursor:default;
     ::selection{background:#00000020 !important;}
-	img{ max-width:95%; margin:0 auto;}
+	img{ max-width:95%; margin:0 auto; max-height: 367px;}
     ::selection{background:#00000000}
   }
   @media (min-width: 10px) {
