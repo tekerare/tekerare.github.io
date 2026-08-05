@@ -1,8 +1,9 @@
 /* GLOBAL ROOT */
 :root{
-  --singleMainBackground:linear-gradient(#ffffffa0), url('backgrounds/gobelin.gif');
-  --mainBackground:linear-gradient(#ffffff40), url('backgrounds/gobelin.gif');
-  --asideBackground: url('../ui/theme/borderhighlight.png') top left repeat-y, url('lOverhang/fashion.png') no-repeat top left, linear-gradient(#ffffff40), url('../ui/backgrounds/gobelin.gif');
+  --htmlBG:url('https://tekerare.github.io/ui/backgrounds/shimotsumaflowers.jpg') repeat-x bottom;
+  --singleMainBackground:linear-gradient(#ffffffa0), url('backgrounds/pink-gingham.png');
+  --mainBackground:linear-gradient(#ffffff40), url('backgrounds/pink-gingham.png');
+  --asideBackground: url('../ui/theme/borderhighlight.png') top left repeat-y, url('lOverhang/fashion.png') no-repeat top left, linear-gradient(#ffffff40), url('../ui/backgrounds/pink-gingham.png');
   --headingBorder:#000000;
   --boldTxt:#4b4d00;
 }
