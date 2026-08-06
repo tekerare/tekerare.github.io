@@ -1,9 +1,9 @@
 /* GLOBAL ROOT */
 :root{
   --htmlBG:url('https://tekerare.github.io/ui/backgrounds/shimotsumaflowers.jpg') repeat-x bottom;
-  --singleMainBackground:linear-gradient(#ffffffa0), url('backgrounds/pink-gingham.png');
-  --mainBackground:linear-gradient(#ffffff40), url('backgrounds/pink-gingham.png');
-  --asideBackground: url('../ui/theme/borderhighlight.png') top left repeat-y, url('lOverhang/fashion.png') no-repeat top left, linear-gradient(#ffffff40), url('../ui/backgrounds/pink-gingham.png');
+  --singleMainBackground:url('backgrounds/pink-gingham.png');
+  --mainBackground:url('backgrounds/pink-gingham.png');
+  --asideBackground: url('../ui/theme/borderhighlight.png') top left repeat-y, url('lOverhang/fashion.png') no-repeat top left, url('../ui/backgrounds/pink-gingham.png');
   --headingBorder:#000000;
   --boldTxt:#4b4d00;
 }
