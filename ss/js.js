@@ -1,0 +1,10 @@
+window.onload = function(){
+  const x = document.getElementById('asideWrp');
+  const locationTitle = document.getElementById('windowLocation');
+  x.innerHTML = '<span style="text-align:center;"><img src="media/notoruki_pixel.png" alt="Pixel art of Norton and Luchino with a cubic heart connecting them." title="pixel by tkr" style="pointer-events:none;width:170px;"><br>ノトルキ &hearts; 愚教 &hearts; 勘蜥<br><marquee scrollamount="2">nortluchi &hearts; foolish teacher &hearts; exploring lizard</marquee></span><div><h2>Browse</h2><span style="text-align:center;"><a href="." target="_parent"><img src="ui/sdtitle.png" alt="&quot;SlateShip&quot;" title="RETURN TO PORTAL"></a></span><ul class="ulSiteMap"><li><a href="nortluchi">What Is Norton x Luchino?</a></li><li><a href="whoisluchino">Who Is Luchino?</a></li><li><a href="merch">My Merchandise Gallery</a></li><li><a href="fanart">Fanart Gallery</a></li><li><a href="headcanons">Headcanons</a></li><li><a href="itabag">痛バ ItaBag Diary</a></li><li><a href="nortoncosplay">My Norton Cosplay</a></li><li><a href="music">Music Playlist</a></li></ul><h2>Blog Stats</h2><p><b>Created since:</b> 2024.09.06<br></p><span style="text-align:center;"><img src="media/notoruki_portrait.png" alt="A Luchino x Norton sketch I drew." title="Aren&apos;t they cute?" onclick="img=&apos;media/notoruki_portrait.png&apos;;enlarge();" style="border:1px #000000 solid;"></span></div>';
+  const z = document.createElement('span');
+  z.setAttribute('style' , 'text-align:center; cursor:not-allowed;');
+  z.innerHTML = '<a href="https://web.archive.org/web/20040730071408fw_/http://omoh.clayangel.net/" target="_blank"><img src="https://' + siteURL + '/media/yaoi_yuri.jpg" alt="Yaoi &amp; yuri support on the web - open your mind, open your heart." title="Yaoi &amp; yuri support on the web - open your mind, open your heart." style="border:1px #000000 solid; max-width:100%;"></a>';
+  document.getElementById('asideWrp').appendChild(z);
+  locationTitle.innerHTML = 'SLATESHIPPING - norton x luchino church';
+}

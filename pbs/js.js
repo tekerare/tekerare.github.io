@@ -1,0 +1,13 @@
+window.onload = function(){
+  const x = document.getElementById('asideWrp');
+  x.innerHTML = '<div><span style="text-align:center;"><img src="https://'+ siteURL + '/pbs/media/merch/2026_08-08-figures.jpg" class="image" alt="All my Jax &amp; Pomni vinyl/plastic figures of 2026" title="All my Jax &amp; Pomni vinyl/plastic figures of 2026." loading="lazy" onclick="img=&apos;media/merch/2026_08-08-figures.jpg&apos;;enlarge();"></span><p>アメイジング<br>デジタル・サーカス<br>fanpage curated by tkr<br>original series property of gooseworx</p><h2>Browse</h2><ul class="ulSiteMap"><li><a href="https://' + siteURL + '/pbs/">Entrance</a></li><li><a href="https://' + siteURL + '/pbs/funnybunny" target="_parent">What Is FunnyBunny?</a></li><li><a href="https://' + siteURL + '/pbs/zines" target="_parent">Buy My Zines Here!</a></li><li><a href="https://' + siteURL + '/pbs/merch">My Merchandise Gallery</a></li><li><a href="https://' + siteURL + '/pbs/diyfashion">DIY Fashion Projects</a></li><li><a href="https://' + siteURL + '/pbs/cosplay">Cosplay Showcase</a></li><li>Places</li><ul><li><a href="https://' + siteURL + '/pbs/place/bobabrothtadcpopup2026">B&amp;B TADC Popup 2026</a></li><li><a href="https://' + siteURL + '/pbs/place/nchouston2026">Nostalgia Con 2026</a></li><li><a href="https://' + siteURL + '/pbs/place/avhouston2026">Animeverse 2026</a></li><li><a href="https://' + siteURL + '/pbs/place/af2025">Anime Frontier 2025</a></li></ul><li><a href="https://' + siteURL + '/pbs/fanart">Fanart Gallery</a></li><li><a href="https://' + siteURL + '/pbs/music">FunnyBunny Playlist</a></li></ul></div><h2>Blog Stats</h2><div><p><b>Created since:</b> 2025.09.10</div>';
+  const jas = document.createElement('span');
+  jas.innerHTML = '<a href="https://'+ siteURL +'/shop/"><img src="https://'+ siteURL +'/media/prmo/cafetadcstandees.gif" alt="a picture of a fanmade acrylic jax standee and acrylic pomni standee created by gristlepod" title="buy the servant pomni &amp; maid jax standee here!" style="margin:3px;"></a>';
+  document.getElementById('asideWrp').appendChild(jas);
+  const z = document.createElement('span');
+  z.setAttribute('style' , 'cursor:not-allowed;');
+  z.innerHTML = '<img src="https://'+ siteURL +'/pbs/ui/nsfwbanner.gif" alt="a gif of jax mauling evil jax" title="(art by tkr)" style="margin:3px;">';
+  document.getElementById('asideWrp').appendChild(z);
+  const locationTitle = document.getElementById('windowLocation');
+  locationTitle.innerHTML = 'PIERROT BUCKSHOT - jax x pomni';
+}
