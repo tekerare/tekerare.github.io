@@ -62,12 +62,13 @@ function kofiWidget(){
 }
 function browsePosts(){
   const x = document.createElement("div");
-  x.innerHTML = '<h2>Browse Site</h2><ul class="ulSiteMap"><li><a href="https://' + siteURL + '">home</a></li><li><a href="https://' + siteURL + '/shop/">shop</a></li><li><a href="https://' + siteURL + '/art/">art</a></li><li><a href="https://' + siteURL + '/log/">log</a></li><li><a href="https://' + siteURL + '/music/">music</a></li><li><a href="https://' + siteURL + '/shrines">shrines</a></li><ul><li><a href="https://' + siteURL + '/fa">fashion</a></li><li><a href="https://' + siteURL + '/pierrotbuckshot">jax x pomni</a></li><li><a href="https://' + siteURL + '/slateshipping">norton x luchino</a></li></ul><li><a href="https://' + siteURL + '/video/">video</a></li><ul><li><a href="https://' + siteURL + '/video/stream">stream</a></li></ul><li><a href="https://' + siteURL + '/update">update</a></li><ul><li><a href="https://' + siteURL + '/rss/rss.xml">rss</a></li></ul><li><a href="https://' + siteURL + '/about">about</a></li></ul><br>';
+  x.setAttribute('class', 'asideMap');
+  x.innerHTML = '<h2>Browse Site</h2><ul class="ulSiteMap"><li><a href="https://' + siteURL + '">home</a></li><li><a href="https://' + siteURL + '/shop/">shop</a></li><li><a href="https://' + siteURL + '/art/">art</a></li><li><a href="https://' + siteURL + '/log/">log</a></li><li><a href="https://' + siteURL + '/mu/">music</a></li><li><a href="https://' + siteURL + '/shrines">shrines</a></li><ul><li><a href="https://' + siteURL + '/fa">fashion</a></li><li><a href="https://' + siteURL + '/pierrotbuckshot">jax x pomni</a></li><li><a href="https://' + siteURL + '/slateshipping">norton x luchino</a></li></ul><li><a href="https://' + siteURL + '/video/">video</a></li><ul><li><a href="https://' + siteURL + '/video/stream">stream</a></li></ul><li><a href="https://' + siteURL + '/update">update</a></li><ul><li><a href="https://' + siteURL + '/rss/rss.xml">rss</a></li></ul><li><a href="https://' + siteURL + '/about">about</a></li></ul><br>';
   document.getElementById('asideWrp').appendChild(x);
 }
-function logMap(){
-  badgeLink();
+function asideMap(){
   browsePosts();
+  badgeLink();
 }
 function loadTheme(){
   const findBody = document.getElementById('body');
@@ -82,11 +83,11 @@ function loadTheme(){
 	x.setAttribute('title','[Click here to front page]');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="11,8,249,76">';
 	document.getElementById('header').appendChild(x).appendChild(y);
-	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>home</button></a><a href="https://'+ siteURL +'/shop/" target="_parent"><button>shop</button></a><a href="https://'+ siteURL +'/log/" target="_parent"><button>log</button></a><a href="https://'+ siteURL +'/shrines" target="_parent"><button>shrines</button></a><a href="https://'+ siteURL +'/art/" target="_parent"><button>art</button></a><a href="https://'+ siteURL +'/music/" target="_parent"><button>music</button></a><a href="https://'+ siteURL +'/video/" target="_parent"><button>video</button></a><a href="https://'+ siteURL +'/update" target="_parent"><button>update</button></a><a href="https://'+ siteURL +'/about" target="_parent"><button>about</button></a>';
+	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>home</button></a><a href="https://'+ siteURL +'/update" target="_parent"><button>update</button></a><a href="https://'+ siteURL +'/log/" target="_parent"><button>blog</button></a><a href="https://'+ siteURL +'/shrines" target="_parent"><button>shrine</button></a><a href="https://'+ siteURL +'/video/" target="_parent"><button>video</button></a><a href="https://'+ siteURL +'/art/" target="_parent"><button>art</button></a><a href="https://'+ siteURL +'/mu/" target="_parent"><button>music</button></a><a href="https://'+ siteURL +'/shop/" target="_parent"><button>shop</button></a><a href="https://'+ siteURL +'/contact" target="_parent"><button>contact</button></a><a href="https://'+ siteURL +'/about" target="_parent"><button>about</button></a>';
 	document.getElementById('footer').appendChild(footer);
 	readerUI();
   }
-  const fauxWindowHTML = '<span>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></span><div><a href="https://' + siteURL + '">Home</a> <a href="https://' + siteURL + '/shop/">Shop</a> <a href="https://' + siteURL + '/log/">Blog</a> <a href="https://' + siteURL + '/shrines">Shrines</a> <a href="https://' + siteURL + '/art/">Art</a> <a href="https://' + siteURL + '/music/">Music</a> <a href="https://' + siteURL + '/video/">Video</a> <a href="https://' + siteURL + '/update">Update</a> <a href="https://' + siteURL + '/about">About</a> <a href="https://' + siteURL + '/rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
+  const fauxWindowHTML = '<span>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></span><div><a href="https://' + siteURL + '">Home</a> <a href="https://' + siteURL + '/shop/">Shop</a> <a href="https://' + siteURL + '/log/">Blog</a> <a href="https://' + siteURL + '/shrines">Shrines</a> <a href="https://' + siteURL + '/art/">Art</a> <a href="https://' + siteURL + '/mu/">Music</a> <a href="https://' + siteURL + '/video/">Video</a> <a href="https://' + siteURL + '/update">Update</a> <a href="https://' + siteURL + '/about">About</a> <a href="https://' + siteURL + '/rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:3px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
   function spawnSDTitle(){
     const sdtitle = document.createElement('span');
 	sdtitle.setAttribute('id' , 'sdTitle');

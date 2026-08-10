@@ -3,7 +3,7 @@
 @font-face {font-family: "assimilation"; src: url("../fonts/assimilation.TTF");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
 :root{
-  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat bottom 10px left 15px, url("backgrounds/shimotsumafield.jpg") repeat-x bottom, #ffffff;
+  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat bottom 10px left 15px, url("backgrounds/shimotsumaflowers.jpg") repeat-x bottom !important; background-attachment:fixed !important;;
   --asideBackground:url('backgrounds/whitedotted.jpg');
   --mainBackground:#bfa6ac;
   --singleMainBackground:url('backgrounds/whitedotted.jpg');
@@ -221,8 +221,9 @@ main{ min-height:650px;
 .bgTone{background:url("backgrounds/tone.png");}
 .image{ border:1px #000000 solid; cursor:pointer; border-radius:5px;}
 .recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
+.mediaViewer, .playlist, .asideMap{background:#ffffff !important; border: 5px solid transparent !important; border-image: url('../ui/backgrounds/scallop_white.png') 5 round !important; padding:3px;}
 /* VIDEO PLAYER START */
-.mediaViewer, .playlist{h2{background:0; text-shadow:none;} border: 5px solid transparent; border-image: url('../ui/backgrounds/scallop_white.png') 5 round; padding:3px; width:96%; background:#ffffff; margin:5px auto 5px;}
+.mediaViewer, .playlist{h2{background:0; text-shadow:none;} width:96%; background:#ffffff; margin:5px auto 5px;}
 .mediaViewer{video{max-width:100%;}
   .videoContainer{width:100%; max-height:400px; border-radius:7px;}
   .mediaVidDescription{min-height:50px;}
