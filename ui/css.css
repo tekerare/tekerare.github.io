@@ -3,7 +3,7 @@
 @font-face {font-family: "assimilation"; src: url("../fonts/assimilation.TTF");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
 :root{
-  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat bottom 10px left 15px, url("backgrounds/shimotsumaflowers.jpg") repeat-x bottom !important; background-attachment:fixed !important;;
+  --htmlBG:url('backgrounds/fax_brcde.png') no-repeat bottom 10px left 15px,  url("backgrounds/shimotsumaflowers.jpg") repeat-x bottom !important; background-attachment:fixed !important;
   --asideBackground:url('backgrounds/whitedotted.jpg');
   --mainBackground:#bfa6ac;
   --singleMainBackground:url('backgrounds/whitedotted.jpg');
