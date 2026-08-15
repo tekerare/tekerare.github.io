@@ -195,7 +195,6 @@ main{ min-height:650px;
   aside{margin: 0px 6px 0px 0px; padding: 5px 1px 0px 0px;}
   .panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y;}
   footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
-  footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
 }
 #preview{background:#000000b5; backdrop-filter: blur(3px); background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none; cursor:zoom-out; padding:5vh 0px 4vh 0px; font-family:hack; font-size:20px;}
 #fullRes{ max-height:80vh;}
@@ -219,7 +218,7 @@ main{ min-height:650px;
 .imgList{text-align:center; margin:0 auto; img{width:40px;}}
 /* VIDEO PLAYER START */
 .mediaViewer, .playlist{h2{background:0; text-shadow:none;} width:96%; background:#ffffff; margin:5px auto 5px;}
-.mediaViewer{video{max-width:100%;}
+#mediaViewer, .mediaViewer{video{max-width:100%;}
   .videoContainer{width:100%; max-height:400px; border-radius:7px;}
   .mediaVidDescription{min-height:50px;}
 }

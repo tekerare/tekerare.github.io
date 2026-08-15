@@ -8,7 +8,10 @@ function enlarge(){
   document.getElementById('fullRes').setAttribute('src', img);
   document.getElementById('exLink').setAttribute('href', img);
 }
-function setScreen(){document.getElementById('mediaViewer').setAttribute('src', img);}
+function setScreen(){
+  document.getElementById('mediaViewer').setAttribute('src', img);
+  document.getElementById('mediaViewer').setAttribute('onclick', "img='"+ img + "';enlarge();");
+}
 function readerUI(){
   const y = document.createElement('div');
   y.setAttribute('id', 'preview');
