@@ -93,7 +93,7 @@ aside{min-width:204px;
 main{ min-height:650px;
   a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab.gif')}
 }
-#body, #singleBody, nav, .panel-wrapper, aside, main, header, footer, div, video{opacity:1; box-sizing:border-box;
+#body, #singleBody, nav, .panel-wrapper, aside, main, header, footer, div, video, #mediaViewer{opacity:1; box-sizing:border-box;
   div, article, img{background-position:top left;}
 }
 /*BODY THEME START*/
@@ -197,12 +197,6 @@ main{ min-height:650px;
   footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
   footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
 }
-.forceBody{
-  > div{background:var(--bodyArticleDiv) !important; color:var(--bodyArticleColor) !important; h2, h3, h4, a, b {color: var(--bodyArticleColor) !important;} th, td{border-color: var(--bodyArticleColor) !important;}}
-}
-.forceSingle{
-  > div{background:var(--fwArticleDiv) !important; color:var(--fwArticleColor) !important; a, b {color: var(--fwArticleColor) !important;} th, td{border-color: var(--fwArticleColor) !important;}}
-}
 #preview{background:#000000b5; backdrop-filter: blur(3px); background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:10; text-align:center; display:none; cursor:zoom-out; padding:5vh 0px 4vh 0px; font-family:hack; font-size:20px;}
 #fullRes{ max-height:80vh;}
 .flex{background:none; box-shadow:none !important; border:none !important; display:flex; width: 96%; max-width:610px; margin:2px auto !important; padding: 0px !important;
@@ -221,8 +215,8 @@ main{ min-height:650px;
 .bgTone{background:url("backgrounds/tone.png");}
 .image{ border:1px #000000 solid; cursor:pointer; border-radius:5px;}
 .counter{margin:0px 5px 5px 5px; font-weight:bold; color:#8f737a; img{border-width: 1px !important; border-color: #000000 !important; margin: -2px 0;}}
-.recentlyUpdated{background:url('icons/flag.gif') top -3px left 2px no-repeat, url("backgrounds/tone.png"); padding-left: 32px;}
-.mediaViewer, .playlist, .asideMap{background:#ffffff !important; border: 5px solid transparent !important; border-image: url('../ui/backgrounds/scallop_white.png') 5 round !important; padding:3px;}
+.mediaViewer, #mediaViewer, .playlist, .asideMap, .imgList{max-width:98%; background:#ffffff !important; border: 5px solid transparent !important; border-image: url('../ui/backgrounds/scallop_white.png') 5 round !important; padding:3px;}
+.imgList{text-align:center; margin:0 auto; img{width:40px;}}
 /* VIDEO PLAYER START */
 .mediaViewer, .playlist{h2{background:0; text-shadow:none;} width:96%; background:#ffffff; margin:5px auto 5px;}
 .mediaViewer{video{max-width:100%;}

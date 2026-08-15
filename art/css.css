@@ -1,6 +1,7 @@
 :root{
   --asideBackground:#f4f4f4;
   --singleMainBackground:#f4f4f4;
-  --mainBackground:url('../ui/backgrounds/bd_snow.jpg') !important;
+  --mainBackground:linear-gradient(90deg, #00000000, #00000000 70%, #ffffff), linear-gradient(#ffffffa0), url('../ui/backgrounds/bd_snow.jpg') !important;
+
 }
 #sdTitle{image-rendering:crisp-edges;}

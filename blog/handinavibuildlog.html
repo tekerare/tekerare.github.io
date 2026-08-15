@@ -25,46 +25,45 @@
     <h2>Equipment</h2>
     <div><br>
       <ol>
-		<li>128 GB microSD card</li>
-		<li><a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi imager</a>*</li>
-		<li>Raspberry Pi SBC</li>
-		<li><a href="https://www.chiark.greenend.org.uk/~sgtaliam/putty/latest.html" target="_blank">PuTTY terminal</a></li>
-		<li>Hosyond 3.5" GPIO LCD touchscreen</li>
-		<li><a href="https://www.autodesk.com/products/fusion-360/personal" target="_blank">Autodesk Fusion 360</a></li>
-		<li>Any offbrand micro USB cable</li>
-		<li><a href="https://www.gimp.org/downloads/" target="_blank">Gimp</a></li>
 		<li>Prusa MK4 Printer</li>
-		<li><a href="https://www.blender.org/download/">Blender</a></li>
-		<li><a href="https://grabcad.com/library/raspberry-pi-4-model-b-1" target="_parent">RPi substitute model</a></li>
-		<li>Canakit 2.5A RPi3B+ power adapter*</li>
+		<li>128 GB microSD card</li>
+		<li>Raspberry Pi SBC</li>
+		<li>Hosyond 3.5" GPIO LCD touchscreen</li>
 		<li>Anker battery pack</li>
+		<li>Any offbrand micro USB cable</li>
+		<li><a href="https://www.chiark.greenend.org.uk/~sgtaliam/putty/latest.html" target="_blank">PuTTY terminal</a></li>
+		<li><a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi imager</a></li>
+		<li><a href="https://www.autodesk.com/products/fusion-360/personal" target="_blank">Autodesk Fusion 360</a></li>
+		<li><a href="https://grabcad.com/library/raspberry-pi-4-model-b-1" target="_parent">RPi substitute model</a></li>
+		<li><a href="https://www.gimp.org/downloads/" target="_blank">Gimp</a></li>
+		<li><a href="https://www.blender.org/download/">Blender</a></li>
 	  </ol><br>
 	</div>
   </article>
   <article>
 	<h2>The Case</h2>
 	<div>
-	  <p>inspired by r/unixporn and cyberdeck builds, i had made my own handinavi from serial experiments lain.</p>
+	  <p>inspired by r/unixporn and other people's cyberdeck builds, i had made my own handinavi from serial experiments lain.</p>
 	  <p>the lone size of the raspberry pi board + GPIO screen fully assembled made it a whopping 3cm horizontally, which isn't ideal. i'm essentially modeling a damn brick. despite that, i managed to keep it as compact as possible just to house the Pi, display, and battery.</p>
-	  <p>the outside shell went through so many alterations in Blender until I decided to just learn how to use Fusion 360. Can't say this aspect of making the handinavi is exciting to explain since trial and error is a typical motion of modeling from scratch.</p>
-	  <center>
+	  <p>the outside shell went through so many alterations in Blender until I decided to just learn how to use Fusion 360. Can't say this aspect of making the handinavi is exciting to explain. There were plenty 3d reference models of the RPi model SBC (in this case, the RPi 3b+) I'm using to capture correct port measurements.</p>
+	  <div class="flex">
 		<img src="media/handinavi_pictures/fusion360_composition_front.jpg" class="image" alt="" onclick="img='media/handinavi_pictures/fusion360_composition_front.jpg';enlarge();">
 		<img src="media/handinavi_pictures/fusion360_composition_back.jpg" class="image" alt=""  onclick="img='media/handinavi_pictures/fusion360_composition_back.jpg';enlarge();">
-	  </center>
-	  <p>the case comes wili a hinged faux trackpad, snapguides, and inserts for the accessories. the back is carved out for an adhesed pseudo-vent and a hole for the sd card to rest on. I opted out of adding snapjoints as the guides were compact enough to hold the case together.</p>
+	  </div>
+	  <p>the case comes with a hinged faux trackpad, snapguides, and inserts for the accessories. the back is carved out for an adhesed pseudo-vent and a hole for the sd card to rest on. i opted out of adding snapjoints as the guides were compact enough to hold the case together.</p>
 	</div>
   </article>
   <article>
 	<h2>Rice</h2>
 	<div>
 	  <p>before touching anything the LCD screen and touch matrix had to be inverted and lie display resoluton changed to 800 x 600 4:3.</p>
-	  <p>we get to see a lot of footage of what lain's handinavi looks like in lie show. as far as I could tell... it'd be impossible to recreate it to the letter. the canonical handinavi's applications are displayed as spherical windows that bounce around lie screen, and i don't have the technical nerve to try and program that. instead, i customized it after lain's desktop environment as seen in Layer02 and ahead.</p>
-	  <p>several artistic liberties were taken when it came to making lie wallpaper because i didn't have lie privilege of creating interactive tooltips or buttons. the next best thing was just to make my own theme using gimp and blender.</p>
+	  <p>we get to see a lot of footage of what lain's handinavi looks like in lie show. as far as i could tell... it'd be impossible to recreate it to the letter. the canonical handinavi's applications are displayed as spherical windows that bounce around lie screen, and i don't have the technical nerve to try and program that. instead, i customized it after lain's desktop environment as seen in layer02 and ahead.</p>
+	  <p>several artistic liberties were taken when it came to making the wallpaper because i didn't have the privilege of creating interactive tooltips or buttons. the next best thing was just to make my own theme using gimp and blender.</p>
 	  <center><img src="media/handinavi_pictures/Navi-Desktop.png" class="image" onclick="img='media/handinavi_pictures/Navi-Desktop.png';enlarge();"></center>
-	  <p>I've pretty much made everyliing in the wallpaper except for the fontfaces, <normal style="font-family: Baskerville Old Face">Baskerville Old Face</normal> and <normal style="font-family: Monotype Corsiva">Monotype Corsiva</normal>.</p>
-	  <p>the orb graphics are just mesh presets rendered in Blender. if i scale it around, i stretch it in Gimp with interpolation set to none. I made 2 versions; one for tooltip flavor and a flat platform as seen when Lain checks her E-mail or opens applications. these assets were recycled later for the custom icon packs.</p>
-	  <p>the navi logo in lie back got airbrushed a bit to emulate a sort of glowing effect, as I felt it was missing the eerie capabilities and presence of the actual lain computer without it. Gradients are your friend. Finally, 90s anime computers aren't 90s anime computers without its scanline overlay.</p>
-	  <p>i'm happy wili what i ended up with. Feel free to save the wallpaper for your own 640 by 480 display.</p>
+	  <p>i've pretty much made everything in the wallpaper except for the fontfaces, <normal style="font-family: Baskerville Old Face">Baskerville Old Face</normal> and <normal style="font-family: Monotype Corsiva">Monotype Corsiva</normal>.</p>
+	  <p>the orb graphics are just mesh presets rendered in blender. if i scale it around, i stretch it in gimp with interpolation set to none. i made 2 versions; one for tooltip flavor and a flat platform as seen when lain checks her e-mail or opens applications. these assets were recycled later for the custom icon packs.</p>
+	  <p>the navi logo in lie back got airbrushed a bit to emulate a sort of glowing effect, as I felt it was missing the eerie capabilities and presence of the actual lain computer without it. gradients are your friend. </p>
+	  <p>i'm happy with what i ended up with. feel free to save the wallpaper for your own 640 by 480 display.</p>
 	</div>
   </article>
   <hr>
@@ -72,8 +71,6 @@
     <div class="mediaList">
 	  <img src="media/handinavi_pictures/blender_screenshot_1.jpg" class="image" alt="" onclick="img='media/handinavi_pictures/blender_screenshot_1.jpg';enlarge();">
 	  <img src="media/handinavi_pictures/computer-build_1.jpg" class="image" alt="" onclick="img='media/handinavi_pictures/computer-build_1.jpg';enlarge();">
-	  <img src="media/handinavi_pictures/printing_backshell.jpg" class="image" alt="" onclick="img='media/handinavi_pictures/printing_backshell.jpg';enlarge();">
-	  <img src="media/handinavi_pictures/printing_frontshell.jpg" class="image" alt="" onclick="img='media/handinavi_pictures/printing_frontshell.jpg';enlarge();">
 	  <img src="media/handinavi_pictures/prototype_landingproof.jpg" class="image" alt="" onclick="img='media/handinavi_pictures/prototype_landingproof.jpg';enlarge();">
 	  <img src="media/handinavi_pictures/prototype_closedcover.jpg" class="image" alt="" onclick="img='media/handinavi_pictures/prototype_closedcover.jpg';enlarge();">
 	</div>
