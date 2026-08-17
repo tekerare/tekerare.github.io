@@ -4,4 +4,5 @@
   --mainBackground:linear-gradient(90deg, #00000000, #00000000 70%, #ffffff), linear-gradient(#ffffffa0), url('../ui/backgrounds/bd_snow.jpg') !important;
 
 }
+header, .panel-wrapper, footer{ max-width:644px;}
 #sdTitle{image-rendering:crisp-edges;}

@@ -6,7 +6,6 @@ let img;
 function enlarge(){
   document.getElementById('preview').style.display = 'block';
   document.getElementById('fullRes').setAttribute('src', img);
-  document.getElementById('exLink').setAttribute('href', img);
 }
 function setScreen(){
   document.getElementById('mediaViewer').setAttribute('src', img);
@@ -15,7 +14,7 @@ function setScreen(){
 function readerUI(){
   const y = document.createElement('div');
   y.setAttribute('id', 'preview');
-  y.innerHTML = '<img src="" id="fullRes" alt="" title=""><br><a id="exLink" target="_blank" style="color:#ffffff;">open on external tab</a>';
+  y.innerHTML = '<img src="" id="fullRes" alt="" title=""><br><a id="exLink" target="_blank" style="color:#ffffff70;">click anywhere to close</a>';
   document.getElementsByTagName('body')[0].prepend(y);
   preview.onclick = function() {
 	document.getElementById('preview').style.display = 'none';
@@ -94,7 +93,7 @@ function loadTheme(){
   function spawnSDTitle(){
     const sdtitle = document.createElement('span');
 	sdtitle.setAttribute('id' , 'sdTitle');
-    sdtitle.innerHTML = '<a href="." style=" text-decoration-line: none;"> <img src="ui/sdtitle.png" id="sdTitle" style="max-height:200px;" alt="← go back" title="←"></a>';
+    sdtitle.innerHTML = '<a href="." id="sdTitle" style="text-decoration-line: none;"> <img src="ui/sdtitle.png" id="sdTitle" style="max-height:200px;" alt="← go back" title="←"></a>';
 	document.getElementsByTagName('main')[0].prepend(sdtitle);
   }
   switch(theme){
