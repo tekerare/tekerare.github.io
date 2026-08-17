@@ -205,22 +205,15 @@ main{ min-height:650px;
   100% {opacity:1;}
 }
 /*ANIMATIONS END*/
-.flex{background:none; box-shadow:none !important; border:none !important; display:flex; width: 96%; max-width:610px; margin:2px auto !important; padding: 0px !important;
-  > div, > article, > a{width:50%; > img{ max-width:96% !important;}}
-  > img{ width:49%;}
-}
 .playlist{h3{ background:url('theme/icon-tune.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); text-shadow:none; padding:0px 0px 0px 18px;a{transition:.2s ease-in-out;}a:hover{letter-spacing:1px;}}}
-.mediaList, .itemList{ margin:0px 10px 0px 10px;div{margin:0 auto;}a{color:#000000 !important;}span{margin:0px;}}
-.mediaList{ text-align:center; img{height:150px; cursor:zoom-in;}}
+.itemList{ margin:0px 10px 0px 10px;div{margin:0 auto;}a{color:#000000 !important;}span{margin:0px;}}
 .itemList{ display:flex; font-size:15px; font-family:sans-serif;
   img{max-height:160px;}
   img:hover{ filter: drop-shadow(0 0 .2rem #ffffff); transform:scale(1.13); z-index:10;}
 }
-.bgTone{background:url("backgrounds/tone.png");}
-.image{ border:1px #000000 solid; cursor:pointer; border-radius:5px;}
 .counter{margin:0px 5px 5px 5px; font-weight:bold; color:#8f737a; img{border-width: 1px !important; border-color: #000000 !important; margin: -2px 0;}}
-.mediaViewer, #mediaViewer, .playlist, .asideMap, .imgList{max-width:98%; background:#ffffff !important; border: 5px solid transparent !important; border-image: url('../ui/backgrounds/scallop_white.png') 5 round !important; padding:3px;}
-.imgList{text-align:center; margin:0 auto; img{width:40px; image-rendering:crisp-edges; transition: .2s ease-in-out;} img:hover{transform:translate(4px,-4px); box-shadow:-2px 2px 0px 1px #00000050;}}
+.mediaViewer, #mediaViewer, .playlist, .asideMap, .boxList{max-width:98%; background:#ffffff !important; border: 5px solid transparent !important; border-image: url('../ui/backgrounds/scallop_white.png') 5 round !important; padding:3px;}
+.boxList{word-spacing:-5px; text-align:center; margin:0 auto; img{width:40px; image-rendering:crisp-edges; transition: .2s ease-in-out;} img:hover{transform:translate(4px,-4px); box-shadow:-2px 2px 0px 1px #00000050;}}
 /* VIDEO PLAYER START */
 .mediaViewer, .playlist{h2{background:0; text-shadow:none;} width:96%; background:#ffffff; margin:5px auto 5px;}
 #mediaViewer, .mediaViewer{video{max-width:100%;}
@@ -234,6 +227,12 @@ main{ min-height:650px;
   .list-description{overflow:hidden; height:0; width:0;}
 }
 /* VIDEO PLAYER END */
+.bgTone{background:url("backgrounds/tone.png");}
+.image{ border:1px #000000 solid; cursor:pointer; border-radius:5px;}
+.flex{background:none; box-shadow:none !important; border:none !important; display:flex; width: 96%; max-width:610px; margin:2px auto !important; padding: 0px !important;
+  > div, > article, > a{width:50%; > img{ max-width:96% !important;}}
+  > img{ width:49%;}
+}
 /*EXTENSION END*/
 /*RSS FEED START*/
 .feed-title{display:none;}
