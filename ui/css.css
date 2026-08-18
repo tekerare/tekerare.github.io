@@ -77,7 +77,7 @@ quiet{color:#00000050;}
 header, footer, h1, h2{image-rendering:crisp-edges;}
 header, nav, .panel-wrapper, footer{width:70%; min-width:644px; max-width:960px;}
 .panel-wrapper{ min-height:200px; display:flex;
- img, video{max-width:97%;}
+ img, video{ max-width:97%; margin:0 auto; max-height: 340px;}
 }
 header, nav{text-align:center;}
 aside, main{
@@ -131,7 +131,6 @@ main{ min-height:650px;
   header, .panel-wrapper{box-shadow: var(--fwBoxShadow);}
   .panel-wrapper{border-style:none solid none solid; padding:4px !important; margin:0 auto; cursor:default;
     ::selection{background:#00000020 !important;}
-	img{ max-width:95%; margin:0 auto; max-height: 340px;}
     ::selection{background:#00000000}
   }
   @media (min-width: 10px) {
@@ -213,7 +212,7 @@ main{ min-height:650px;
 }
 .counter{margin:0px 5px 5px 5px; font-weight:bold; color:#8f737a; img{border-width: 1px !important; border-color: #000000 !important; margin: -2px 0;}}
 .mediaViewer, #mediaViewer, .playlist, .asideMap, .boxList{max-width:98%; background:#ffffff !important; border: 5px solid transparent !important; border-image: url('../ui/backgrounds/scallop_white.png') 5 round !important; padding:3px;}
-.boxList{word-spacing:-5px; text-align:center; margin:0 auto; img{width:40px; image-rendering:crisp-edges; transition: .2s ease-in-out;} img:hover{transform:translate(4px,-4px); box-shadow:-2px 2px 0px 1px #00000050;}}
+.boxList{word-spacing:-5px; text-align:center; margin:0 auto; span{ margin:0px 1px 0px 2px; image-rendering:crisp-edges; display:inline-block; width:40px; height:40px; border:1px #000000 solid; border-radius:5px; background-position:top center !important; background-size:cover !important; transition: .2s ease-in-out;}}
 /* VIDEO PLAYER START */
 .mediaViewer, .playlist{h2{background:0; text-shadow:none;} width:96%; background:#ffffff; margin:5px auto 5px;}
 #mediaViewer, .mediaViewer{video{max-width:100%;}

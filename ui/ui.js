@@ -9,6 +9,7 @@ function enlarge(){
 }
 function setScreen(){
   document.getElementById('mediaViewer').setAttribute('src', img);
+  document.getElementById('mediaViewer').setAttribute('title', "click to enlarge.");
   document.getElementById('mediaViewer').setAttribute('onclick', "img='"+ img + "';enlarge();");
 }
 function readerUI(){
