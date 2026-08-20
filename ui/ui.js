@@ -39,7 +39,7 @@ function changeLog(){
   document.write('<article id="rss-feed"><h2>most recent <a href="update">change</a></h2><div><script src="https://rss.bloople.net/?url=https%3A%2F%2F' + siteURL + '%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script></div></article>');
 }
 function patreon(){
-  document.write('<span style="text-align:center;margin:4px 0px 4px 0px;"><a href="https://www.patreon.com/tekerare" target="_blank"><img src="https://'+ siteURL +'/media/prmo/patreonbanner_donktail.jpg" class="image" alt="join my patreon here" title="only two dollars a month for full access to the 18+ arts."></a></span>');
+  document.write('<span style="text-align:center;margin:4px 0px 4px 0px;"><a href="https://www.patreon.com/cw/tekerare" target="_blank"><img src="https://'+ siteURL +'/media/prmo/patreonbanner_donktail.jpg" class="image" alt="join my patreon here" title="only two dollars a month for full access to the 18+ arts."></a></span>');
 }
 function galleryWidget(){
   const x = document.createElement('div');
