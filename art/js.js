@@ -4,9 +4,3 @@ function guLogMap(){
   artSiteMap();
   eventWidget();
 }
-window.onload = function(){
-  const x = document.createElement("span");
-  x.setAttribute("style", "text-align:center;");
-  x.innerHTML = '<img src="../media/label/gristlepod_180.png" alt="">';
-  document.getElementById('mainWrp').appendChild(x);
-}
