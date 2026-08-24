@@ -86,7 +86,7 @@ function loadTheme(){
 	y.setAttribute('usemap', '#top_map');
 	x.setAttribute('name','top_links');
 	x.setAttribute('id','top_map');
-	x.setAttribute('title','[Click here to front page]');
+	x.setAttribute('title','[click here to front page]');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="11,8,249,76">';
 	document.getElementById('header').appendChild(x).appendChild(y);
 	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>home</button></a><a href="https://'+ siteURL +'/update" target="_parent"><button>update</button></a><a href="https://'+ siteURL +'/blog/" target="_parent"><button>blog</button></a><a href="https://'+ siteURL +'/shrines" target="_parent"><button>shrine</button></a><a href="https://'+ siteURL +'/video/" target="_parent"><button>video</button></a><a href="https://'+ siteURL +'/art/" target="_parent"><button>art</button></a><a href="https://'+ siteURL +'/mu/" target="_parent"><button>music</button></a><a href="https://'+ siteURL +'/shop/" target="_parent"><button>shop</button></a><a href="https://'+ siteURL +'/contact" target="_parent"><button>contact</button></a><a href="https://'+ siteURL +'/about" target="_parent"><button>about</button></a>';
