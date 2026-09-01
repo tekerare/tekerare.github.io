@@ -215,7 +215,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 }
 .counter{margin:0px 5px 5px 5px; font-weight:bold; color:#8f737a; img{border-width: 1px !important; border-color: #000000 !important; margin: -2px 0;}}
 .mediaViewer, #mediaViewer, .playlist, .asideMap, .boxList{max-width:98%; background:#ffffff !important; border: 5px solid transparent !important; border-image: url('../ui/backgrounds/scallop_white.png') 5 round !important; padding:3px;}
-.boxList{word-spacing:-5px; text-align:center; margin:0 auto; span{ margin:0px 1px 0px 2px; image-rendering:crisp-edges; display:inline-block; width:40px; height:40px; border:1px #000000 solid; border-radius:5px; background-position:top center !important; background-size:cover !important; transition: .2s ease-in-out;}}
+.boxList{ text-align:center; margin:0 auto; span{ margin:0px 1px 0px 2px; image-rendering:crisp-edges; display:inline-block; width:40px; height:40px; border:1px #000000 solid; border-radius:5px; background-position:top center !important; background-size:cover !important; transition: .2s ease-in-out;}}
 /* VIDEO PLAYER START */
 .mediaViewer, .playlist{h2{background:0; text-shadow:none;} width:96%; background:#ffffff; margin:5px auto 5px;}
 #mediaViewer, .mediaViewer{video{max-width:100%;}
