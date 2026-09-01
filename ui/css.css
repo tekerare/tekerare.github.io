@@ -88,6 +88,9 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 #body, #singleBody, nav, .panel-wrapper, aside, main, header, footer, div, video, textarea, #mediaViewer{opacity:1; box-sizing:border-box;
   div, article, img{background-position:top left;}
 }
+@media (min-width: 670px) {
+  header, nav, .panel-wrapper, footer{width:70%; min-width:644px; max-width:960px;}
+}
 /*MAIN THEME START*/
 #body{ anchor-name: --aside-anchor;
   aside, main{ border:1px #000000; border-style: none solid none none;}
@@ -100,7 +103,6 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   }
   article{> div{background:var(--bodyArticleDiv); color:var(--bodyArticleColor); h2, h3, h4, a, a:visited, b {color: var(--bodyArticleColor); text-shadow:none;} th, td{border-color: var(--bodyArticleColor);}}}
   @media (min-width: 670px) {
-    header, nav, .panel-wrapper, footer{width:70%; min-width:644px; max-width:960px;}
 	main{min-height:650px;}
     aside{ position:static; max-width:216px; border-style: none;}
     .panel-wrapper{ min-height:200px; display:flex;
@@ -136,7 +138,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 
 /*MAIN THEME END*/
 /*FAUX WINDOW THEME START*/
-#fauxWindow{ padding:0px 0px 15px 0px;
+#fauxWindow{ padding:0px 0px 15px 0px; 
   .panel-wrapper, header{background: var(--fwColor) !important; border:#000000 1px;}
   header{ height:77px !important; border-style:solid solid none solid; padding: 3px 3px 6px 3px !important; text-align:start;
 	button{background: url('icons/window_set.png') no-repeat, var(--fwColor); box-shadow:var(--fwBoxShadow); border:1px #000000 solid; min-height: var(--fwButtonSize); min-width:var(--fwButtonSize); pointer-events:auto;cursor:not-allowed;}
@@ -172,6 +174,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   main{h1, h2{ text-transform: lowercase;}}
   h1{font-size:18px;} h2{font-size:16px;}
   aside{background:var(--asideBackground);
+    img{width:100%;}
     > div{ margin:7px auto 7px;}
   }
   main{
