@@ -49,7 +49,7 @@ p, h1, h2, h3, h4, span, details, subtext{display:block;}
 p, h1, h2, h3, h4, subtext{padding:0px 5px 0px 5px; display:block;}
 article, div, p, h1, h2, h4, details, span, ul, ol, li, td, dl{border:1px #000000;}
 h2, h3, h4{background: url("theme/h4Bg.png") no-repeat center left 13px; background-size:contain;}
-h3, h2, h1, h4{ border:1px var(--h1BorderColor); margin:0; padding:0px 4px 0px 4px; text-align:start; margin: 5px 0px 5px 0px; position:relative;}
+h3, h2, h1, h4{ border:1px var(--h1BorderColor); margin:0; padding:0px 4px 0px 4px; text-align:start; margin: 5px 0px 5px 0px;}
 details{padding:10px;}
 ul{margin:0px 0px 0px 0px; padding:3px 0px 3px 23px;}
 ol{list-style-type: hiragana; margin:3px;}
@@ -59,7 +59,6 @@ ul{list-style-type: "→ ";}
   a:hover{font-weight:bold;}
 }
 li {margin:0px 0px 0px 0px; text-align:start;}
-div, article{position:relative;}
 td{border-style:dotted dotted dotted dotted; img{max-width:100% !important;}}
 textarea{margin:5px auto 5px auto; display: block; min-height:60px;font-family: "MS PGothic", sans-serif;font-size:12px;}
 table{width:100%;}
@@ -90,22 +89,22 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   div, article, img{background-position:top left;}
 }
 /*MAIN THEME START*/
-#body{
-  aside, main{ border:1px #000000; border-style: none none solid none;}
+#body{ anchor-name: --aside-anchor;
+  aside, main{ border:1px #000000; border-style: none solid none none;}
   main{ background:url('theme/borderlightvalue.png') top left repeat-y, url('theme/borderdarkvalue.png') top right repeat-y, var(--mainBackground); margin:0px 0px 0px 14px; padding:5px 0px 0px 1px; width: 100%;
     hr{background: url('theme/hr.png') repeat-x; margin:3px 0px 3px -1px; background-position:top left; width:100%; height:2px;}
 	li { margin:0px 10px 0px 0px;}
   }
-  
-  aside{margin:0px 6px 0px 0px; width:100%;
+  .panel-wrapper{display:flex;}
+  aside{position:absolute top; position-anchor: --aside-anchor; margin:0px 6px 0px 0px;  width:204px; 
     > div {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; border: solid 1px; border-radius:4px;}
   }
   article{> div{background:var(--bodyArticleDiv); color:var(--bodyArticleColor); h2, h3, h4, a, a:visited, b {color: var(--bodyArticleColor); text-shadow:none;} th, td{border-color: var(--bodyArticleColor);}}}
   @media (min-width: 670px) {
     header, nav, .panel-wrapper, footer{width:70%; min-width:644px; max-width:960px;}
 	main{min-height:650px;}
-    aside{max-width:216px; border-style: none;}
-    .panel-wrapper{ min-height:200px; display:flex;
+    aside{ position:static; max-width:216px; border-style: none;}
+    .panel-wrapper{ min-height:200px;
       img, video{ max-width:97%; margin:1 auto; max-height: 340px;}
     }
   }
@@ -119,19 +118,19 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 }
 #body, #singleBody{
   header, footer{padding:5px;}
-  header{background:url("theme/body_header_mobile.png") no-repeat center, var(--mainBackground);}
+  header{background: url('theme/mobile_body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top right no-repeat !important;}
   main, aside{padding: 5px 0px 6px 0px;}
   header, aside, main, footer{box-shadow:none;}
-  footer{background:var(--mainBackground); height:200px; text-align:center;}
+  footer{background:#8d757a; height:200px; text-align:center;}
   header, footer{ button{color:#000000; margin:0px 1px 0px 1px; background: linear-gradient(#8c757a, #80656b, #6e5157); border:1px solid #303030; padding:2px; border-radius:2px;} button:hover{background: linear-gradient(#6e5157, #80656b, #8c757a);}}
   @media (min-width: 670px) {
 	header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important; text-align:end; border:none;
       > div{overflow-y:scroll; border:1px #000000 solid; width:260px; height:67px; background:#ffffff; top:11px; right:-392px;}
     }
 	.panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y; padding:0px 6px 0px 14px;}
-	main{margin: 0px 0px 0px 14px; border-style:none solid none none !important;}
+	main{margin: 0px 0px 0px 14px;}
     aside{margin: 0px 6px 15px 0px; padding: 5px 1px 0px 0px;}
-    footer{text-align:end; background:url('theme/body_rFooter.png') top right no-repeat, url('theme/body_lFooter.png') no-repeat top left, url('theme/body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
+    footer{text-align:end; background:url('theme/desktop_body_rFooter.png') top right no-repeat, url('theme/desktop_body_lFooter.png') no-repeat top left, url('theme/desktop_body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
   }
 }
 #body aside, #singleBody main { > article, > div{border-color:#949494;}}
