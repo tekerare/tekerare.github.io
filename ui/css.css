@@ -106,7 +106,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 	main{min-height:650px;}
     aside{ position:static; max-width:216px; border-style: none;}
     .panel-wrapper{ min-height:200px; display:flex;
-      img, video{ max-width:97%; margin:1 auto; max-height: 340px;}
+      img, video{ max-width:97%; max-height: 340px;}
     }
   }
 }
@@ -174,7 +174,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   main{h1, h2{ text-transform: lowercase;}}
   h1{font-size:18px;} h2{font-size:16px;}
   aside{background:var(--asideBackground);
-    img{width:100%;}
+    img{max-width:100%;}
     > div{ margin:7px auto 7px;}
   }
   main{
