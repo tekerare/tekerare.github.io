@@ -14,7 +14,6 @@ body{
   background-size:fit;
   background-attachment:fixed;
 }
-header, .panel-wrapper, footer{ max-width:644px;}
 #body{
   main{background: var(--mainBackground); border:0px;}
 }
