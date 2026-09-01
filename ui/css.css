@@ -82,7 +82,7 @@ aside{min-width:204px;
 	div{margin: 5px !important;}
   }
   textarea{max-width:90%; min-width:90%;}
-  img{max-width:216px;}
+  img{max-width:200px;}
 }
 main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab.gif')}}
 #body, #singleBody, nav, .panel-wrapper, aside, main, header, footer, div, video, textarea, #mediaViewer{opacity:1; box-sizing:border-box;

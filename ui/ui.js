@@ -32,7 +32,7 @@ function readerUI(){
 }
 function badgeLink(){
   const x = document.createElement("div");
-  x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/media/buttons/button.gif" alt="tekerare: homepage" title="tekerare"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/media/buttons/button.gif" alt="tekerare&apos;s badge" title="tekerare"></a></textarea><subtext style="font-size:10px;">badge linkage. this code allows updates across links.</subtext>';
+  x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/media/buttons/button.gif" alt="tekerare: homepage" title="tekerare" style="width:88px;"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/media/buttons/button.gif" alt="tekerare&apos;s badge" title="tekerare"></a></textarea><subtext style="font-size:10px;">badge linkage. this code allows updates across links.</subtext>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function changeLog(){
