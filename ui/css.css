@@ -1,6 +1,5 @@
 /* GLOBAL ROOT */
-@font-face {font-family: "cursive"; src: url("../fonts/cursive.ttf")}
-@font-face {font-family: "pritchard"; src: url("../fonts/pritchard.otf");}
+@font-face {font-family: "unnamedfontcopy"; src: url("../fonts/unnamedfontcopy.ttf");}
 @font-face {font-family: "assimilation"; src: url("../fonts/assimilation.TTF");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
 :root{
@@ -43,8 +42,8 @@ img{max-width:100%;}
 audio:hover{filter:opacity(50%);}
 a, a:visited{text-decoration-style: dotted; border:1px #000000; cursor:pointer;}
 p{margin:10px 0px 10px 0px;}
-h1, h2, h3{text-shadow:-1px -1px 0 var(--h1BorderColor), 1px -1px 0 var(--h1BorderColor), -1px 1px 0 var(--h1BorderColor), 1px 1px 0 var(--h1BorderColor), 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 3px #000000, 0px 0px 3px #000000; color:#000000;}
-h1{ background:url("theme/icon-h1_bull.gif") no-repeat top 1px left 3px, url("theme/h1Bg.png") no-repeat center left 13px; font-family:"assimilation"; padding:4px 4px 4px 33px !important;}
+h1{text-transform: lowercase; font-family:"unnamedfontcopy"; padding:4px 4px 4px 33px !important;}
+h1, h2{text-transform: lowercase;}
 p, h1, h2, h3, h4, span, details, subtext{display:block;}
 p, h1, h2, h3, h4, subtext{padding:0px 5px 0px 5px; display:block;}
 article, div, p, h1, h2, h4, details, span, ul, ol, li, td, dl{border:1px #000000;}
@@ -111,7 +110,6 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   }
 }
 #singleBody{
-  iframe{aspect-ratio:16/9;width:100%;overflow: hidden;}
   aside{display:none; border:none; min-width:0;}
   main{background:var(--singleMainBackground) !important; width:auto; border:0 !important; padding:5px 0px 5px 0px; margin:0px 6px 0px 14px !important;
     article { width:95% !important; margin:0 auto; margin:5px auto;}
@@ -171,14 +169,13 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   a, a:visited{color:var(--linkColor);}
   .panel-wrapper, nav, aside, main, header, footer{margin:0 auto;}
   header{ min-height:77px; height:102px;}
-  main{h1, h2{ text-transform: lowercase;}}
   h1{font-size:18px;} h2{font-size:16px;}
   aside{background:var(--asideBackground);
     img{max-width:100%;}
     > div{ margin:7px auto 7px;}
   }
   main{
-	> h1{letter-spacing:3px; width:auto !important; margin:0; color:#000000; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} border:0;}
+	> h1{background:url("theme/icon-h1_bull.gif") no-repeat top 2px left 3px, #725c61; color:#ffffff !important; letter-spacing:2px; width:auto !important; margin:0px 5px 0px 5px; color:#000000; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} border:0;}
   }
   footer{min-height:80px; background-repeat: no-repeat !important;}
   article{ margin:5px auto 5px auto; border-radius:5px; margin: 5px auto 5px; padding:5px; backdrop-filter:blur(1px); box-shadow: inset 0px 0px 7px var(--articleSubSurface), inset 0px 0px 7px #ffffff; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff00 100%); border:1px solid; border-color:#000000; width:95%;
