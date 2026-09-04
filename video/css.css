@@ -1,6 +1,5 @@
 :root{
   --mainBackground:url('../ui/backgrounds/green-gingham.gif'), #dcedb4 !important;
   --articleSubSurface:#ff809130;
-  
-  --x:fixed;
+  --bodyArticleH1:#7a9671;
 }

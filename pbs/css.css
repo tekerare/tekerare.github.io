@@ -1,7 +1,7 @@
 :root{
   --browserTitle:#8876ad;
   --fwColor:#d3c5e3;
-  --bodyArticleH1:#52157a;
+  --bodyArticleH1:#302b3b;
 }
 body{background: url('../ui/backgrounds/bd_maid.jpg') #ffffff; background-attachment:fixed;}
 #fullRes {border: 0;}

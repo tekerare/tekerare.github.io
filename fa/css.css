@@ -5,5 +5,6 @@
   --mainBackground:url('backgrounds/pink-gingham.png');
   --asideBackground: url('../ui/theme/borderhighlight.png') top left repeat-y, url('../ui/backgrounds/pink-gingham.png');
   --headingBorder:#000000;
+  --bodyArticleH1:#e08fa0;
 }
 h4, h3, h2, h1{ color:var(--boldTxt);}

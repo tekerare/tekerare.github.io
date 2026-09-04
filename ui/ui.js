@@ -12,6 +12,16 @@ function setScreen(){
   document.getElementById('mediaViewer').setAttribute('title', "click to enlarge.");
   document.getElementById('mediaViewer').setAttribute('onclick', "img='"+ img + "';enlarge();");
 }
+function mobileAsideToggle() {
+  var x = document.getElementsByTagName('aside')[0];
+  var y = document.querySelector('.aside-mobile-button');
+  if (x.style.display === "block") {
+    x.style.display = "none";
+	
+  } else {
+    x.style.display = "block";
+  }
+}
 function readerUI(){
   const y = document.createElement('div');
   y.setAttribute('id', 'preview');
@@ -20,6 +30,10 @@ function readerUI(){
   preview.onclick = function() {
 	document.getElementById('preview').style.display = 'none';
   }
+  const mobilebutton = document.createElement('label');
+  mobilebutton.setAttribute('class', 'aside-mobile-button');
+  mobilebutton.setAttribute('onclick' , 'mobileAsideToggle();');
+  document.getElementsByTagName('body')[0].append(mobilebutton);
   const tbutt = document.createElement('a');
   const bbutt = document.createElement('a');
   tbutt.setAttribute('target', '_parent');

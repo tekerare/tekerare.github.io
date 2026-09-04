@@ -3,6 +3,7 @@
   --bgColorOpacity:#e1e3e160;
   --boldTxt:#f2f2f2;
   --liLinkBorder:#b33b00;
+  --bodyArticleH1:#857b81;
 }
 body{
   background-size: 150px, auto, auto, auto;

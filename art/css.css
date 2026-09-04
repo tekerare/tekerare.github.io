@@ -1,7 +1,21 @@
 :root{
-  --asideBackground:#f4f4f4;
+  --asideBackground:#ffffff;
+  --articleSubSurface:#ff809130;
   --singleMainBackground:#f4f4f4;
   --mainBackground:linear-gradient(90deg, #00000000, #00000000 70%, #ffffff), linear-gradient(#ffffffa0), url('../ui/backgrounds/bd_snow.jpg') !important;
+  --bodyArticleH1:#7d7d7d;
 
 }
+a, a:visited{color:#ffffff;}
+header, footer{height:0px;}
+header, main, aside, footer{ padding:7px;}
 #sdTitle{image-rendering:crisp-edges;}
+body{
+  background:url('../ui/backgrounds/shimotsumapaddy.jpg') bottom no-repeat, #ffffff;
+  background-size:fit;
+  background-attachment:fixed;
+}
+#body{
+  main{background: var(--mainBackground); border:0px;}
+}
+#eventsWidget{> div{height:auto !important; overflow-y:auto !important;}}
