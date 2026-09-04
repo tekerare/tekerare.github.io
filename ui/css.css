@@ -45,7 +45,7 @@ h1{text-transform: lowercase; font-family:"unnamedfontcopy"; padding:4px 4px 4px
 h1, h2{text-transform: lowercase;}
 p, h1, h2, h3, h4, span, details, subtext{display:block;}
 p, h1, h2, h3, h4, subtext{padding:0px 5px 0px 5px; display:block;}
-article, div, p, h1, h2, h4, details, span, ul, ol, li, td, dl{border:1px #000000;}
+main, footer, article, div, p, h1, h2, h4, details, span, ul, ol, li, td, dl{border:1px #000000;}
 h2, h3, h4{background: url("theme/h4Bg.png") no-repeat center left 13px; background-size:contain;}
 h3, h2, h1, h4{ margin:0; padding:0px 4px 0px 4px; text-align:start; margin: 5px 0px 5px 0px;}
 details{padding:10px;}
@@ -74,7 +74,6 @@ video{background:#000000; border:1px #000000 solid;}
 subtext{color:#00000050;}
 header, footer, h1, h2{image-rendering:crisp-edges;}
 header, nav{text-align:center;}
-aside, main{ img{ margin:0px 1px 0px 1px;}}
 aside{min-width:204px;
   > div{ text-align:start;
 	div{margin: 5px !important;}
@@ -108,7 +107,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
     aside{ display:block !important; position:static; max-width:216px; height:auto; border-style: none;}
 	.aside-mobile-button{display:none;}
     .panel-wrapper{ min-height:200px; display:flex;
-      img, video{ max-width:97%; max-height: 340px;}
+      img, video{ max-width:90%; max-height: 340px;}
     }
   }
 }
@@ -123,7 +122,8 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   header{background: url('theme/mobile_body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top right no-repeat !important;}
   header, aside, main, footer{box-shadow:none;}
   main{min-height:940px;}
-  footer{background:#8d757a; height:200px; text-align:center;}
+  aside{img{ margin:5px;}}
+  footer{border-style:solid none none none; background:#8d757a; height:200px; text-align:center;}
   header, footer{ button{color:#000000; margin:0px 1px 0px 1px; background: linear-gradient(#8c757a, #80656b, #6e5157); border:1px solid #303030; padding:2px; border-radius:2px;} button:hover{background: linear-gradient(#6e5157, #80656b, #8c757a);}}
   @media (min-width: 670px) {
 	header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important; text-align:end; border:none;
@@ -132,7 +132,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 	.panel-wrapper{background:url('theme/panelWrapper_rBorder.png') left 8px top repeat-y, url('theme/panelWrapper_lBorder.png') top right repeat-y; padding:0px 6px 0px 14px;}
 	main{margin: 0px 0px 0px 14px;}
     aside{margin: 0px 6px 15px 0px; padding: 5px 1px 0px 0px;}
-    footer{text-align:end; background:url('theme/desktop_body_rFooter.png') top right no-repeat, url('theme/desktop_body_lFooter.png') no-repeat top left, url('theme/desktop_body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
+    footer{border-style:none none none none; text-align:end; background:url('theme/desktop_body_rFooter.png') top right no-repeat, url('theme/desktop_body_lFooter.png') no-repeat top left, url('theme/desktop_body_mFooter.png') top center repeat-y; padding:15px 10px 10px 46px;}
   }
 }
 #body aside, #singleBody main { > article, > div{border-color:#949494;}}
@@ -140,6 +140,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 /*MAIN THEME END*/
 /*FAUX WINDOW THEME START*/
 #fauxWindow{ padding:0px 0px 15px 0px; 
+  .aside-mobile-button{visibility:hidden;}
   .panel-wrapper, header{background: var(--fwColor) !important; border:#000000 1px;}
   header{ height:77px !important; border-style:solid solid none solid; padding: 3px 3px 6px 3px !important; text-align:start;
 	button{background: url('icons/window_set.png') no-repeat, var(--fwColor); box-shadow:var(--fwBoxShadow); border:1px #000000 solid; min-height: var(--fwButtonSize); min-width:var(--fwButtonSize); pointer-events:auto;cursor:not-allowed;}
@@ -235,7 +236,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 .image{ border:1px #000000 solid; cursor:pointer; border-radius:5px;}
 .flex{background:none; box-shadow:none !important; border:none !important; display:flex; width: 96%; max-width:610px; margin:2px auto !important; padding: 0px !important;
   > div, > article, > a{width:50%; > img{ max-width:96% !important;}}
-  > img{ width:49%;}
+  > img{ width:49%; margin:0px 2px 0px 0px;}
 }
 /*EXTENSION END*/
 /*RSS FEED START*/
