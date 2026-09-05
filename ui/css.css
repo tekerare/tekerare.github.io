@@ -81,15 +81,17 @@ aside{min-width:204px;
   textarea{max-width:90%; min-width:90%;}
   img{max-width:200px;}
 }
-
 .aside-mobile-button{border:1px #ffffff solid; position:fixed; bottom: 5px; left: 5px; background:var(--bodyAsideMobileIcon), var(--bodyArticleH1); display:inline-block; height:32px; width:32px; cursor:pointer; color:#ffffff; text-align:center;}
 .aside-mobile-button:hover{background:var(--bodyAsideMobileIcon), #000000;}
+.panel-wrapper{ min-height:200px; display:flex;
+  img, video{ max-width:90%; max-height: 340px;}
+}
 main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab.gif')}}
 #body, #singleBody, nav, .panel-wrapper, aside, main, header, footer, div, video, textarea, #mediaViewer{opacity:1; box-sizing:border-box;
   div, article, img{background-position:top left;}
 }
 @media (min-width: 670px) {
-  header, nav, .panel-wrapper, footer{width:70%; min-width:644px; max-width:960px;}
+  header, nav, .panel-wrapper, footer{min-width:644px; max-width:960px;}
 }
 /*MAIN THEME START*/
 #body{
@@ -106,9 +108,6 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 	main{min-height:650px;}
     aside{ display:block !important; position:static; max-width:216px; height:auto; border-style: none;}
 	.aside-mobile-button{display:none;}
-    .panel-wrapper{ min-height:200px; display:flex;
-      img, video{ max-width:90%; max-height: 340px;}
-    }
   }
 }
 #singleBody{
@@ -118,6 +117,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   }
 }
 #body, #singleBody{
+  header, nav, .panel-wrapper, footer{width:70%;}
   header, footer{padding:5px;}
   header{background: url('theme/mobile_body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top right no-repeat !important;}
   header, aside, main, footer{box-shadow:none;}
@@ -142,6 +142,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 #fauxWindow{ padding:0px 0px 15px 0px; 
   .aside-mobile-button{visibility:hidden;}
   .panel-wrapper, header{background: var(--fwColor) !important; border:#000000 1px;}
+  header, nav, .panel-wrapper, footer{width:70%; min-width:644px;}
   header{ height:77px !important; border-style:solid solid none solid; padding: 3px 3px 6px 3px !important; text-align:start;
 	button{background: url('icons/window_set.png') no-repeat, var(--fwColor); box-shadow:var(--fwBoxShadow); border:1px #000000 solid; min-height: var(--fwButtonSize); min-width:var(--fwButtonSize); pointer-events:auto;cursor:not-allowed;}
     button:hover{box-shadow: inset -1px -1px #808080, inset 1px 1px , inset -2px -2px #ffffff, inset 2px 2px #ffffff;}
@@ -149,19 +150,13 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 	span{position:relative;}
 	> div{ box-sizing:border-box; box-shadow: inset 0px -1px #0a0a0a, inset -0px -2px #808080;padding: 2px 3px 4px 3px !important;}
   }
-  .panel-wrapper{border-style:none solid none solid; padding:4px !important; margin:0 auto; cursor:default;
+  .panel-wrapper{ display:flex; border-style:none solid none solid; padding:4px !important; margin:0 auto; cursor:default;
     ::selection{background:#00000020 !important;}
   }
-  @media (min-width: 10px) {
-    .panel-wrapper{ display:flex;}
-	aside{border-color:var(--fwColor) var(--fwColor) var(--fwColor) #000000 !important; border-style:inset inset inset dotted !important; border-width:3px 3px 3px 1px !important;}
-	main{border-style: inset !important; border-width:3px 0px 3px 3px !important;}
-  }
-  aside{max-width:220px; padding:5px 5px 5px 5px; border-color:#000000 var(--fwColor) var(--fwColor) var(--fwColor); border-style:dotted inset inset inset; border-width:1px 3px 3px 3px;
+  aside{border-color:var(--fwColor) var(--fwColor) var(--fwColor) #000000 !important; border-style:inset inset inset dotted !important; border-width:3px 3px 3px 1px !important; max-width:220px; padding:5px 5px 5px 5px; border-color:#000000 var(--fwColor) var(--fwColor) var(--fwColor); border-style:dotted inset inset inset; border-width:1px 3px 3px 3px;
     h2, h1{padding: 4px !important; margin:0;}
-    > div{ border:1px #000000; padding:1px; margin: 0px 0px 10px 0px;}
   }
-  main{padding:5px 0px 5px 0px; border-color:var(--fwColor); border-style:inset inset none inset; border-width:3px 3px 0px 3px;background:#ffffff; width:100%; min-width:407px;
+  main{ border-style: inset !important; border-width:3px 0px 3px 3px !important; padding:5px 0px 5px 0px; border-color:var(--fwColor); border-style:inset inset none inset; border-width:3px 3px 0px 3px;background:#ffffff; width:100%;
     h1, h1 a{ box-shadow:none !important; text-decoration:none;}
   }
   footer{height:0px;}
@@ -179,13 +174,13 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
     > div{ margin:7px auto 7px;}
   }
   main{
+	h2, article > h1{ font-family:'frampoase', 'ms gothic'; -webkit-font-smoothing: none; letter-spacing:2px; background: url('theme/icon-h2_bull.gif') no-repeat top left 2px; -webkit-text-stroke: 4px var(--bodyArticleDiv); paint-order: stroke fill; background-size:20px, auto; min-height:19px; margin:0px 0px 4px 0px; color:var(--bodyArticleH1); padding:1px 0px 0px 24px;
+	  a {color: var(--bodyArticleH1) !important;}
+    }
 	> h1{background:url("theme/icon-h1_bull.gif") no-repeat top 2px left 3px, var(--bodyArticleH1); color:#ffffff !important; letter-spacing:2px; width:auto !important; margin:0px 5px 5px 5px; color:#000000; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} border:0;}
   }
   footer{min-height:80px; background-repeat: no-repeat !important;}
   article{ margin:5px auto 5px auto; border-radius:5px; margin: 5px auto 5px; padding:5px; backdrop-filter:blur(1px); box-shadow: inset 0px 0px 7px var(--articleSubSurface), inset 0px 0px 7px #ffffff; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff00 100%); border:1px solid; border-color:#000000; width:95%;
-    h1, h2{ font-family:'frampoase', 'ms gothic'; -webkit-font-smoothing: none; letter-spacing:2px; background: url('theme/icon-h2_bull.gif') no-repeat top left 2px; -webkit-text-stroke: 4px var(--bodyArticleDiv); paint-order: stroke fill; background-size:20px, auto; min-height:19px; margin:0px 0px 4px 0px; color:var(--bodyArticleH1); padding:1px 0px 0px 24px;
-	  a {color: var(--bodyArticleH1) !important;}
-    }
     > div{box-shadow:inset 0px 0px 3px -1px #000000; border: #000000 1px solid; padding:0px;
 	}
   }
