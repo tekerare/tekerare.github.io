@@ -18,4 +18,3 @@ body{
 #body{
   main{background: var(--mainBackground); border:0px;}
 }
-#eventsWidget{> div{height:auto !important; overflow-y:auto !important;}}

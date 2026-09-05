@@ -183,7 +183,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   }
   #eventsWidget, #galleryWidget{ > div{border:1px solid #000000;} img{ width:93%;}}
   #eventsWidget{border-style:solid !important; border-radius:5px;
-    > div{background: url("backgrounds/dotted_paper.png"), #ffffff; height:100px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll;}
+    > div{background: url("backgrounds/dotted_paper.png"), #ffffff; height:97px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll; overflow-x:hidden;}
     p{ padding:0px 5px 0px 5px !important; margin:3px;border-radius:3px; padding:5px 0px 5px 0px;}
   }
 }
