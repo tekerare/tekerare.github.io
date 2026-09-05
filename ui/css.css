@@ -29,11 +29,7 @@
 /* GLOBAL */
 @media screen and (max-width:790px){html{min-height:1000px;}}
 html{scroll-behavior: smooth; scrollbar-color: var(--bodyArticleH1) #ffffff; scrollbar-width: auto;font-family: "MS PGothic", sans-serif; font-size:12px;}
-body{
-  background: var(--htmlBG);
-  background-attachment:fixed;
-  margin: 0 auto;
-}
+body{ overflow-x: hidden; background: var(--htmlBG); background-attachment:fixed; margin: 0 auto;}
 ::selection {background: #00000020;}
 hr {background-image: linear-gradient(to right, #00000000, #000000, #00000000);border: 0;height:1px;}
 audio{width:100%;filter:opacity(30%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
@@ -117,7 +113,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   }
 }
 #body, #singleBody{
-  header, nav, .panel-wrapper, footer{width:70%;}
+  header, nav, .panel-wrapper, footer{width:100%;}
   header, footer{padding:5px;}
   header{background: url('theme/mobile_body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top right no-repeat !important;}
   header, aside, main, footer{box-shadow:none;}
@@ -126,6 +122,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   footer{border-style:solid none none none; background:#8d757a; height:200px; text-align:center;}
   header, footer{ button{color:#000000; margin:0px 1px 0px 1px; background: linear-gradient(#8c757a, #80656b, #6e5157); border:1px solid #303030; padding:2px; border-radius:2px;} button:hover{background: linear-gradient(#6e5157, #80656b, #8c757a);}}
   @media (min-width: 670px) {
+    header, nav, .panel-wrapper, footer{width:70%;}
 	header{background:url('theme/body_header_frame.png') top right no-repeat, var(--headerLinkGraphic), url('theme/body_lHeader.png') top left no-repeat, url('theme/body_mHeader.png') top center no-repeat !important; text-align:end; border:none;
       > div{overflow-y:scroll; border:1px #000000 solid; width:260px; height:67px; background:#ffffff; top:11px; right:-392px;}
     }
