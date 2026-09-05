@@ -77,7 +77,7 @@ aside{min-width:204px;
   textarea{max-width:90%; min-width:90%;}
   img{max-width:200px;}
 }
-.aside-mobile-button{border:1px #ffffff solid; position:fixed; bottom: 5px; left: 5px; background:var(--bodyAsideMobileIcon), var(--bodyArticleH1); display:inline-block; height:32px; width:32px; cursor:pointer; color:#ffffff; text-align:center;}
+.aside-mobile-button{border:1px #ffffff solid; position:fixed; bottom: 5px; left: 5px; background:var(--bodyAsideMobileIcon), var(--bodyArticleH1); display:inline-block; height:40px; width:40px; cursor:pointer; color:#ffffff; text-align:center;}
 .aside-mobile-button:hover{background:var(--bodyAsideMobileIcon), #000000;}
 .panel-wrapper{ min-height:200px; display:flex;
   img, video{ max-width:90%; max-height: 340px;}
