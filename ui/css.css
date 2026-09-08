@@ -1,5 +1,6 @@
 /* GLOBAL ROOT */
 @font-face {font-family: "frampoase"; src: url("../fonts/frampoase.ttf");}
+@font-face {font-family: "pixelta"; src: url("../fonts/pixelta.ttf");}
 @font-face {font-family: "unnamedfontcopy"; src: url("../fonts/unnamedfontcopy.ttf");}
 @font-face {font-family: "assimilation"; src: url("../fonts/assimilation.TTF");}
 @font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
@@ -171,7 +172,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
     > div{ margin:7px auto 7px;}
   }
   main{
-	h2, article > h1{ font-family:'frampoase', 'ms gothic'; -webkit-font-smoothing: none; letter-spacing:2px; background: url('theme/icon-h2_bull.gif') no-repeat top left 2px; -webkit-text-stroke: 4px var(--bodyArticleDiv); paint-order: stroke fill; background-size:20px, auto; min-height:19px; margin:0px 0px 4px 0px; color:var(--bodyArticleH1); padding:1px 0px 0px 24px;
+	article > h2, article > h1{ font-family:'frampoase', 'ms gothic'; -webkit-font-smoothing: none; letter-spacing:2px; background: url('theme/icon-h2_bull.gif') no-repeat top left 2px; -webkit-text-stroke: 4px var(--bodyArticleDiv); paint-order: stroke fill; background-size:20px, auto; min-height:19px; margin:0px 0px 4px 0px; color:var(--bodyArticleH1); padding:1px 0px 0px 24px;
 	  a {color: var(--bodyArticleH1) !important;}
     }
 	> h1{background:url("theme/icon-h1_bull.gif") no-repeat top 2px left 3px, var(--bodyArticleH1); color:#ffffff !important; letter-spacing:2px; width:auto !important; margin:0px 5px 5px 5px; color:#000000; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} border:0;}
