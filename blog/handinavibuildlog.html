@@ -72,14 +72,12 @@
 	</div>
   </article>
   <hr>
-  <h1>Gallery</h1>
-    <span style="text-align:center;">
-	  <img src="../media/blog_pics/handinavi_pictures/computer-build_1.jpg" class="image" alt="" onclick="img='../media/blog_pics/handinavi_pictures/computer-build_1.jpg';enlarge();">
-	</span>
-	<div class="flex">
-	  <img src="../media/blog_pics/handinavi_pictures/prototype_landingproof.jpg" class="image" alt="" onclick="img='../media/blog_pics/handinavi_pictures/prototype_landingproof.jpg';enlarge();">
-	  <img src="../media/blog_pics/handinavi_pictures/prototype_closedcover.jpg" class="image" alt="" onclick="img='../media/blog_pics/handinavi_pictures/prototype_closedcover.jpg';enlarge();">
-	</div>
+  <div style="text-align:center;"><img src="../media/blog_pics/handinavi_pictures/computer-build_1.jpg" alt="" id="mediaViewer" class="image" onclick="img='../media/blog_pics/handinavi_pictures/computer-build_1.jpg';enlarge();"></div>
+  <div class="boxList">
+     <span style="background:url('../media/blog_pics/handinavi_pictures/computer-build_1.jpg');" onclick="img='../media/blog_pics/handinavi_pictures/computer-build_1.jpg';setScreen();" loading="lazy"></span>
+	 <span style="background:url('../media/blog_pics/handinavi_pictures/prototype_landingproof.jpg');" onclick="img='../media/blog_pics/handinavi_pictures/prototype_landingproof.jpg';setScreen();" loading="lazy"></span>
+	 <span style="background:url('../media/blog_pics/handinavi_pictures/prototype_closedcover.jpg');" onclick="img='../media/blog_pics/handinavi_pictures/prototype_closedcover.jpg';setScreen();" loading="lazy"></span>
+  </div>
 </main>
 <aside id="asideWrp"></aside>
 </div>

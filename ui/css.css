@@ -34,7 +34,7 @@ body{ overflow-x: hidden; background: var(--htmlBG); background-attachment:fixed
 ::selection {background: #00000020;}
 hr {background-image: linear-gradient(to right, #00000000, #000000, #00000000);border: 0;height:1px;}
 audio{width:100%;filter:opacity(30%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
-img{max-width:100%;}
+img{max-width:auto;}
 audio:hover{filter:opacity(50%);}
 a, a:visited{text-decoration-style: dotted; border:1px #000000; cursor:pointer;}
 p{margin:10px 0px 10px 0px;}
@@ -168,7 +168,6 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   header{ min-height:77px; height:102px;}
   h1{font-size:18px;} h2{font-size:16px;}
   aside{background:var(--asideBackground);
-    img{max-width:100%;}
     > div{ margin:7px auto 7px;}
   }
   main{
@@ -197,11 +196,10 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 /*ANIMATIONS START*/
 @keyframes imgSummAnm{0%{padding:0px 20px 10px 20px;}100%{padding:15px 20px 10px 20px;}}
 @keyframes fade { 0%{opacity:0;} 45%{opacity:0;} 100% {opacity:1;}}
-@keyframes bobIn {0% {transform: translate(0px, 30px); opacity:0;} 100% {transform: translate(0px, 0px);opacity:1;}}
-@keyframes bgFade {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
+.animation-fade{animation: fade .7s ease-in;}
+@keyframes bobIn {0% {transform: translate(0px, 20px); opacity:0;} 100% {transform: translate(0px, 0px);opacity:1;}}
+.animation-bob-in{animation:bobIn .7s ease-in;}
+.hover-rotate:hover{transform:rotate(10deg); image-rendering:crisp-edges;}
 /*ANIMATIONS END*/
 .playlist{h3{ background:url('theme/icon-tune.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); text-shadow:none; padding:0px 0px 0px 18px;a{transition:.2s ease-in-out;}a:hover{letter-spacing:1px;}}}
 .itemList{ align-items: flex-end; margin:0px 10px 0px 10px;div{margin:0 auto;}a{color:#000000 !important;}span{margin:0px;}}
