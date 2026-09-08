@@ -234,6 +234,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 /*EXTENSION END*/
 /*RSS FEED START*/
 .feed-title{display:none;}
+.change-log{h4{border:1px var(--bodyArticleColor); border-style: dotted none none none; padding:10px 4px 0px 4px;}}
 /*RSS FEED END*/
 /*OFFSITE CUSTOMS START*/
 #CultofUsakumya {background:none !important; border:0 !important; 
