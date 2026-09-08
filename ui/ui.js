@@ -64,7 +64,7 @@ function galleryWidget(){
 function artSiteMap(){
   const x = document.createElement("div");
   x.setAttribute('class','asideMap');
-  x.innerHTML = '<ul class="ulSiteMap"><li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">merch shop</a></li><ul><li><a href="https://' + siteURL + '/shop/testimonials" target="_parent">reviews</a></li><li><a href="https://' + siteURL + '/shop/booths" target="_parent">my booths</a></li></ul><li><a href="https://' + siteURL + '/shop/terms" target="_parent">digital shop</a></li><li><a href="https://www.patreon.com/cw/tekerare" target="_blank">patreon</a></li></ul>';
+  x.innerHTML = '<ul class="ulSiteMap"><li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">merch shop</a></li><ul><li><a href="https://' + siteURL + '/shop/testimonials" target="_parent">reviews</a></li><li><a href="https://' + siteURL + '/shop/booths" target="_parent">my booths</a></li></ul><li><a href="https://' + siteURL + '/shop/packmule" target="_parent">packmule</a></li><li><a href="https://' + siteURL + '/shop/terms" target="_parent">commission info</a></li><li><a href="https://www.patreon.com/cw/tekerare" target="_blank">patreon</a></li></ul>';
   document.getElementById('asideWrp').appendChild(x);
 }
 function eventWidget(){
