@@ -59,19 +59,19 @@ function galleryWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'galleryWidget');
   x.innerHTML = '<h2 style="text-align:center;">&rarr; Newest In Gallery &larr;</h2><span style="text-align:center;"><a href="/art/gallery"><img src="https://' + siteURL + '/media/og_rtwrk/tadc-2026_06_08.png" class="image" style=""></a></span><quiet style="font-size:12px; padding:0px 0px 3px; 0px; text-align:center;">see more works @ <a href="https://' + siteURL + '/art/">/art/</a></quiet>';
-  document.getElementById('asideWrp').appendChild(x);
+  document.getElementsByTagName('aside')[0].appendChild(x);
 }
 function artSiteMap(){
   const x = document.createElement("div");
   x.setAttribute('class','asideMap');
   x.innerHTML = '<ul class="ulSiteMap"><li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">merch shop</a></li><ul><li><a href="https://' + siteURL + '/shop/testimonials" target="_parent">reviews</a></li><li><a href="https://' + siteURL + '/shop/booths" target="_parent">my booths</a></li></ul><li><a href="https://' + siteURL + '/shop/packmule" target="_parent">packmule</a></li><li><a href="https://' + siteURL + '/shop/terms" target="_parent">commission info</a></li><li><a href="https://www.patreon.com/cw/tekerare" target="_blank">patreon</a></li></ul>';
-  document.getElementById('asideWrp').appendChild(x);
+  document.getElementsByTagName('aside')[0].appendChild(x);
 }
 function eventWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
   x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ul><li>nostalgia con @ htx<br>(oct 2-4)</li><li>idv popup @ sugarland tx<br>(oct 10)</li><li><a href="https://www.instagram.com/monstermeadowmart/" target="_blank">monster meadow</a> @ POST<br>(dec 19-20)</li><strike><li>idv popup @ sugarland tx<br>(july 4)</li><li>tadc fan popup @ sugarland tx<br>(june 27 - 28)</li><li>kimokawaii @ conroe tx<br>(june 06-07)</li><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/shop/booths" target="_parent">/shop/</a></p>';
-  document.getElementById('asideWrp').appendChild(x);
+  document.getElementsByTagName('aside')[0].appendChild(x);
 }
 function kofiWidget(){
   const x = document.createElement('div');
@@ -84,7 +84,7 @@ function browsePosts(){
   const x = document.createElement("div");
   x.setAttribute('class', 'asideMap');
   x.innerHTML = '<h2>Browse Site</h2><ul class="ulSiteMap"><li><a href="https://' + siteURL + '">home</a></li><li><a href="https://' + siteURL + '/shop/">shop</a></li><li><a href="https://' + siteURL + '/art/">art</a></li><li><a href="https://' + siteURL + '/blog/">blog</a></li><li><a href="https://' + siteURL + '/mu/">music</a></li><li><a href="https://' + siteURL + '/shrines">shrines</a></li><ul><li><a href="https://' + siteURL + '/fa/">fashion</a></li><li><a href="https://' + siteURL + '/pbs/">jax x pomni</a></li><li><a href="https://' + siteURL + '/ss/">norton x luchino</a></li></ul><li><a href="https://' + siteURL + '/video/">video</a></li><ul><li><a href="https://' + siteURL + '/video/stream">stream</a></li></ul><li><a href="https://' + siteURL + '/update">update</a></li><ul><li><a href="https://' + siteURL + '/rss/rss.xml">rss</a></li></ul><li><a href="https://' + siteURL + '/contact">contact</a></li><li><a href="https://' + siteURL + '/about">about</a></li></ul><br>';
-  document.getElementById('asideWrp').appendChild(x);
+  document.getElementsByTagName('aside')[0].appendChild(x);
 }
 function asideMap(){
   browsePosts();

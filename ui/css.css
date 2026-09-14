@@ -39,6 +39,9 @@ audio:hover{filter:opacity(50%);}
 a, a:visited{text-decoration-style: dotted; border:1px #000000; cursor:pointer;}
 p{margin:10px 0px 10px 0px;}
 h1{text-transform: lowercase; font-family:"unnamedfontcopy"; padding:4px 4px 4px 33px !important;}
+button, label{border:#00000050 1px solid; border-radius:5px; padding:3px 5px; backdrop-filter: blur(3px); input{appearance:none; position:absolute;}}
+label:hover{cursor:pointer;}
+label:has(input:checked) {background:#00000020;}
 h1, h2{text-transform: lowercase;}
 p, h1, h2, h3, h4, span, details, subtext{display:block;}
 p, h1, h2, h3, h4, subtext{padding:0px 5px 0px 5px; display:block;}
@@ -100,7 +103,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   aside{overflow-y:scroll; overflow-x:hidden; position:fixed; display:none; top:0; width:40%; height:100vh; margin:0px 6px 0px 0px;
     > div {background: var(--divSolid); box-shadow: 4px 3px 9px -4px #00000070; text-shadow:none !important; width:89%; border: solid 1px; border-radius:4px;}
   }
-  article{> div{background:var(--bodyArticleDiv); color:var(--bodyArticleColor); h2, h3, h4, a, a:visited, b {color: var(--bodyArticleColor); text-shadow:none;} th, td{border-color: var(--bodyArticleColor);}}}
+  main > article{> div{background:var(--bodyArticleDiv); color:var(--bodyArticleColor); h2, h3, h4, a, a:visited, b {color: var(--bodyArticleColor); text-shadow:none;} th, td{border-color: var(--bodyArticleColor);}}}
   @media (min-width: 670px) {
 	main{min-height:650px;}
     aside{ display:block !important; position:static; max-width:216px; height:auto; border-style: none;}
@@ -175,12 +178,12 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 	  a {color: var(--bodyArticleH1) !important;}
     }
 	> h1{background:url("theme/icon-h1_bull.gif") no-repeat top 2px left 3px, var(--bodyArticleH1); color:#ffffff !important; letter-spacing:2px; width:auto !important; margin:0px 5px 5px 5px; color:#000000; a{color:#ffffff !important; font-size:11px; opacity: 0.5;} border:0;}
+	> article{ margin:5px auto 5px auto; border-radius:5px; margin: 5px auto 5px; padding:5px; backdrop-filter:blur(1px); box-shadow: inset 0px 0px 7px var(--articleSubSurface), inset 0px 0px 7px #ffffff; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff00 100%); border:1px solid; border-color:#000000; width:95%;
+      > div{box-shadow:inset 0px 0px 3px -1px #000000; border: #000000 1px solid; padding:0px;
+	  }
+    }
   }
   footer{min-height:80px; background-repeat: no-repeat !important;}
-  article{ margin:5px auto 5px auto; border-radius:5px; margin: 5px auto 5px; padding:5px; backdrop-filter:blur(1px); box-shadow: inset 0px 0px 7px var(--articleSubSurface), inset 0px 0px 7px #ffffff; background: linear-gradient(180deg, var(--bodyArticle) 0%, #ffffff00 100%); border:1px solid; border-color:#000000; width:95%;
-    > div{box-shadow:inset 0px 0px 3px -1px #000000; border: #000000 1px solid; padding:0px;
-	}
-  }
   #eventsWidget, #galleryWidget{ > div{border:1px solid #000000;} img{ width:93%;}}
   #eventsWidget{border-style:solid !important; border-radius:5px;
     > div{background: url("backgrounds/dotted_paper.png"), #ffffff; height:97px; box-shadow: #0000006b 0px 2px 5px inset; overflow-y:scroll; overflow-x:hidden;}
@@ -204,7 +207,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
 .playlist{h3{ background:url('theme/icon-tune.png') no-repeat left 3px top 3px, url('backgrounds/tone.png'); text-shadow:none; padding:0px 0px 0px 18px;a{transition:.2s ease-in-out;}a:hover{letter-spacing:1px;}}}
 .itemList{ align-items: flex-end; margin:0px 10px 0px 10px;div{margin:0 auto;}a{color:#000000 !important;}span{margin:0px;}}
 .itemList{ display:flex; font-size:15px; font-family:sans-serif;
-  img{max-height:160px;}
+  img{width:98%; max-width:160px;}
   img:hover{ filter: drop-shadow(0 0 .2rem #ffffff); transform:scale(1.13); z-index:10;}
 }
 .counter{margin:0px 5px 5px 5px; font-weight:bold; color:#8f737a; img{ image-rendering:crisp-edges; border-width: 1px !important; border-color: #000000 !important; margin: -2px 0;}}
@@ -229,6 +232,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
   > div, > article, > a{width:50%; > img{ max-width:96% !important;}}
   > img{ width:49%; margin:0px 2px 0px 0px;}
 }
+.main-scroll-box{border:#919191 1px solid; margin:0px 5px 0px 5px; border-radius:10px; box-shadow: inset 0px 0px 8px -2px #000000; height:400px; overflow-y:scroll; overflow-x:hidden; img:hover{ transform:scale(1.13); z-index:10;}}
 /*EXTENSION END*/
 /*RSS FEED START*/
 .feed-title{display:none;}
