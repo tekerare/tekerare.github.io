@@ -161,7 +161,7 @@ main{a[href^="http"]:not(:has(img))::after {content: url('theme/icon-externaltab
     h1, h1 a{ box-shadow:none !important; text-decoration:none;}
   }
   footer{height:0px;}
-  .minmaxDec, .minmaxDec2, .closeDec{position:absolute;top:1px;} .minmaxDec2{right:40px;}.minmaxDec{background-position:top left -15px;right:20px;}.dropDown{background-position:top left -49px;}.closeDec{background-position:top left -34px;right:0px;} .fauxField{background:#ffffff;border:var(--fwColor) 3px inset; padding:1px 5px 0px 5px;margin:0px -1px !important;}
+  .minmaxDec, .minmaxDec2, .closeDec{position:absolute; top:1px; border-radius:0px;} .minmaxDec2{right:44px;}.minmaxDec{background-position:top left -15px;right:22px;}.dropDown{border-radius:0px; background-position:top left -49px;}.closeDec{background-position:top left -34px;right:0px;} .fauxField{background:#ffffff;border:var(--fwColor) 3px inset; padding:1px 5px 0px 5px;margin:0px -1px !important;}
 }
 /*FAUX WINDOW THEME END*/
 /*EXTENSION START*/

@@ -47,7 +47,7 @@ function readerUI(){
 function badgeLink(){
   const x = document.createElement("div");
   x.innerHTML = '<center><br><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/media/buttons/button.gif" alt="tekerare: homepage" title="tekerare" style="width:88px;"></a></center><textarea><a href="https://'+ siteURL +'"><img src="https://' + siteURL +'/media/buttons/button.gif" alt="tekerare&apos;s badge" title="tekerare"></a></textarea><subtext style="font-size:10px;">badge linkage. this code allows updates across links.</subtext>';
-  document.getElementById('asideWrp').appendChild(x);
+  document.getElementsByTagName('aside')[0].appendChild(x);
 }
 function changeLog(){
   document.write('<article id="rss-feed"><h2>most recent <a href="https://' + siteURL + '/update">change</a></h2><div class="change-log"><script src="https://rss.bloople.net/?url=https%3A%2F%2F' + siteURL + '%2Frss%2Frss.xml&limit=4&showtitle=false&type=js"></script></div></article>');
@@ -73,13 +73,6 @@ function eventWidget(){
   x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ul><li>nostalgia con @ htx<br>(oct 2-4)</li><li>idv popup @ sugarland tx<br>(oct 10)</li><li><a href="https://www.instagram.com/monstermeadowmart/" target="_blank">monster meadow</a> @ POST<br>(dec 19-20)</li><strike><li>idv popup @ sugarland tx<br>(july 4)</li><li>tadc fan popup @ sugarland tx<br>(june 27 - 28)</li><li>kimokawaii @ conroe tx<br>(june 06-07)</li><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ul></div><p style="text-align:end;">virtual booth tour @ <a href="https://' + siteURL + '/shop/booths" target="_parent">/shop/</a></p>';
   document.getElementsByTagName('aside')[0].appendChild(x);
 }
-function kofiWidget(){
-  const x = document.createElement('div');
-  x.setAttribute('id' , 'kofiWidget');
-  x.setAttribute('style','bottom-padding:2px;');
-  x.innerHTML = '<h3>Browse My Shop</h3><span style="text-align:center;"><a href="https://'+ siteURL +'/shop/" target="_blank"><img src="https://' + siteURL + '/media/prmo/cafetadcstandees.gif" class="image" alt="promotional image for my servant pomni and maid jax acrylic standee, available on my shop."></a></span>';
-  document.getElementById('asideWrp').appendChild(x);
-}
 function browsePosts(){
   const x = document.createElement("div");
   x.setAttribute('class', 'asideMap');
@@ -91,7 +84,7 @@ function asideMap(){
   badgeLink();
 }
 function loadTheme(){
-  const findBody = document.getElementById('body');
+  const findBody = document.getElementsByTagName('body')[0];
   function defaultHtmlBase(){
 	const x = document.createElement("map");
 	const y = document.createElement("img");
@@ -102,9 +95,9 @@ function loadTheme(){
 	x.setAttribute('id','top_map');
 	x.setAttribute('title','[click here to front page]');
 	x.innerHTML = '<area shape="rect" href="https://'+ siteURL +'" target="_parent" alt="Home" coords="11,8,249,76">';
-	document.getElementById('header').appendChild(x).appendChild(y);
+	document.getElementsByTagName('header')[0].appendChild(x).appendChild(y);
 	footer.innerHTML = '<a href="https://'+ siteURL +'/" target="_parent"><button>home</button></a><a href="https://'+ siteURL +'/update" target="_parent"><button>update</button></a><a href="https://'+ siteURL +'/blog/" target="_parent"><button>blog</button></a><a href="https://'+ siteURL +'/shrines" target="_parent"><button>shrine</button></a><a href="https://'+ siteURL +'/video/" target="_parent"><button>video</button></a><a href="https://'+ siteURL +'/art/" target="_parent"><button>art</button></a><a href="https://'+ siteURL +'/mu/" target="_parent"><button>music</button></a><a href="https://'+ siteURL +'/shop/" target="_parent"><button>shop</button></a><a href="https://'+ siteURL +'/contact" target="_parent"><button>contact</button></a><a href="https://'+ siteURL +'/about" target="_parent"><button>about</button></a>';
-	document.getElementById('footer').appendChild(footer);
+	document.getElementsByTagName('footer')[0].appendChild(footer);
 	readerUI();
   }
   const fauxWindowHTML = '<span>mule viewer 1.0<button class="closeDec"></button><button class="minmaxDec"></button><button class="minmaxDec2"></button></span><div><a href="https://' + siteURL + '">Home</a> <a href="https://' + siteURL + '/shop/">Shop</a> <a href="https://' + siteURL + '/update">Update</a> <a href="https://' + siteURL + '/contact">Contact</a> <a href="https://' + siteURL + '/rss/rss.xml">RSS</a></div><div class="flex"><div style="width:auto;margin:1px 0px; padding:3px 2px;">Location:</div><div class="fauxField" id="windowLocation" style="cursor:not-allowed;width:100%;"></div><div style="width:auto;"><button class="dropDown"></button></div></div>';
@@ -137,13 +130,13 @@ function loadTheme(){
 	break;
 	case 4:
 	  findBody.setAttribute('id', 'fauxWindow');
-	  const x = document.getElementById('header');
+	  const x = document.getElementsByTagName('header')[0];
 	  x.innerHTML = fauxWindowHTML;
       readerUI();
 	break;
 	case 5:
 	  findBody.setAttribute('id', 'fauxWindow');
-	  const p = document.getElementById('header');
+	  const p = document.getElementsByTagName('header')[0];
 	  p.innerHTML = fauxWindowHTML;
       spawnSDTitle();
       readerUI();
