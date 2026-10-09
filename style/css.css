@@ -4,7 +4,7 @@
 @font-face {font-family: "saitamaar"; src: url("../font/saitamaar.ttf");}
 @media screen and (max-width:790px){html{min-height:1000px;}}
 html{scroll-behavior: smooth; scrollbar-width: auto;font-family: "saitamaar", "MS PGothic", sans-serif; font-size:14px;}
-body{background:#e8e8e8; min-width:340px; overflow-x: hidden; margin: 0 auto;}
+body{background:url('../media/backgrounds/pink-gingham.png') ; min-width:340px; overflow-x: hidden; margin: 0 auto;}
 ::selection {background: #00000020;}
 a, a:visited{color:#000000; text-decoration-style: dotted; border:1px #000000; cursor:pointer;}
 p{margin:10px 0px 10px 0px;}
@@ -42,7 +42,7 @@ video{background:#000000; border:1px #000000 solid;}
 subtext{color:#00000050;}
 header, main, aside, footer{background-color:#ffffff;}
 header, footer, h1, h2{image-rendering:crisp-edges;}
-header{font-family: "beast-regular"; font-size:26px; background:url('../media/backgrounds/barcode.png') no-repeat top right 6px; border-style:none none dotted none;
+header{font-family: "beast-regular"; font-size:26px; background:url('../media/backgrounds/barcode.png') no-repeat top right 6px, #ffffff; border-style:none none dotted none;
   a{text-decoration:none;}
 }
 main, aside{padding:5px; display:inline-block; vertical-align: top;
@@ -67,7 +67,7 @@ footer{text-align:center; padding:15px 10px 10px 46px;}
   body{ margin:0 auto;
     > div{display:flex;}
   }
-  body{header, > div, footer{width:640px; margin:0 auto;}}
+  body{header, > div, footer{box-shadow: 0px 0px 7px 6px #ffffff; width:640px; margin:0 auto;}}
   main, aside{min-height:650px; height:auto;}
   main{ max-width:440px; border-style:none none none dotted;}
   aside{position:static; display:inline-block !important; max-width:216px; max-width: 216px;border-style:none;}
