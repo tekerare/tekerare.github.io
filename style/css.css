@@ -52,6 +52,8 @@ main, aside{padding:5px; display:inline-block; vertical-align: top;
 }
 main{ width:100%;
   a[href^="http"]:not(:has(img))::after {content: url('../media/icons/icon-externaltab.gif')}
+  > article{ border: 5px solid transparent !important; border-image: url('../media/backgrounds/scallop_white.png') 5 round !important; margin:0px 0px 5px 0px;
+	}
 }
 aside{background: url('../media/backgrounds/whitedotted.jpg'), #ffffff; min-width:204px; overflow-y:scroll; overflow-x:hidden; position:fixed; display:none; top:0; width:40%; height:100vh; border-style:none dotted none none;
   > div, section, article{ text-align:start; background:#ffffff; border-style:dotted; margin:0px 0px 5px 0px;
@@ -67,10 +69,7 @@ footer{text-align:center; padding:15px 10px 10px 46px;}
   }
   body{header, > div, footer{width:640px; margin:0 auto;}}
   main, aside{min-height:650px; height:auto;}
-  main{ max-width:440px; border-style:none none none dotted;
-    > article{ border: 5px solid transparent !important; border-image: url('../media/backgrounds/scallop_white.png') 5 round !important; margin:0px 0px 5px 0px;
-	}
-  }
+  main{ max-width:440px; border-style:none none none dotted;}
   aside{position:static; display:inline-block !important; max-width:216px; max-width: 216px;border-style:none;}
   footer{border-style:dotted none none none;}
   .aside-mobile-button{display:none !important;}
