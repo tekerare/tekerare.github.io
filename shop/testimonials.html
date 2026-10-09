@@ -3,29 +3,31 @@
 <head>
 <title>tkr | shop</title>
 <meta charset="utf-8"/>
-<link rel="shortcut icon" type="image/jpg" href="../favicon.png">
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="tekerare - artwork">
+<meta name="description" content="">
 <meta property="og:image" content="preview.jpg"/>
-<link rel="stylesheet" href="../ui/css.css">
-<link rel="stylesheet" href="../art/css.css">
-<script src="../ui/ui.js"></script>
-<script src="js.js"></script>
-<meta name="author" content="tkr">
+<script src="../style/ui.js"></script>
+<script src="ui.js"></script>
+<link rel="stylesheet" href="../style/css.css">
+<meta name="author" content="tkr/玲音">
 <style>
-tr{ font-family:arial;
+tr{ font-family:arial; font-size:12px;
   td:nth-child(odd) {background:none; width:65px; border:none; img{border:1px solid #000000; border-radius:30px;width:60px;}}
   td:nth-child(even) { padding:10px; border-radius:10px; background:#ffffffa3; border:1px solid #00000084; transition:.2s ease-in-out; img{float:right;margin:0px 0px 0px 5px;} subtext{padding:0;}}
   @media (min-width: 670px) {td:nth-child(even):hover{ background:#ffffff;transform:scale(105%);}}
 }
 </style>
 </head>
-<body id="body">
+<body>
 <header>
 </header>
 <nav>
 </nav>
-<div class="panel-wrapper">
+<div>
+<aside>
+  <script>artSiteMap();</script>
+</aside>
 <main>
   <h1>testimonials</h1>
   <table id="microlog">
@@ -63,11 +65,8 @@ tr{ font-family:arial;
 	</tr>
   </table>
 </main>
-<aside>
-</aside>
 </div>
 <footer>
 </footer>
-<script>theme = 2;loadTheme();</script>
 </body>
 </html>

@@ -3,29 +3,32 @@
 <head>
 <title>tkr | video</title>
 <meta charset="utf-8"/>
-<link rel="shortcut icon" type="image/png" href="../favicon.png">
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="tkr | video">
-<script src="../ui/ui.js"></script>
-<link rel="stylesheet" href="../ui/css.css">
-<link rel="stylesheet" href="css.css">
-<script src="js.js"></script>
-<meta name="author" content="tkr">
+<meta name="description" content="">
+<meta property="og:image" content="preview.jpg"/>
+<script src="../style/ui.js"></script>
+<script src="ui.js"></script>
+<link rel="stylesheet" href="../style/css.css">
+<meta name="author" content="tkr/玲音">
 </head>
-<body id="body">
-<header id="header">
+<body>
+<header>
 </header>
-<nav id="nav">
+<nav>
 </nav>
-<div class="panel-wrapper">
-<main id="mainWrp">
+<div>
+<aside>
+  <span style="text-align:center;"><a href="."><img src="../media/label/muleviewer.png" alt="all my videos" class="animation-bob-in hover-rotate"></a><a href="https://'+ siteURL +'/video/stream"><img src="../media/label/quitterspark.png" alt="my stream" class="animation-bob-in hover-rotate"></a></span>
+</aside>
+<main>
   <h1>video</h1>
-  <div class="mediaViewer">
+  <article class="mediaViewer">
     <video src="../media/videos/cyberpsycho/2026_08_14-mesighting.mp4" playsinline loop controls class="videoContainer"></video>
-    <h2 class="mediaVidTitle">most recent video</h2>
-	<div class="mediaVidDescription">real footage of shows or events i've been at. hopefully i can tip the scales by a grain to help you figure if they're worth going to. if u wanna meet at any local upcoming events, e-mail me a week or two in advance.</div>
-  </div>
-  <div class="playlist" style="height:320px; overflow-y:scroll;">
+    <h2 class="mediaVidTitle"></h2>
+	<div class="mediaVidDescription"></div>
+  </article>
+  <article class="playlist" style="height:320px; overflow-y:scroll;">
 	<div class="list">
       <video src="../media/videos/cyberpsycho/2026_08_14-mesighting.mp4" class="list-video"></video>
 	  <h2 class="list-title">cyberpsycho august: me sighting</h2>
@@ -106,14 +109,11 @@
 	  <span class="list-description"><p>&starf;&starf;&starf;&star;&star;<br>i didn't take a lot of videos for amped because i spent most of the show dancing. i took this while resting at the back and gosh, look at all these people too scared to dance out of fear of looking a little dumb.</p>
 	  <p>this was pretty much the kind of energy amped and its following events attracted, but that's why you bring friends.</p></span>
 	</div>
-  </div>
+  </article>
 </main>
-<aside id="asideWrp">
-</aside>
 </div>
-<footer id="footer">
+<footer>
 </footer>
-<script>theme = 1;loadTheme();</script>
 <script>
 let videoList = document.querySelectorAll('.playlist .list');
 

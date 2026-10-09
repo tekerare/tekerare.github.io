@@ -3,59 +3,43 @@
 <head>
 <title>tkr | music</title>
 <meta charset="utf-8"/>
-<link rel="shortcut icon" type="image/png" href="../favicon.png">
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="tkr - music">
+<meta name="description" content="">
 <meta property="og:image" content="preview.jpg"/>
-<script src="../ui/ui.js"></script>
-<link rel="stylesheet" href="../ui/css.css">
-<link rel="stylesheet" href="css.css">
-<meta name="author" content="tkr">
+<script src="../style/ui.js"></script>
+<script src="ui.js"></script>
+<link rel="stylesheet" href="../style/css.css">
+<meta name="author" content="tkr/玲音">
 </head>
-<body id="body">
-<header id="header">
+<body>
+<header>
 </header>
-<nav id="nav">
+<nav>
 </nav>
-<div class="panel-wrapper">
-<main id="mainWrp">
-  <h1>my soundwork</h1><br>
-    <div class="playlist">
-	  <audio controls="" id="audio" autoplay="false" tabindex="0"></audio>
-	  <table>
-		<tr>
-		  <td>
-			<h3><a onclick='changeAudio(0)'>hamster warlock (demo)</a></h3>
-			<p>2024.11.04</p>
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-			<h3><a onclick='changeAudio(1)'>horse song</a></h3>
-			<p>2023.03.03 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="../ui/theme/icon-module.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download</a></p>
-		  </td>
-		</tr>
-	  </table>
-	</div>
-</main>
-<aside id="asideWrp">
-  <center><img src="media/cover.png" style="width:89%; border:#949494 1px solid; border-radius:4px; box-shadow: 4px 3px 9px -4px #00000070; image-rendering:pixelated; margin:0px 0px 5px 0px;" alt="" onclick="img='media/cover.png';enlarge();"></center>
-  <div>
-    <p>production, mixing, visual renders made by yours truly.</p>
-    <p>work is not to be reposted on spotify; proper credit only.</p>
-  </div>
+<div>
+<aside>
   <script>asideMap();</script>
 </aside>
+<main>
+  <h1>my soundwork</h1>
+  <article class="playlist">
+	<audio controls="" id="audio" autoplay="false" tabindex="0"></audio>
+	<ol>
+	  <li><a onclick='changeAudio(0)'>2024.11.04 // hamster warlock (demo)</a></li>
+	  <li><a onclick='changeAudio(1)'>2023.03.03 // horse song</a></li>
+	</ol>
+  </article>
+</main>
 </div>
-<footer id="footer">
+<footer>
 </footer>
-<script>theme = 1;loadTheme();</script>
 <script>
 const audioFiles = [
-  "audios/3r+958ff.flac",
-  "audios/PasteMarchDivision.flac",
+  "../media/audios/mymusic/3r+958ff.flac",
+  "../media/audios/mymusic/PasteMarchDivision.flac",
 ];
 </script>
-<script src="../ui/mediaPlayerExt.js"></script>
+<script src="../script/mediaPlayerExt.js"></script>
 </body>
 </html>

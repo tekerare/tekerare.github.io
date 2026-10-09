@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>tkr | stream</title>
+<title>tkr | video</title>
 <meta charset="utf-8"/>
-<link rel="shortcut icon" type="image/png" href="../favicon.png">
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="tkr | stream">
-<script src="../ui/ui.js"></script>
-<link rel="stylesheet" href="../ui/css.css">
-<link rel="stylesheet" href="css.css">
-<script src="js.js"></script>
-<meta name="author" content="tkr">
+<meta name="description" content="">
+<meta property="og:image" content="preview.jpg"/>
+<script src="../style/ui.js"></script>
+<script src="ui.js"></script>
+<link rel="stylesheet" href="../style/css.css">
+<meta name="author" content="tkr/玲音">
 </head>
-<body id="body">
-<header id="header">
+<body>
+<header>
 </header>
-<nav id="nav">
+<nav>
 </nav>
-<div class="panel-wrapper">
-<main id="mainWrp">
-  <h1>stream</h1>
-  <div class="mediaViewer">
-    <iframe src="https://player.twitch.tv/?channel=tekerare&parent=tekerare.github.io&autoplay=true&muted=false&time=0s" class="image" height="auto" frameborder="0" allowfullscreen></iframe>
-    <iframe src="https://www.twitch.tv/embed/tekerare/chat?parent=tekerare.github.io" height="auto" style="border:0;height:400px;"></iframe>
-  </div>
-</main>
-<aside id="asideWrp">
+<div>
+<aside>
+  <span style="text-align:center;"><a href="."><img src="../media/label/muleviewer.png" alt="all my videos" class="animation-bob-in hover-rotate"></a><a href="https://'+ siteURL +'/video/stream"><img src="../media/label/quitterspark.png" alt="my stream" class="animation-bob-in hover-rotate"></a></span>
 </aside>
+<main>
+  <h1>stream</h1>
+  <article>
+    <div class="mediaViewer">
+      <iframe src="https://player.twitch.tv/?channel=tekerare&parent=tekerare.github.io&autoplay=true&muted=false&time=0s" height="auto" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.twitch.tv/embed/tekerare/chat?parent=tekerare.github.io" height="auto" style="border:0;height:400px;"></iframe>
+    </div>
+  </article>
+</main>
 </div>
-<footer id="footer">
+<footer>
 </footer>
-<script>theme = 1;loadTheme();</script>
 </body>
 </html>

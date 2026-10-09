@@ -1,9 +1,0 @@
-:root{
-  --browserTitle:#8876ad;
-  --fwColor:#d3c5e3;
-  --bodyArticleH1:#302b3b;
-}
-body{background: url('../ui/backgrounds/bd_maid.jpg') #ffffff; background-attachment:fixed;}
-#fullRes {border: 0;}
-main{background:url('../ui/backgrounds/bd_lilac.jpg') !important;
-  div > h2{ -webkit-text-stroke: 3px #ffffff; paint-order: stroke fill; color:#6e588c;}

@@ -3,47 +3,30 @@
 <head>
 <title>tkr | shop</title>
 <meta charset="utf-8"/>
-<link rel="shortcut icon" type="image/jpg" href="../favicon.png">
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="tkr - previous booths">
+<meta name="description" content="">
 <meta property="og:image" content="preview.jpg"/>
-<link rel="stylesheet" href="../ui/css.css">
-<link rel="stylesheet" href="../art/css.css">
-<script src="../ui/ui.js"></script>
-<script src="js.js"></script>
-<meta name="author" content="tkr">
+<script src="../style/ui.js"></script>
+<script src="ui.js"></script>
+<link rel="stylesheet" href="../style/css.css">
+<meta name="author" content="tkr/玲音">
 </head>
-<body id="body">
+<body>
 <header>
 </header>
 <nav>
 </nav>
-<div class="panel-wrapper">
+<div>
+<aside>
+  <script>artSiteMap();</script>
+</aside>
 <main>
+  <h1>the booth</h1>
   <div style="text-align:center;"><img src="../media/rl_pics/places/booths/nc-2026_10_03.jpg" alt="" class="image" onclick="img='../media/rl_pics/places/booths/nc-2026_10_03.jpg';enlarge();" style="max-height: 540px;"></div>
 </main>
-<aside>
-</aside>
 </div>
 <footer>
 </footer>
-<script>
-let videoList = document.querySelectorAll('.playlist .list');
-
-videoList.forEach(vid =>{
-   vid.onclick = () =>{
-      videoList.forEach(remove =>{remove.classList.remove('active')});
-      vid.classList.add('active');
-      let src = vid.querySelector('.list-video').src;
-      let title = vid.querySelector('.list-title').innerHTML;
-      let description = vid.querySelector('.list-description').innerHTML;
-      document.querySelector('.mediaViewer .videoContainer').src = src;
-      document.querySelector('.mediaViewer .videoContainer').play();
-      document.querySelector('.mediaViewer .mediaVidTitle').innerHTML = title;
-      document.querySelector('.mediaViewer .mediaVidDescription').innerHTML = description;
-   };
-});
-</script>
-<script>theme = 2;loadTheme();</script>
 </body>
 </html>
