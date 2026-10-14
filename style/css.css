@@ -40,7 +40,6 @@ summary{cursor:pointer;}
 iframe{aspect-ratio:16/9; width:100%;overflow: hidden; margin:0 auto;}
 video{background:#000000; border:1px #000000 solid;}
 subtext{color:#00000050;}
-header, main, aside, footer{background-color:#ffffff;}
 header, footer, h1, h2{image-rendering:crisp-edges;}
 header{font-family: "beast-regular"; font-size:26px; background:url('../media/backgrounds/barcode.png') no-repeat top right 6px, #ffffff; border-style:none none dotted none;
   a{text-decoration:none;}
@@ -52,8 +51,8 @@ main, aside{padding:5px; display:inline-block; vertical-align: top;
 }
 main{ width:100%;
   a[href^="http"]:not(:has(img))::after {content: url('../media/icons/icon-externaltab.gif')}
-  > article{ border: 5px solid transparent !important; border-image: url('../media/backgrounds/scallop_white.png') 5 round !important; margin:0px 0px 5px 0px;
-	}
+  > article{ border: 5px solid transparent !important; border-image: url('../media/backgrounds/scallop_white.png') 5 round !important; margin:0px 0px 5px 0px; background-color:#ffffff;
+  }
 }
 aside{background: url('../media/backgrounds/whitedotted.jpg'), #ffffff; min-width:204px; overflow-y:scroll; overflow-x:hidden; position:fixed; display:none; top:0; width:40%; height:100vh; border-style:none dotted none none;
   > div, section, article{ text-align:start; background:#ffffff; border-style:dotted; margin:0px 0px 5px 0px;
@@ -67,6 +66,7 @@ footer{text-align:center; padding:15px 10px 10px 46px;}
   body{ margin:0 auto;
     > div{display:flex;}
   }
+  header, main, aside, footer{background-color:#ffffff;}
   body{header, > div, footer{box-shadow: 0px 0px 7px 6px #ffffff; width:640px; margin:0 auto;}}
   main, aside{min-height:650px; height:auto;}
   main{ max-width:440px; border-style:none none none dotted;}
@@ -108,7 +108,7 @@ footer{text-align:center; padding:15px 10px 10px 46px;}
   div{margin:0 auto;}a{color:#000000 !important;}
   span{margin:0px;}
 }
-.main-scroll-box{border:#919191 1px solid; padding:5px; margin:0px 5px 0px 5px; border-radius:10px; box-shadow: inset 0px 0px 8px -2px #000000; height:400px; overflow-y:scroll; overflow-x:hidden;
+.main-scroll-box{border:#919191 1px solid; padding:5px; margin:0px 5px 0px 5px; background-color:#ffffff; border-radius:10px; box-shadow: inset 0px 0px 8px -2px #000000; height:400px; overflow-y:scroll; overflow-x:hidden;
   img{width:160px;}
 }
 .image{border:1px solid #000000; margin:2px 1px;}
