@@ -13,18 +13,15 @@
 <meta name="author" content="tkr/玲音">
 <style>
 body{max-width:800px;}
-td:nth-child(2){width:150px; text-align:center;}
 
-.tagged:has(input:checked) article {display: none;}
-.tagged:has(#all:checked) article,
-.tagged:has(#acrylic:checked) article[class~="acrylic"],
-.tagged:has(#badges:checked) article[class~="badges"],
-.tagged:has(#stickers:checked) article[class~="stickers"],
-.tagged:has(#prints:checked) article[class~="prints"],
-.tagged:has(#zines:checked) article[class~="zines"],
-.tagged:has(#jaxpom:checked) article[class~="jaxpom"]
+.tagged:has(input:checked) div {display: none;}
+.tagged:has(#all:checked) div,
+.tagged:has(#acrylic:checked) div[class~="acrylic"],
+.tagged:has(#badges:checked) div[class~="badges"],
+.tagged:has(#stickers:checked) div[class~="stickers"],
+.tagged:has(#prints:checked) div[class~="prints"]
   {display: block;}
-.tagged section{ margin:0px 2px 8px 2px;}
+.tagged span{ margin:0px 2px 8px 2px;}
 }</style>
 </head>
 <body>
@@ -35,116 +32,339 @@ td:nth-child(2){width:150px; text-align:center;}
 <div>
 <aside>
   <script>artSiteMap();</script>
+  <div>
+    <h2>please read</h2>
+	<p>if you plan on bundling, please e-mail me instead and you'll receive an invoice, otherwise i'll refund what i can so you don't pay double for shipping.</p>
+  </div>
 </aside>
 <main>
   <h1>shop</h1>
-  <div class="tagged">
-    <section>
+  <section class="tagged">
+    <span>
       <label><input type="radio" id="all" name="tag" checked="">all</label>
       <label><input type="radio" id="acrylic" name="tag">acrylic</label>
       <label><input type="radio" id="badges" name="tag">badges</label>
       <label><input type="radio" id="stickers" name="tag">stickers</label>
       <label><input type="radio" id="prints" name="tag">prints</label>
-      <label><input type="radio" id="zines" name="tag">zines</label>
-    </section>
+    </span>
     <section class="main-scroll-box">
-	  <article class="acrylic jaxpom">
-		<table><tr><td><p><b>maid jax standee</b><br>$22.00usd<br>"me? start a food fight in the cafe? gosh, ain't i a stinker."<br><br>1 acrylic standee (179mm x 96mm, 3.5mm thick), paired with an 100mm wide base adorned in stupid sauce.</td><td><a href="https://square.link/u/kDU4fu2x" target="_parent"><img src="../media/shop_catalog/standees/maidjax.png" alt="an acrylic standee of jax from tadc wearing a maid dress." title="click to pay for maid jax acrylic standee." loading="lazy" style="width:90px;"></a></td></tr>
-		<tr><td><p><p><b>servant pomni standee</b><br>$22.00usd<br>don't worry, she didn't have any hand in cooking the omurice...<br><br>1 acrylic standee (179mm x 96mm, 3.5mm thick), paired with an 100mm wide base adorned in stupid sauce.</p></td><td><a href="https://square.link/u/3O6XnWVZ" target="_parent"><img src="../media/shop_catalog/standees/servantpomni.png" alt="an acrylic standee of pomni from tadc wearing a butler's suit." title="click to pay for servant pomni acrylic standee." loading="lazy" style="width:90px;"></a></td></tr></table>
-	  </article>
-	  <article class="badges jaxpom">
-		<table><tr><td><p><b>tadc stupid cafe tin badge</b><br>$10.00usd<br>the tin badges (5.7 cm) from my “stupid cafe” series. they're both $10 each, but $15 total if bought together.<br><br>printed and pressed by hand, zinc and brass.</p></td><td><a href="https://square.link/u/31NEA8fQ" target="_parent"><img src="../media/shop_catalog/tinbadges/tadc_stupidcafe.png" alt="" id="tadc_stupidcafe" title="click to pay for the stupid cafe pomni and jax tin badge." loading="lazy"></a></td></tr></table>
-	  </article>
-	  <article class="acrylic jaxpom">
-		<table><tr><td><p><b>funnybunny acrylic charm</b><br>$15.00usd<br>has two designs on both sides (examples on checkout). the back says "everything is going to be okay"<br><br>the cutest fan charm for funnybunny fans. i kept one for my own itabag.</p></td><td><a href="https://square.link/u/BdW9Lqrd" target="_parent"><img src="../media/shop_catalog/charms/tadc-funnybunny.gif" alt="a spinning gif of an acrylic charm depicting jax and pomni holding hands." title="click to pay for funnybunny acrylic charm." loading="lazy"></a></td></tr></table>
-      </article>
-      <article class="badges jaxpom">
-		<table><tr><td><p><b>iconic funnybunny tin badge</b><br>$10.00usd<br>a tin badge (5.7 cm) of jax and pomni locking eyes. printed and pressed by hand, zinc and brass.</p></td><td><a href="https://square.link/u/5inYREmv" target="_parent"><img src="../media/shop_catalog/tinbadges/tadc_iconicfunnybunny.png" alt="" title="click to pay for the iconic funnybunny tin badge." loading="lazy" style="width:90px;"></a></td></tr>
+	  <div class="badges">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/shop/tinbadges/gijinka/modplugtan_junglistslovemepianorollsfearme.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/tinbadges/touhou/reimu.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/tinbadges/touhou/reisen.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/tinbadges/tadc/iconicfunnybunny.png" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+			<td><b>piano rolls fear me badge</b><br>$8.00</td>
+			<td><b>reimu<br>tin badge</b><br>$8.00</td>
+			<td><b>reisen<br>tin badge</b><br>$8.00</td>
+		    <td><b>iconic jaxpom tin badge</b><br>$8.00</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/f017DwzV" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/6RxtOun3" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/sXBUblEm" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/5inYREmv" target="_parent"><label>詳細</label></a></td>
 		</table>
-      </article>
-	  <article class="zines jaxpom">
-	    <table><tr><td><p><b>pbs-clipping vol. 1 (18+)</b><br>$5.00<br>a visual collection dating from at latest april 14, 2026. 15 pagecount in cardstock (or whatever paper is available to me).</p></td><td><a href="https://square.link/u/wzPEbksk" target="_parent"><img src="../media/shop_catalog/zines/pbs-clipping-vol1.png" alt="a picture of my nsfw jaxpom zine's volume 1." title="click to pay for this zine." loading="lazy"></a></td></tr></table>
-	  </article>
-	  <article class="acrylic">
-	    <div class="flex">
-		  <div><a href="https://square.link/u/pt98QNcn" target="_parent"><img src="../media/shop_catalog/charms/idv_norton.gif" alt="" title="click to pay for the iconic norton acrylic charm." loading="lazy"><span>idv iconic norton charm<br>$15.00usd</span></a></div>
-		  <div><a href="https://square.link/u/oeBoJ6op" target="_parent"><img src="../media/shop_catalog/charms/idv_alice.gif" alt="" title="click to pay for the iconic alice acrylic charm." loading="lazy"><span>idv iconic alice charm<br>$15.00usd</span></a></div>
-		  <div><a href="https://square.link/u/pp8aDzl0" target="_parent"><img src="../media/shop_catalog/charms/idv_naib.gif" alt="" title="click to pay for the iconic naib acrylic charm." loading="lazy"><span>idv iconic<br>naib charm<br>$15.00usd</span></a></div>
-		  <div><a href="https://square.link/u/ICAcBSV3" target="_parent"><img src="../media/shop_catalog/charms/dr_kokichi.gif" alt="" title="click to pay for the iconic ouma acrylic charm." loading="lazy"><span>dr iconic ouma charm<br>$15.00usd</span></a></div>
-		</div>
-	  </article>
-	  <article class="stickers">
-	    <div class="flex">
-			<div><a href="https://square.link/u/z4rutYzy" target="_parent"><img src="../media/shop_catalog/stickersheets/nortluchiinvasion.png" alt="" title="click to pay for either the norton invasion or luchino invasion sticker sheet." loading="lazy"><span>nortlu invasion sheets<br>$8.00usd</span></a></div>
-			<div><a href="https://square.link/u/hVsWS54e" target="_parent"><img src="../media/shop_catalog/stickersheets/xxxholic_douwata.png" alt="" title="click to pay for the douwata sheet." loading="lazy"><span>douwata sheet<br>$8.00usd</span></a></div>
-			<div><a href="https://square.link/u/eGXB5gel" target="_parent"><img src="../media/shop_catalog/stickersheets/putthatbunnyinitsplace.png" alt="" title="click to pay for the jaxpom sheet." loading="lazy"><span>jaxpom sheets<br>$8.00usd</span></a></div>
-		  </div>
-		  <div class="flex">
-			<div><a href="https://square.link/u/OBP84qEq" target="_parent"><img src="../media/shop_catalog/stickers/fujochud.png" alt="" title="click to pay for the fujochud sticker." loading="lazy"><span>fujochud<br> sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/1Mh4guMi" target="_parent"><img src="../media/shop_catalog/stickers/yanineko_drunkyaniko.png" alt="drunk yaniko from yani neko." id="sticker-yanineko_drunkyaniko" title="click to pay for the drunk yaniko sticker." loading="lazy"><span>drunk yaniko sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/3ggXNqh0" target="_parent"><img src="../media/shop_catalog/stickers/deathnote_ryukmii.png" alt="" title="click to pay for the deathnote miiyuk sticker." loading="lazy"><span>miiyuk sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/fURg6pqW" target="_parent"><img src="../media/shop_catalog/stickers/dr_kokichi.png" alt="" title="click to pay for the ouma sticker." loading="lazy"><span>ouma sticker<br>$5.00usd</span></a></div>
-		  </div>
-		  <div class="flex">
-			<div><a href="https://square.link/u/BKnHW18y" target="_parent"><img src="../media/shop_catalog/stickers/touchingbuns_sticker.png" alt="" title="click to pay for the touching buns sticker." loading="lazy"><span>touching buns sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/YMAYUpK5" target="_parent"><img src="../media/shop_catalog/stickers/tadc_jaxshinjichair.png" alt="" title="click to pay for the shinji chair jax sticker." loading="lazy"><span>shinji jax<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/cEOaZGOs" target="_parent"><img src="../media/shop_catalog/stickers/tadc_iconicfunnybunny.png" alt="" title="click to pay for the tadc iconicfunnybunny sticker." loading="lazy"><span>iconic funnybunny sticker<br>$5.00usd</span></a></div>
-		  </div>
-		  <div class="flex">
-			<div><a href="https://square.link/u/QFsMMHSz" target="_parent"><img src="../media/shop_catalog/stickers/tadc_bunnyteethvore.png" alt="" title="click to pay for the bunnyteeth vore sticker." loading="lazy"><span>bunnyteeth vore<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/sMYUqgXL" target="_parent"><img src="../media/shop_catalog/stickers/tadc_kingerwithashotgun.png" alt="" title="click to pay for the kinger shotgun sticker." loading="lazy"><span>kinger sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/TnLJQcJy" target="_parent"><img src="../media/shop_catalog/stickers/tadc_skinnedjax.png" alt="jax pride sticker featuring the trans flag." title="click to pay for the skinned jax sticker." loading="lazy"><span>skinned jax sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/GRzG7uCZ" target="_parent"><img src="../media/shop_catalog/stickers/tadc_pridejax.png" alt="jax pride sticker featuring the trans flag." title="click to pay for the jax pride sticker." loading="lazy"><span>jax pride sticker<br>$5.00usd</span></a></div>
-		  </div>
-		  <div class="flex">
-			<div><a href="https://square.link/u/McwMQv36" target="_parent"><img src="../media/shop_catalog/stickers/idv_pixel_aesop.png" alt="" title="click to pay for the idv pixel aesop sticker." loading="lazy"><span>pixel aesop sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/eUi0NWh5" target="_parent"><img src="../media/shop_catalog/stickers/idv_pixel_andrew.png" alt="" title="click to pay for the pixel andrew sticker." loading="lazy"><span>pixel andrew sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/YQCtryNx" target="_parent"><img src="../media/shop_catalog/stickers/idv_pixel_luchino.png" alt="" title="click to pay for the pixel luchino sticker." loading="lazy"><span>pixel luchino sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/XAZLesif" target="_parent"><img src="../media/shop_catalog/stickers/idv_pixel_norton.png" alt="" title="click to pay for the idv pixel norton sticker." loading="lazy"><span>pixel norton sticker<br>$5.00usd</span></a></div>
-		  </div>
-		  <div class="flex">
-			<div><a href="https://square.link/u/ynevQ5yY" target="_parent"><img src="../media/shop_catalog/stickers/gayglaaki.png" alt="" title="click to pay for the gla'aki gay thoughts sticker" loading="lazy"><span>gla'aki sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/nWuw2A6F" target="_parent"><img src="../media/shop_catalog/stickers/pkmn_scolipede.png" alt="" title="click to pay for the scolipede sticker." loading="lazy"><span> scolipede sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/VNk9wZ8t" target="_parent"><img src="../media/shop_catalog/stickers/idv_aesop.png" alt="" title="click to pay for the aesop rebirth sticker." loading="lazy"><span>rebirth sticker<br>$5.00usd</span></a></div>
-		  </div>
-		  <div class="flex">
-			<div><a href="https://square.link/u/BFSfxrCs" target="_parent"><img src="../media/shop_catalog/stickers/idv_norton.png" alt="" title="Click to pay for the Polarity sticker." loading="lazy"><span>nort polarity sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/LcGxQM0Q" target="_parent"><img src="../media/shop_catalog/stickers/idv_joseph.png" alt="" title="click to pay for the face card joseph sticker." loading="lazy"><span>face card sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/NgLRkF8i" target="_parent"><img src="../media/shop_catalog/stickers/idv_naib.png" alt="" title="click to pay for the naib sticker." loading="lazy"><span>naib sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/13quhin1" target="_parent"><img src="../media/shop_catalog/stickers/idv_alice.png" alt="" title="click to pay for the alice sticker." loading="lazy"><span>alice sticker<br>$5.00usd</span></a></div>
-		  </div>
-		  <div class="flex">
-			<div><a href="https://square.link/u/UL6x7huK" target="_parent"><img src="../media/shop_catalog/stickers/homestuck_davekatyaoitube.png" alt="" title="" loading="lazy"><span>davekat sticker<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/fzqiAXON" target="_parent"><img src="../media/shop_catalog/stickers/zootopia_nickjudy.png" alt="" title="click to pay for the zootopia nickjudy sticker" loading="lazy"><span>nickjudy<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/89tyBoCT" target="_parent"><img src="../media/shop_catalog/stickers/mlp_rarijack.png" alt="" title="click to pay for the mlp rarijack sticker." loading="lazy"><span>rarijack<br>$5.00usd</span></a></div>
-			<div><a href="https://square.link/u/SJfaMWu1" target="_parent"><img src="../media/shop_catalog/stickers/outlast_tragerbooger.png" alt="" title="click to pay for the outlast trager sticker." loading="lazy"><span>trager sticker<br>$5.00usd</span></a></div>
-		  </div>
-	  </article>
-	  <article class="prints">
-	    <div class="flex">
-	      <div class="print"><a href="https://square.link/u/UEQYK1ry" target="_parent"><img src="../media/og_rtwrk/fugo.jpg" alt="" title="click to pay for the dlw norton print." loading="lazy"><span>dlw norton print<br>$15.00usd<span></a></div>
-	      <div class="print"><a href="https://square.link/u/n3vaydgf" target="_parent"><img src="../media/og_rtwrk/idv_mushroomburger.jpg" alt="" title="click to pay for the mushroom burger print." loading="lazy"><span>mshrm burg print<br>$15.00usd</span></a></div>
-	      <div class="print"><a href="https://square.link/u/JNTLPVtx" target="_parent"><img src="../media/og_rtwrk/professorportrait.jpg" alt="" title="click to pay for the idv professor print." loading="lazy"><span>professor<br>print<br>$15.00usd</span></a></div>
-	      <div class="print"><a href="https://square.link/u/hPsLNwF3" target="_parent"><img src="../media/og_rtwrk/reptilianportrait.jpg" alt="" title="click to pay for the idv reptilian print." loading="lazy"><span>reptilian print<br>$15.00usd</span></a></div>
-        </div>
-        <div class="flex">
-	      <div class="print"><a href="https://square.link/u/UTzCOjiz" target="_parent"><img src="../media/og_rtwrk/radix.jpg" alt="" title="click to pay for the original pale rover radix print." loading="lazy"><span>radix print<br>$15.00usd</span></a></div>
-	      <div class="print"><a href="https://square.link/u/pAmBnC4F" target="_parent"><img src="../media/og_rtwrk/tadc_witchgirlwithnicotineaddiction.jpg" alt="" title="click to pay for the witch jax print." loading="lazy"><span>witch jax print<br>$15.00usd</span></a></div>
-	      <div class="print"><a href="https://square.link/u/cckx5ZYF" target="_parent"><img src="../media/og_rtwrk/idv_kevnort.jpg" alt="" title="click to pay for the idv kevin x norton print." loading="lazy"><span>kevnort print<br>$15.00usd</span></a></div>
-	      <div class="print"><a href="https://square.link/u/ZL6PYFKh" target="_parent"><img src="../media/og_rtwrk/idv_eyecaps.jpg" alt="" title="click to pay for the eyecaps print." loading="lazy"><span>eyecaps print<br>$15.00usd</span></a></div>
-        </div>
-        <div class="flex">
-	      <div class="print"><a href="https://square.link/u/nVjrSQPE" target="_parent"><img src="../media/og_rtwrk/tadc-2026_03_23-crumblingbeaniebaby.jpg" alt="" title="click to pay for the crumbling beanie jax print." loading="lazy"><span>crumbling beanie jax print<br>$15.00usd</span></a></div>
-        </div>
-	  </section>
-	</div>
+	  </div>
+	  <div class="acrylic">
+	    <table>
+		  <tr>
+		    <td><img src="../media/shop/standees/maidjax.png" alt="an acrylic standee of jax from tadc wearing a maid dress." loading="lazy" style="width:120px;"></td>
+		    <td><img src="../media/shop/standees/servantpomni.png" alt="an acrylic standee of pomni from tadc wearing a butler's suit." loading="lazy" style="width:120px;"></td>
+		    <td><img src="../media/shop/charms/tadc-funnybunny.gif" alt="a spinning gif of an acrylic charm depicting jax and pomni holding hands." loading="lazy" style="width:150px;"></td>
+		  </tr>
+		  <tr>
+		    <td><b>maid jax</b><br>$15.00usd</td>
+		    <td><b>servant pomni</b><br>$15.00usd</td>
+		    <td><b>funnybunny charm</b><br>$15.00</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/kDU4fu2x" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/3O6XnWVZ" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/BdW9Lqrd" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="prints">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/art/paintings/tadc-2026_03_23-crumblingbeaniebaby.jpg" alt="" loading="lazy"></td>
+			<td style="width:100px;"><img src="../media/art/paintings/tadc-2026_08_27-ifeelfantastic.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/tadc-2026_08_14-zuckerbergmemejax.jpg" alt="skinned jax" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/zines/pbs-clipping-vol1.png" alt="a picture of my nsfw jaxpom zine's volume 1." loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>beanie jax print</b><br>$15.00usd</td>
+			<td><b>jax feels fantastic</b><br>$15.00usd</td>
+		    <td><b>jax zuckdraw print</b><br>$15.00usd</td>
+		    <td><b>pbs clipping vol. 1</b><br>$5.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/QFsMMHSz" target="_parent"><label>詳細</label></a></td>
+			<td><a href="https://square.link/u/JkHUeZQj" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/TnLJQcJy" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/wzPEbksk" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="stickers">
+	    <table>
+		  <tr>
+		    <td><img src="../media/shop/stickersheets/putthatbunnyinitsplace.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/touchingbuns_sticker.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/tadc_jaxshinjichair.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/tadc_iconicfunnybunny.png" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>jaxpom sadism<br>sticker sheet</b><br>$8.00usd</td>
+		    <td><b>touching buns<br>sticker</b><br>$5.00usd</td>
+		    <td><b>shinji chair jax sticker</b><br>$5.00usd</td>
+		    <td><b>iconic funnybunny<br>sticker</b><br>$5.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/eGXB5gel" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/BKnHW18y" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/YMAYUpK5" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/cEOaZGOs" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="badges">
+	    <table>
+		  <tr>
+		    <td><p><b>tadc stupid cafe badge series</b><br> $8.00<br>matching tin badges (each 5.7 cm) of pomni and jax from my “stupid cafe” series, also available as acrylic standees.</p></td>
+			<td><img src="../media/shop/tinbadges/tadc/stupidcafe.png" alt="" id="tadc_stupidcafe" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td colspan="2"><a href="https://square.link/u/31NEA8fQ" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="stickers">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/shop/stickers/tadc_bunnyteethvore.png" alt="" title="click to pay for the bunnyteeth vore sticker." loading="lazy"></td>
+			<td style="width:100px;"><img src="../media/shop/stickers/tadc_kingerqueenies.gif" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/tadc_skinnedjax.png" alt="skinned jax" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/tadc_pridejax.png" alt="jax pride sticker featuring the trans flag." loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>bunnyteeth vore sticker</b><br>$5.00usd</td>
+			<td><b>kinger and queenie stickers</b><br>$5.00usd</td>
+		    <td><b>skinned jax sticker</b><br>$5.00usd</td>
+		    <td><b>happy jax sticker</b><br>$5.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/QFsMMHSz" target="_parent"><label>詳細</label></a></td>
+			<td><a href="https://square.link/u/sMYUqgXL" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/TnLJQcJy" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/GRzG7uCZ" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="stickers">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/shop/stickers/dr_byakuyatochibi.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/dr_chibigitokomaeda.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/dr_kochibiouma.png" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>tochibi sticker</b><br>$8.00usd</td>
+		    <td><b>chibigito sticker</b><br>$5.00usd</td>
+		    <td><b>kochibi sticker</b><br>$5.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/8DASJCCm" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/OSTA7jrh" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/fURg6pqW" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="stickers">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_pixel_aesop.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_pixel_andrew.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_pixel_luchino.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_pixel_norton.png" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>pixel aesop<br>sticker</b><br>$5.00usd</td>
+		    <td><b>pixel andrew<br>sticker</b><br>$5.00usd</td>
+		    <td><b>pixel luchino<br>sticker</b><br>$5.00usd</td>
+		    <td><b>pixel norton<br>sticker</b><br>$5.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/VNk9wZ8t" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/eUi0NWh5" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/YQCtryNx" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/XAZLesif" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	    <table>
+		  <tr>
+		    <td><img src="../media/shop/stickersheets/xxxholic_douwata.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_aesop.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/gayglaaki.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickersheets/nortluchiinvasion.png" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>xxxHOLiC douwata<br>sticker sheet</b><br>$8.00usd</td>
+		    <td><b>aesop rebirth<br>sticker</b><br>$5.00usd</td>
+		    <td><b>gla'aki gay thoughts sticker</b><br>$5.00usd</td>
+		    <td><b>nortluchi invasion<br>sticker sheet</b><br>$8.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/hVsWS54e" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/McwMQv36" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/ynevQ5yY" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/z4rutYzy" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="acrylic">
+		<table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/shop/charms/idv_norton.gif" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/charms/idv_naib.gif" alt=""  loading="lazy"></a></td>
+		    <td style="width:100px;"><img src="../media/shop/charms/idv_alice.gif" alt=""  loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/charms/dr_kokichi.gif" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>iconic norton<br>charm</b><br>$15.00usd</td>
+		    <td><b>iconic naib<br>charm</b><br>$15.00usd</td>
+		    <td><b>iconic alice<br>charm</b><br>$15.00usd</td>
+		    <td><b>iconic ouma<br>charm</b><br>$15.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/pt98QNcn" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/pp8aDzl0" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/oeBoJ6op" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/ICAcBSV3" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="stickers">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_norton.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_naib.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_alice.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/idv_joseph.png" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>iconic norton<br>sticker</b><br>$5.00usd</td>
+		    <td><b>iconic naib<br>sticker</b><br>$5.00usd</td>
+		    <td><b>iconic alice<br>sticker</b><br>$5.00usd</td>
+		    <td><b>iconic joseph<br>sticker</b><br>$5.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/BFSfxrCs" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/NgLRkF8i" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/13quhin1" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/LcGxQM0Q" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="prints">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/og_rtwrk/fugo.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/og_rtwrk/idv_mushroomburger.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/og_rtwrk/professorportrait.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/og_rtwrk/reptilianportrait.jpg" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>dazzling lone wolf<br>print</b><br>$15.00usd</td>
+		    <td><b>mushroom burger<br>print</b><br>$15.00usd</td>
+		    <td><b>professor portrait<br>print</b><br>$15.00usd</td>
+		    <td><b>reptilian portrait<br>print</b><br>$15.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/UEQYK1ry" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/n3vaydgf" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/JNTLPVtx" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/hPsLNwF3" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+		<table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/og_rtwrk/radix.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/idv-2026_10_13-lucatracy.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/og_rtwrk/idv_kevnort.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/og_rtwrk/idv_eyecaps.jpg" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>pale rover<br>print</b><br>$15.00usd</td>
+		    <td><b>lucatracy halloween<br>print</b><br>$15.00usd</td>
+		    <td><b>kevnort<br>print</b><br>$15.00usd</td>
+		    <td><b>aesop eyecaps<br>print</b><br>$15.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/UTzCOjiz" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/9HmF2Wyy" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/cckx5ZYF" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/ZL6PYFKh" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="stickers">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/shop/stickers/fujochud.png" alt="" loading="lazy"></td>
+			<td style="width:100px;"><img src="../media/shop/stickers/mlp_rarijack.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/yanineko_drunkyaniko.png" alt="drunk yaniko from yani neko." id="sticker-yanineko_drunkyaniko" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/pkmn_scolipede.png" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>fujochud sticker</b><br>$5.00usd</td>
+			<td><b>rarijack sticker</b><br>$5.00usd</td>
+		    <td><b>yaniko sticker</b><br>$5.00usd</td>
+		    <td><b>scolipede sticker</b><br>$5.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/OBP84qEq" target="_parent"><label>詳細</label></a></td>
+			<td><a href="https://square.link/u/89tyBoCT" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/1Mh4guMi" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/nWuw2A6F" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+	  <div class="stickers">
+	    <table>
+		  <tr>
+		    <td style="width:100px;"><img src="../media/shop/stickers/zootopia_nickjudy.png" alt="" loading="lazy"></td>
+			<td style="width:100px;"><img src="../media/shop/stickers/homestuck_davekatyaoitube.png" alt="" title="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/outlast_tragerbooger.png" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/shop/stickers/deathnote_ryukmii.png" alt="" loading="lazy"></td>
+		  </tr>
+		  <tr>
+		    <td><b>nickjudy sticker</b><br>$5.00usd</td>
+			<td><b>davekat yaoitube sticker</b><br>$5.00usd</td>
+		    <td><b>trager sticker</b><br>$5.00usd</td>
+		    <td><b>miiyuk sticker</b><br>$5.00usd</td>
+		  </tr>
+		  <tr>
+		    <td><a href="https://square.link/u/fzqiAXON" target="_parent"><label>詳細</label></a></td>
+			<td><a href="https://square.link/u/UL6x7huK" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/SJfaMWu1" target="_parent"><label>詳細</label></a></td>
+		    <td><a href="https://square.link/u/3ggXNqh0" target="_parent"><label>詳細</label></a></td>
+		  </tr>
+		</table>
+	  </div>
+    </section>
+  </section>
   <article>
     <h2>Offline Merch Information</h2>
       <h3>Sustainability + Accessibility</h3>
       <p>all stuff is home-manufactured and secured in salvaged packaging (recyclable plastic, envelopes, and absorbants).</p>
 	  <p>any of my digital paintings can be bought as prints. if you don't see what you want up on the shop you may put in a request.</p>
 	  <h3>Before You Order</h3>
-	  <p>being situated in the US, international purchases may be subject to <a href="https://support.pirateship.com/en/articles/3859826-list-of-countries-not-currently-accepting-shipments-from-usps-or-ups" target="_blank">a list of countries</a> our postal service is restricted to send to. refunds are issued accordingly. shipment will take 1-3 days after placed order.</p>
+	  <p>being situated in the US, international purchases may be subject to <a href="https://support.pirateship.com/en/sections/3859826-list-of-countries-not-currently-accepting-shipments-from-usps-or-ups" target="_blank">a list of countries</a> our postal service is restricted to send to. refunds are issued accordingly. shipment will take 1-3 days after placed order.</p>
   </article>
 </main>
 </div>
