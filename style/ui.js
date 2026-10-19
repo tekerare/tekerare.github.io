@@ -67,7 +67,7 @@ function artSiteMap(){
 function eventsWidget(){
   const x = document.createElement('div');
   x.setAttribute('id', 'eventsWidget');
-  x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ol><li>tsumicon @ htx (oct 16 - 18)</li><li><a href="https://www.instagram.com/monstermeadowmart/" target="_blank">monster meadow</a> @ POST<br>(dec 19-20)</li><strike><li>nostalgia con @ htx<br>(oct 2-4)</li><li>idv popup @ sugarland tx<br>(oct 10)</li><li>idv popup @ sugarland tx<br>(july 4)</li><li>tadc fan popup @ sugarland tx<br>(june 27 - 28)</li><li>kimokawaii @ conroe tx<br>(june 06-07)</li><li>artist alley houston part 2<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ol></div><p style="text-align:end;">visit my <a href="https://' + siteURL + '/shop/" target="_parent">/shop/</a></p>';
+  x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ol><li><a href="https://www.instagram.com/monstermeadowmart/" target="_blank">monster meadow</a> @ POST<br>(dec 19-20)</li><strike><li>tsumicon @ htx (oct 16 - 18)</li><li>nostalgia con @ htx<br>(oct 2-4)</li><li>idv popup @ sugarland tx<br>(oct 10)</li><li>idv popup @ sugarland tx<br>(july 4)</li><li>tadc fan popup @ sugarland tx<br>(june 27 - 28)</li><li>kimokawaii @ conroe tx<br>(june 06-07)</li><li>artist alley houston<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ol></div><p style="text-align:end;">visit my <a href="https://' + siteURL + '/shop/" target="_parent">/shop/</a></p>';
   document.getElementsByTagName('aside')[0].appendChild(x);
 }
 function browsePosts(){
