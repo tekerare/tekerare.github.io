@@ -11,57 +11,145 @@
 <script src="ui.js"></script>
 <link rel="stylesheet" href="../style/css.css">
 <meta name="author" content="tkr/玲音">
+<style>
+.tag-function:has(input:checked) article{display: none;}
+.tag-function:has(#all:checked) article,
+.tag-function:has(#oc:checked) article[class~="oc"],
+.tag-function:has(#game:checked) article[class~="game"],
+.tag-function:has(#anime:checked) article[class~="anime"],
+.tag-function:has(#idv:checked) article[class~="idv"],
+.tag-function:has(#tadc:checked) article[class~="tadc"],
+.tag-function:has(#danganronpa:checked) article[class~="danganronpa"]
+  {display: block;}
+</style>
 </head>
 <body>
 <header>
 </header>
 <nav>
 </nav>
-<div>
+<div class="tag-function">
 <aside>
   <script>artSiteMap();</script>
+  <section class="tagged-aside-section-taglist">
+  <h2>tags</h2>
+    <span>
+      <label><input type="radio" id="all" name="tag" checked="">all</label>
+      <label><input type="radio" id="oc" name="tag">original</label>
+      <label><input type="radio" id="game" name="tag">ゲームgame</label>
+      <label><input type="radio" id="anime" name="tag">アニメanimation</label>
+      <label><input type="radio" id="idv" name="tag">idv</label>
+      <label><input type="radio" id="tadc" name="tag">tadc</label>
+      <label><input type="radio" id="danganronpa" name="tag">danganronpa</label>
+   </span>
+  </section>
 </aside>
 <main>
   <h1>gallery</h1>
-  <section style="text-align:center;">
-    <img src="../media/og_rtwrk/tadc-2026_08_27-ifeelfantastic.jpg" alt="" id="mediaViewer" class="image" onclick="img='../media/og_rtwrk/tadc-2026_08_27-ifeelfantastic.jpg';enlarge();">
-  </section>
-  <!-- <span style="background:url('');" onclick="img='';setScreen();" loading="lazy"></span> -->
-  <article class="image-gallery-list"><a href="#sdTitle">
-    <span style="background:url('../media/og_rtwrk/tadc-2026_08_27-ifeelfantastic.jpg');" onclick="img='../media/og_rtwrk/tadc-2026_08_27-ifeelfantastic.jpg';setScreen();" title="2026_08_26" loading="lazy"></span>
-    <span style="background:url('../media/og_rtwrk/idv-2026_08_26-2026mummynorton.jpg');" onclick="img='../media/og_rtwrk/idv-2026_08_26-2026mummynorton.jpg';setScreen();" title="2026_08_26" loading="lazy"></span>
-    <span style="background:url('../media/og_rtwrk/2026_08_22-yaniniko_drunk.jpg');" onclick="img='../media/og_rtwrk/2026_08_22-yaniniko_drunk.jpg';setScreen();" title="2026_08_22" loading="lazy"></span>
-    <span style="background:url('../media/icons/thumbnailrating_nsfw.png'), url('../media/og_rtwrk/fursona-roryrhodes-2026_08_19.jpg');" onclick="img='../media/og_rtwrk/fursona-roryrhodes-2026_08_19.jpg';setScreen();" alt="" title="suggestive" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/tadc-2026_08_14-zuckerbergmemejax.jpg');" onclick="img='../media/og_rtwrk/tadc-2026_08_14-zuckerbergmemejax.jpg';setScreen();" title="2026_08_14" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/tadc-2026_06_25-maidcafejaxpom.jpg');" onclick="img='../media/og_rtwrk/tadc-2026_06_25-maidcafejaxpom.jpg';setScreen();" title="2026_06_25" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/tadc-2026_03_23-crumblingbeaniebaby.jpg');" onclick="img='../media/og_rtwrk/tadc-2026_03_23-crumblingbeaniebaby.jpg';setScreen();"  title="2026_03_23" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/tadc_2026_02_27_toybox.jpg');" onclick="img='../media/og_rtwrk/tadc_2026_02_27_toybox.jpg';setScreen();" title="2026_02_27" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/tadc-2026_02_27-funnybunny.jpg');" onclick="img='../media/og_rtwrk/tadc-2026_02_27-funnybunny.jpg';setScreen();"  title="2026_02_27" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/tadc-2026_01_25-cainejaxvore.jpg');" onclick="img='../media/og_rtwrk/tadc-2026_01_25-cainejaxvore.jpg';setScreen();" title="2026_01_25" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/tadc-2026_01_03-pomnitouchingjaxsbuns.jpg');" onclick="img='../media/og_rtwrk/tadc-2026_01_03-pomnitouchingjaxsbuns.jpg';setScreen();" title="2026_01_03" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/tadc_witchgirlwithnicotineaddiction.jpg');" onclick="img='../media/og_rtwrk/tadc_witchgirlwithnicotineaddiction.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/icons/thumbnailrating_nsfw.png'), url('../media/og_rtwrk/tadc_peeledjax.jpg');" onclick="img='../media/og_rtwrk/tadc_peeledjax.jpg';setScreen();" title="nudity &amp; body horror" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/jaxshinjichair.jpg');" onclick="img='../media/og_rtwrk/jaxshinjichair.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/konghouportrait.jpg');" onclick="img='../media/og_rtwrk/konghouportrait.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/fugo.jpg');" onclick="img='../media/og_rtwrk/fugo.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/idv_mushroomburger.jpg');" onclick="img='../media/og_rtwrk/idv_mushroomburger.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/mlp-2025_11_28.jpg');" onclick="img='../media/og_rtwrk/mlp-2025_11_28.jpg';setScreen();" title="2025_11_28" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/mutatedwanderer.jpg');" onclick="img='../media/og_rtwrk/mutatedwanderer.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/reptilianportrait.jpg');" onclick="img='../media/og_rtwrk/reptilianportrait.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/professorportrait.jpg');" onclick="img='../media/og_rtwrk/professorportrait.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/idv_kevnort.jpg');" onclick="img='../media/og_rtwrk/idv_kevnort.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/icons/thumbnailrating_nsfw.png'), url('../media/og_rtwrk/nortluchi_valentines.jpg');" onclick="img='../media/og_rtwrk/nortluchi_valentines.jpg';setScreen();" title="heavy injury" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/pokemon-2025_07_09-scolipede.jpg');" onclick="img='../media/og_rtwrk/pokemon-2025_07_09-scolipede.jpg';setScreen();" title="2025_07_09" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/basilisksmeal.jpg');" onclick="img='../media/og_rtwrk/basilisksmeal.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/2025_02_03-fujochud.jpg');" onclick="img='../media/og_rtwrk/2025_02_03-fujochud.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/polygrub_render.jpg');" onclick="img='../media/og_rtwrk/polygrub_render.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/radix.jpg');" onclick="img='../media/og_rtwrk/radix.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/comm_theunderstudy.jpg');" onclick="img='../media/og_rtwrk/comm_theunderstudy.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/idv_eyecaps.jpg');" onclick="img='../media/og_rtwrk/idv_eyecaps.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/2025_01_23-glaakiyaoi.jpg');" onclick="img='../media/og_rtwrk/2025_01_23-glaakiyaoi.jpg';setScreen();" loading="lazy"></span>
-	<span style="background:url('../media/og_rtwrk/idv_tombplucker.jpg');" onclick="img='../media/og_rtwrk/idv_tombplucker.jpg';setScreen();" loading="lazy"></span>
-  </a></article>
-  <script>patreon();</script>
+  <article class="oc danganronpa game">
+    <h2>2026_10_22</h2>
+    <img src="../media/art/paintings/merch-2026_10_15-netkyara.jpg" alt="">
+    <img src="../media/art/paintings/danganronpa-2026_10_15-antagonists.jpg" alt="">
+  </article>
+  
+  <article class="idv game">
+    <h2>2026_10_13</h2>
+    <img src="../media/art/paintings/idv-2026_10_13-lucatracy.jpg" alt="">
+  </article>
+
+  <article class="tadc">
+    <h2>tadc-2026_08_27</h2>
+    <img src="../media/art/paintings/tadc-2026_08_27-ifeelfantastic.jpg" alt="">
+  </article>
+  
+  <article class="idv game">
+    <h2>2026_08_26-2026</h2>
+    <img src="../media/art/paintings/idv-2026_08_26-2026-mummynorton.jpg" alt="">
+  </article>
+  
+  <article class="anime">
+    <h2>2026_08_22</h2>
+    <img src="../media/art/paintings/2026_08_22-yaniniko_drunk.jpg" alt="">
+  </article>
+  
+  <article class="tadc">
+    <h2>2026_08_14</h2>
+    <img src="../media/art/paintings/tadc-2026_08_14-zuckerbergmemejax.jpg" alt="">
+  </article>
+  
+  <article class="tadc">
+    <h2>2026_06_25</h2>
+    <img src="../media/art/paintings/tadc-2026_06_25-maidcafejaxpom.jpg" alt="">
+  </article>
+  
+  <article class="tadc">
+    <h2>2026_03_23</h2>
+    <img src="../media/art/paintings/tadc-2026_03_23-crumblingbeaniebaby.jpg" alt="">
+  </article>
+  
+  <article class="tadc">
+    <h2>2026_02_27</h2>
+    <article class="flex">
+	  <img src="../media/art/paintings/tadc-2026_02_27-funnybunny.jpg" alt="">
+	  <img src="../media/art/paintings/tadc-2026_02_27-toybox.jpg" alt="">
+	</article>
+  </article>
+  
+  <article class="tadc">
+    <h2>2026_01_25</h2>
+    <img src="../media/art/paintings/tadc-2026_01_25-cainejaxvore.jpg" alt="">
+  </article>
+  
+  <article class="tadc">
+    <h2>2026_01_03</h2>
+    <img src="../media/art/paintings/tadc-2026_01_03-pomnitouchingjaxsbuns.jpg" alt="">
+  </article>
+  
+  <article class="tadc">
+    <h2>2026_01_25</h2>
+    <img src="../media/art/paintings/tadc-2026_01_25-peeledjax.jpg" alt="">
+  </article>
+  
+  <article class="anime">
+    <h2>2025_11_28</h2>
+    <img src="../media/art/paintings/mlp-2025_11_28.jpg" alt="">
+  </article>
+  
+  <article class="idv game">
+    <h2>unsorted identity v paintings of 2025</h2>
+    <img src="../media/art/paintings/idv-2025_05_22-kevnort.jpg" alt="">
+    <img src="../media/art/paintings/idv-2025_05_22-mushroomburger.jpg" alt="">
+    <img src="../media/art/paintings/idv-2025_05_25-mutatedwanderer.jpg" alt="">
+    <img src="../media/art/paintings/idv-2025_05_22-eyecaps.jpg" alt="">
+    <img src="../media/art/paintings/idv-2025_05_22-repproschase.jpg" alt="">
+    <img src="../media/art/paintings/idv-2025_05_22-chestknife.jpg" alt="">
+    <img src="../media/art/paintings/idv-2025_05_22-konghouportrait.jpg" alt="">
+    <img src="../media/art/paintings/idv-2025_05_22-reptilianportrait.jpg" alt="">
+    <img src="../media/art/paintings/idv-2025_05_22-professorportrait.jpg" alt="">
+	<p>2026_10_22: these images aren't labeled with their proper dates. my painting rate was idle this year but every now and then i'd finish a piece to post on sns, all of which was just identity v.</p>
+  </article>
+  
+  <article class="game">
+    <h2>2025_07_09</h2>
+    <img src="../media/art/paintings/pokemon-2025_07_09-scolipede.jpg" alt="">
+  </article>
+  
+  <article class="oc">
+    <h2>2025_02_03</h2>
+    <img src="../media/art/paintings/2025_02_03-fujochud.jpg" alt="">
+  </article>
+  
+  <article class="idv oc">
+    <h2>2025_01_23</h2>
+    <img src="../media/art/paintings/2025_01_23-glaakiyaoi.jpg" alt="">
+  </article>
+  
+  <article  class="idv oc game">
+    <h2>unsorted 2025 paintings</h2>
+    <img src="../media/art/paintings/palerover-2025.jpg" alt="">
+    <img src="../media/art/paintings/2025-vinylcatboycomm.jpg" alt="">
+	<img src="../media/art/paintings/idv-2025-tombplucker.jpg" alt="">
+  </article>
 </main>
 </div>
 <footer>

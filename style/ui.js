@@ -59,13 +59,13 @@ function galleryWidget(){
   document.getElementsByTagName('aside')[0].appendChild(x);
 }
 function artSiteMap(){
-  const x = document.createElement("div");
+  const x = document.createElement("section");
   x.setAttribute('class','asideMap');
   x.innerHTML = '<h2>artwork</h2><ul class="ulSiteMap"><li><a href="https://' + siteURL + '/art/">portfolio</a></li><ul><li><a href="https://' + siteURL + '/art/gallery" target="_parent">gallery</a></li><li><a href="https://' + siteURL + '/art/sketches" target="_parent">sketches</a></li></ul><li><a href="https://' + siteURL + '/shop/" target="_parent">merch shop</a></li><ul><li><a href="https://' + siteURL + '/shop/testimonials" target="_parent">reviews</a></li><li><a href="https://' + siteURL + '/shop/booths" target="_parent">my booths</a></li></ul><li><a href="https://' + siteURL + '/shop/packmule" target="_parent">packmule</a></li><li><a href="https://' + siteURL + '/shop/terms" target="_parent">commission info</a></li><li><a href="https://www.patreon.com/cw/tekerare" target="_blank">patreon</a></li></ul>';
   document.getElementsByTagName('aside')[0].appendChild(x);
 }
 function eventsWidget(){
-  const x = document.createElement('div');
+  const x = document.createElement('section');
   x.setAttribute('id', 'eventsWidget');
   x.innerHTML = '<h2>Upcoming Booths</h2><div id="eventsList"><ol><li><a href="https://www.instagram.com/monstermeadowmart/" target="_blank">monster meadow</a> @ POST<br>(dec 19-20)</li><strike><li>tsumicon @ htx (oct 16 - 18)</li><li>nostalgia con @ htx<br>(oct 2-4)</li><li>idv popup @ sugarland tx<br>(oct 10)</li><li>idv popup @ sugarland tx<br>(july 4)</li><li>tadc fan popup @ sugarland tx<br>(june 27 - 28)</li><li>kimokawaii @ conroe tx<br>(june 06-07)</li><li>artist alley houston<br>(april 18 - 19)</li><li>artist alley houston<br>(jan 31 10am - 5pm)</li><li>zakicon @ friendswood tx<br>(jan 09-11)</strike></li></ol></div><p style="text-align:end;">visit my <a href="https://' + siteURL + '/shop/" target="_parent">/shop/</a></p>';
   document.getElementsByTagName('aside')[0].appendChild(x);

@@ -14,14 +14,14 @@
 <style>
 body{max-width:800px;}
 
-.tagged:has(input:checked) div {display: none;}
-.tagged:has(#all:checked) div,
-.tagged:has(#acrylic:checked) div[class~="acrylic"],
-.tagged:has(#badges:checked) div[class~="badges"],
-.tagged:has(#stickers:checked) div[class~="stickers"],
-.tagged:has(#prints:checked) div[class~="prints"]
+.tag-function:has(input:checked) main div {display: none;}
+.tag-function:has(#all:checked) main div,
+.tag-function:has(#acrylic:checked) main div[class~="acrylic"],
+.tag-function:has(#badges:checked) main div[class~="badges"],
+.tag-function:has(#stickers:checked) main div[class~="stickers"],
+.tag-function:has(#prints:checked) main div[class~="prints"]
   {display: block;}
-.tagged span{ margin:0px 2px 8px 2px;}
+.tag-function span{ margin:0px 2px 8px 2px;}
 }</style>
 </head>
 <body>
@@ -29,17 +29,23 @@ body{max-width:800px;}
 </header>
 <nav>
 </nav>
-<div>
+<div class="tag-function">
 <aside>
   <script>artSiteMap();eventsWidget();</script>
-  <div>
-    <h2>please read</h2>
-	<p>if you plan on bundling, please e-mail me instead and you'll receive an invoice, otherwise i'll refund what i can so you don't pay double for shipping.</p>
-  </div>
+  <section class="tagged-aside-section-taglist">
+    <h2>tags</h2>
+    <span>
+      <label><input type="radio" id="all" name="tag" checked="">all</label>
+      <label><input type="radio" id="acrylic" name="tag">acrylic</label>
+      <label><input type="radio" id="badges" name="tag">badges</label>
+      <label><input type="radio" id="stickers" name="tag">stickers</label>
+      <label><input type="radio" id="prints" name="tag">prints</label>
+    </span>
+  </section>
 </aside>
 <main>
   <h1>shop</h1>
-  <section class="tagged">
+  <section>
     <span style="background:#ffffff;">
       <label><input type="radio" id="all" name="tag" checked="">all</label>
       <label><input type="radio" id="acrylic" name="tag">acrylic</label>
@@ -282,10 +288,10 @@ body{max-width:800px;}
 	  <div class="prints">
 	    <table>
 		  <tr>
-		    <td style="width:100px;"><img src="../media/og_rtwrk/fugo.jpg" alt="" loading="lazy"></td>
-		    <td style="width:100px;"><img src="../media/og_rtwrk/idv_mushroomburger.jpg" alt="" loading="lazy"></td>
-		    <td style="width:100px;"><img src="../media/og_rtwrk/professorportrait.jpg" alt="" loading="lazy"></td>
-		    <td style="width:100px;"><img src="../media/og_rtwrk/reptilianportrait.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/fugo.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/idv_mushroomburger.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/professorportrait.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/reptilianportrait.jpg" alt="" loading="lazy"></td>
 		  </tr>
 		  <tr>
 		    <td><b>dazzling lone wolf<br>print</b><br>$15.00usd</td>
@@ -302,10 +308,10 @@ body{max-width:800px;}
 		</table>
 		<table>
 		  <tr>
-		    <td style="width:100px;"><img src="../media/og_rtwrk/radix.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/palerover-2025.jpg" alt="" loading="lazy"></td>
 		    <td style="width:100px;"><img src="../media/art/paintings/idv-2026_10_13-lucatracy.jpg" alt="" loading="lazy"></td>
-		    <td style="width:100px;"><img src="../media/og_rtwrk/idv_kevnort.jpg" alt="" loading="lazy"></td>
-		    <td style="width:100px;"><img src="../media/og_rtwrk/idv_eyecaps.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/idv-2025_05_22-kevnort.jpg" alt="" loading="lazy"></td>
+		    <td style="width:100px;"><img src="../media/art/paintings/idv-2025_05_22-eyecaps.jpg" alt="" loading="lazy"></td>
 		  </tr>
 		  <tr>
 		    <td><b>pale rover<br>print</b><br>$15.00usd</td>
@@ -367,6 +373,10 @@ body{max-width:800px;}
 	  </div>
     </section>
   </section>
+  <article>
+    <h2>how to use</h2>
+    <p><b>bundling:</b> don't order at the checkout, please e-mail me which products you want instead and you'll receive an invoice.</p>
+  </article>
   <article>
     <h2>Offline Merch Information</h2>
       <h3>Sustainability + Accessibility</h3>
