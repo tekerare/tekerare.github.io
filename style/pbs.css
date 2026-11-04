@@ -1,0 +1,12 @@
+:root{
+  --h2backgroundcolor:#d1a3bf;
+}
+html{
+  background:url('../media/backgrounds/texture_grain01.jpg');
+}
+main{
+  background:url('../media/backgrounds/lilac-gingham.jpg');
+}
+aside{
+  background:url('../media/backgrounds/pbs_tile.jpg');
+}

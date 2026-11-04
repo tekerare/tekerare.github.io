@@ -1,4 +1,5 @@
 :root{
+  --h2backgroundcolor:#0000004f;
   --scallop:url('../media/backgrounds/scallop_white.png') 5 round;	
 }
 
@@ -57,7 +58,7 @@ main article, aside, .main-scroll-box{border: 5px solid transparent !important; 
 main, aside{ padding:5px; display:inline-block; vertical-align: top;
   > *{margin:0 auto; margin:0px auto 5px auto; }
   h1{font-family:'2Credits'; font-weight:normal; margin:0px; letter-spacing:-4px;}
-  h2{padding: 3px 0px 0px 23px; font-size:16px; background:url('../media/icons/h2_bull.png') no-repeat top 3px left 3px, #0000004f;}
+  h2{padding: 3px 0px 0px 23px; font-size:16px; background:url('../media/icons/h2_bull.png') no-repeat top 3px left 3px, var(--h2backgroundcolor);}
   img{max-width: 99%;}
 }
 main{ width:100%;
