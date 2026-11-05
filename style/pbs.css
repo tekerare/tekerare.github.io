@@ -1,5 +1,6 @@
 :root{
   --h2backgroundcolor:#d1a3bf;
+  --speech-bubble-color:#ffffffa0;
 }
 html{
   background: url('../media/backgrounds/everythingisgoingtobeokay.png') repeat-y top 4px left 4px, url('../media/backgrounds/everythingisgoingtobeokay.png') repeat-y top 4px right 4px, url('../media/backgrounds/humping-dither.png') repeat-x top left -160px, url('../media/backgrounds/texture_grain01.jpg');
@@ -12,4 +13,37 @@ html{
 }
 aside{
   background:url('../media/backgrounds/pbs_tile.jpg');
+}
+.jax-containment{
+  border: #94919c 3px ridge;
+  background:url('../media/pbs/merch/maidjaxstatue.gif') no-repeat, url("../media/backgrounds/bd_maid.jpg");
+  background-size:140px, 90px;
+  animation:bdmaid-scroll 9s linear infinite;
+  -webkit-text-stroke: 3px var(--header-title-stroke-color);
+  paint-order: stroke fill;
+  text-align:center;
+  height:200px;
+}
+
+@keyframes bdmaid-scroll{ 0%{background-position: 20px 0px , 0px 0px;} 100% {background-position: 20px 0px , 90px 0px;}} 
+
+.speech-bubble {
+	position: relative;
+	background: var(--speech-bubble-color);
+	border-radius: .2em;
+	padding:3px;
+	margin:4px;
+}
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: var(--speech-bubble-color);
+	border-bottom: 0;
+	margin-left: -5px;
+	margin-bottom: -5px;
 }
