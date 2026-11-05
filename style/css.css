@@ -1,6 +1,7 @@
 :root{
   --h2backgroundcolor:#0000004f;
-  --scallop:url('../media/backgrounds/scallop_white.png') 5 round;	
+  --scallop:url('../media/backgrounds/scallop_white.png') 5 round;
+  --header-title-stroke-color:#ffffff;  
 }
 
 @font-face {font-family: "pixelta"; src: url("../font/pixelta.ttf");}
@@ -53,6 +54,8 @@ video{background:#000000; border:1px #000000 solid;}
 subtext{color:#00000050;}
 header{font-family: "beast-regular"; font-size:26px; background:url('../media/backgrounds/barcode.png') no-repeat top right 6px; border-style:none none dotted none;
   a{text-decoration:none;}
+  .header-title{-webkit-text-stroke: 4px var(--header-title-stroke-color);
+   paint-order: stroke fill;}
 }
 main article, aside, .main-scroll-box{border: 5px solid transparent !important; border-image: var(--scallop) !important; background-color:#ffffff;}
 main, aside{ padding:5px; display:inline-block; vertical-align: top;
@@ -70,7 +73,7 @@ aside{z-index:10; background: url('../media/backgrounds/whitedotted.jpg'), #ffff
 	div{margin: 5px !important;}
   }
   textarea{max-width:90%; min-width:90%;}
-  img{max-width:200px;}
+  img{max-width:180px;}
 }
 footer{ text-align:center; padding:15px 10px 10px 46px;
   > *{ padding:0px 15px; display:inline; background:linear-gradient(90deg ,#00000000, #000000a7 5%, #000000a7 95%, #00000000); color:#ffffff;}

@@ -81,6 +81,7 @@ function asideMap(){
 }
 window.onload = function(){
   const header = document.createElement('span');
+  header.setAttribute('class','header-title');
   header.innerHTML = '<a href="https://'+ siteURL +'">tekerare</a>';
   document.getElementsByTagName('header')[0].appendChild(header);
   const titleLink = document.createElement('a');
