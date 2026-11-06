@@ -87,7 +87,7 @@ window.onload = function(){
   const titleLink = document.createElement('a');
   titleLink.setAttribute('style','margin:0px 7px 0px 0px;');
   titleLink.setAttribute('href','.');
-  titleLink.innerHTML = '<img src="https://' + siteURL + '/media/icons/h1_redirect.png" alt="&larr;" title="&larr; go back">';
+  titleLink.innerHTML = '<img src="https://' + siteURL + '/media/icons/h1_redirect.gif" alt="&larr;" title="&larr; go back">';
   document.getElementsByTagName('h1')[0].prepend(titleLink);
   const footer = document.createElement('span');
   footer.innerHTML = 'intended for adults. mackerelfarming since 2019.';
