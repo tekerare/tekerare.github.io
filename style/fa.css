@@ -1,0 +1,13 @@
+:root{
+  --h2backgroundcolor:#bd9fc9;
+}
+html{
+  background: url('../media/backgrounds/amewarashi.png'), #ffffff ;
+  background-attachment:fixed;
+}
+
+@media (min-width: 550px) {
+  main{
+    background:url('../media/backgrounds/lilac-plaid.png');
+  }
+}

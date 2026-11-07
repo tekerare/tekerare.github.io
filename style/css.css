@@ -140,3 +140,7 @@ footer{ text-align:center; padding:15px 10px 10px 46px;
 #preview{ image-rendering: auto; background:#000000e7; animation:bgFade .5s ease-in-out; backdrop-filter: blur(3px); background-position:top left; position:fixed; min-width:100%; min-height:100%;z-index:100; text-align:center; display:none; cursor:zoom-out; padding:5vh 0px 4vh 0px; font-family:'beast-regular'; font-size:20px; img{transition:.3s ease-in-out;}}
 #fullRes{ max-height:80vh; animation: bobIn .8s;}
 #exLink{animation:fade 2s ease-in-out;}
+#CultofUsakumya {background:none !important; border:0 !important; 
+  table{width:auto;margin:0 auto;}
+  td{background:none !important;border:0 !important; padding: 0 !important;margin:0 auto;}
+}

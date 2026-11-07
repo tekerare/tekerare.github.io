@@ -1,0 +1,4 @@
+function faAside(){
+  const x = document.getElementsByTagName('aside')[0];
+  x.innerHTML = '<section><h2>contents</h2><ul class="ulSiteMap"><li><a href="https://' + siteURL + '/fa/" target="_parent">index</a></li><li><a href="https://' + siteURL + '/fa/log">/fa/ blog</a></li><li><strike>wishlist</strike></li><li><a href="https://' + siteURL + '/fa/photo">photos</a></li><li><a href="https://' + siteURL + '/fa/links">resources &amp; links</a></li></ul></section><section><h2>Blog Stats</h2><p><b>live since 2025.05.09</b></p></section><br><span style="text-align:center;"><img src="https://' + siteURL + '/fa/ui/brandtags.png" alt=""><img src="https://' + siteURL + '/media/fa/lolita_not_cosplay.gif" alt="lolita ≠ cosplay" title="lolita ≠ cosplay"></span>';
+}
